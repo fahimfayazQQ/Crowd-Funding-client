@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import React from 'react'
 import Bottle from "../../../public/assets/images/Placeholder.png"
@@ -17,7 +18,7 @@ const Header = () => {
               crowdfunding when they’re trying to decide if they want to start
               an online fundraiser.
             </div>
-            <div className="w-3/12 bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4">
+            <div className="w-3/12 bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
               EXPLORE
             </div>
           </div>

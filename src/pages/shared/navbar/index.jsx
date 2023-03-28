@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavigationItems from "./NavLinks";
 import { Modal } from "antd";
@@ -7,21 +7,24 @@ import "./Navbar.css";
 import { customlinks } from "./MyLinks";
 import { Search } from "../Icons";
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
-  const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-white transition ease transform duration-500 m-4`;
+  const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-500 m-4`;
+  
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent">
-      <nav className="bg-transparent text-white relative">
+      <nav className="bg-transparent text-black relative">
         <div className="flex justify-between py-5">
           <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
             QUADQUE
           </div>
           <div className="flex justify-between">
             <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
-              <Search />
+              <Search className="text-black"/>
             </div>
             <div className="" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}

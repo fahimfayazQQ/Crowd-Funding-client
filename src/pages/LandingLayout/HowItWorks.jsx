@@ -1,5 +1,6 @@
+'use client'
 import React from 'react'
-import { List1, List2, List3 } from "../../app/components/shared/Icons";
+import { List1, List2, List3 } from "../shared/Icons"
 
 const HowItWorks = () => {
   return (

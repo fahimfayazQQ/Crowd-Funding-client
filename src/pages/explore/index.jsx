@@ -1,9 +1,19 @@
+'use client'
 import React from 'react'
+import Navbar from '../shared/navbar'
+import ExploreFilter from './exploreFilter'
+import ExploreGallery from './exploreGallery'
+import Footer from '../shared/footer'
 
-const Explore = () => {
+const ExploreLayout = () => {
   return (
-    <div>Explore</div>
+    <>
+    <Navbar/>
+    <ExploreFilter/>
+    <ExploreGallery/>
+    <Footer/>
+    </>
   )
 }
 
-export default Explore
+export default ExploreLayout

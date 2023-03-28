@@ -4,7 +4,7 @@ import { FB, Insta, Twitter } from "./Icons"
 const Footer = () => {
   return (
     <div className="max-w-screen-xl pt-20 mx-auto">
-      <div className="w-full flex justify-between items-center">
+      <div className="w-full flex justify-between items-center ">
         <div className="text-3xl font-semibold">QUADQUE</div>
         <div className="font-semibold rounded-full shadow-md px-6 py-3">
           Create Campaign
@@ -35,7 +35,7 @@ const Footer = () => {
           <li className="mb-4 cursor-pointer">Changelog</li>
         </ul>
 
-        <div className="w-1/4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl p-5">
+        <div className="w-1/4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl shadow-lg p-5">
           <div className="text-white text-center pb-5">
             Paragraphs are the building blocks of papers
           </div>
