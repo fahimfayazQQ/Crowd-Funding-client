@@ -1,0 +1,17 @@
+.investor_shine {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.investor_shine::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -60px;
+    width: 700px;
+    height: 1000px;
+    background: #5956E9;
+    transform: rotate(-20deg);
+}
