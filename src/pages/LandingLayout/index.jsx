@@ -8,7 +8,7 @@ import HowItWorks from "./HowItWorks";
 import Investors from './Investors'
 import Accolades from "./Accolades";
 import Articles from "./Articles";
-import Footer from "../../shared/Footer";
+import Footer from '@/components/app/components/shared/Footer';
 
 const LandingPage = () => {
   return (

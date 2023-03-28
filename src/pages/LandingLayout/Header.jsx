@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
-import Bottle from "../../../../../public/assets/images/Placeholder.png"
-import Image1 from "../../../../../public/assets/images/header.png"
+import Bottle from "../../../public/assets/images/Placeholder.png"
+import Image1 from "../../../public/assets/images/header.png"
 
 const Header = () => {
   return (

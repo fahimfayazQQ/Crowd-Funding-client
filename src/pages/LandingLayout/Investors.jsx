@@ -6,7 +6,7 @@ import "../../../_slick.css";
 import "../../../_slickTheme.css"; */
 import "./style.css"
 import Image from "next/image";
-import Image1 from "../../../../../public/assets/images/image2.png";
+import Image1 from "../../../public/assets/images/image2.png";
 
 const Investors = () => {
     const settings = {

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import Coke from "../../../../../public/assets/images/cocacola.png"
+import Coke from "../../../public/assets/images/cocacola.png"
 
 const Articles = () => {
   return (
