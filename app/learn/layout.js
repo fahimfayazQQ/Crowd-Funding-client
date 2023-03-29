@@ -1,7 +1,7 @@
-import './globals.css'
+import '../globals.css'
 
 export const metadata = {
-  title: 'Crowd Funding-Quadque',
+  title: 'learn-Crowd Funding',
   description: 'Crowd Funding - Quadque',
 }
 
