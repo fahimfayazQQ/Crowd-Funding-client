@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import Card1 from "../../../public/assets/images/card1.png"
 import Card2 from "../../../public/assets/images/card2.png"
 
