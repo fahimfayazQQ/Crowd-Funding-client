@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Image3 from "../../public/assets/images/overview.png"
+import Image3 from "../../../public/assets/images/overview.png"
 
 const Overview = () => {
   return (

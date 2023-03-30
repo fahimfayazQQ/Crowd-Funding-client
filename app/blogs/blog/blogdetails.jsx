@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Img1 from "../../public/assets/images/overview.png";
-import Card1 from "../../public/assets/images/card1.png";
-import Card2 from "../../public/assets/images/card2.png";
-import Image3 from "../../public/assets/images/avatar.png";
-import { FB, Insta, Twitter } from "../shared/Icons";
+import Img1 from "../../../public/assets/images/overview.png";
+import Card1 from "../../../public/assets/images/card1.png";
+import Card2 from "../../../public/assets/images/card2.png";
+import Image3 from "../../../public/assets/images/avatar.png";
+import { FB, Insta, Twitter } from "../../shared/Icons";
 
-const BlogDetail = () => {
+const BlogDetails = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-20">
       <div className="text-3xl font-semibold mb-2">
@@ -98,7 +98,14 @@ const BlogDetail = () => {
           <Twitter className="text-3xl mx-3 cursor-pointer" />
         </div>
         <div className="text-lg font-semibold my-5">Leave a comment</div>
-        <textarea name="comment" id="comment" cols="30" rows="3" className="w-full border-b-2 shadow-lg rounded-md outline-none p-2"></textarea>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="3"
+          placeholder="What's on your mind..."
+          className="w-full border border-b-2 shadow-lg rounded-md outline-none p-2"
+        ></textarea>
 
         <div>
           <div className="flex justify-start items-center">
@@ -145,4 +152,4 @@ const BlogDetail = () => {
   );
 };
 
-export default BlogDetail;
+export default BlogDetails;

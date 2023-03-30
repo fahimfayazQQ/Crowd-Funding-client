@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../shared/navbar";
+import Navbar from "../../shared/navbar";
 import ProductHeader from "./productHeader";
 import ProductTabs from "./productTabs";
-import Footer from "../shared/footer";
+import Footer from "../../shared/footer";
 
 const ProductLayout = () => {
   return (

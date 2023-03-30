@@ -9,7 +9,7 @@ import Image1 from "../../public/assets/images/image2.png";
 
 const Investors = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

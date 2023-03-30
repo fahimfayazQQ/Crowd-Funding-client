@@ -1,10 +1,11 @@
 export const customlinks = [
   { name: "Home", link: "/welcome" },
-  { name: "Pricing", link: "/welcome" },
-  { name: "About", link: "/welcome" },
-  { name: "Blogs", link: "/welcome" },
-  { name: "Contact", link: "/welcome" },
-  { name: "Login", link: "/login" },
+  { name: "Explore", link: "/explore" },
+  { name: "Product", link: "/product" },
+  { name: "About", link: "/about" },
+  { name: "Blogs", link: "/blogs" },
+  { name: "Events", link: "/events" },
+  { name: "Learn", link: "/learn" },
   { name: "Free Trial", link: "/welcome" },
   /* {
     name: "More",

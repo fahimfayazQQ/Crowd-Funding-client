@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Img1 from "../../public/assets/images/overview.png";
-import Card1 from "../../public/assets/images/card1.png";
-import Card2 from "../../public/assets/images/card2.png";
-import Image3 from "../../public/assets/images/avatar.png";
-import { FB, Insta, Twitter } from "../shared/Icons";
+import Img1 from "../../../public/assets/images/overview.png";
+import Card1 from "../../../public/assets/images/card1.png";
+import Card2 from "../../../public/assets/images/card2.png";
+import Image3 from "../../../public/assets/images/avatar.png";
+import { FB, Insta, Twitter } from "../../shared/Icons";
 
 const StoryDetail = () => {
   return (

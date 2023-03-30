@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Product1 from "../../public/assets/images/product.png";
+import Product1 from "../../../public/assets/images/product.png";
 
 const ProductHeader = () => {
   return (

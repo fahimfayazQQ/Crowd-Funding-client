@@ -1,16 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import NavigationItems from "./NavLinks";
+/* import NavigationItems from "./NavLinks"; */
 import { Modal } from "antd";
 import "./Navbar.css";
 import { customlinks } from "./MyLinks";
 import { Search } from "../Icons";
-
+import Link from "next/link";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [isHome, setIsHome] = useState(false);
+  // const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
   const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-500 m-4`;
   
@@ -70,7 +69,7 @@ const Navbar = () => {
                         }`}
                       >
                         {link.submenu?.map((slink) => (
-                          <Link to={slink.sublink}>
+                          <Link href={slink.sublink}>
                             <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}

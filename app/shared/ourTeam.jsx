@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const OurTeam = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -23,6 +23,13 @@ const OurTeam = () => {
       </div>
       <div className="my-5">
         <Slider {...settings} arrows={false}>
+          <div className="w-full h-full">
+            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <div className="text-center text-black font-semibold mt-3">
+              HM Alvi
+            </div>
+            <div className="text-center text-black text-sm">Ceo & Founder </div>
+          </div>
           <div className="w-full h-full">
             <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">

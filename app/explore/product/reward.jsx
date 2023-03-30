@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Card1 from "../../public/assets/images/card1.png"
-import Card2 from "../../public/assets/images/card2.png"
+import Card1 from "../../../public/assets/images/card1.png"
+import Card2 from "../../../public/assets/images/card2.png"
 
 const Reward = () => {
   return (

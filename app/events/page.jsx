@@ -1,18 +1,18 @@
 import React from 'react'
 import Navbar from '../shared/navbar'
-import EventHeader from './header'
-import EventContent from './eventContent'
+import EventHeader from './eventsHeader'
+import EventsGallery from './eventsGallery'
 import Footer from '../shared/footer'
 
 const EventLayout = () => {
   return (
     <>
-      <Navbar/>
-      <EventHeader/>
-      <EventContent/>
-      <Footer/>
+      <Navbar />
+      <EventHeader />
+      <EventsGallery />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default EventLayout

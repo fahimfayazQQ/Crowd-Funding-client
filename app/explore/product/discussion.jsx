@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Image3 from "../../public/assets/images/avatar.png";
+import Image3 from "../../../public/assets/images/avatar.png";
 
 const Discussion = () => {
   return (
