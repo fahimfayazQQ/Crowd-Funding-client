@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, {useRef} from "react";
 import Coke from "../../public/assets/images/photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const OurTeam = () => {
+  const sliderRef = useRef(null);
   const settings = {
     dots: false,
     infinite: true,
@@ -22,7 +23,7 @@ const OurTeam = () => {
         paragraphs in terms of length
       </div>
       <div className="my-5">
-        <Slider {...settings} arrows={false}>
+        <Slider ref={sliderRef} {...settings} arrows={false}>
           <div className="w-full h-full">
             <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
@@ -62,10 +63,10 @@ const OurTeam = () => {
       </div>
 
       <div className="flex items-center">
-        <div className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
+        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
           {"<"}
         </div>
-        <div className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
+        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
           {">"}
         </div>
       </div>

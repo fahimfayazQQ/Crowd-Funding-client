@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Biznez from "../../public/assets/images/biznez.png"
 import Meta from "../../public/assets/images/fb.png"
@@ -115,12 +116,19 @@ const Signup = () => {
               </div>
 
               <div className="mb-6">
+              <Link href={"../profile"}>
                 <button
                   type="submit"
                   className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
                 >
                   Sign up
                 </button>
+              </Link>
+              </div>
+              <div>Already have an account? 
+                <Link href={"../login"}>
+                <span className='pl-2 underline text-sky-600'>Login here</span>
+                </Link>
               </div>
 
               {/* <p className="text-sm text-center text-gray-400">

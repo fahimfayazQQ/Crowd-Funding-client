@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../shared/navbar'
 import ProfileTab from './profileTab'
 
-const Profilelayout = () => {
+const ProfileLayout = () => {
   return (
     <>
     <Navbar/>
@@ -11,4 +11,4 @@ const Profilelayout = () => {
   )
 }
 
-export default Profilelayout
+export default ProfileLayout

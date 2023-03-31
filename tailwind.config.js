@@ -86,8 +86,9 @@ module.exports = {
         46: "11.5rem",
       },
       colors: {
-        "brand-color": "#7037FF",
-        "home-color": "#4737FF"
+        "home-color": "#4737FF",
+        "admin-color": "#1C2039",
+        "admin-secondary-color": "#262B49",
       },
       lineHeight: {
         4.5: "1.125rem",

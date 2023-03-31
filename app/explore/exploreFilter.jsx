@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Select, Space } from "antd";
+import { Select } from "antd";
 import image from "../../public/assets/images/image3.png";
 // import "../landingLayout/style.css";
 // import { Search } from "../shared/Icons";

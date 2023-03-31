@@ -35,7 +35,7 @@ const Footer = () => {
           <li className="mb-4 cursor-pointer">Changelog</li>
         </ul>
 
-        <div className="w-1/4 bg-gradient-to-r from-fuchsia-600 to-purple-600 rounded-3xl shadow-lg p-5">
+        <div className="w-1/4 bg-gradient-to-r from-purple-600 to-fuchsia-700 border rounded-3xl shadow-xl p-5">
           <div className="text-white text-center pb-5">
             Paragraphs are the building blocks of papers
           </div>
