@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Modal } from "antd";
 import "./Navbar.css";
 import { customlinks } from "./MyLinks";
-import { Search } from "../Icons";
+import { Search, Down } from "../Icons";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -18,14 +18,16 @@ const Navbar = () => {
     <div id="Navbar" className="w-full absolute top-0 bg-transparent">
       <nav className="bg-transparent text-black relative">
         <div className="flex justify-between py-5">
-          <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
-            QUADQUE
-          </div>
+          <Link href={"./"}>
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-20">
+              QUADQUE
+            </div>
+          </Link>
           <div className="flex justify-between">
             <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
-              <Search className="text-black"/>
+              <Search className="text-black cursor-pointer"/>
             </div>
-            <div className="" onClick={() => setOpen(!open)}>
+            <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
               <div className={` ${genericHamburgerLine}`} />
               <div className={`${genericHamburgerLine}`} />
@@ -38,7 +40,7 @@ const Navbar = () => {
           </ul> */}
           {/* Mobile View */}
           <Modal
-            className="bg-white border rounded-md NavbarModal cross_btn"
+            className="NavbarModal bg-white border rounded-md float-right cross_btn"
             title={false}
             centered
             open={open}
@@ -47,19 +49,23 @@ const Navbar = () => {
             footer={false}
             /* width="100%" */
           >
-            <div className="w-full h-[95vh] flex flex-col justify-between text-center text-black text-xl py-10">
+            <div className="w-full h-[95vh] flex flex-col text-black text-xl py-10 pl-10">
               {customlinks?.map((link) => (
                 <>
                   <div
+                  className="flex justify-between items-center py-4"
                     onClick={() => {
                       toogleSubmenu !== link?.name
                         ? setToogleSubmenu(link?.name)
                         : setToogleSubmenu("");
                     }}
                   >
-                    <a className="text-black font-semibold" href={link?.link}>
+                    <a className="text-black" href={link?.link}>
                       {link.name}
                     </a>
+                    <div className={`${link?.submenu ? "block":"hidden"}`}>
+                      <Down className={`text-black text-sm ${toogleSubmenu === "" && "-rotate-90" }`}/>
+                    </div>
                   </div>
                   <div>
                     {link?.submenu !== "" && (

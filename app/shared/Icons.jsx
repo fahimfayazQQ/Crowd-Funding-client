@@ -12,4 +12,8 @@ export { default as Value4 } from "../../public/assets/icons/value4.svg";
 export { default as Value5 } from "../../public/assets/icons/value5.svg";
 export { default as Value6 } from "../../public/assets/icons/value6.svg";
 export { default as ArrowWhite } from "../../public/assets/icons/arrow-white.svg";
+export { default as Menu } from "../../public/assets/icons/menu.svg";
+export { default as Send } from "../../public/assets/icons/send.svg";
+export { default as Heart } from "../../public/assets/icons/heart.svg";
+export { default as Down } from "../../public/assets/icons/down.svg";
 

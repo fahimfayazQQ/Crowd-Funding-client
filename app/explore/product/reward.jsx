@@ -5,7 +5,7 @@ import Card2 from "../../../public/assets/images/card2.png"
 
 const Reward = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20 p-10 rounded-xl shadow-lg">
+    <div className="max-w-screen-xl mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
       <div className="text-2xl text-cneter">Rewards</div>
       <div className="mb-5">
         This handout will help you understand how paragraphs are formed, how to

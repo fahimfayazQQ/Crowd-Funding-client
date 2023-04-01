@@ -15,8 +15,8 @@ const Project = () => {
   };
   return (
     <div className="w-11/12 h-full mx-auto p-20 text-white">
-      <div className="bg-admin-secondary-color rounded-3xl shadow-lg p-10 my-5">
-        <div className="flex">
+      <div className="w-11/12 bg-admin-secondary-color rounded-3xl shadow-lg p-10">
+        <div className="flex justify-between">
           <Image src={post1} className="w-[30rem] mr-3" />
           <div>
             <div className="flex justify-between pb-2">
@@ -35,7 +35,7 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="flex justify-between mb-5">
+      <div className="flex justify-between my-5">
         <div className="flex items-end gap-4">
           <div>
             <div className="text-2xl font-bold">Update</div>

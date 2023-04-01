@@ -24,7 +24,7 @@ const ProjectForm = () => {
           information below. Your answers will be locked for this campaign and
           can’t be changed later.
         </div>
-        <div className="flex flex-wrap justify-around p-5 shadow-lg rounded-xl my-10">
+        <div className="flex flex-wrap justify-around bg-white p-5 shadow-lg rounded-xl my-10">
           <div
             onClick={() => {
               hangleToogle(0);

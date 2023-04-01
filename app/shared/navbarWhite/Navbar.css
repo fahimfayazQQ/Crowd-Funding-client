@@ -1,6 +1,6 @@
 /* Overriding antd modal */
 
-.NavbarModal .ant-modal,
+.NavbarWhiteModal .ant-modal,
 .ant-modal-content {
     height: 100%;
     width: 100%;
@@ -8,34 +8,34 @@
     top: 0;
 }
 
-.NavbarModal .ant-modal-body {
+.NavbarWhiteModal .ant-modal-body {
     height: 95vh;
 }
 
-.NavbarModal .ant-modal-content {
+.NavbarWhiteModal .ant-modal-content {
     background-color: transparent !important;
     border-radius: 0 !important;
     color: #ffffff !important;
 }
 
-.NavbarModal .ant-modal-title {
+.NavbarWhiteModal .ant-modal-title {
     background-color: white !important;
     border-radius: 0 !important;
     color: #ffffff !important;
 }
 
-.NavbarModal .ant-modal-close-x {
+.NavbarWhiteModal .ant-modal-close-x {
     display: block;
     font-size: 24px !important;
     font-weight: 800 !important;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
     line-height: 22px;
     text-align: center;
     text-transform: none;
     text-rendering: auto;
 }
 
-.NavbarModal .cross_btn>.ant-modal-content>.ant-modal-close {
+.NavbarWhiteModal .cross_btn>.ant-modal-content>.ant-modal-close {
     position: absolute;
     top: 3.5rem !important;
     margin-right: 0.7rem !important;

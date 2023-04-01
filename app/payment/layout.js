@@ -1,7 +1,7 @@
 import "../globals.css";
 
 export const metadata = {
-  title: "create project-Crowd Funding",
+  title: "payment-Crowd Funding",
   description: "Crowd Funding - Quadque",
 };
 

@@ -1,20 +1,22 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Avatar from "../../public/assets/images/avatar.png";
 import post1 from "../../public/assets/images/blog2.png";
+import "./userStyles.css"
 import { Select } from "antd";
-const categoryData = ["All", "Events"];
+const categoryData = ["Recent", "All"];
 
-const Notification = () => {
+const Notifications = () => {
   const handleProvinceChange = (value) => {
     value.preventDefault();
   };
   return (
-    <div className="w-10/12 h-full mx-auto p-20">
+    <div className="w-11/12 h-full mx-auto p-20 text-white">
       <div className="flex justify-between mb-5">
         <div className="flex items-end gap-4">
           <div>
-            <div className="text-lg font-bold">Notifications</div>
+            <div className="text-2xl font-bold">Update</div>
           </div>
           <Select
             defaultValue={categoryData[0]}
@@ -33,7 +35,7 @@ const Notification = () => {
         </a>
       </div>
 
-      <div className="h-[85vh] shadow text-sm p-5 overflow-y-scroll">
+      <div className="h-[75vh] shadow text-sm p-5 overflow-y-scroll">
 
         <div className="flex items-center">
           <Image src={Avatar} className="w-10 mr-3" />
@@ -46,7 +48,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
         <div className="flex items-center">
@@ -79,7 +81,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
 
@@ -94,7 +96,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
         <div className="flex items-center">
@@ -127,7 +129,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
 
@@ -142,7 +144,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
         <div className="flex items-center">
@@ -175,7 +177,7 @@ const Notification = () => {
           <div className="text-zinc-400 px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
-          <div className="w-full border"></div>
+          <div className="w-full border-t"></div>
         </div>
 
 
@@ -184,4 +186,4 @@ const Notification = () => {
   );
 };
 
-export default Notification;
+export default Notifications;

@@ -3,11 +3,10 @@ import React, {useState} from 'react'
 import Image from 'next/image';
 import Propic from "../../public/assets/images/sourav.png"
 import Project from './project';
-/* import UserProfile from './userProfile'
-import Settings from './settings'
-import Notification from './notification'
-import WishProject from './wishProject'
-import Reccomendation from './reccomendation' */
+import Notifications from './notifications';
+import Members from './members';
+import UserSettings from './userSettings';
+import Chat from './chat';
 
 const UsersTab = () => {
     const [toogleTab, setToogleTab] = useState(0)
@@ -27,12 +26,16 @@ const UsersTab = () => {
             <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Chat</div>
             <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Member</div>
             <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Accounts</div>
-            <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===5 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Settings</div>
+            <div onClick={()=>{handleToogle(5)}} className={`${toogleTab===5 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Settings</div>
             </div>
         </div>
       </div>
       <div className='w-full'>
         {toogleTab===0 && <Project/>}
+        {toogleTab===1 && <Notifications/>}
+        {toogleTab===2 && <Chat/>}
+        {toogleTab===3 && <Members/>}
+        {toogleTab===5 && <UserSettings/>}
       </div>
     </div>
   );

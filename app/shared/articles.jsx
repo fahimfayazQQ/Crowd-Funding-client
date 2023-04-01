@@ -58,10 +58,10 @@ const Articles = () => {
         <div className="w-2/12 bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
           See More
         </div>
-        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
+        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
           {"<"}
         </div>
-        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
+        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
           {">"}
         </div>
       </div>

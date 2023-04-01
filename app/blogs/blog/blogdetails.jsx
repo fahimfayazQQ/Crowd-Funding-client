@@ -118,7 +118,7 @@ const BlogDetails = () => {
             dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
             adipiscing elit. Sed at arcu dui. Aenean placerat.
           </div>
-          <div className="text-sm cursor-pointer">Reply</div>
+          <div className="text-sm cursor-pointer ml-10">Reply</div>
         </div>
         <div className="pl-20">
           <div className="flex justify-start items-center">
@@ -131,9 +131,8 @@ const BlogDetails = () => {
             dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
             adipiscing elit. Sed at arcu dui. Aenean placerat.
           </div>
-          <div className="text-sm cursor-pointer">Reply</div>
+          <div className="text-sm cursor-pointer ml-10">Reply</div>
         </div>
-        <div className="border w-full my-5"></div>
         <div>
           <div className="flex justify-start items-center">
             <Image src={Image3} alt="" className="w-10 h-10 my-5" />
@@ -145,7 +144,7 @@ const BlogDetails = () => {
             dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
             adipiscing elit. Sed at arcu dui. Aenean placerat.
           </div>
-          <div className="text-sm cursor-pointer">Reply</div>
+          <div className="text-sm cursor-pointer ml-10">Reply</div>
         </div>
       </div>
     </div>

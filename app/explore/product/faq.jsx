@@ -9,7 +9,7 @@ const text = `
 
 const Faq = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20 p-10 rounded-xl shadow-lg">
+    <div className="max-w-screen-xl mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
       <div className="text-2xl pb-5">Frequently Asked Questions</div>
       <Collapse accordion>
         <Panel header="1. Where is my order? Quisque molestie" key="1">

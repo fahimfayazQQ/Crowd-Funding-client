@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "../../shared/navbar";
 import EventHeader from "../eventsHeader";
-import EventContent from '../eventContent';
+import EventContent from './eventContent';
 import Footer from "../../shared/footer";
 
 const EventDetailsLayout = () => {

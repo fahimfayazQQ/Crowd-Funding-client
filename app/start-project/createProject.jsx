@@ -14,7 +14,7 @@ const CreateProject = () => {
         a type specimen book.
       </div>
       <Link href={"/start-project/registration"}>
-        <div className="w-[15rem] bg-home-color text-white text-sm text-center tracking-widest rounded-md px-5 py-3">
+        <div className="inline-block bg-home-color text-white text-sm text-center tracking-widest rounded-md px-5 py-3">
           START PROJECT
         </div>
       </Link>

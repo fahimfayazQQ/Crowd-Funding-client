@@ -1,10 +1,16 @@
+"use client";
 import Image from "next/image";
 import Product1 from "../../../public/assets/images/product.png";
+import Link from "next/link";
+import { Heart } from "../../shared/Icons";
+import { useState } from "react";
 
 const ProductHeader = () => {
+  const [isReacted, setIsReacted] = useState(false);
+
   return (
     <div className="rounded-2xl max-w-screen-xl mx-auto mt-20">
-      <div className="w-full h-full flex justify-between rounded-xl shadow-lg">
+      <div className="w-full h-full flex justify-between rounded-xl shadow-md bg-white">
         <div className="w-full relative p-5">
           <Image src={Product1} alt="" className="" />
           <div className="flex items-center absolute top-5">
@@ -42,11 +48,14 @@ const ProductHeader = () => {
             </div>
           </div>
 
-          <div className="flex justify-evenly">
-            <div className="w-3/12 bg-home-color text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-              INVEST
-            </div>
-            <div className="w-3/12 text-black border tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+          <div className="flex justify-start gap-10">
+            <Link href={"../payment"}>
+              <div className="inline-block bg-home-color text-white tracking-widest text-sm text-center rounded-full shadow-lg py-3 px-10 cursor-pointer">
+                INVEST
+              </div>
+            </Link>
+            <div onClick={()=>{setIsReacted(!isReacted)}} className="flex items-center text-black border tracking-widest text-sm text-center rounded-full shadow-lg py-3 px-10 cursor-pointer">
+              <Heart className={`text-xl mr-2 ${isReacted ? "text-[#F40B5F]":"text-gray-200"}`} />
               WISH
             </div>
           </div>

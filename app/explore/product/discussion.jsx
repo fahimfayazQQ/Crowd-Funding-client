@@ -4,7 +4,7 @@ import Image3 from "../../../public/assets/images/avatar.png";
 
 const Discussion = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20 p-10 rounded-xl shadow-lg">
+    <div className="max-w-screen-xl mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
       <div className="w-[80%] mx-auto">
         <div>
           <div className="flex justify-start items-center">

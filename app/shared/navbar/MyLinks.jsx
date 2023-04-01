@@ -1,27 +1,31 @@
 export const customlinks = [
   { name: "Home", link: "/welcome" },
   { name: "Explore", link: "/explore" },
-  { name: "Product", link: "/product" },
-  { name: "About", link: "/about" },
-  { name: "Blogs", link: "/blogs" },
-  { name: "Events", link: "/events" },
-  { name: "Learn", link: "/learn" },
-  { name: "Login", link: "/login" },
-  /* {
-    name: "More",
+  { name: "Project", link: "/start-project" },
+  // { name: "Blogs", link: "/blogs" },
+  // { name: "Stories", link: "/stories" },
+  // { name: "Events", link: "/events" },
+  // { name: "Learn", link: "/learn" },
+  {
+    name: "About",
     submenu: [
       {
         name: "Blogs",
-        sublink: "/blog",
-      },
-      {
-        name: "Gallery",
-        sublink: "/gallery",
+        sublink: "/blogs",
       },
       {
         name: "Stories",
         sublink: "/stories",
       },
+      {
+        name: "Events",
+        sublink: "/events",
+      },
+      {
+        name: "Learn",
+        sublink: "/learn",
+      },
     ],
-  }, */
+  },
+  { name: "Login", link: "/login" },
 ];

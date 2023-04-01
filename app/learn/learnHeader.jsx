@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Bottle from "../../public/assets/images/Placeholder.png"
+import Link from 'next/link'
 
 const LearnHeader = () => {
   return (
@@ -15,9 +16,11 @@ const LearnHeader = () => {
             crowdfunding when they’re trying to decide if they want to start
             an online fundraiser.
           </div>
-          <div className="w-3/12 bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-            EXPLORE
-          </div>
+          <Link href={"./learn/gallery"}>
+            <div className="w-3/12 bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+              EXPLORE
+            </div>
+          </Link>
         </div>
         <div className="w-full relative">
           <Image src={Bottle} alt="" className="w-full h-full" />

@@ -24,13 +24,13 @@ const Investors = () => {
         Our Happy Investors
       </div>
       <div
-        onClick={() => sliderRef.current.slickNext()}
+        onClick={() => sliderRef.current.slickPrev()}
         className="absolute left-5 top-[40%]"
       >
         <ArrowWhite className="text-5xl" />
       </div>
       <div
-        onClick={() => sliderRef.current.slickPrev()}
+        onClick={() => sliderRef.current.slickNext()}
         className="absolute right-5 top-[40%]"
       >
         <ArrowWhite className="text-5xl rotate-180" />

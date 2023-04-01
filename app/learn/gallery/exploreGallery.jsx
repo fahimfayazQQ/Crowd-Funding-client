@@ -2,9 +2,9 @@
 import React, {useRef} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Card1 from "../../public/assets/images/card1.png"
-import Card2 from "../../public/assets/images/card2.png"
-import Products from "../shared/jsondata/products.json"
+import Card1 from "../../../public/assets/images/card1.png"
+import Card2 from "../../../public/assets/images/card2.png"
+import Products from "../../shared/jsondata/products.json"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,10 +28,10 @@ const ExploreGallery = () => {
       <div className="flex justify-between items-center mb-4">
         <div className="text-xl">Trending Items</div>
         <div className="flex items-center">
-          <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
+          <div className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
             {"<"}
           </div>
-          <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4">
+          <div className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
             {">"}
           </div>
         </div>
@@ -45,7 +45,7 @@ const ExploreGallery = () => {
               <Image src={Card1} alt="" className=""/>
               <div className="text-xl my-5">{product?.title}</div>
               <div className="text-sm pb-8">{product?.description}</div>
-              <Link href={"./explore/product"}>
+              <Link href={"./learn/gallery/details"}>
                 <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
                   Learn More
                 </div>
