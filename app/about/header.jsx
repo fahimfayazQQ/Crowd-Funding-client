@@ -1,7 +1,7 @@
 import React from "react";
 import "../LandingLayout/style.css";
 import Image1 from "../../public/assets/images/image2.png";
-import Image2 from "../../public/assets/images/method.png";
+import Image2 from "../../public/assets/images/Method.png";
 import Image3 from "../../public/assets/images/footer33.png";
 import Image from "next/image";
 import {

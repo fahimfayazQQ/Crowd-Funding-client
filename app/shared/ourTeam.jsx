@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, {useRef} from "react";
-import Coke from "../../public/assets/images/photo.png";
+import Coke from "../../public/assets/images/Photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
