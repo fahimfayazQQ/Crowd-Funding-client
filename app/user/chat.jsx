@@ -11,7 +11,7 @@ const Chat = () => {
         <div className="relative h-[76vh] bg-admin-secondary-color rounded-tr-2xl rounded-tl-2xl p-8">
           <div className="flex items-center justify-between pb-4">
             <div className="flex items-center">
-              <Image src={Avatar} className="w-14 h-14 mr-3" />
+              <Image src={Avatar} alt="img" className="w-14 h-14 mr-3" />
               <div>
                 <div className="text-xl font-semibold">David Bekham</div>
                 <div className="text-sm">3 new messages</div>
@@ -42,9 +42,7 @@ const Chat = () => {
 
           <div className="my-2 float-right">
             <div className="bg-admin-color inline-block rounded-3xl py-2 px-4">
-              <div>
-                Sure. What type of product are you interested in?
-              </div>
+              <div>Sure. What type of product are you interested in?</div>
             </div>
             <div className="text-zinc-400 text-sm pl-5">1 hour ago</div>
           </div>
@@ -67,11 +65,11 @@ const Chat = () => {
       <div className="w-1/3 bg-admin-secondary-color rounded-2xl p-5">
         <div className="text-xl pb-2">Chats</div>
         <div className="h-[70vh] overflow-y-auto my-5">
-          {Chatperson?.map((person) => (
-            <div className="cursor-pointer">
+          {Chatperson?.map((person, i) => (
+            <div key={i} className="cursor-pointer">
               <div className="flex items-center justify-between py-3">
                 <div className="flex items-center">
-                  <Image src={Avatar} className="w-10 h-10 mr-3" />
+                  <Image src={Avatar} alt="img" className="w-10 h-10 mr-3" />
                   <div className="font-semibold">{person?.name}</div>
                 </div>
                 <div className="text-zinc-400 text-xs mr-2">{person?.time}</div>

@@ -5,6 +5,7 @@ import Card1 from "../../../public/assets/images/card1.png";
 import Card2 from "../../../public/assets/images/card2.png";
 import Image3 from "../../../public/assets/images/avatar.png";
 import { FB, Insta, Twitter } from "../../shared/Icons";
+import Link from "next/link";
 
 const StoryDetail = () => {
   return (
@@ -16,7 +17,7 @@ const StoryDetail = () => {
         <span>January 15, 2023</span> &nbsp; / &nbsp;
         <span>By: David Gilmour</span>
       </div>
-      <Image src={Img1} alt="" className="w-full my-5" />
+      <Image src={Img1} alt="img" className="w-full my-5" />
       <div>
         This page is a demo that shows everything you can do inside portfolio
         and blog posts. We’ve included everything you need to create engaging
@@ -48,7 +49,19 @@ const StoryDetail = () => {
       <div className="text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
       <div className="grid lg:grid-cols-4 gap-3 mb-10">
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
+        </div>
+
+        <div className="shadow-lg rounded-2xl">
+          <Image src={Card2} alt="img" className="rounded-2xl" />
+        </div>
+
+        <div className="shadow-lg rounded-2xl">
+          <Image src={Card1} alt="img" className="rounded-2xl" />
+        </div>
+
+        <div className="shadow-lg rounded-2xl">
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
@@ -56,23 +69,11 @@ const StoryDetail = () => {
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
-        </div>
-
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
-        </div>
-
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
-        </div>
-
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
@@ -87,15 +88,21 @@ const StoryDetail = () => {
         when it is in view, so your visitors won’t scroll down to find it half
         way through your images.
       </div>
-      <Image src={Img1} alt="" className="w-full my-5" />
+      <Image src={Img1} alt="img" className="w-full my-5" />
 
       {/* Share & Comments Section */}
       <div className="mx-auto pt-20">
         <div className="text-lg font-semibold my-5">Share</div>
         <div className="flex pb-5">
-          <FB className="text-3xl mx-3 cursor-pointer" />
-          <Insta className="text-3xl mx-3 cursor-pointer" />
-          <Twitter className="text-3xl mx-3 cursor-pointer" />
+          <Link href={"https://www.facebook.com/"}>
+            <FB className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+          </Link>
+          <Link href={"https://www.instagram.com/"}>
+            <Insta className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+          </Link>
+          <Link href={"https://twitter.com/"}>
+            <Twitter className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+          </Link>
         </div>
         <div className="text-lg font-semibold my-5">Leave a comment</div>
         <textarea
@@ -108,7 +115,7 @@ const StoryDetail = () => {
 
         <div>
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Sourav Sen</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>
@@ -121,7 +128,7 @@ const StoryDetail = () => {
         </div>
         <div className="pl-20">
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Atika Younus</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>
@@ -135,7 +142,7 @@ const StoryDetail = () => {
         <div className="border w-full my-5"></div>
         <div>
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Sourav Sen</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>

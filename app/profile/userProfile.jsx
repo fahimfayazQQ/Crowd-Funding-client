@@ -6,18 +6,18 @@ const UserProfile = () => {
   return (
     <div className="w-9/12 h-full mx-auto p-20">
       <div className="flex relative">
-        <Image src={ProfilePic} className="absolute -left-52" />
+        <Image src={ProfilePic} alt="img" className="absolute -left-52" />
         <div>
           <div className="text-xl">Atmaram Tukharaman</div>
           <div className="text-sm italic">Atmaram31@gmail.com</div>
         </div>
       </div>
       <div className="w-full border my-10"></div>
-        <div className="w-1/2 text-lg">
-          This handout will help you understand how paragraphs are formed, how
-          to develop stronger paragraphs, and how to completely and clearly
-          express your ideas.
-        </div>
+      <div className="w-1/2 text-lg">
+        This handout will help you understand how paragraphs are formed, how to
+        develop stronger paragraphs, and how to completely and clearly express
+        your ideas.
+      </div>
       <div className="w-full border my-10"></div>
       <div className="flex flex-wrap justify-between w-1/2">
         <div className="w-[10rem] flex flex-col m-10">

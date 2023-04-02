@@ -17,7 +17,7 @@ const Project = () => {
     <div className="w-11/12 h-full mx-auto p-20 text-white">
       <div className="w-11/12 bg-admin-secondary-color rounded-3xl shadow-lg p-10">
         <div className="flex justify-between">
-          <Image src={post1} className="w-[30rem] mr-3" />
+          <Image src={post1} alt="img" className="w-[30rem] mr-3" />
           <div>
             <div className="flex justify-between pb-2">
               <div className="text-2xl">Food Category</div>
@@ -52,7 +52,10 @@ const Project = () => {
             }))}
           />
         </div>
-        <div onClick={() => setOpen(!open)} className="w-[15rem] bg-admin-secondary-color text-xl rounded-lg py-2 flex justify-center items-center">
+        <div
+          onClick={() => setOpen(!open)}
+          className="w-[15rem] bg-admin-secondary-color text-xl rounded-lg py-2 flex justify-center items-center mr-5"
+        >
           <span className="w-5 h-5 bg-white text-admin-secondary-color rounded-full flex justify-center items-center mr-3">
             +
           </span>
@@ -85,26 +88,33 @@ const Project = () => {
               original hand-tossed crust continue.....
             </div>
           </div>
-
         </div>
       </div>
       <Modal
-            className=""
-            title={false}
-            centered
-            open={open}
-            onOk={() => setOpen(false)}
-            onCancel={() => setOpen(false)}
-            footer={false}
-            width="70%"
-            height="90vh"
-          >
-            <div className="w-full text-black text-xl py-10">
-              <div className="text-2xl">Update Post</div>
-              <textarea name="" id="" cols="30" rows="10" className="w-full rounded-md border my-5"></textarea>
-              <div className="w-[6rem] bg-admin-secondary-color text-center text-white rounded-md py-2">Save</div>
-            </div>
-          </Modal>
+        className=""
+        title={false}
+        centered
+        open={open}
+        onOk={() => setOpen(false)}
+        onCancel={() => setOpen(false)}
+        footer={false}
+        width="70%"
+        height="90vh"
+      >
+        <div className="w-full text-black text-xl py-10">
+          <div className="text-2xl">Update Post</div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            className="w-full rounded-md border my-5"
+          ></textarea>
+          <div className="w-[6rem] bg-admin-secondary-color text-center text-white rounded-md py-2">
+            Save
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

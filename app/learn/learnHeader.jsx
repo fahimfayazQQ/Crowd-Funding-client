@@ -13,8 +13,8 @@ const LearnHeader = () => {
           </div>
           <div className="mb-10">
             Below, we answer the questions people most often have about
-            crowdfunding when they’re trying to decide if they want to start
-            an online fundraiser.
+            crowdfunding when they’re trying to decide if they want to start an
+            online fundraiser.
           </div>
           <Link href={"./learn/gallery"}>
             <div className="w-3/12 bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
@@ -23,11 +23,11 @@ const LearnHeader = () => {
           </Link>
         </div>
         <div className="w-full relative">
-          <Image src={Bottle} alt="" className="w-full h-full" />
+          <Image src={Bottle} alt="img" className="w-full h-full" />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default LearnHeader

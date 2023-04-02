@@ -12,12 +12,12 @@ const UserSignup = () => {
       <div className="flex h-[85vh] border p-5 rounded-2xl">
         <div className="w-full bg-admin-secondary-color flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
           <div className="">
-            <Image src={Biznez} className="m-auto" />
+            <Image src={Biznez} alt="img" className="m-auto" />
             <div className="text-white flex justify-center mb-3">Partners</div>
             <div className="w-9/12 flex mx-auto">
-              <Image src={Meta} className="w-[5rem] mx-auto" />
-              <Image src={Google} className="w-[5rem] mx-auto" />
-              <Image src={Youtube} className="w-[5rem] mx-auto" />
+              <Image src={Meta} alt="img" className="w-[5rem] mx-auto" />
+              <Image src={Google} alt="img" className="w-[5rem] mx-auto" />
+              <Image src={Youtube} alt="img" className="w-[5rem] mx-auto" />
             </div>
           </div>
         </div>
@@ -39,10 +39,7 @@ const UserSignup = () => {
             <div className="m-6">
               <form className="mb-4">
                 <div className="mb-6  ">
-                  <label
-                    htmlFor="email"
-                    className="block mb-2 text-sm "
-                  >
+                  <label htmlFor="email" className="block mb-2 text-sm ">
                     Email
                   </label>
                   <input
@@ -106,29 +103,29 @@ const UserSignup = () => {
                     defaultValue="off"
                     /* onChange={handleRememberMe} */
                   />
-                  <label
-                    className="cursor-pointer "
-                    htmlFor="remember_me"
-                  >
+                  <label className="cursor-pointer " htmlFor="remember_me">
                     Remember Me
                   </label>
                 </div>
 
                 <div className="mb-6">
                   <Link href={"../users"}>
-                  <button
-                    type="submit"
-                    className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
-                  >
-                    Sign up
-                  </button>
+                    <button
+                      type="submit"
+                      className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
+                    >
+                      Sign up
+                    </button>
                   </Link>
                 </div>
-                <div>Already have an account? 
-                <Link href={"../user-login"}>
-                <span className='pl-2 underline text-sky-600'>Login here</span>
-                </Link>
-              </div>
+                <div>
+                  Already have an account?
+                  <Link href={"../user-login"}>
+                    <span className="pl-2 underline text-sky-600">
+                      Login here
+                    </span>
+                  </Link>
+                </div>
 
                 {/* <p className="text-sm text-center text-gray-400">
                 Don't have an account yet?

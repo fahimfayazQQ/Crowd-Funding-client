@@ -5,6 +5,7 @@ import Propic from "../../public/assets/images/sourav.png"
 import Project from './project';
 import Notifications from './notifications';
 import Members from './members';
+import Account from './account';
 import UserSettings from './userSettings';
 import Chat from './chat';
 
@@ -18,7 +19,7 @@ const UsersTab = () => {
     <div className="w-full h-screen flex bg-admin-color">
       <div className="w-[30rem] h-full text-white z-50 pl-10 py-20">
         <div className='h-full bg-admin-secondary-color rounded-2xl py-20'>
-            <Image src={Propic} className="w-24 h-24 rounded-full mx-auto"/>
+            <Image src={Propic} alt="img" className="w-24 h-24 rounded-full mx-auto"/>
             <div className='text-2xl font-semibold text-center mt-3'>Sourav Sen</div>
             <div className="flex flex-col justify-center text-lg pt-20">
             <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Project</div>
@@ -35,6 +36,7 @@ const UsersTab = () => {
         {toogleTab===1 && <Notifications/>}
         {toogleTab===2 && <Chat/>}
         {toogleTab===3 && <Members/>}
+        {toogleTab===4 && <Account/>}
         {toogleTab===5 && <UserSettings/>}
       </div>
     </div>

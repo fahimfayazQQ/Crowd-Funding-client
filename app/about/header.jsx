@@ -2,6 +2,7 @@ import React from "react";
 import "../LandingLayout/style.css";
 import Image1 from "../../public/assets/images/image2.png";
 import Image2 from "../../public/assets/images/method.png";
+import Image3 from "../../public/assets/images/footer33.png";
 import Image from "next/image";
 import {
   List1,
@@ -17,7 +18,7 @@ import {
 
 const AboutHeader = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20">
+    <div className="max-w-screen-xl mx-auto mt-20">
       <div className="w-full bg-home-color rounded-2xl p-16 investor_shine">
         <div className="text-white text-4xl font-semibold pb-5 text-center">
           About Us
@@ -29,19 +30,19 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="bg-white py-20">
+      <div className="py-20">
         <div className="flex justify-evenly items-center">
-          <div className="flex-col shadow-lg p-5 rounded-3xl">
-            <Image src={Image1} alt="" className="pb-5" />
-            <Image src={Image2} alt="" className="" />
+          <div className="flex-col shadow-lg p-5 rounded-3xl bg-white">
+            <Image src={Image1} alt="img" className="pb-5" />
+            <Image src={Image2} alt="img" className="" />
           </div>
           <div className="w-1/4 my-auto">
             <div className="font-semibold text-2xl pb-5">
-              We're on a mission to bring ideas to life.
+              We&apos;re on a mission to bring ideas to life.
             </div>
             <div className="pb-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500s,
             </div>
             <div className="flex">
@@ -50,7 +51,7 @@ const AboutHeader = () => {
                 <div className="text-lg font-semibold">
                   How technology started
                 </div>
-                <div>Building an enterprisedoesn't need your thousands.</div>
+                <div>Building an enterprisedoesn&apos;t need your thousands.</div>
               </div>
             </div>
             <div className="flex">
@@ -59,7 +60,7 @@ const AboutHeader = () => {
                 <div className="text-lg font-semibold">
                   Endless Possibilities
                 </div>
-                <div>Building an enterprisedoesn't need your thousands.</div>
+                <div>Building an enterprisedoesn&apos;t need your thousands.</div>
               </div>
             </div>
           </div>
@@ -92,13 +93,13 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="bg-white py-20">
+      <div className="py-20">
         <div className="flex justify-evenly items-center">
           <div className="w-1/4 my-auto">
             <div className="font-semibold text-2xl pb-5">Our Mission</div>
             <div className="pb-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500s,
             </div>
             <div className="flex">
@@ -107,7 +108,7 @@ const AboutHeader = () => {
                 <div className="text-lg font-semibold">
                   How technology started
                 </div>
-                <div>Building an enterprisedoesn't need your thousands.</div>
+                <div>Building an enterprisedoesn&apos;t need your thousands.</div>
               </div>
             </div>
             <div className="flex">
@@ -116,11 +117,11 @@ const AboutHeader = () => {
                 <div className="text-lg font-semibold">
                   Endless Possibilities
                 </div>
-                <div>Building an enterprisedoesn't need your thousands.</div>
+                <div>Building an enterprisedoesn&apos;t need your thousands.</div>
               </div>
             </div>
           </div>
-          <Image src={Image1} alt="" className="mt-20" />
+          <Image src={Image1} alt="img" className="" />
         </div>
       </div>
 
@@ -130,7 +131,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -141,7 +142,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -152,7 +153,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -163,7 +164,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -174,7 +175,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -185,7 +186,7 @@ const AboutHeader = () => {
           <div className="text-xl text-center font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
+          <div className=" text-sm text-center pb-8 px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>
@@ -212,53 +213,67 @@ const AboutHeader = () => {
             </div>
           </div>
 
-          <Image src={Image1} alt="" className="w-1/3" />
+          <div className="relative">
+            <Image src={Image3} alt="img" className="w-[300px]" />
+            <div className="absolute top-[30%] px-4">
+              <div className="text-lg font-semibold text-white text-center pb-5">
+                Paragraphs are the building blocks of papers
+              </div>
+              <div className="text-white text-center text-3xl pb-3">
+                Startup <span>$25</span>
+              </div>
+              <div className="w-[10rem] mx-auto bg-[#5143F6] rounded-lg shadow-md text-white text-center px-5 py-2">
+                {" "}
+                Get Plan
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="text-4xl text-center mt-20 mb-8">Our Investors</div>
-      <div className="grid lg:grid-cols-2 gap-10 mb-20">
+      <div className="grid lg:grid-cols-2 gap-10">
         <div className="pb-5">
-          <Value1 className="text-5xl mx-auto" />
-          <div className="text-xl text-center font-semibold my-5 px-2">
+          <div className="text-2xl font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div className=" text-sm pb-8 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting. of
+            the printing and typesetting industry Lorem Ipsum is simply dummy
+            text. Lorem Ipsum is simply dummy text.
           </div>
         </div>
 
         <div className="pb-5">
-          <Value2 className="text-5xl mx-auto" />
-          <div className="text-xl text-center font-semibold my-5 px-2">
+          <div className="text-2xl font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div className=" text-sm pb-8 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting. of
+            the printing and typesetting industry Lorem Ipsum is simply dummy
+            text. Lorem Ipsum is simply dummy text.
           </div>
         </div>
 
         <div className="pb-5">
-          <Value3 className="text-5xl mx-auto" />
-          <div className="text-xl text-center font-semibold my-5 px-2">
+          <div className="text-2xl font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div className=" text-sm pb-8 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting. of
+            the printing and typesetting industry Lorem Ipsum is simply dummy
+            text. Lorem Ipsum is simply dummy text.
           </div>
         </div>
 
         <div className="pb-5">
-          <Value4 className="text-5xl mx-auto" />
-          <div className="text-xl text-center font-semibold my-5 px-2">
+          <div className="text-2xl font-semibold my-5 px-2">
             Lorem ipsum dolor
           </div>
-          <div className="w-2/3 mx-auto text-sm text-center pb-8 px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div className=" text-sm pb-8 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting. of
+            the printing and typesetting industry Lorem Ipsum is simply dummy
+            text. Lorem Ipsum is simply dummy text.
           </div>
         </div>
       </div>

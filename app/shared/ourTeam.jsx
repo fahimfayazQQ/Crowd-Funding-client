@@ -25,35 +25,35 @@ const OurTeam = () => {
       <div className="my-5">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           <div className="w-full h-full">
-            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
               HM Alvi
             </div>
             <div className="text-center text-black text-sm">Ceo & Founder </div>
           </div>
           <div className="w-full h-full">
-            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
               HM Alvi
             </div>
             <div className="text-center text-black text-sm">Ceo & Founder </div>
           </div>
           <div className="w-full h-full">
-            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
               HM Alvi
             </div>
             <div className="text-center text-black text-sm">Ceo & Founder </div>
           </div>
           <div className="w-full h-full">
-            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
               HM Alvi
             </div>
             <div className="text-center text-black text-sm">Ceo & Founder </div>
           </div>
           <div className="w-full h-full">
-            <Image src={Coke} alt="" className="w-[95%] rounded-lg" />
+            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
             <div className="text-center text-black font-semibold mt-3">
               HM Alvi
             </div>
@@ -63,10 +63,16 @@ const OurTeam = () => {
       </div>
 
       <div className="flex items-center">
-        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
+        <div
+          onClick={() => sliderRef.current.slickPrev()}
+          className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3"
+        >
           {"<"}
         </div>
-        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
+        <div
+          onClick={() => sliderRef.current.slickNext()}
+          className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4"
+        >
           {">"}
         </div>
       </div>

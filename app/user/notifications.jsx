@@ -35,10 +35,9 @@ const Notifications = () => {
         </a>
       </div>
 
-      <div className="h-[75vh] shadow text-sm p-5 overflow-y-scroll">
-
+      <div className="h-[75vh] text-sm p-5 overflow-y-scroll">
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> commented on
             your post.
@@ -52,15 +51,15 @@ const Notifications = () => {
         </div>
 
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> created a post
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 border rounded-xl shadow-lg p-5 my-5">
+        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
           <div className="flex">
-            <Image src={post1} className="w-[15rem] mr-3" />
+            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -84,9 +83,8 @@ const Notifications = () => {
           <div className="w-full border-t"></div>
         </div>
 
-
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> commented on
             your post.
@@ -100,15 +98,15 @@ const Notifications = () => {
         </div>
 
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> created a post
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 border rounded-xl shadow-lg p-5 my-5">
+        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
           <div className="flex">
-            <Image src={post1} className="w-[15rem] mr-3" />
+            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -132,9 +130,8 @@ const Notifications = () => {
           <div className="w-full border-t"></div>
         </div>
 
-
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> commented on
             your post.
@@ -148,15 +145,15 @@ const Notifications = () => {
         </div>
 
         <div className="flex items-center">
-          <Image src={Avatar} className="w-10 mr-3" />
+          <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
             <span className="font-semibold">Galid Mahmood</span> created a post
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 border rounded-xl shadow-lg p-5 my-5">
+        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
           <div className="flex">
-            <Image src={post1} className="w-[15rem] mr-3" />
+            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -179,8 +176,6 @@ const Notifications = () => {
           </div>
           <div className="w-full border-t"></div>
         </div>
-
-
       </div>
     </div>
   );

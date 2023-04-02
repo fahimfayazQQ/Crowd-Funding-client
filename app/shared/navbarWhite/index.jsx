@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 /* import NavigationItems from "./NavLinks"; */
 import { Modal } from "antd";
-import "./Navbar.css";
-import { customlinks } from "../navbar/MyLinks";
-import { Search, Down } from "../Icons";
 import Link from "next/link";
+import { Down, Search } from "../Icons";
+import { customlinks } from "../navbar/MyLinks";
+import "./Navbar.css";
 
 const NavbarWhite = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ const NavbarWhite = () => {
           </Link>
           <div className="flex justify-between">
             <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
-              <Search className="text-white cursor-pointer"/>
+              <Search className="text-white cursor-pointer" />
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
@@ -40,7 +40,7 @@ const NavbarWhite = () => {
           </ul> */}
           {/* Mobile View */}
           <Modal
-            className="NavbarWhiteModal bg-black bg-opacity-30 backdrop:filter backdrop-blur-sm border border-gray-400 rounded-md float-right cross_btn"
+            className="NavbarWhiteModal bg-black bg-opacity-50 backdrop:filter backdrop-blur-sm border border-gray-500 rounded-md float-right cross_btn"
             title={false}
             centered
             open={open}
@@ -50,10 +50,11 @@ const NavbarWhite = () => {
             /* width="100%" */
           >
             <div className="w-full h-[95vh] flex flex-col text-xl py-10 pl-10">
-              {customlinks?.map((link) => (
-                <>
+              {customlinks?.map((link, i) => (
+                <div key={i}>
                   <div
-                  className="py-4 flex justify-between items-center"
+                    key={i}
+                    className="py-4 flex justify-between items-center"
                     onClick={() => {
                       toogleSubmenu !== link?.name
                         ? setToogleSubmenu(link?.name)
@@ -63,8 +64,12 @@ const NavbarWhite = () => {
                     <a className="text-white" href={link?.link}>
                       {link.name}
                     </a>
-                    <div className={`${link?.submenu ? "block":"hidden"}`}>
-                      <Down className={`text-white text-sm ${toogleSubmenu === "" && "-rotate-90" }`}/>
+                    <div className={`${link?.submenu ? "block" : "hidden"}`}>
+                      <Down
+                        className={`text-white text-sm ${
+                          toogleSubmenu === "" && "-rotate-90"
+                        }`}
+                      />
                     </div>
                   </div>
                   <div>
@@ -74,15 +79,17 @@ const NavbarWhite = () => {
                           toogleSubmenu === link.name ? "" : "hidden"
                         }`}
                       >
-                        {link.submenu?.map((slink) => (
-                          <Link href={slink.sublink}>
-                            <div className="py-6 pl-10">{slink.name}</div>
+                        {link.submenu?.map((slink, i) => (
+                          <Link key={i} href={slink.sublink}>
+                            <div className="py-6 pl-10">
+                              {slink.name}
+                            </div>
                           </Link>
                         ))}
                       </div>
                     )}
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </Modal>

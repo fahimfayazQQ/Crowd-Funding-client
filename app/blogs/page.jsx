@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../shared/navbar';
+import Navbar from '../shared/navbar/page';
 import BlogGallery from './blogGallery';
 import Footer from '../shared/footer';
 

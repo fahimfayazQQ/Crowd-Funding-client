@@ -11,11 +11,11 @@ const WishProject = () => {
   return (
     <div className="h-full overflow-y-scroll">
       <div className="w-9/12 h-auto mx-auto p-20">
-        <div className="grid lg:grid-cols-3 gap-3 ">
+        <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod, i) => (
-            <div key={i} className="relative rounded-2xl shadow-lg pb-5 border">
+            <div key={i} className="bg-white relative rounded-2xl shadow-lg pb-5 border">
               <div onClick={()=>{setIsFavourite(!isFavourite)}} className="w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center"><Heart className={`${isFavourite? "text-[#F40B5F]":"text-gray-200"}`}/></div>
-              <Image src={Card1} alt="" className="" />
+              <Image src={Card1} alt="img" className="" />
               <div className="px-3">
                 <div className="text-xl my-5">{prod?.title}</div>
                 <div className="text-sm pb-3">{prod?.description}</div>

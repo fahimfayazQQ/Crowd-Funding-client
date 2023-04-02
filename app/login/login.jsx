@@ -10,21 +10,18 @@ const Login = () => {
     <div className="bg-home-color h-screen flex">
       <div className="w-full flex justify-center items-center">
         <div className="">
-          <Image src={Biznez} className="m-auto" />
+          <Image src={Biznez} alt="img" className="m-auto" />
           <div className="text-white flex justify-center mb-3">Partners</div>
           <div className="w-9/12 flex mx-auto">
-            <Image src={Meta} className="w-[5rem] mx-auto" />
-            <Image src={Google} className="w-[5rem] mx-auto" />
-            <Image src={Youtube} className="w-[5rem] mx-auto" />
+            <Image src={Meta} alt="img" className="w-[5rem] mx-auto" />
+            <Image src={Google} alt="img" className="w-[5rem] mx-auto" />
+            <Image src={Youtube} alt="img" className="w-[5rem] mx-auto" />
           </div>
         </div>
       </div>
       <div className="w-full bg-white flex justify-center items-center">
-        <div
-          className="bg-zinc-100 rounded-xl w-[40vh] h-[80vh] shadow-lg"
-        >
-          <div className="flex justify-start">
-          </div>
+        <div className="bg-zinc-100 rounded-xl w-[40vh] h-[80vh] shadow-lg">
+          <div className="flex justify-start"></div>
           <div className="pt-8">
             <div className="flex flex-col items-center">
               {/* <img src={Logo} alt="" /> */}
@@ -39,7 +36,7 @@ const Login = () => {
 
           <div className="m-6">
             <form className="mb-4">
-              <div className="mb-6  ">
+              <div className="mb-6">
                 <label
                   htmlFor="email"
                   className="block mb-2 text-sm text-black"
@@ -116,18 +113,29 @@ const Login = () => {
               </div>
 
               <div className="mb-6">
-              <Link href={"../profile"}>
-                <button
-                  type="submit"
-                  className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
-                >
-                  Log in
-                </button>
-              </Link>
+                <Link href={"../profile"}>
+                  <button
+                    type="submit"
+                    className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
+                  >
+                    Log in
+                  </button>
+                </Link>
               </div>
-              <div>Dont have an account? 
+              <div>
+                Dont have an account?
                 <Link href={"../signup"}>
-                <span className='pl-2 underline text-sky-600'>Sign up here</span>
+                  <span className="pl-2 underline text-sky-600">
+                    Sign up here
+                  </span>
+                </Link>
+              </div>
+              <div>
+                User Panel:
+                <Link href={"../user-login"}>
+                  <span className="pl-2 underline text-sky-600">
+                    User login
+                  </span>
                 </Link>
               </div>
 

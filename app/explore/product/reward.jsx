@@ -14,62 +14,60 @@ const Reward = () => {
       </div>
 
       <div className="grid lg:grid-cols-4 gap-3 mb-10">
-
         <div className="rounded-2xl shadow-lg pb-5 border">
-            <Image src={Card1} alt="" className=""/>
-            <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
-            <div className="text-sm pb-5 px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-            </div>
-            <div className="text-2xl px-2 pb-5">5000 tk</div>
-            <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-              Select
-            </div>
+          <Image src={Card1} alt="img" className="" />
+          <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
+          <div className="text-sm pb-5 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div className="text-2xl px-2 pb-5">5000 tk</div>
+          <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+            Select
+          </div>
         </div>
 
         <div className="rounded-2xl shadow-lg pb-5 border">
-            <Image src={Card2} alt="" className=""/>
-            <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
-            <div className="text-sm pb-5 px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-            </div>
-            <div className="text-2xl px-2 pb-5">5000 tk</div>
-            <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-              Select
-            </div>
+          <Image src={Card2} alt="img" className="" />
+          <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
+          <div className="text-sm pb-5 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div className="text-2xl px-2 pb-5">5000 tk</div>
+          <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+            Select
+          </div>
         </div>
 
         <div className="rounded-2xl shadow-lg pb-5 border">
-            <Image src={Card1} alt="" className=""/>
-            <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
-            <div className="text-sm pb-5 px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-            </div>
-            <div className="text-2xl px-2 pb-5">5000 tk</div>
-            <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-              Select
-            </div>
+          <Image src={Card1} alt="img" className="" />
+          <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
+          <div className="text-sm pb-5 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div className="text-2xl px-2 pb-5">5000 tk</div>
+          <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+            Select
+          </div>
         </div>
 
         <div className="rounded-2xl shadow-lg pb-5 border">
-            <Image src={Card2} alt="" className=""/>
-            <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
-            <div className="text-sm pb-5 px-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-            </div>
-            <div className="text-2xl px-2 pb-5">5000 tk</div>
-            <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-              Select
-            </div>
+          <Image src={Card2} alt="img" className="" />
+          <div className="text-xl my-5 px-2">Lorem ipsum dolor</div>
+          <div className="text-sm pb-5 px-2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div className="text-2xl px-2 pb-5">5000 tk</div>
+          <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+            Select
+          </div>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
 
 export default Reward;

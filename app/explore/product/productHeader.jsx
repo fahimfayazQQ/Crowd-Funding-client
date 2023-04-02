@@ -12,7 +12,7 @@ const ProductHeader = () => {
     <div className="rounded-2xl max-w-screen-xl mx-auto mt-20">
       <div className="w-full h-full flex justify-between rounded-xl shadow-md bg-white">
         <div className="w-full relative p-5">
-          <Image src={Product1} alt="" className="" />
+          <Image src={Product1} alt="img" className="" />
           <div className="flex items-center absolute top-5">
             <div className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
               {"<"}
@@ -54,8 +54,17 @@ const ProductHeader = () => {
                 INVEST
               </div>
             </Link>
-            <div onClick={()=>{setIsReacted(!isReacted)}} className="flex items-center text-black border tracking-widest text-sm text-center rounded-full shadow-lg py-3 px-10 cursor-pointer">
-              <Heart className={`text-xl mr-2 ${isReacted ? "text-[#F40B5F]":"text-gray-200"}`} />
+            <div
+              onClick={() => {
+                setIsReacted(!isReacted);
+              }}
+              className="flex items-center text-black border tracking-widest text-sm text-center rounded-full shadow-lg py-3 px-10 cursor-pointer"
+            >
+              <Heart
+                className={`text-xl mr-2 ${
+                  isReacted ? "text-[#F40B5F]" : "text-gray-200"
+                }`}
+              />
               WISH
             </div>
           </div>

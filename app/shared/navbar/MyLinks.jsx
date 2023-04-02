@@ -1,5 +1,6 @@
 export const customlinks = [
-  { name: "Home", link: "/welcome" },
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
   { name: "Explore", link: "/explore" },
   { name: "Project", link: "/start-project" },
   // { name: "Blogs", link: "/blogs" },
@@ -7,7 +8,7 @@ export const customlinks = [
   // { name: "Events", link: "/events" },
   // { name: "Learn", link: "/learn" },
   {
-    name: "About",
+    name: "More",
     submenu: [
       {
         name: "Blogs",

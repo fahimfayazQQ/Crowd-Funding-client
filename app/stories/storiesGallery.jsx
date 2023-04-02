@@ -39,28 +39,34 @@ const StoriesGallery = () => {
 
       <div className="my-20">
         <Slider ref={sliderRef} {...settings} arrows={false}>
-          {Blogs?.map((story, i)=>
-            <Link href={"./stories/story"}>
-              <div className='m-2 mb-5'>
-                <div key={i} className="w-[20rem] rounded-2xl shadow-lg pb-5 border">
-                  <Image src={Card1} alt="" className="" />
-                  <div className="text-xl my-5 px-2">{story?.title}</div>
-                  <div className="text-sm pb-8 px-2">
-                    {story?.description}
-                  </div>          
+          {Blogs?.map((story, i) => (
+            <Link key={i} href={"./stories/story"}>
+              <div className="m-2 mb-5">
+                <div className="w-[20rem] bg-white rounded-2xl shadow-lg pb-5 border">
+                  <Image src={Card1} alt="img" className="" />
+                  <div className="px-4">
+                    <div className="text-xl my-5">{story?.title}</div>
+                    <div className="text-sm pb-8">{story?.description}</div>
+                  </div>
                 </div>
               </div>
             </Link>
-          )}
+          ))}
         </Slider>
-        <div className="flex items-center">
-        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center cursor-pointer py-4 px-4 mr-3">
-          {"<"}
+        <div className="flex justify-center items-center mt-5">
+          <div
+            onClick={() => sliderRef.current.slickPrev()}
+            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center cursor-pointer py-4 px-4 mr-3"
+          >
+            {"<"}
+          </div>
+          <div
+            onClick={() => sliderRef.current.slickNext()}
+            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center cursor-pointer py-4 px-4"
+          >
+            {">"}
+          </div>
         </div>
-        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center cursor-pointer py-4 px-4">
-          {">"}
-        </div>
-      </div>
       </div>
     </div>
   );

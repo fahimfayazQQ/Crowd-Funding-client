@@ -27,41 +27,47 @@ const Articles = () => {
       </div>
       <div className="my-5">
         <Slider ref={sliderRef} {...settings} arrows={false}>
-            <div className="w-full h-full relative">
-              <Image src={Coke} alt="" className="w-11/12 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
-              </div>
+          <div className="w-full h-full relative">
+            <Image src={Coke} alt="img" className="w-11/12 shrink-0" />
+            <div className="absolute bottom-5 px-10 text-white font-semibold">
+              Paragraphs are the building blocks of papers. Many students define
+              paragraphs in terms of length{" "}
+              <span className="text-indigo-600">View More</span>
             </div>
-            <div className="w-full h-full relative">
-              <Image src={Coke} alt="" className="w-11/12 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
-              </div>
+          </div>
+          <div className="w-full h-full relative">
+            <Image src={Coke} alt="img" className="w-11/12 shrink-0" />
+            <div className="absolute bottom-5 px-10 text-white font-semibold">
+              Paragraphs are the building blocks of papers. Many students define
+              paragraphs in terms of length{" "}
+              <span className="text-indigo-600">View More</span>
             </div>
-            <div className="w-full h-full relative">
-              <Image src={Coke} alt="" className="w-11/12 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
-              </div>
+          </div>
+          <div className="w-full h-full relative">
+            <Image src={Coke} alt="img" className="w-11/12 shrink-0" />
+            <div className="absolute bottom-5 px-10 text-white font-semibold">
+              Paragraphs are the building blocks of papers. Many students define
+              paragraphs in terms of length{" "}
+              <span className="text-indigo-600">View More</span>
             </div>
+          </div>
         </Slider>
       </div>
 
       <div className="flex items-center">
-        <div className="w-2/12 bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
+        <div className="w-2/12 bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
           See More
         </div>
-        <div onClick={() => sliderRef.current.slickPrev()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4 mr-3">
+        <div
+          onClick={() => sliderRef.current.slickPrev()}
+          className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-3"
+        >
           {"<"}
         </div>
-        <div onClick={() => sliderRef.current.slickNext()} className="w-[40px] bg-[#5143F6] text-white tracking-widest text-sm text-center py-4 px-4">
+        <div
+          onClick={() => sliderRef.current.slickNext()}
+          className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4"
+        >
           {">"}
         </div>
       </div>

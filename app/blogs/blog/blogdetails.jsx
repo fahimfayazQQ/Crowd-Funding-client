@@ -16,7 +16,7 @@ const BlogDetails = () => {
         <span>January 15, 2023</span> &nbsp; / &nbsp;
         <span>By: Donn John</span>
       </div>
-      <Image src={Img1} alt="" className="w-full my-5" />
+      <Image src={Img1} alt="img" className="w-full my-5" />
       <div>
         This page is a demo that shows everything you can do inside portfolio
         and blog posts. We’ve included everything you need to create engaging
@@ -48,35 +48,35 @@ const BlogDetails = () => {
       <div className="text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
       <div className="grid lg:grid-cols-4 gap-3 mb-10">
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="rounded-2xl" />
         </div>
       </div>
 
@@ -87,7 +87,7 @@ const BlogDetails = () => {
         when it is in view, so your visitors won’t scroll down to find it half
         way through your images.
       </div>
-      <Image src={Img1} alt="" className="w-full my-5" />
+      <Image src={Img1} alt="img" className="w-full my-5" />
 
       {/* Share & Comments Section */}
       <div className="mx-auto pt-20">
@@ -109,7 +109,7 @@ const BlogDetails = () => {
 
         <div>
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Sourav Sen</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>
@@ -122,7 +122,7 @@ const BlogDetails = () => {
         </div>
         <div className="pl-20">
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Atika Younus</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>
@@ -135,7 +135,7 @@ const BlogDetails = () => {
         </div>
         <div>
           <div className="flex justify-start items-center">
-            <Image src={Image3} alt="" className="w-10 h-10 my-5" />
+            <Image src={Image3} alt="img" className="w-10 h-10 my-5" />
             <span className="px-5">Sourav Sen</span>
             <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
           </div>

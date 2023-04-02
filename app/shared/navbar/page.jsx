@@ -25,7 +25,7 @@ const Navbar = () => {
           </Link>
           <div className="flex justify-between">
             <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
-              <Search className="text-black cursor-pointer"/>
+              <Search className="text-black cursor-pointer" />
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           </ul> */}
           {/* Mobile View */}
           <Modal
-            className="NavbarModal bg-white border rounded-md float-right cross_btn"
+            className="NavbarModal bg-white bg-opacity-80 backdrop:filter backdrop-blur-sm border rounded-md float-right cross_btn"
             title={false}
             centered
             open={open}
@@ -50,21 +50,29 @@ const Navbar = () => {
             /* width="100%" */
           >
             <div className="w-full h-[95vh] flex flex-col text-black text-xl py-10 pl-10">
-              {customlinks?.map((link) => (
-                <>
+              {customlinks?.map((link, i) => (
+                <div key={i}>
                   <div
-                  className="flex justify-between items-center py-4"
+                    key={i}
+                    className="flex justify-between items-center py-4"
                     onClick={() => {
                       toogleSubmenu !== link?.name
                         ? setToogleSubmenu(link?.name)
                         : setToogleSubmenu("");
                     }}
                   >
-                    <a className="text-black" href={link?.link}>
+                    <a
+                      className="text-black hover:text-home-color"
+                      href={link?.link}
+                    >
                       {link.name}
                     </a>
-                    <div className={`${link?.submenu ? "block":"hidden"}`}>
-                      <Down className={`text-black text-sm ${toogleSubmenu === "" && "-rotate-90" }`}/>
+                    <div className={`${link?.submenu ? "block" : "hidden"}`}>
+                      <Down
+                        className={`text-black text-sm ${
+                          toogleSubmenu === "" && "-rotate-90"
+                        }`}
+                      />
                     </div>
                   </div>
                   <div>
@@ -74,15 +82,15 @@ const Navbar = () => {
                           toogleSubmenu === link.name ? "" : "hidden"
                         }`}
                       >
-                        {link.submenu?.map((slink) => (
-                          <Link href={slink.sublink}>
+                        {link.submenu?.map((slink, i) => (
+                          <Link key={i} href={slink.sublink}>
                             <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}
                       </div>
                     )}
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </Modal>

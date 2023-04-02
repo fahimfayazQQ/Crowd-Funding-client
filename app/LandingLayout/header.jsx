@@ -23,10 +23,10 @@ const Header = () => {
             </div>
           </div>
           <div className="w-full relative">
-            <Image src={Bottle} alt="" className="w-full h-full" />
+            <Image src={Bottle} alt="img" className="w-full h-full" />
             <Image
               src={Image1}
-              alt=""
+              alt="img"
               className="w-full absolute bottom-0 -left-64"
             />
           </div>

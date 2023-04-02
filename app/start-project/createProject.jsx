@@ -9,7 +9,7 @@ const CreateProject = () => {
       <div className="text-3xl mb-5">Lorem Ipsum is simply dummy text of</div>
       <div className="mb-5">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum been the industry's standard dummy text ever since
+        industry. Lorem Ipsum been the industry&apos;s standard dummy text ever since
         the 1500s, when an unknown printegalley of type and scrambled it to make
         a type specimen book.
       </div>
@@ -18,23 +18,23 @@ const CreateProject = () => {
           START PROJECT
         </div>
       </Link>
-      <Image src={startProj} className="w-full my-10" />
+      <Image src={startProj} alt="img" className="w-full my-10" />
       <div className="text-3xl mb-5">Lorem Ipsum is simply dummy text</div>
       <div className="mb-5">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum been the industry's standard dummy text ever since
+        industry. Lorem Ipsum been the industry&apos;s standard dummy text ever since
         the 1500s, when an unknown printegalley of type and scrambled it to make
         a type specimen book.Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum been the industry's standard dummy
+        and typesetting industry. Lorem Ipsum been the industry&apos;s standard dummy
         text ever since the 1500s, when an unknown printegalley of type and
         scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
         text of the printing and typesetting industry. Lorem Ipsum been the
-        industry's standard dummy text ever since the 1500s, when an unknown
+        industry&apos;s standard dummy text ever since the 1500s, when an unknown
         printegalley of type and scrambled it to make a type specimen book.
       </div>
       <div className="mb-5">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum been the industry's standard dummy text ever since
+        industry. Lorem Ipsum been the industry&apos;s standard dummy text ever since
         the 1500s, when an unknown printegalley of type and scrambled it to make
         a type specimen book.
       </div>
@@ -45,7 +45,7 @@ const CreateProject = () => {
         </li>
         <li className="py-3">
           <span className="text-xl font-semibold pr-2">02</span>Randomised words
-          which don't look even slightly believable.
+          which don&apos;t look even slightly believable.
         </li>
         <li className="py-3">
           <span className="text-xl font-semibold pr-2">03</span>
@@ -59,7 +59,7 @@ const CreateProject = () => {
       </ul>
       <div className="mb-5">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum been the industry's standard dummy text ever since
+        industry. Lorem Ipsum been the industry&apos;s standard dummy text ever since
         the 1500s, when an unknown printegalley of type and scrambled it to make
         a type specimen book.
       </div>
@@ -69,20 +69,20 @@ const CreateProject = () => {
           <div className="text-3xl mb-5">Lorem Ipsum is simply dummy text</div>
           <div className="mb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum been the industry's standard dummy text ever
+            industry. Lorem Ipsum been the industry&apos;s standard dummy text ever
             since the 1500s, when an unknown printegalley of type and scrambled
             it to make a type specimen book.Lorem Ipsum is simply dummy text of
             the printing and typesetting industry. Lorem Ipsum been the
-            industry's standard dummy text ever since the 1500s, when an unknown
+            industry&apos;s standard dummy text ever since the 1500s, when an unknown
             printegalley of type and scrambled it to make a type specimen
             book.Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum been the industry's standard dummy
+            typesetting industry. Lorem Ipsum been the industry&apos;s standard dummy
             text ever since the 1500s, when an unknown printegalley of type and
             scrambled it to make a type specimen book.
           </div>
           <div className="mb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum been the industry's standard dummy text ever
+            industry. Lorem Ipsum been the industry&apos;s standard dummy text ever
             since the 1500s, when an unknown printegalley of type and scrambled
             it to make a type specimen book.
           </div>

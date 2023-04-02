@@ -1,10 +1,10 @@
-'use client'
-import React from 'react'
-import { List1, List2, List3 } from "../shared/Icons"
+"use client";
+import React from "react";
+import { List1, List2, List3 } from "../shared/Icons";
 
 const HowItWorks = () => {
   return (
-    <div className="bg-white py-20">
+    <div className="py-20">
       <div className="flex justify-evenly items-center">
         <div className="flex-col">
           <div className="flex justify-center items-center mb-5">
@@ -45,13 +45,13 @@ const HowItWorks = () => {
           </div>
           <div>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s,
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default HowItWorks
+export default HowItWorks;

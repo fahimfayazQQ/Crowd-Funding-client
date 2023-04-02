@@ -10,18 +10,19 @@ const Login = () => {
     <div className="bg-home-color h-screen flex">
       <div className="w-full flex justify-center items-center">
         <div className="">
-          <Image src={CreditCard} className="m-auto" />
+          <Image src={CreditCard} alt="img" className="m-auto" />
           <div className="w-1/2 text-white text-justify flex mx-auto">
-          Certified Charity donations are made to PayPal Giving Fund, minus processing fees and granted within 15-45 days, subject to its terms. In the unlikely event that there is a problem funding your chosen charity, PayPal Giving Fund will contact you before reassigning the funds. Your donation is typically tax deductible in the US.
+            Certified Charity donations are made to PayPal Giving Fund, minus
+            processing fees and granted within 15-45 days, subject to its terms.
+            In the unlikely event that there is a problem funding your chosen
+            charity, PayPal Giving Fund will contact you before reassigning the
+            funds. Your donation is typically tax deductible in the US.
           </div>
         </div>
       </div>
       <div className="w-full bg-white flex justify-center items-center">
-        <div
-          className="bg-zinc-100 rounded-xl w-[50vh] h-[80vh] shadow-lg"
-        >
-          <div className="flex justify-start">
-          </div>
+        <div className="bg-zinc-100 rounded-xl w-[50vh] h-[80vh] shadow-lg">
+          <div className="flex justify-start"></div>
           <div className="pt-8">
             <div className="flex flex-col items-center">
               {/* <img src={Logo} alt="" /> */}
@@ -61,9 +62,9 @@ const Login = () => {
               /> */}
               </div>
               <div className="mb-4">
-                  <label htmlFor="holder" className="text-sm text-black">
-                    Card holder
-                  </label>
+                <label htmlFor="holder" className="text-sm text-black">
+                  Card holder
+                </label>
                 <input
                   size="large"
                   name="holder"
@@ -76,9 +77,9 @@ const Login = () => {
                 />
               </div>
               <div className="mb-4">
-                  <label htmlFor="holder" className="text-sm text-black">
-                    Card holder email
-                  </label>
+                <label htmlFor="holder" className="text-sm text-black">
+                  Card holder email
+                </label>
                 <input
                   size="large"
                   name="email"
@@ -158,9 +159,9 @@ const Login = () => {
               </div>
 
               <div className="mb-4">
-                  <label htmlFor="holder" className="text-sm text-black">
-                    Amount
-                  </label>
+                <label htmlFor="holder" className="text-sm text-black">
+                  Amount
+                </label>
                 <input
                   size="large"
                   name="amount"
@@ -174,14 +175,14 @@ const Login = () => {
               </div>
 
               <div className="flex justify-center mb-6">
-              <Link href={"../profile"}>
-                <button
-                  type="submit"
-                  className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none"
-                >
-                  Make Payment
-                </button>
-              </Link>
+                <Link href={"../profile"}>
+                  <button
+                    type="submit"
+                    className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none"
+                  >
+                    Make Payment
+                  </button>
+                </Link>
               </div>
 
               {/* <p className="text-sm text-center text-gray-400">

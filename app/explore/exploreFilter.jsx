@@ -32,37 +32,41 @@ const ExploreFilter = () => {
             industry.
           </div>
           <div className="flex justify-center gap-2 border p-8 rounded-xl bg-white bg-opacity-10 backdrop:filter backdrop-blur-md">
-          <Select
-            defaultValue={categoryData[0]}
-            style={{
-              width: 140,
-            }}
-            onChange={handleProvinceChange}
-            options={categoryData.map((province) => ({
-              label: province,
-              value: province,
-            }))}
+            <Select
+              defaultValue={categoryData[0]}
+              style={{
+                width: 140,
+              }}
+              onChange={handleProvinceChange}
+              options={categoryData.map((province) => ({
+                label: province,
+                value: province,
+              }))}
             />
-          <Select
-            style={{
-              width: 140,
-            }}
-            defaultValue={sortByData[0]}
-            value={secondCity}
-            onChange={onSecondCityChange}
-            options={cities.map((city) => ({
-              label: city,
-              value: city,
-            }))}
-          />
-          <div className="flex relative">
-          <input type="text" placeholder="Search Campaigns" className="bg-white bg-opacity-30 rounded-md w-[300px] px-2 placeholder-white"/>
-          {/* <Search className="text-xl mt-1.5 absolute right-2"/> */}
-          </div>
+            <Select
+              style={{
+                width: 140,
+              }}
+              defaultValue={sortByData[0]}
+              value={secondCity}
+              onChange={onSecondCityChange}
+              options={cities.map((city) => ({
+                label: city,
+                value: city,
+              }))}
+            />
+            <div className="flex relative">
+              <input
+                type="text"
+                placeholder="Search Campaigns"
+                className="bg-white bg-opacity-30 rounded-md w-[300px] px-2 placeholder-white"
+              />
+              {/* <Search className="text-xl mt-1.5 absolute right-2"/> */}
+            </div>
           </div>
         </div>
 
-        <Image src={image} alt="" className="w-1/3"/>
+        <Image src={image} alt="img" className="w-1/3" />
       </div>
     </div>
   );

@@ -6,10 +6,10 @@ const NavigationItems = () => {
   const [toogleSubmenu, setToogleSubmenu] = useState("");
   return (
     <>
-    {/* DESKTOP VIEW */}
+      {/* DESKTOP VIEW */}
       <div className="lg:flex z-[999] bg-white lg:bg-transparent border border-white border-opacity-30 lg:border-none shadow-2xl shadow-[#ffffff20] lg:shadow-none md:text-white text-center text-xl lg:text-base rounded-md cursor-pointer mx-2 my-6">
-        {customlinks?.map((link) => (
-          <>
+        {customlinks?.map((link, i) => (
+          <div key={i}>
             <div
               className="flex items-center px-4"
               onClick={() => {
@@ -29,15 +29,15 @@ const NavigationItems = () => {
                 <div
                   className={`${toogleSubmenu === link?.name ? "" : "hidden"}`}
                 >
-                  {link?.submenu?.map((slink) => (
-                    <Link to={slink?.sublink}>
+                  {link?.submenu?.map((slink, i) => (
+                    <Link key={i} to={slink?.sublink}>
                       <div className="py-6 pl-10">{slink?.name}</div>
                     </Link>
                   ))}
                 </div>
               )}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>
