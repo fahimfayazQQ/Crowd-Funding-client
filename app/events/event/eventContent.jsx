@@ -5,7 +5,7 @@ import Events1 from "../../../public/assets/images/events1.png";
 
 const EventContent = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20">
+    <div className="max-w-screen-xl px-5 mx-auto my-20">
       <div className="text-3xl font-semibold mb-5">
         Lorem Ipsum is simply dummy text{" "}
       </div>

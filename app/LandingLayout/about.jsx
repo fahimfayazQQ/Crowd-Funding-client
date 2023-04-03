@@ -6,9 +6,9 @@ import Image2 from "../../public/assets/images/Method.png";
 
 const About = () => {
   return (
-    <div className="py-20">
-      <div className="flex justify-evenly items-center">
-        <div className="w-1/4 my-auto">
+    <div className="py-14 lg:py-20">
+      <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
+        <div className="w-11/12 lg:w-1/4 my-auto">
           <div className="font-semibold text-2xl pb-5">
             About Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.
@@ -22,7 +22,7 @@ const About = () => {
             <span className="font-bold">100%</span> Safe to Use
           </div>
         </div>
-        <div className="flex-col shadow-lg p-5 rounded-3xl bg-white">
+        <div className="flex-col shadow-lg p-5 rounded-3xl bg-white mb-14 lg:mb-0">
           <Image src={Image1} alt="img" className="pb-5" />
           <Image src={Image2} alt="img" className="" />
         </div>

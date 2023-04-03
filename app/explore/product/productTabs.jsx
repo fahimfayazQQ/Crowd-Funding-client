@@ -14,7 +14,7 @@ const ProductTabs = () => {
     setToogleTab(id);
   }
   return (
-    <div className='max-w-screen-xl mx-auto my-10'>
+    <div className='max-w-screen-xl px-5 mx-auto my-10'>
       <div className='w-full flex flex-wrap justify-around p-5 shadow-md rounded-xl mx-auto bg-white'>
         <div onClick={()=>{hangleToogle(0)}} className={`${toogleTab===0 && "text-home-color scale-110 duration-300"} cursor-pointer`}>Overview</div>
         <div onClick={()=>{hangleToogle(1)}} className={`${toogleTab===1 && "text-home-color scale-110 duration-300"} cursor-pointer`}>About</div>

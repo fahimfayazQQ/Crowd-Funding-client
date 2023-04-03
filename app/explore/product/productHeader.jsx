@@ -9,7 +9,7 @@ const ProductHeader = () => {
   const [isReacted, setIsReacted] = useState(false);
 
   return (
-    <div className="rounded-2xl max-w-screen-xl mx-auto mt-20">
+    <div className="rounded-2xl max-w-screen-xl px-5 mx-auto mt-20">
       <div className="w-full h-full flex justify-between rounded-xl shadow-md bg-white">
         <div className="w-full relative p-5">
           <Image src={Product1} alt="img" className="" />

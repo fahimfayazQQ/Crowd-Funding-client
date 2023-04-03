@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="max-w-screen-xl pt-20 mx-auto">
+    <div className="max-w-screen-xl px-5 pt-14 lg:pt-20 mx-auto">
       <div className="border-t pb-5"></div>
-      <div className="w-full flex justify-between items-center ">
+      <div className="w-11/12 lg:w-full flex justify-between items-center mx-auto lg:m-0">
         <div className="text-3xl font-semibold">QUADQUE</div>
         <div className="bg-white font-semibold rounded-full shadow-md px-6 py-3">
           Create Campaign
@@ -16,8 +16,8 @@ const Footer = () => {
       </div>
       <div className="border-b pt-5"></div>
 
-      <div className="flex flex-wrap justify-between items-center mt-10">
-        <ul className="text-zinc-600">
+      <div className="w-11/12 mx-auto lg:w-auto flex flex-wrap justify-between items-start lg:items-center text-sm lg:text-base mt-10">
+        <ul className="text-zinc-600 pb-5 lg:pb-0">
           <Link href={"../"}>
             <li className="mb-4 cursor-pointer">Home</li>
           </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
           </Link>
         </ul>
 
-        <ul className="text-zinc-600">
+        <ul className="text-zinc-600 pb-5 lg:pb-0">
           <Link href={"../blogs"}>
             <li className="mb-4 cursor-pointer">Blogs</li>
           </Link>
@@ -50,15 +50,17 @@ const Footer = () => {
           </Link>
         </ul>
 
-        <ul className="text-zinc-600">
+        <ul className="text-zinc-600 pb-5 lg:pb-0">
           <li className="mb-4 cursor-pointer">Guide</li>
           <li className="mb-4 cursor-pointer">password Protection</li>
           <li className="mb-4 cursor-pointer">Licences</li>
           <li className="mb-4 cursor-pointer">Changelog</li>
         </ul>
 
-        <div className="relative">
-          <Image src={image1} alt="img" className="w-[300px]" />
+        <div className="relative mx-auto lg:m-0">
+          <div className="rounded-2xl shadow-lg">
+            <Image src={image1} alt="img" className="w-[300px]" />
+          </div>
           <div className="absolute top-[30%] px-4">
             <div className="text-lg font-semibold text-white text-center pb-5">
               Paragraphs are the building blocks of papers
@@ -75,7 +77,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t mt-10 mb-5"></div>
-      <div className="w-full flex justify-between items-center mb-5">
+      <div className="w-11/12 mx-auto lg:w-auto lg:m-0 flex justify-between items-center pb-5">
         <div className="text-xs font-semibold">
           Copyright © 2023 QUADQUE Technology LTD
         </div>

@@ -16,7 +16,7 @@ const OurTeam = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="max-w-screen-xl py-20 mx-auto">
+    <div className="max-w-screen-xl px-5 py-20 mx-auto">
       <div className="text-3xl mb-3">Our Team</div>
       <div className="w-1/3">
         Paragraphs are the building blocks of papers. Many students define

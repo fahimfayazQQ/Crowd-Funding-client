@@ -17,7 +17,7 @@ const Articles = () => {
     centerPadding: '0',
   };
   return (
-    <div className="max-w-screen-xl py-20 mx-auto">
+    <div className="max-w-screen-xl px-5 py-20 mx-auto">
       <div className="text-zinc-700 tracking-widest text-sm mb-3">
         - ARTICLES
       </div>

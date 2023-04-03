@@ -5,7 +5,7 @@ import startProj from "../../public/assets/images/start-project.png";
 
 const CreateProject = () => {
   return (
-    <div className="max-w-screen-xl mx-auto pt-20">
+    <div className="max-w-screen-xl px-5 mx-auto pt-20">
       <div className="text-3xl mb-5">Lorem Ipsum is simply dummy text of</div>
       <div className="mb-5">
         Lorem Ipsum is simply dummy text of the printing and typesetting

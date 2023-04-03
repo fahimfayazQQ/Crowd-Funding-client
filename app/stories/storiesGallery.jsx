@@ -25,7 +25,7 @@ const StoriesGallery = () => {
     focusOnSelect: false,
   };
   return (
-    <div className="max-w-screen-xl mx-auto my-20">
+    <div className="max-w-screen-xl px-5 mx-auto my-20">
       <div className="w-full bg-home-color rounded-2xl p-16 story_shine">
         <div className="text-white text-4xl font-semibold pb-5">
           Success Stories

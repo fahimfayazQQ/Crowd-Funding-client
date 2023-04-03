@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
+    <div className="max-w-screen-xl px-5 mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
       <div className="text-2xl text-cneter">Address</div>
       <div className="w-1/3 pb-5">
         HEADQUARTERS <br />

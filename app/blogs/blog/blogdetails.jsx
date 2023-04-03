@@ -8,7 +8,7 @@ import { FB, Insta, Twitter } from "../../shared/Icons";
 
 const BlogDetails = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-20">
+    <div className="max-w-screen-xl px-5 mx-auto py-20">
       <div className="text-3xl font-semibold mb-2">
         Do what you can, with what you have
       </div>

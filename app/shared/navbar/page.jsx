@@ -6,25 +6,37 @@ import "./Navbar.css";
 import { customlinks } from "./MyLinks";
 import { Search, Down } from "../Icons";
 import Link from "next/link";
+import CustomSearch from "../search/page";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState(false);
   // const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
   const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-500 m-4`;
-  
+
+  const handleSearch = (bool) => {
+    setSearch(bool);
+  };
+  console.log(search);
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent">
       <nav className="bg-transparent text-black relative">
         <div className="flex justify-between py-5">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-20">
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-10 lg:pl-20">
               QUADQUE
             </div>
           </Link>
-          <div className="flex justify-between">
-            <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
+          <div className="flex justify-between items-center gap-2">
+            <CustomSearch search={search} handleSearch={handleSearch} />
+            <div
+              onClick={() => {
+                handleSearch(true);
+              }}
+              className="flex justify-center items-center text-xl text-center font-bold"
+            >
               <Search className="text-black cursor-pointer" />
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>

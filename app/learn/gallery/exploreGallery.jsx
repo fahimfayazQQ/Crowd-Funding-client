@@ -24,7 +24,7 @@ const ExploreGallery = () => {
     focusOnSelect: false,
   };
   return (
-    <div className="max-w-screen-xl mx-auto mt-20">
+    <div className="max-w-screen-xl px-5 mx-auto mt-20">
       <div className="flex justify-between items-center mb-4">
         <div className="text-xl">Trending Items</div>
         <div className="flex items-center">

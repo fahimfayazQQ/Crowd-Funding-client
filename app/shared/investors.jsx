@@ -19,7 +19,7 @@ const Investors = () => {
   };
 
   return (
-    <div className="max-w-screen-xl investor_shine bg-home-color my-20 p-20 mx-auto rounded-3xl text-white relative">
+    <div className="max-w-screen-xl px-5 investor_shine bg-home-color my-20 p-20 mx-auto rounded-3xl text-white relative">
       <div className="text-3xl font-semibold text-center pb-10">
         Our Happy Investors
       </div>

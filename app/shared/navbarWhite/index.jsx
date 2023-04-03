@@ -6,25 +6,37 @@ import Link from "next/link";
 import { Down, Search } from "../Icons";
 import { customlinks } from "../navbar/MyLinks";
 import "./Navbar.css";
+import CustomSearch from "../search/page";
 
 const NavbarWhite = () => {
   const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState(false);
   // const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
   const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-white transition ease transform duration-500 m-4`;
   
+  const handleSearch = (bool) => {
+    setSearch(bool);
+  }
+  console.log(search);
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[999]">
       <nav className="bg-transparent text-white relative">
         <div className="flex justify-between py-5">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-20">
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-10 lg:pl-20">
               QUADQUE
             </div>
           </Link>
-          <div className="flex justify-between">
-            <div className="flex justify-center items-center text-xl text-center font-bold pl-20">
+          <div className="flex justify-between items-center gap-2">
+            <CustomSearch search={search} handleSearch={handleSearch}/>
+            <div
+              onClick={() => {
+                handleSearch(true);
+              }}
+              className="flex justify-center items-center text-xl text-center font-bold"
+            >
               <Search className="text-white cursor-pointer" />
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
@@ -81,9 +93,7 @@ const NavbarWhite = () => {
                       >
                         {link.submenu?.map((slink, i) => (
                           <Link key={i} href={slink.sublink}>
-                            <div className="py-6 pl-10">
-                              {slink.name}
-                            </div>
+                            <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}
                       </div>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const LearnHeader = () => {
   return (
-    <div className="rounded-2xl max-w-screen-xl mx-auto py-20">
+    <div className="rounded-2xl max-w-screen-xl px-5 mx-auto py-20">
       <div className="w-full h-[85vh] flex justify-between">
         <div className="w-full h-full bg-gradient-to-tl from-[#5143F6] via-indigo-500 to-[#5143F6] rounded-tl-2xl rounded-bl-2xl text-white py-8 pl-8 pr-20">
           <div className="text-5xl font-semibold mb-5 mt-10">

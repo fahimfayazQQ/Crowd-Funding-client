@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const StoryDetail = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-20">
+    <div className="max-w-screen-xl px-5 mx-auto py-20">
       <div className="text-3xl font-semibold mb-2">
         Do what you can, with what you have
       </div>

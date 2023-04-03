@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const LearnContent = () => {
   return (
-    <div className="max-w-screen-xl mx-auto mt-20">
+    <div className="max-w-screen-xl px-5 mx-auto mt-20">
       <div className="text-black mx-auto mb-20">
         <div className="text-4xl text-center pb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting

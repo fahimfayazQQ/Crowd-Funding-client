@@ -6,7 +6,7 @@ import Learn1 from "../../../../public/assets/images/learn1.png";
 
 const DetailContent = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-20">
+    <div className="max-w-screen-xl px-5 mx-auto my-20">
       <Image src={Learn1} alt="img" className="w-full pb-10" />
       <div className="text-3xl font-semibold mb-5">
         Lorem Ipsum is simply dummy text{" "}
