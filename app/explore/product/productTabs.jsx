@@ -16,12 +16,12 @@ const ProductTabs = () => {
   return (
     <div className='max-w-screen-xl px-5 mx-auto my-10'>
       <div className='w-full flex flex-wrap justify-around p-5 shadow-md rounded-xl mx-auto bg-white'>
-        <div onClick={()=>{hangleToogle(0)}} className={`${toogleTab===0 && "text-home-color scale-110 duration-300"} cursor-pointer`}>Overview</div>
-        <div onClick={()=>{hangleToogle(1)}} className={`${toogleTab===1 && "text-home-color scale-110 duration-300"} cursor-pointer`}>About</div>
-        <div onClick={()=>{hangleToogle(2)}} className={`${toogleTab===2 && "text-home-color scale-110 duration-300"} cursor-pointer`}>Update</div>
-        <div onClick={()=>{hangleToogle(3)}} className={`${toogleTab===3 && "text-home-color scale-110 duration-300"} cursor-pointer`}>Rewards</div>
-        <div onClick={()=>{hangleToogle(4)}} className={`${toogleTab===4 && "text-home-color scale-110 duration-300"} cursor-pointer`}>FAQ</div>
-        <div onClick={()=>{hangleToogle(5)}} className={`${toogleTab===5 && "text-home-color scale-110 duration-300"} cursor-pointer`}>Discussion</div>
+        <div onClick={()=>{hangleToogle(0)}} className={`${toogleTab===0 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>Overview</div>
+        <div onClick={()=>{hangleToogle(1)}} className={`${toogleTab===1 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>About</div>
+        <div onClick={()=>{hangleToogle(2)}} className={`${toogleTab===2 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>Update</div>
+        <div onClick={()=>{hangleToogle(3)}} className={`${toogleTab===3 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>Rewards</div>
+        <div onClick={()=>{hangleToogle(4)}} className={`${toogleTab===4 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>FAQ</div>
+        <div onClick={()=>{hangleToogle(5)}} className={`${toogleTab===5 && "text-home-color scale-110 duration-300"} px-5 pb-2 cursor-pointer`}>Discussion</div>
       </div>
 
     {toogleTab===0 && <Overview/>}

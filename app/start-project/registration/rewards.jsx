@@ -19,17 +19,17 @@ const Rewards = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Title"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Description"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Amount (bdt)"
           />
         </div>
@@ -40,20 +40,20 @@ const Rewards = () => {
       </div>
       <div className="bg-white rounded-xl shadow-lg p-10 my-5">
         <div className="pb-5">*Delivery starting</div>
-        <div className="flex gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="day"
           />
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="month"
           />
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="year"
           />
         </div>

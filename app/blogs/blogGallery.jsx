@@ -24,27 +24,55 @@ const BlogGallery = () => {
     rows: 2,
     slidesPerRow: 1,
     focusOnSelect: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="max-w-screen-3lg mx-auto my-20">
-      <div className="w-full bg-home-color rounded-2xl p-16 blog_shine">
-        <div className="text-white text-4xl font-semibold pb-5">
-          Latest News
-        </div>
-        <div className="text-white">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. <br /> Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
+    <div className="max-w-screen-3lg px-2 lg:px-5 mx-auto mt-20 mb-10 lg:mb-20">
+      <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 blog_shine">
+        <div className="bg-black bg-opacity-30 backdrop:filter backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none rounded-2xl p-5">
+          <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
+            Latest News
+          </div>
+          <div className="text-white">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. <br /> Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.
+          </div>
         </div>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-10 lg:mt-20">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Blogs?.map((blog, i) => (
             <div key={i}>
-              <div className="w-[calc(100%-20px)] pb-10">
+              <div className="w-[calc(100%-20px)] mx-auto pb-10">
                 <Image src={Blog3} alt="img" className="w-full" />
-                <div className="px-10">
+                <div className="lg:px-10">
                   <div className="text-zinc-500 my-5">{blog?.time}</div>
                   <div className="border w-10/12 mx-auto mb-5"></div>
                   <div className="text-xl mb-5">{blog?.title}</div>

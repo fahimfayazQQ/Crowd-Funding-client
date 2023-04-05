@@ -4,8 +4,8 @@ import Image3 from "../../../public/assets/images/overview.png";
 
 const Update = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto my-10 p-10 rounded-xl shadow-md bg-white">
-      <div className="w-1/2 mx-auto p-4 shadow-lg">
+    <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white">
+      <div className="w-11/12 lg:w-1/2 mx-auto p-4 shadow-lg">
         <Image src={Image3} alt="img" className="w-full rounded-lg my-5" />
         <div>13.04.23</div>
         <div className="text-2xl my-2">Happy New Year</div>

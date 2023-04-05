@@ -16,12 +16,12 @@ const Overview = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Project title"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Subtitle"
           />
         </div>
@@ -40,12 +40,12 @@ const Overview = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Primary category"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Subcategory"
           />
         </div>
@@ -63,7 +63,7 @@ const Overview = () => {
         </div>
         <input
           type="text"
-          className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           placeholder="Location"
         />
       </div>
@@ -80,7 +80,7 @@ const Overview = () => {
         </div>
         <input
           type="text"
-          className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           placeholder="Location"
         />
       </div>
@@ -98,17 +98,17 @@ const Overview = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Currency"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Amount"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Share price"
           />
         </div>
@@ -124,20 +124,20 @@ const Overview = () => {
         <div className="font-semibold pb-5">
           *All fields required unless noted.
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-col lg:flex-row gap-2">
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="day"
           />
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="month"
           />
           <input
             type="text"
-            className="shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="year"
           />
         </div>
@@ -154,11 +154,11 @@ const Overview = () => {
           *All fields required unless noted.
         </div>
           <textarea name="" id="" cols="30" rows="10"
-            className="w-full shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="w-full shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           ></textarea>
       </div>
 
-      <div className='w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center my-10 rounded-md cursor-pointer'>Save & Continue</div>
+      <div className='w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center mt-10 rounded-md cursor-pointer'>Save & Continue</div>
     </div>
   );
 }

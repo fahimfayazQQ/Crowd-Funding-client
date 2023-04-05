@@ -18,11 +18,11 @@ const Update = () => {
           id=""
           cols="30"
           rows="10"
-          className="w-full shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="w-full shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
         ></textarea>
       </div>
 
-      <div className="w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center my-10 rounded-md cursor-pointer">
+      <div className="w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center mt-10 rounded-md cursor-pointer">
         Save & Continue
       </div>
     </div>

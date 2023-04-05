@@ -14,8 +14,8 @@ const ProjectForm = () => {
   };
   return (
     <div className="bg-gray-100">
-      <div className="max-w-screen-lg mx-auto py-20">
-        <div className="text-4xl font-semibold mb-5">
+      <div className="max-w-screen-2lg px-5 mx-auto pt-20">
+        <div className="text-3xl lg:text-4xl font-semibold mb-5">
           Let’s get ready to start your campaign!
         </div>
         <div>
@@ -41,7 +41,7 @@ const ProjectForm = () => {
             >
               1
             </div>
-            <div>Overview </div>
+            <div className="text-sm">Overview </div>
           </div>
           <div
             onClick={() => {
@@ -59,7 +59,7 @@ const ProjectForm = () => {
             >
               2
             </div>
-            <div>About </div>
+            <div className="text-sm">About </div>
           </div>
           <div
             onClick={() => {
@@ -77,7 +77,7 @@ const ProjectForm = () => {
             >
               3
             </div>
-            <div>Update </div>
+            <div className="text-sm">Update </div>
           </div>
           <div
             onClick={() => {
@@ -95,7 +95,7 @@ const ProjectForm = () => {
             >
               4
             </div>
-            <div>Rewards </div>
+            <div className="text-sm">Rewards </div>
           </div>
           <div
             onClick={() => {
@@ -113,7 +113,7 @@ const ProjectForm = () => {
             >
               5
             </div>
-            <div>FAQ </div>
+            <div className="text-sm">FAQ </div>
           </div>
         </div>
 

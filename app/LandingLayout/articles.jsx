@@ -52,7 +52,7 @@ const Articles = () => {
       </div>
       <div className="my-5">
         <Slider ref={sliderRef} {...settings} arrows={false}>
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative px-1">
             <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
             <div className="absolute bottom-5 px-10 text-white font-semibold">
               Paragraphs are the building blocks of papers. Many students define
@@ -60,7 +60,7 @@ const Articles = () => {
               <span className="text-indigo-600">View More</span>
             </div>
           </div>
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative px-1">
             <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
             <div className="absolute bottom-5 px-10 text-white font-semibold">
               Paragraphs are the building blocks of papers. Many students define
@@ -68,7 +68,7 @@ const Articles = () => {
               <span className="text-indigo-600">View More</span>
             </div>
           </div>
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative px-1">
             <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
             <div className="absolute bottom-5 px-10 text-white font-semibold">
               Paragraphs are the building blocks of papers. Many students define

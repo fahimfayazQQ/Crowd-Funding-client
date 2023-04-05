@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <input
           type="text"
-          className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           placeholder="Address"
         />
       </div>
@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <input
           type="text"
-          className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           placeholder="Amount"
         />
       </div>
@@ -49,12 +49,12 @@ const About = () => {
         </div>
         <input
           type="text"
-          className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
           placeholder="Description"
         />
       </div>
 
-      <div className="w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center my-10 rounded-md cursor-pointer">
+      <div className="w-[20rem] mx-auto bg-home-color text-white px-4 py-3 text-center mt-10 rounded-md cursor-pointer">
         Save & Continue
       </div>
     </div>

@@ -16,12 +16,12 @@ const Faq = () => {
         <div className="flex flex-col">
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Question"
           />
           <input
             type="text"
-            className="w-1/2 shadow-lg py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+            className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
             placeholder="Answer"
           />
         </div>

@@ -18,8 +18,8 @@ import {
 
 const AboutHeader = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-20">
-      <div className="w-full bg-home-color lg:rounded-2xl p-16 investor_shine">
+    <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20">
+      <div className="w-full bg-home-color rounded-2xl p-16 investor_shine">
         <div className="text-white text-4xl font-semibold pb-5 text-center">
           About Us
         </div>

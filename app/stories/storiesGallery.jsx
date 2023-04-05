@@ -23,11 +23,37 @@ const StoriesGallery = () => {
     rows: 2,
     slidesPerRow: 1,
     focusOnSelect: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="max-w-screen-xl px-5 mx-auto my-20">
-      <div className="w-full bg-home-color rounded-2xl p-16 story_shine">
-        <div className="text-white text-4xl font-semibold pb-5">
+    <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20">
+      <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 story_shine">
+        <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
           Success Stories
         </div>
         <div className="text-white">
@@ -37,12 +63,12 @@ const StoriesGallery = () => {
         </div>
       </div>
 
-      <div className="my-20">
+      <div className="my-10 lg:my-20">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Blogs?.map((story, i) => (
             <Link key={i} href={"./stories/story"}>
               <div className="m-2 mb-5">
-                <div className="w-[20rem] bg-white rounded-2xl shadow-lg pb-5 border">
+                <div className="w-[20rem] mx-auto bg-white rounded-2xl shadow-lg pb-5 border">
                   <Image src={Card1} alt="img" className="" />
                   <div className="px-4">
                     <div className="text-xl my-5">{story?.title}</div>

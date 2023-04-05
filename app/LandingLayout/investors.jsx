@@ -25,13 +25,13 @@ const Investors = () => {
       </div>
       <div
         onClick={() => sliderRef.current.slickNext()}
-        className="absolute left-5 top-[50%] lg:top-[40%] cursor-pointer"
+        className="absolute left-5 top-[60%] lg:top-[40%] cursor-pointer"
       >
         <ArrowWhite className="text-5xl" />
       </div>
       <div
         onClick={() => sliderRef.current.slickPrev()}
-        className="absolute right-5 top-[50%] lg:top-[40%] cursor-pointer"
+        className="absolute right-5 top-[60%] lg:top-[40%] cursor-pointer"
       >
         <ArrowWhite className="text-5xl rotate-180" />
       </div>
@@ -42,8 +42,8 @@ const Investors = () => {
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />
               <div className="text-white py-5">Pakku, Head of Okla</div>
-              <div className="w-full lg:w-9/12 text-white mx-auto">
-                awfawfawfLorem Ipsum is simply dummy text of the printing and
+              <div className="lg:w-9/12 text-white mx-auto">
+                Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry&apos;s
                 standard dummy text ever since the when an unknown printer took
                 a galley of type and scrambled it to make a type specimen book.{" "}
@@ -52,7 +52,7 @@ const Investors = () => {
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />
               <div className="text-white py-5">Pakku, Head of Okla</div>
-              <div className="w-full lg:w-9/12 text-white mx-auto">
+              <div className="lg:w-9/12 text-white mx-auto">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the when an unknown printer took a galley
@@ -62,7 +62,7 @@ const Investors = () => {
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />
               <div className="text-white py-5">Pakku, Head of Okla</div>
-              <div className="w-full lg:w-9/12 text-white mx-auto">
+              <div className="lg:w-9/12 text-white mx-auto">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the when an unknown printer took a galley
@@ -72,7 +72,7 @@ const Investors = () => {
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />
               <div className="text-white py-5">Pakku, Head of Okla</div>
-              <div className="w-full lg:w-9/12 text-white mx-auto">
+              <div className="lg:w-9/12 text-white mx-auto">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the when an unknown printer took a galley
@@ -82,7 +82,7 @@ const Investors = () => {
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />
               <div className="text-white py-5">Pakku, Head of Okla</div>
-              <div className="w-full lg:w-9/12 text-white mx-auto">
+              <div className="lg:w-9/12 text-white mx-auto">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the when an unknown printer took a galley

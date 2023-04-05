@@ -32,6 +32,12 @@
 
 .youtubePlayer > iframe {
   width: 100%;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .youtubePlayer>iframe {
+      width: 100%;
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
 }

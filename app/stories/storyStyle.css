@@ -16,3 +16,18 @@
     background-image: url("https://www.aiche.org/sites/default/files/styles/chenected_lead_image/public/images/Chenected/lead/untitleddesign31.png");
     transform: rotate(-20deg);
 }
+
+@media screen and (max-width: 450px) {
+    .story_shine::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: 250px;
+        width: 700px;
+        height: 1000px;
+        background: #5956e9;
+        background-image: url("https://www.aiche.org/sites/default/files/styles/chenected_lead_image/public/images/Chenected/lead/untitleddesign31.png");
+        transform: rotate(-20deg);
+    }
+}

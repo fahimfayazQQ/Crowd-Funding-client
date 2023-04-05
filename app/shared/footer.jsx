@@ -9,8 +9,8 @@ const Footer = () => {
     <div className="max-w-screen-xl px-5 pt-14 lg:pt-20 mx-auto">
       <div className="border-t pb-5"></div>
       <div className="w-11/12 lg:w-full flex justify-between items-center mx-auto lg:m-0">
-        <div className="text-3xl font-semibold">QUADQUE</div>
-        <div className="bg-white font-semibold rounded-full shadow-md px-6 py-3">
+        <div className="text-xl lg:text-3xl font-semibold">QUADQUE</div>
+        <div className="bg-white text-xs lg:text-sm font-semibold rounded-full shadow-md px-6 py-3">
           Create Campaign
         </div>
       </div>
@@ -58,19 +58,21 @@ const Footer = () => {
         </ul>
 
         <div className="relative mx-auto lg:m-0">
-          <div className="rounded-2xl shadow-lg">
+          <div className="rounded-2xl shadow-lg shadow-gray-500">
             <Image src={image1} alt="img" className="w-[300px]" />
           </div>
           <div className="absolute top-[30%] px-4">
-            <div className="text-lg font-semibold text-white text-center pb-5">
-              Paragraphs are the building blocks of papers
-            </div>
-            <div className="text-white text-center text-3xl pb-3">
-              Startup <span>$25</span>
-            </div>
-            <div className="w-[10rem] mx-auto bg-[#5143F6] rounded-lg shadow-md text-white text-center px-5 py-2">
-              {" "}
-              Get Plan
+            <div className="">
+              <div className="text-lg font-semibold text-white text-center pb-5">
+                Paragraphs are the building blocks of papers
+              </div>
+              <div className="text-white text-center text-3xl pb-3">
+                Startup <span>$25</span>
+              </div>
+              <div className="w-[10rem] mx-auto bg-[#5143F6] rounded-lg shadow-md text-white text-center px-5 py-2">
+                {" "}
+                Get Plan
+              </div>
             </div>
           </div>
         </div>
@@ -79,7 +81,7 @@ const Footer = () => {
       <div className="border-t mt-10 mb-5"></div>
       <div className="w-11/12 mx-auto lg:w-auto lg:m-0 flex justify-between items-center pb-5">
         <div className="text-xs font-semibold">
-          Copyright © 2023 QUADQUE Technology LTD
+          Copyright © 2023 Quadque Technology Ltd.
         </div>
         <div className="flex">
           <Link href={"https://www.facebook.com/"}>
