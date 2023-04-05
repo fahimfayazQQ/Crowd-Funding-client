@@ -30,14 +30,26 @@
   }
 }
 
-.youtubePlayer > iframe {
+/* .youtubePlayer > iframe {
   width: 100%;
-}
+} */
 
 @media screen and (max-width: 500px) {
   .youtubePlayer>iframe {
       width: 100%;
       border-bottom-right-radius: 16px;
       border-bottom-left-radius: 16px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+  .youtubePlayer>iframe {
+      width: 360px;
+      height: 260px;
+    }
+}
+@media screen and (max-width: 1366px) {
+  .youtubePlayer>iframe {
+      width: 100%;
     }
 }

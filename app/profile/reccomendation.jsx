@@ -18,12 +18,12 @@ const Reccomendation = () => {
     console.log(selectedCat);
   return (
     <div className="h-full overflow-y-scroll">
-      <div className="w-9/12 h-auto mx-auto p-20">
+      <div className="lg:w-9/12 h-auto mx-auto p-5 lg:p-20">
         <div className="text-2xl">Recommendations</div>
 
-        <div className="bg-white border shadow-lg rounded-2xl p-10 my-5">
+        <div className="bg-white border shadow-lg rounded-2xl p-4 lg:p-10 my-5">
           <div className="text-lg">category</div>
-          <div className="w-10/12 mx-auto grid grid-cols-2 my-10 gap-5">
+          <div className="w-10/12 mx-auto grid grid-cols-2 my-10 gap-5 text-xs lg:text-base">
             <div
               onClick={() => {
                 handleSelectedCatagory(1);
@@ -33,7 +33,7 @@ const Reccomendation = () => {
               <div
                 className={`${
                   selectedCat.includes(1) && "bg-home-color border-none"
-                } w-6 h-6 border rounded-md  shadow-md mr-2`}
+                } w-6 h-6 border rounded-md shadow-md mr-2`}
               ></div>
               Edtech
             </div>

@@ -22,6 +22,7 @@ const Navbar = () => {
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent">
+      <div></div>
       <nav className="bg-transparent text-black relative">
         <div className="flex justify-between py-5">
           <Link href={"./"}>
@@ -30,7 +31,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex justify-between items-center gap-2">
-            <CustomSearch search={search} handleSearch={handleSearch} />
+            <CustomSearch search={search} handleSearch={handleSearch}/>
             <div
               onClick={() => {
                 handleSearch(true);

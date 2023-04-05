@@ -54,7 +54,7 @@ const BlogGallery = () => {
   return (
     <div className="max-w-screen-3lg px-2 lg:px-5 mx-auto mt-20 mb-10 lg:mb-20">
       <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 blog_shine">
-        <div className="bg-black bg-opacity-30 backdrop:filter backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none rounded-2xl p-5">
+        <div className="w-9/12 lg:w-full">
           <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
             Latest News
           </div>

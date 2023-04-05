@@ -7,6 +7,15 @@ import YouTube from "react-youtube";
 
 const Header = () => {
   const videoId = `4TutF9refYo`;
+
+  const opts = {
+    height: '340',
+    width: '440',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    }
+  }
   return (
     <div className="bg-home-color h-auto lg:h-screen py-20 px-5 lg:px-20">
       <div className="border lg:h-[80vh] rounded-2xl p-3 lg:p-10 lg:max-w-screen-xl mx-auto">
@@ -27,8 +36,9 @@ const Header = () => {
           <div className="w-full relative">
             <Image src={Bottle} alt="img" className="hidden lg:block w-full h-full" />
             <YouTube
+            opts={opts}
               videoId={videoId}
-              className="youtubePlayer lg:absolute lg:bottom-15 lg:-left-36"
+              className="youtubePlayer lg:absolute lg:bottom-15 lg:-left-48"
             />
             {/* <Image
               src={Image1}

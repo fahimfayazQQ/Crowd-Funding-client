@@ -10,7 +10,7 @@ const WishProject = () => {
   const [isFavourite, setIsFavourite] = useState(false)
   return (
     <div className="h-full overflow-y-scroll">
-      <div className="w-9/12 h-auto mx-auto p-20">
+      <div className="lg:w-9/12 h-auto mx-auto p-5 lg:p-20">
         <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod, i) => (
             <div key={i} className="bg-white relative rounded-2xl shadow-lg pb-5 border">
