@@ -19,7 +19,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white flex justify-center items-center">
+      <div className="w-full bg-white flex justify-center items-center py-10 lg:py-0">
         <div className="bg-zinc-100 rounded-xl w-[40vh] h-[80vh] shadow-lg">
           <div className="flex justify-start"></div>
           <div className="pt-8">

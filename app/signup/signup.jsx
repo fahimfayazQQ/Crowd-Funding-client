@@ -7,8 +7,8 @@ import Google from "../../public/assets/images/google.png"
 import Youtube from "../../public/assets/images/yt.png"
 const Signup = () => {
   return (
-    <div className="bg-home-color h-screen flex">
-      <div className="w-full flex justify-center items-center">
+    <div className="bg-home-color h-screen flex flex-col lg:flex-row">
+      <div className="w-full flex justify-center items-center py-20 lg:py-0">
         <div className="">
           <Image src={Biznez} alt="img" className="m-auto" />
           <div className="text-white flex justify-center mb-3">Partners</div>
@@ -19,7 +19,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white flex justify-center items-center">
+      <div className="w-full bg-white flex justify-center items-center py-10 lg:py-0">
         <div className="bg-zinc-100 rounded-xl w-[40vh] h-[80vh] shadow-lg">
           <div className="flex justify-start"></div>
           <div className="pt-8">

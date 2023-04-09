@@ -4,7 +4,7 @@ import ProfilePic from "../../public/assets/images/propic.png";
 
 const Settings = () => {
   return (
-    <div className="w-9/12 h-full mx-auto p-20">
+    <div className="lg:w-9/12 h-full mx-auto p-4 lg:p-20">
       <div className="flex justify-between">
         <div>
           <div className="text-lg font-bold pb-5">Email Address</div>
@@ -19,7 +19,7 @@ const Settings = () => {
       </div>
       <div className="w-full border my-10"></div>
       <div className="flex justify-between relative">
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <div className="text-lg font-bold pb-5">Password</div>
           <div className="pb-5">
             <span className="text-sm"> Enter current password</span>

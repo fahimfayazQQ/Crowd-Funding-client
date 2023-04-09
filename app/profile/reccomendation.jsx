@@ -215,7 +215,7 @@ const Reccomendation = () => {
         <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod, i) => (
             <div key={i} className="bg-white rounded-2xl shadow-lg pb-5 border">
-              <Image src={Card1} alt="img" className="" />
+              <Image src={Card1} alt="img" className="w-full" />
               <div className="px-3">
                 <div className="text-xl my-5">{prod?.title}</div>
                 <div className="text-sm pb-3">{prod?.description}</div>

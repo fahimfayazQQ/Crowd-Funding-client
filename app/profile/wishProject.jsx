@@ -15,7 +15,7 @@ const WishProject = () => {
           {Products?.map((prod, i) => (
             <div key={i} className="bg-white relative rounded-2xl shadow-lg pb-5 border">
               <div onClick={()=>{setIsFavourite(!isFavourite)}} className="w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center"><Heart className={`${isFavourite? "text-[#F40B5F]":"text-gray-200"}`}/></div>
-              <Image src={Card1} alt="img" className="" />
+              <Image src={Card1} alt="img" className="w-full" />
               <div className="px-3">
                 <div className="text-xl my-5">{prod?.title}</div>
                 <div className="text-sm pb-3">{prod?.description}</div>

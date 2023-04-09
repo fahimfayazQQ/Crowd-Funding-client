@@ -52,7 +52,7 @@ const NavbarWhite = () => {
           </ul> */}
           {/* Mobile View */}
           <Modal
-            className="NavbarWhiteModal bg-black bg-opacity-50 backdrop:filter backdrop-blur-sm border border-gray-500 rounded-md lg:float-right cross_btn"
+            className="NavbarWhiteModal bg-black bg-opacity-50 backdrop:filter backdrop-blur-sm border border-gray-500 rounded-md sm:float-right cross_btn"
             title={false}
             centered
             open={open}
