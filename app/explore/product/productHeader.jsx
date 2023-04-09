@@ -23,7 +23,7 @@ const ProductHeader = () => {
     <div className="rounded-2xl max-w-screen-xl px-5 mx-auto mt-20">
       <div className="flex flex-col lg:flex-row rounded-xl shadow-md bg-white">
         <div className="relative p-5">
-          <Slider ref={sliderRef} {...settings} arrows={false} className="w-[32rem]">
+          <Slider ref={sliderRef} {...settings} arrows={false} className="w-full lg:w-[32rem] mx-auto">
             <Image src={Product1} class="img-fluid" alt="" />
             <Image src={Product1} class="img-fluid" alt="" />
           </Slider>
@@ -43,8 +43,8 @@ const ProductHeader = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full text-black p-10">
-          <div className="text-4xl font-semibold mb-5 mt-10">
+        <div className="w-full h-full text-black p-5 lg:p-10">
+          <div className="text-2xl lg:text-4xl font-semibold mb-5 lg:mt-10">
             Pasta Bolognese
           </div>
           <div className="mb-10">
@@ -71,7 +71,7 @@ const ProductHeader = () => {
             </div>
           </div>
 
-          <div className="flex justify-around gap-10">
+          <div className="flex justify-around gap-3 lg:gap-10">
             <Link href={"../payment"}>
               <div className="inline-block bg-home-color text-white tracking-widest text-sm text-center rounded-full shadow-lg py-3 px-10 cursor-pointer">
                 INVEST
