@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from "next/image";
 import React, {useRef} from "react";
 import Coke from "../../public/assets/images/Photo.png";

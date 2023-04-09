@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from "react";
 /* import NavigationItems from "./NavLinks"; */
 import { Modal } from "antd";

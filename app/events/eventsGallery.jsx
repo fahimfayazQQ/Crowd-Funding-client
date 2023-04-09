@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useRef } from "react";
 import Image from "next/image";
 import Blog1 from "../../public/assets/images/blog1.png";

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from "next/image";
 import Product1 from "../../../public/assets/images/product.png";
 import Link from "next/link";
