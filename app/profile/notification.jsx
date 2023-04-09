@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Avatar from "../../public/assets/images/avatar.png";
 import post1 from "../../public/assets/images/blog2.png";
@@ -6,9 +6,14 @@ import { Select } from "antd";
 const categoryData = ["All", "Events"];
 
 const Notification = () => {
+  const [readAll, setReadAll] = useState(false);
   const handleProvinceChange = (value) => {
     value.preventDefault();
   };
+
+  const handleReadAllMsg = () => {
+  setReadAll(true);
+  }
   return (
     <div className="lg:w-10/12 h-full mx-auto p-4 lg:p-20">
       <div className="flex flex-col lg:flex-row justify-between mb-5">
@@ -29,8 +34,8 @@ const Notification = () => {
           />
         </div>
         <div className="flex items-center">
-          <div className="w-4 h-4 border border-black"></div>
-          <a href="" className="text-sm underline text-sky-600 mr-10 px-2">
+          <div className={`${readAll ? "bg-black":""} w-4 h-4 border border-black`}></div>
+          <a onClick={()=>{handleReadAllMsg()}} href="" className="text-sm underline text-sky-600 mr-10 px-2 py-2">
             mark all as read
           </a>
         </div>

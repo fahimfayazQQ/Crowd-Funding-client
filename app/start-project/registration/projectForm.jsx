@@ -34,9 +34,8 @@ const ProjectForm = () => {
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
-              className={`${
-                toogleTab === 0 &&
-                "w-6 h-6 bg-home-color rounded-full mx-auto text-white"
+              className={`w-6 h-6 bg-black rounded-full text-white mx-auto ${
+                toogleTab === 0 && "bg-home-color"
               }`}
             >
               1
@@ -52,9 +51,8 @@ const ProjectForm = () => {
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
-              className={`${
-                toogleTab === 1 &&
-                "w-6 h-6 bg-home-color rounded-full mx-auto text-white"
+              className={`w-6 h-6 bg-black rounded-full text-white mx-auto ${
+                toogleTab === 1 && "bg-home-color"
               }`}
             >
               2
@@ -70,9 +68,8 @@ const ProjectForm = () => {
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
-              className={`${
-                toogleTab === 2 &&
-                "w-6 h-6 bg-home-color rounded-full mx-auto text-white"
+              className={`w-6 h-6 bg-black rounded-full text-white mx-auto ${
+                toogleTab === 2 && "bg-home-color"
               }`}
             >
               3
@@ -88,9 +85,8 @@ const ProjectForm = () => {
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
-              className={`${
-                toogleTab === 3 &&
-                "w-6 h-6 bg-home-color rounded-full mx-auto text-white"
+              className={`w-6 h-6 bg-black rounded-full text-white mx-auto ${
+                toogleTab === 3 && "bg-home-color"
               }`}
             >
               4
@@ -106,9 +102,9 @@ const ProjectForm = () => {
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
-              className={`${
+              className={`w-6 h-6 bg-black rounded-full text-white mx-auto ${
                 toogleTab === 4 &&
-                "w-6 h-6 bg-home-color rounded-full mx-auto text-white"
+                "bg-home-color"
               }`}
             >
               5

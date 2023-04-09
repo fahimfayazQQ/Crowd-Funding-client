@@ -37,7 +37,7 @@ const Investors = () => {
       </div>
 
       <div className="text-center">
-        <div>
+        <div className="w-10/12 mx-auto">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             <div>
               <Image src={Image1} alt="img" className="mx-auto rounded-full" />

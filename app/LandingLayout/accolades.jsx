@@ -4,7 +4,7 @@ import React from 'react'
 const Accolades = () => {
   return (
     <div className="text-black mx-auto py-14 lg:py-20">
-      <div className="text-2xl lg:text-4xl text-center pb-10">
+      <div className="text-2xl lg:text-4xl text-center px-4 pb-10">
         Lorem Ipsum is simply dummy text of the printing and typesetting
       </div>
       <div className="w-11/12 lg:w-2/3 flex flex-wrap justify-evenly mx-auto">

@@ -201,7 +201,7 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="investor_shine bg-home-color lg:rounded-2xl max-w-screen-xl px-5 mx-auto p-5 lg:p-10 mt-20 shadow-lg">
+      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl px-5 mx-auto p-5 lg:p-10 mt-20 shadow-lg">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="w-full lg:w-2/3 mx-auto lg:m-0 pb-10 lg:pb-0 text-white">
             <div className="text-2xl lg:text-4xl my-4 lg:my-8">Lorem ipsum dolor</div>

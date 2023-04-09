@@ -48,35 +48,35 @@ const BlogDetails = () => {
       <div className="text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
       <div className="grid lg:grid-cols-4 gap-3 mb-10">
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="rounded-2xl" />
+          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
         </div>
 
         <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="rounded-2xl" />
+          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
         </div>
       </div>
 
