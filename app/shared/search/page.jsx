@@ -17,7 +17,7 @@ const CustomSearch = ({ search, handleSearch }) => {
             search
               ? "w-full text-black rounded-tl-full rounded-bl-full bg-white shadow-sm px-3 py-1.5 lg:py-1"
               : "w-0"
-          } cus-transition-all duration-700 outline-none`}
+          } custom-transition-all duration-700 outline-none`}
         />
         <div
           onClick={() => {
@@ -27,7 +27,7 @@ const CustomSearch = ({ search, handleSearch }) => {
             search
               ? "w-8 rounded-tr-full rounded-br-full cursor-pointer px-2 text-black"
               : "text-white invisible duration-300"
-          } text-sm cus-transition-all delay-200`}
+          } text-sm custom-transition-all delay-200`}
         >
           X
         </div>
