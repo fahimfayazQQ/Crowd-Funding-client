@@ -8,6 +8,7 @@ import Products from "../shared/jsondata/products.json"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Zoom } from "react-reveal";
 
 const ExploreGallery = () => {
   const sliderRef = useRef(null);
@@ -72,18 +73,20 @@ const ExploreGallery = () => {
       <div className="w-11/12 lg:w-full mx-auto">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Products?.map((product, i) => (
-            <div key={i} className="p-2 mb-5">
-              <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
-                <Image src={Card1} alt="img" className="w-full" />
-                <div className="text-xl my-5">{product?.title}</div>
-                <div className="text-sm pb-8">{product?.description}</div>
-                <Link href={"./explore/product"}>
-                  <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                    Learn More
-                  </div>
-                </Link>
+            <Zoom>
+              <div key={i} className="p-2 mb-5">
+                <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
+                  <Image src={Card1} alt="img" className="w-full" />
+                  <div className="text-xl my-5">{product?.title}</div>
+                  <div className="text-sm pb-8">{product?.description}</div>
+                  <Link href={"./explore/product"}>
+                    <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+                      Learn More
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
+            </Zoom>
           ))}
         </Slider>
       </div>

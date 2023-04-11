@@ -9,7 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ExploreGallery = () => {
+const LearnGallery = () => {
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -22,6 +22,32 @@ const ExploreGallery = () => {
     rows: 2,
     slidesPerRow: 1,
     focusOnSelect: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="max-w-screen-xl px-5 mx-auto mt-20">
@@ -46,9 +72,9 @@ const ExploreGallery = () => {
       <div className="">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Products?.map((product, i) => (
-            <div key={i} className="m-2 mb-5">
-              <div className="w-[20rem] bg-white rounded-2xl shadow-lg pb-5 border p-2">
-                <Image src={Card1} alt="img" className="" />
+            <div key={i} className="p-2 mb-5">
+              <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
+                <Image src={Card1} alt="img" className="w-full" />
                 <div className="text-xl my-5">{product?.title}</div>
                 <div className="text-sm pb-8">{product?.description}</div>
                 <Link href={"./learn/gallery/details"}>
@@ -65,4 +91,4 @@ const ExploreGallery = () => {
   );
 };
 
-export default ExploreGallery;
+export default LearnGallery;

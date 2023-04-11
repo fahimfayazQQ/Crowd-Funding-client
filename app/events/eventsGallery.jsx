@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Blogs from "../shared/jsondata/blogs.json";
 import Link from "next/link";
+import { Fade } from "react-reveal";
 
 const EventsGallery = () => {
   const sliderRef = useRef(null);
@@ -52,27 +53,31 @@ const EventsGallery = () => {
   return (
     <div className="max-w-screen-3lg mx-auto mt-20">
       <div className="mt-10 lg:mt-20">
-        <Slider ref={sliderRef} {...settings} arrows={false}>
-          {Blogs?.map((blog, i) => (
-            <Link key={i} href={"./events/event"}>
-              <div>
-                <div className="w-[calc(100%-20px)] bg-white rounded-2xl shadow-lg pb-5 mx-2.5 mb-5">
-                  <Image
-                    src={Blog2}
-                    alt="img"
-                    className="w-11/12 mx-auto pt-5"
-                  />
-                  <div className="px-10">
-                    <div className="text-zinc-500 my-5">{blog?.time}</div>
-                    <div className="border w-10/12 mx-auto mb-5"></div>
-                    <div className="text-xl mb-5 px-2">{blog?.title}</div>
-                    <div className="text-sm pb-8 px-2">{blog?.description}</div>
+        <Fade right>
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            {Blogs?.map((blog, i) => (
+              <Link key={i} href={"./events/event"}>
+                <div>
+                  <div className="w-[calc(100%-20px)] bg-white rounded-2xl shadow-lg pb-5 mx-2.5 mb-5">
+                    <Image
+                      src={Blog2}
+                      alt="img"
+                      className="w-11/12 mx-auto pt-5"
+                    />
+                    <div className="px-10">
+                      <div className="text-zinc-500 my-5">{blog?.time}</div>
+                      <div className="border w-10/12 mx-auto mb-5"></div>
+                      <div className="text-xl mb-5 px-2">{blog?.title}</div>
+                      <div className="text-sm pb-8 px-2">
+                        {blog?.description}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-        </Slider>
+              </Link>
+            ))}
+          </Slider>
+        </Fade>
         <div className="flex justify-center items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}

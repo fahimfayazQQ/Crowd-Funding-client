@@ -6,7 +6,7 @@ import Header from "./header";
 import Business from "./business";
 import About from "./about";
 import HowItWorks from "./howItWorks";
-import Investors from './investors'
+import Investors from '../shared/investors';
 import Accolades from "./accolades";
 import Articles from "./articles";
 

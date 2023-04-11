@@ -7,11 +7,11 @@ import Google from "../../public/assets/images/google.png"
 import Youtube from "../../public/assets/images/yt.png"
 const Login = () => {
   return (
-    <div className="bg-home-color h-screen flex">
+    <div className="bg-home-color h-screen flex flex-col lg:flex-row ">
       <div className="w-full flex justify-center items-center">
-        <div className="">
+        <div className="my-20 lg:my-0">
           <Image src={CreditCard} alt="img" className="m-auto" />
-          <div className="w-1/2 text-white text-justify flex mx-auto">
+          <div className="w-11/12 lg:w-1/2 text-white text-justify flex mx-auto">
             Certified Charity donations are made to PayPal Giving Fund, minus
             processing fees and granted within 15-45 days, subject to its terms.
             In the unlikely event that there is a problem funding your chosen

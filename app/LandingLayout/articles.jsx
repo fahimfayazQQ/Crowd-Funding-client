@@ -5,6 +5,7 @@ import Coke from "../../public/assets/images/cocacola.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Fade, Zoom } from "react-reveal";
 
 const Articles = () => {
   const sliderRef = useRef(null);
@@ -43,41 +44,45 @@ const Articles = () => {
   };
   return (
     <div className="max-w-screen-xl px-5 py-10 lg:py-20 mx-auto">
-      <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl mx-auto lg:m-0">
-        <div className="text-zinc-700 tracking-widest text-sm mb-3">
-          - ARTICLES
+      <Fade bottom>
+        <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl mx-auto lg:m-0">
+          <div className="text-zinc-700 tracking-widest text-sm mb-3">
+            - ARTICLES
+          </div>
+          Paragraphs are the building blocks of papers. Many students define
+          paragraphs in terms of length
         </div>
-        Paragraphs are the building blocks of papers. Many students define
-        paragraphs in terms of length
-      </div>
-      <div className="my-5">
-        <Slider ref={sliderRef} {...settings} arrows={false}>
-          <div className="w-full h-full relative px-1">
-            <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-            <div className="absolute bottom-5 px-10 text-white font-semibold">
-              Paragraphs are the building blocks of papers. Many students define
-              paragraphs in terms of length{" "}
-              <span className="text-indigo-600">View More</span>
+      </Fade>
+      <Zoom>
+        <div className="my-5">
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            <div className="w-full h-full relative px-1">
+              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
+              <div className="absolute bottom-5 px-10 text-white font-semibold">
+                Paragraphs are the building blocks of papers. Many students
+                define paragraphs in terms of length{" "}
+                <span className="text-indigo-600">View More</span>
+              </div>
             </div>
-          </div>
-          <div className="w-full h-full relative px-1">
-            <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-            <div className="absolute bottom-5 px-10 text-white font-semibold">
-              Paragraphs are the building blocks of papers. Many students define
-              paragraphs in terms of length{" "}
-              <span className="text-indigo-600">View More</span>
+            <div className="w-full h-full relative px-1">
+              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
+              <div className="absolute bottom-5 px-10 text-white font-semibold">
+                Paragraphs are the building blocks of papers. Many students
+                define paragraphs in terms of length{" "}
+                <span className="text-indigo-600">View More</span>
+              </div>
             </div>
-          </div>
-          <div className="w-full h-full relative px-1">
-            <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-            <div className="absolute bottom-5 px-10 text-white font-semibold">
-              Paragraphs are the building blocks of papers. Many students define
-              paragraphs in terms of length{" "}
-              <span className="text-indigo-600">View More</span>
+            <div className="w-full h-full relative px-1">
+              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
+              <div className="absolute bottom-5 px-10 text-white font-semibold">
+                Paragraphs are the building blocks of papers. Many students
+                define paragraphs in terms of length{" "}
+                <span className="text-indigo-600">View More</span>
+              </div>
             </div>
-          </div>
-        </Slider>
-      </div>
+          </Slider>
+        </div>
+      </Zoom>
 
       <div className="w-11/12 lg:w-full mx-auto flex items-center justify-between">
         <div className="inline-block bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">

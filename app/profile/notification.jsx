@@ -16,8 +16,8 @@ const Notification = () => {
   setReadAll(true);
   }
   return (
-    <div className="lg:w-10/12 h-full mx-auto p-4 lg:p-20">
-      <div className="flex flex-col lg:flex-row justify-between mb-5">
+    <div className="lg:w-10/12 h-full mx-auto lg:p-20">
+      <div className="flex flex-col lg:flex-row justify-between my-5 mx-4">
         <div className="flex items-end gap-4">
           <div>
             <div className="text-lg font-bold">Notifications</div>
@@ -42,7 +42,7 @@ const Notification = () => {
         </div>
       </div>
 
-      <div className="h-[85vh] text-sm lg:p-5 overflow-y-scroll">
+      <div className="h-[85vh] text-sm lg:p-5 overflow-y-scroll px-4">
         <div className="flex items-center">
           <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
