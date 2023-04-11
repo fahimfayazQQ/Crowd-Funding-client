@@ -41,7 +41,7 @@ const NavbarWhite = () => {
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
-              <div className={` ${genericHamburgerLine}`} />
+              <div className={`${genericHamburgerLine}`} />
               <div className={`${genericHamburgerLine}`} />
               <div className={`${genericHamburgerLine}`} />
             </div>
@@ -70,7 +70,7 @@ const NavbarWhite = () => {
                     onClick={() => {
                       toogleSubmenu !== link?.name
                         ? setToogleSubmenu(link?.name)
-                        : setToogleSubmenu("");
+                        : setToogleSubmenu("")
                     }}
                   >
                     <a className="text-white" href={link?.link}>
@@ -92,7 +92,7 @@ const NavbarWhite = () => {
                         }`}
                       >
                         {link.submenu?.map((slink, i) => (
-                          <Link key={i} href={slink.sublink}>
+                          <Link key={i} href={slink.sublink} onClick={()=>{setOpen(false);setToogleSubmenu("")}}>
                             <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}

@@ -1,14 +1,12 @@
 'use client'
 import React from 'react'
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Header from "./header";
 import Business from "./business";
 import About from "./about";
 import HowItWorks from "./howItWorks";
 import Investors from '../shared/investors';
 import Accolades from "./accolades";
-import Articles from "./articles";
+import Articles from "../shared/articles";
 
 const LandingPage = () => {
   return (

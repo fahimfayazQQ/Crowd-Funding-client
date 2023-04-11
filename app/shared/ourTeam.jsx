@@ -5,6 +5,7 @@ import Coke from "../../public/assets/images/Photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Fade, Zoom } from "react-reveal";
 
 const OurTeam = () => {
   const sliderRef = useRef(null);
@@ -48,45 +49,57 @@ const OurTeam = () => {
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length
       </div>
-      <div className="my-5">
-        <Slider ref={sliderRef} {...settings} arrows={false}>
-          <div className="w-full h-full">
-            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
-            <div className="text-center text-black font-semibold mt-3">
-              HM Alvi
+      <Zoom>
+        <div className="my-5">
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            <div className="w-full h-full">
+              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <div className="text-center text-black font-semibold mt-3">
+                HM Alvi
+              </div>
+              <div className="text-center text-black text-sm">
+                Ceo & Founder{" "}
+              </div>
             </div>
-            <div className="text-center text-black text-sm">Ceo & Founder </div>
-          </div>
-          <div className="w-full h-full">
-            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
-            <div className="text-center text-black font-semibold mt-3">
-              HM Alvi
+            <div className="w-full h-full">
+              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <div className="text-center text-black font-semibold mt-3">
+                HM Alvi
+              </div>
+              <div className="text-center text-black text-sm">
+                Ceo & Founder{" "}
+              </div>
             </div>
-            <div className="text-center text-black text-sm">Ceo & Founder </div>
-          </div>
-          <div className="w-full h-full">
-            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
-            <div className="text-center text-black font-semibold mt-3">
-              HM Alvi
+            <div className="w-full h-full">
+              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <div className="text-center text-black font-semibold mt-3">
+                HM Alvi
+              </div>
+              <div className="text-center text-black text-sm">
+                Ceo & Founder{" "}
+              </div>
             </div>
-            <div className="text-center text-black text-sm">Ceo & Founder </div>
-          </div>
-          <div className="w-full h-full">
-            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
-            <div className="text-center text-black font-semibold mt-3">
-              HM Alvi
+            <div className="w-full h-full">
+              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <div className="text-center text-black font-semibold mt-3">
+                HM Alvi
+              </div>
+              <div className="text-center text-black text-sm">
+                Ceo & Founder{" "}
+              </div>
             </div>
-            <div className="text-center text-black text-sm">Ceo & Founder </div>
-          </div>
-          <div className="w-full h-full">
-            <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
-            <div className="text-center text-black font-semibold mt-3">
-              HM Alvi
+            <div className="w-full h-full">
+              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <div className="text-center text-black font-semibold mt-3">
+                HM Alvi
+              </div>
+              <div className="text-center text-black text-sm">
+                Ceo & Founder{" "}
+              </div>
             </div>
-            <div className="text-center text-black text-sm">Ceo & Founder </div>
-          </div>
-        </Slider>
-      </div>
+          </Slider>
+        </div>
+      </Zoom>
 
       <div className="flex justify-center items-center">
         <div

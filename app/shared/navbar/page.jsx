@@ -60,7 +60,6 @@ const Navbar = () => {
             onOk={() => setOpen(false)}
             onCancel={() => setOpen(false)}
             footer={false}
-            /* width="100%" */
           >
             <div className="w-full h-[95vh] flex flex-col text-black text-xl py-10 pl-10">
               {customlinks?.map((link, i) => (
@@ -96,7 +95,7 @@ const Navbar = () => {
                         }`}
                       >
                         {link.submenu?.map((slink, i) => (
-                          <Link key={i} href={slink.sublink}>
+                          <Link key={i} href={slink.sublink} onClick={()=>{setOpen(false);setToogleSubmenu("")}}>
                             <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}

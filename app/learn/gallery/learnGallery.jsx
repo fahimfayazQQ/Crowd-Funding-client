@@ -1,13 +1,14 @@
 'use client';
-import React, {useRef} from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React, {useRef} from "react"
+import Image from "next/image"
+import Link from "next/link"
 import Card1 from "../../../public/assets/images/card1.png"
 import Card2 from "../../../public/assets/images/card2.png"
 import Products from "../../shared/jsondata/products.json"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { Fade } from "react-reveal"
 
 const LearnGallery = () => {
   const sliderRef = useRef(null);
@@ -68,25 +69,27 @@ const LearnGallery = () => {
           </div>
         </div>
       </div>
-
-      <div className="">
-        <Slider ref={sliderRef} {...settings} arrows={false}>
-          {Products?.map((product, i) => (
-            <div key={i} className="p-2 mb-5">
-              <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
-                <Image src={Card1} alt="img" className="w-full" />
-                <div className="text-xl my-5">{product?.title}</div>
-                <div className="text-sm pb-8">{product?.description}</div>
-                <Link href={"./learn/gallery/details"}>
-                  <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                    Learn More
-                  </div>
-                </Link>
+      
+      <Fade right>
+        <div className="">
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            {Products?.map((product, i) => (
+              <div key={i} className="p-2 mb-5">
+                <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
+                  <Image src={Card1} alt="img" className="w-full" />
+                  <div className="text-xl my-5">{product?.title}</div>
+                  <div className="text-sm pb-8">{product?.description}</div>
+                  <Link href={"./learn/gallery/details"}>
+                    <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+                      Learn More
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+            ))}
+          </Slider>
+        </div>
+      </Fade>
     </div>
   );
 };
