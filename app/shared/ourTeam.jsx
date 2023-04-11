@@ -5,7 +5,7 @@ import Coke from "../../public/assets/images/Photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const OurTeam = () => {
   const sliderRef = useRef(null);
@@ -49,7 +49,7 @@ const OurTeam = () => {
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length
       </div>
-      <Zoom>
+      <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             <div className="w-full h-full">

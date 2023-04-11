@@ -6,7 +6,7 @@ import Update from './update'
 import Reward from './reward'
 import Faq from './faq'
 import Discussion from './discussion'
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const ProductTabs = () => {
   const [toogleTab, setToogleTab] = useState(0)
@@ -27,12 +27,12 @@ const ProductTabs = () => {
       </div>
       </Fade>
 
-    {toogleTab===0 && <Fade bottom opposite><Overview/></Fade>}
-    {toogleTab===1 && <Fade bottom opposite><About/></Fade>}
-    {toogleTab===2 && <Fade bottom opposite><Update/></Fade>}
-    {toogleTab===3 && <Fade bottom opposite><Reward/></Fade>}
-    {toogleTab===4 && <Fade bottom opposite><Faq/></Fade>}
-    {toogleTab===5 && <Fade bottom opposite><Discussion/></Fade>}
+    {toogleTab===0 && <Fade><Overview/></Fade>}
+    {toogleTab===1 && <Fade><About/></Fade>}
+    {toogleTab===2 && <Fade><Update/></Fade>}
+    {toogleTab===3 && <Fade><Reward/></Fade>}
+    {toogleTab===4 && <Fade><Faq/></Fade>}
+    {toogleTab===5 && <Fade><Discussion/></Fade>}
     </div>
   )
 }

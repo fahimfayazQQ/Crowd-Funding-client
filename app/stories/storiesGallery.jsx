@@ -9,7 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from 'next/link';
-import { Fade, Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const StoriesGallery = () => {
   const sliderRef = useRef(null);
@@ -53,7 +53,7 @@ const StoriesGallery = () => {
   };
   return (
     <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20">
-      <Zoom>
+      <Zoom triggerOnce>
         <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 story_shine">
           <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
             Success Stories
@@ -67,7 +67,7 @@ const StoriesGallery = () => {
       </Zoom>
 
       <div className="my-10 lg:my-20">
-        <Fade right>
+        <Zoom triggerOnce>
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Blogs?.map((story, i) => (
               <Link key={i} href={"./stories/story"}>
@@ -83,7 +83,7 @@ const StoriesGallery = () => {
               </Link>
             ))}
           </Slider>
-        </Fade>
+        </Zoom>
         <div className="flex justify-center items-center mt-5">
           <div
             onClick={() => sliderRef.current.slickPrev()}

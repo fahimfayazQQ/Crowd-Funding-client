@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Blogs from "../shared/jsondata/blogs.json";
 import Link from "next/link";
-import { Fade } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const EventsGallery = () => {
   const sliderRef = useRef(null);
@@ -53,7 +53,7 @@ const EventsGallery = () => {
   return (
     <div className="max-w-screen-3lg mx-auto mt-20">
       <div className="mt-10 lg:mt-20">
-        <Fade right>
+        <Zoom triggerOnce>
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Blogs?.map((blog, i) => (
               <Link key={i} href={"./events/event"}>
@@ -77,7 +77,7 @@ const EventsGallery = () => {
               </Link>
             ))}
           </Slider>
-        </Fade>
+        </Zoom>
         <div className="flex justify-center items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}

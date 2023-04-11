@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@netlify/plugin-nextjs": "^4.33.0",
     "@reduxjs/toolkit": "^1.9.3",
     "@svgr/webpack": "^7.0.0",
@@ -18,10 +19,10 @@
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "18.2.0",
     "react-quill": "^2.0.0",
     "react-redux": "^8.0.5",
-    "react-reveal": "^1.2.2",
     "react-slick": "^0.29.0",
     "react-youtube": "^10.1.0",
     "redux": "^4.2.1",

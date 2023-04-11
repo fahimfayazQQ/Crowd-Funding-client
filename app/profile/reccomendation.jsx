@@ -4,9 +4,21 @@ import Image from "next/image";
 import Card1 from "../../public/assets/images/card1.png";
 import Card2 from "../../public/assets/images/card2.png";
 import Products from "../shared/jsondata/products.json";
+import { Modal } from 'antd';
 
 const Reccomendation = () => {
     const [selectedCat, setSelectedCat] = useState([])
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const showModal = () => {
+      setIsModalOpen(true);
+    };
+    const handleOk = () => {
+      setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+      setIsModalOpen(false);
+    };
+
 
     const handleSelectedCatagory = (id) => {
         if (selectedCat?.includes(id)) {
@@ -17,60 +29,217 @@ const Reccomendation = () => {
     }
     console.log(selectedCat);
   return (
-    <div className="h-full overflow-y-scroll">
+    <div className="h-[100vh] overflow-y-auto">
       <div className="lg:w-9/12 h-auto mx-auto p-5 lg:p-20">
         <div className="text-2xl">Recommendations</div>
-
-        <div className="bg-white border shadow-lg rounded-2xl p-4 lg:p-10 my-5">
-          <div className="text-lg">category</div>
-          <div className="w-10/12 mx-auto grid grid-cols-2 my-10 gap-5 text-xs lg:text-base">
-            <div onClick={() => {handleSelectedCatagory(1);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(1) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Edtech 
-            </div>
-            <div onClick={() => {handleSelectedCatagory(2);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(2) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Fintech
-            </div>
-            <div onClick={() => {handleSelectedCatagory(3);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(3) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Logistics
-            </div>
-            <div onClick={() => {handleSelectedCatagory(4);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(4) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>E-Commerce and Retail
-            </div>
-            <div onClick={() => {handleSelectedCatagory(5);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(5) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Gaming
-            </div>
-            <div onClick={() => {handleSelectedCatagory(6);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(6) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Climate and Energy
-            </div>
-            <div onClick={() => {handleSelectedCatagory(7);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(7) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Consumer Service
-            </div>
-            <div onClick={() => {handleSelectedCatagory(8);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(8) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Halthcare
-            </div>
-            <div onClick={() => {handleSelectedCatagory(9);}} className="flex items-center" >
-              <div  className={`${selectedCat.includes(9) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Food & Agro
-            </div>
-            <div onClick={() => {handleSelectedCatagory(10);}} className="flex items-center">
-              <div className={`${selectedCat.includes(10) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Mobility
-            </div>
-            <div onClick={() => {handleSelectedCatagory(11);}} className="flex items-center">
-              <div className={`${selectedCat.includes(11) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Software and Technology
-            </div>
-            <div onClick={() => {handleSelectedCatagory(12);}} className="flex items-center">
-              <div className={`${selectedCat.includes(12) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Sports and Entertainment
-            </div>
-            <div onClick={() => {handleSelectedCatagory(13);}} className="flex items-center">
-              <div className={`${selectedCat.includes(13) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Circular Economy
-            </div>
-            <div onClick={() => {handleSelectedCatagory(14);}} className="flex items-center">
-              <div className={`${selectedCat.includes(14) && "bg-home-color border-none"} w-6 h-6 border rounded-md shadow-md mr-2`}></div>Others
-            </div>
-          </div>
-          <div className="w-[5rem] bg-home-color rounded-md text-white text-center px-2 py-2">
-            OK
-          </div>
+        <div
+          onClick={showModal}
+          className="inline-block bg-home-color rounded-md text-white text-center px-2 py-2 my-5 cursor-pointer"
+        >
+          Select categories
         </div>
+
+        <Modal
+          title={false}
+          footer={false}
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+        >
+          <div className="bg-white p-4 lg:p-10">
+            <div className="text-lg font-semibold">categories</div>
+            <div className="w-10/12 mx-auto grid grid-cols-2 my-10 gap-5 text-xs lg:text-base">
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(1);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(1) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Edtech
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(2);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(2) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Fintech
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(3);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(3) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Logistics
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(4);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(4) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                E-Commerce and Retail
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(5);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(5) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Gaming
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(6);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(6) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Climate and Energy
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(7);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(7) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Consumer Service
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(8);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(8) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Halthcare
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(9);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(9) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Food & Agro
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(10);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(10) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Mobility
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(11);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(11) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Software and Technology
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(12);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(12) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Sports and Entertainment
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(13);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(13) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Circular Economy
+              </div>
+              <div
+                onClick={() => {
+                  handleSelectedCatagory(14);
+                }}
+                className="flex items-center"
+              >
+                <div
+                  className={`${
+                    selectedCat.includes(14) && "bg-home-color border-none"
+                  } w-6 h-6 border rounded-md shadow-md mr-2`}
+                ></div>
+                Others
+              </div>
+            </div>
+            <div
+              onClick={handleCancel}
+              className="w-[5rem] bg-home-color rounded-md text-white text-center px-2 py-2"
+            >
+              OK
+            </div>
+          </div>
+        </Modal>
 
         <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod, i) => (

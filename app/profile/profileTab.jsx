@@ -5,7 +5,7 @@ import Settings from './settings'
 import Notification from './notification'
 import WishProject from './wishProject'
 import Reccomendation from './reccomendation'
-import { Fade } from 'react-reveal'
+import { Fade, Slide } from "react-awesome-reveal";
 
 const ProfileTab = () => {
     const [toogleTab, setToogleTab] = useState(0)
@@ -36,7 +36,7 @@ const ProfileTab = () => {
               <div className={`${HamburgerLine} ${showTabs? "opacity-0":"opacity-100"}`} />
               <div className={`${HamburgerLine} ${showTabs? "-rotate-45 -translate-y-2":""}`} />
       </div>
-      <Fade left spy={showTabs}>
+      <Fade spy={showTabs}>
       <div className={`${showTabs? "":"hidden"} duration-500 lg:hidden w-full flex flex-wrap justify-around p-5 rounded-xl mx-auto`}>
         <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} w-full rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Notifications</div>
         <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} w-full rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Wish Project</div>
@@ -47,11 +47,11 @@ const ProfileTab = () => {
       </div>
       </Fade>
       <div className='w-full'>
-        {toogleTab===0 && <Fade bottom opposite><Notification/></Fade>}
-        {toogleTab===1 && <Fade bottom opposite><WishProject/></Fade>}
-        {toogleTab===2 && <Fade bottom opposite><Reccomendation/></Fade>}
-        {toogleTab===3 && <Fade bottom opposite><UserProfile/></Fade>}
-        {toogleTab===4 && <Fade bottom opposite><Settings/></Fade>}
+        {toogleTab===0 && <Slide direction='right'><Notification/></Slide>}
+        {toogleTab===1 && <Slide direction='right'><WishProject/></Slide>}
+        {toogleTab===2 && <Slide direction='right'><Reccomendation/></Slide>}
+        {toogleTab===3 && <Slide direction='right'><UserProfile/></Slide>}
+        {toogleTab===4 && <Slide direction='right'><Settings/></Slide>}
       </div>
     </div>
   );

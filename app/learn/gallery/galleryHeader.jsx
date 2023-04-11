@@ -1,11 +1,11 @@
 import React from 'react'
 import "../learnStyles.css"
-import { Zoom } from "react-reveal"
+import { Zoom } from "react-awesome-reveal"
 
 const GalleryHeader = () => {
   return (
     <div className="max-w-screen-xl px-5 mx-auto my-20">
-      <Zoom>
+      <Zoom triggerOnce>
         <div className="w-full bg-home-color rounded-2xl py-16 px-5 lg:px-16 learn_shine">
           <div className="text-white text-4xl font-semibold pb-5">Learn</div>
           <div className="text-white w-1/2 lg:w-full">

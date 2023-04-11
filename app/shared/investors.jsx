@@ -7,7 +7,7 @@ import "../LandingLayout/style.css";
 import Image from "next/image";
 import Image1 from "../../public/assets/images/image2.png";
 import { ArrowWhite } from "./Icons";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Investors = () => {
   const sliderRef = useRef(null);
@@ -22,7 +22,7 @@ const Investors = () => {
   return (
     <div className="lg:px-5">
       <div className="max-w-screen-xl px-5 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto lg:rounded-3xl text-white relative">
-        <Zoom>
+        <Zoom triggerOnce>
           <div className="text-3xl font-semibold text-center pb-10">
             Our Happy Investors
           </div>
@@ -41,7 +41,7 @@ const Investors = () => {
         </div>
 
         <div className="text-center">
-          <Zoom>
+          <Zoom triggerOnce>
             <div className="w-10/12 mx-auto">
               <Slider ref={sliderRef} {...settings} arrows={false}>
                 <div>

@@ -5,7 +5,7 @@ import Coke from "../../public/assets/images/cocacola.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const Articles = () => {
   const sliderRef = useRef(null);
@@ -45,7 +45,7 @@ const Articles = () => {
   };
   return (
     <div className="max-w-screen-xl px-5 py-10 lg:py-20 mx-auto">
-      <Fade bottom>
+      <Fade direction="up" triggerOnce>
         <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl mx-auto lg:m-0">
           <div className="text-zinc-700 tracking-widest text-sm mb-3">
             - ARTICLES
@@ -54,7 +54,7 @@ const Articles = () => {
           paragraphs in terms of length
         </div>
       </Fade>
-      <Zoom>
+      <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             <div className="w-full h-full relative px-1">

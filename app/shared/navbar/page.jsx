@@ -21,7 +21,7 @@ const Navbar = () => {
   console.log(search);
 
   return (
-    <div id="Navbar" className="w-full absolute top-0 bg-transparent">
+    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-40">
       <div></div>
       <nav className="bg-transparent text-black relative">
         <div className="flex justify-between py-5">

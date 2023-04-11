@@ -5,7 +5,7 @@ import About from "./about";
 import Update from "./update";
 import Rewards from "./rewards";
 import Faq from "./faq";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const ProjectForm = () => {
   const [toogleTab, setToogleTab] = useState(0);

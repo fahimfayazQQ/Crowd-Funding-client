@@ -4,8 +4,9 @@ import { Select } from "antd";
 import image from "../../public/assets/images/image3.png";
 // import "../landingLayout/style.css";
 // import { Search } from "../shared/Icons";
+import "../LandingLayout/style.css"
 import Image from "next/image";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const categoryData = ["Marketing", "SEO"];
 const sortByData = {
@@ -28,10 +29,11 @@ const ExploreFilter = () => {
     <div className="px-2 lg:px-5">
       <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl mx-auto p-4 lg:p-10 mt-20 shadow-lg">
         <div className="flex flex-col lg:flex-row justify-between">
-          
-          <Fade left>
-            <div className="w-full lg:w-2/3 text-white">
-              <div className="text-2xl lg:text-4xl text-center lg:text-start my-8">Lorem ipsum dolor</div>
+          <Fade direction="left" triggerOnce>
+            <div className="w-full text-white">
+              <div className="text-2xl lg:text-4xl text-center lg:text-start my-8">
+                Lorem ipsum dolor
+              </div>
               <div className="text-base lg:pb-8 text-center lg:text-start">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
@@ -73,8 +75,8 @@ const ExploreFilter = () => {
               </div>
             </div>
           </Fade>
-          <Fade right>
-          <Image src={image} alt="img" className="hidden lg:block" />
+          <Fade direction="right" triggerOnce>
+            <Image src={image} alt="img" className="hidden lg:block" />
           </Fade>
         </div>
       </div>

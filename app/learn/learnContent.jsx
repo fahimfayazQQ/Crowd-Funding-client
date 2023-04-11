@@ -4,7 +4,7 @@ import { List1 } from "../shared/Icons";
 import Image1 from "../../public/assets/images/image2.png";
 import Image2 from "../../public/assets/images/Method.png";
 import Image from "next/image";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const LearnContent = () => {
   return (
@@ -14,7 +14,7 @@ const LearnContent = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
         </div>
         <div className="lg:w-2/3 flex flex-wrap justify-evenly mx-auto">
-          <Zoom>
+          <Zoom triggerOnce>
             <div className="flex-col pb-5">
               <div className="text-indigo-600 text-4xl font-semibold text-center">
                 1000
@@ -22,7 +22,7 @@ const LearnContent = () => {
               <div className="text-center">Investors</div>
             </div>
           </Zoom>
-          <Zoom>
+          <Zoom triggerOnce>
             <div className="flex-col pb-5">
               <div className="text-indigo-600 text-4xl font-semibold text-center">
                 1000
@@ -30,7 +30,7 @@ const LearnContent = () => {
               <div className="text-center">Investors</div>
             </div>
           </Zoom>
-          <Zoom>
+          <Zoom triggerOnce>
             <div className="flex-col pb-5">
               <div className="text-indigo-600 text-4xl font-semibold text-center">
                 1000
@@ -44,7 +44,7 @@ const LearnContent = () => {
         Save time by scheduling posts
       </div>
       <div className="grid lg:grid-cols-4 gap-5 mb-10">
-        <Zoom>
+        <Zoom triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts1</div>
             <div className="text-sm pb-8">
@@ -59,7 +59,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={1200}>
+        <Zoom duration={1200} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts2</div>
             <div className="text-sm pb-8">
@@ -74,7 +74,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={1400}>
+        <Zoom duration={1400} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts3</div>
             <div className="text-sm pb-8">
@@ -89,7 +89,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={1600}>
+        <Zoom duration={1600} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts4</div>
             <div className="text-sm pb-8">
@@ -104,7 +104,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={1800}>
+        <Zoom duration={1800} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts5</div>
             <div className="text-sm pb-8">
@@ -119,7 +119,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={2000}>
+        <Zoom duration={2000} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts6</div>
             <div className="text-sm pb-8">
@@ -134,7 +134,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={2200}>
+        <Zoom duration={2200} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts7</div>
             <div className="text-sm pb-8">
@@ -149,7 +149,7 @@ const LearnContent = () => {
             </div>
           </div>
         </Zoom>
-        <Zoom duration={2400}>
+        <Zoom duration={2400} triggerOnce>
           <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
             <div className="text-xl my-5">Save time by scheduling posts8</div>
             <div className="text-sm pb-8">
@@ -168,14 +168,14 @@ const LearnContent = () => {
 
       <div className="py-10 lg:py-20">
         <div className="flex flex-col lg:flex-row justify-between items-center">
-          <Fade left>
+          <Fade direction="left" triggerOnce>
             <div className="bg-white flex-col shadow-lg p-5 rounded-3xl">
               <Image src={Image1} alt="img" className="pb-5" />
               <Image src={Image2} alt="img" className="" />
             </div>
           </Fade>
-          <Fade right>
             <div className="lg:w-1/2 my-auto grid grid-cols-1 lg:grid-cols-2 pt-10 lg:pt-0 lg:gap-5">
+          <Fade direction="right" triggerOnce>
               <div className="p-4">
                 <div className="text-5xl">01</div>
                 <div className="font-semibold text-xl pb-5">
@@ -224,8 +224,8 @@ const LearnContent = () => {
                   standard dummy text ever since the 1500s,
                 </div>
               </div>
-            </div>
           </Fade>
+            </div>
         </div>
       </div>
     </div>

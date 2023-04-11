@@ -8,7 +8,7 @@ import Products from "../../shared/jsondata/products.json"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { Fade } from "react-reveal"
+import { Zoom } from "react-awesome-reveal";
 
 const LearnGallery = () => {
   const sliderRef = useRef(null);
@@ -69,8 +69,8 @@ const LearnGallery = () => {
           </div>
         </div>
       </div>
-      
-      <Fade right>
+
+      <Zoom triggerOnce>
         <div className="">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Products?.map((product, i) => (
@@ -89,7 +89,7 @@ const LearnGallery = () => {
             ))}
           </Slider>
         </div>
-      </Fade>
+      </Zoom>
     </div>
   );
 };

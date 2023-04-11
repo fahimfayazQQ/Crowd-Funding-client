@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Fade } from "react-reveal";
+import { Fade, JackInTheBox } from "react-awesome-reveal";
 
 const ProductHeader = () => {
   const [isReacted, setIsReacted] = useState(false);
@@ -23,7 +23,7 @@ const ProductHeader = () => {
   return (
     <div className="rounded-2xl max-w-screen-xl px-5 mx-auto mt-20">
       <div className="flex flex-col lg:flex-row rounded-xl shadow-md bg-white">
-        <Fade bottom>
+        <JackInTheBox direction="left" triggerOnce>
           <div className="relative lg:p-5">
             <Slider
               ref={sliderRef}
@@ -50,8 +50,8 @@ const ProductHeader = () => {
               </div>
             </div>
           </div>
-        </Fade>
-        <Fade bottom>
+        </JackInTheBox>
+        <Fade direction="down" triggerOnce>
           <div className="w-full h-full text-black p-5 lg:p-10">
             <div className="text-2xl lg:text-4xl font-semibold mb-5 lg:mt-10">
               Pasta Bolognese

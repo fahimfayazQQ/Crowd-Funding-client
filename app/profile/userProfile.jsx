@@ -4,7 +4,7 @@ import ProfilePic from "../../public/assets/images/propic.png";
 
 const UserProfile = () => {
   return (
-    <div className="lg:w-9/12 h-full mx-auto p-4 lg:pl-20">
+    <div className="lg:w-9/12 h-full mx-auto p-4 lg:pl-20 pt-10 lg:pt-20">
       <div className="flex items-center gap-5 relative">
         <Image src={ProfilePic} alt="img" className="lg:absolute lg:-left-52 lg:top-5 z-50" />
         <div>
