@@ -73,8 +73,8 @@ const ExploreGallery = () => {
       <div className="w-11/12 lg:w-full mx-auto">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Products?.map((product, i) => (
-            <Zoom triggerOnce>
-              <div key={i} className="p-2 mb-5">
+            <Zoom triggerOnce key={i}>
+              <div className="p-2 mb-5">
                 <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
                   <Image src={Card1} alt="img" className="w-full" />
                   <div className="text-xl my-5">{product?.title}</div>
