@@ -16,4 +16,4 @@ export { default as Menu } from "../../public/assets/icons/menu.svg";
 export { default as Send } from "../../public/assets/icons/send.svg";
 export { default as Heart } from "../../public/assets/icons/heart.svg";
 export { default as Down } from "../../public/assets/icons/down.svg";
-
+export { default as Tick } from "../../public/assets/icons/tick.svg";

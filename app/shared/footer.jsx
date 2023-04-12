@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   return (
-    <div className="max-w-screen-xl px-5 pt-14 lg:pt-20 mx-auto">
+    <div className="max-w-screen-xl px-5 pt-14 lg:pt-20 mx-auto overflow-hidden">
       <div className="border-t pb-5"></div>
       <div className="w-11/12 lg:w-full flex justify-between items-center mx-auto lg:m-0">
         <Fade direction="left" triggerOnce>
@@ -69,8 +69,8 @@ const Footer = () => {
           </ul>
         </Fade>
 
-        <Fade direction="right" triggerOnce>
-          <div className="relative mx-auto lg:m-0">
+        <Fade direction="right" triggerOnce className="mx-auto lg:m-0">
+          <div className="relative">
             <div className="rounded-2xl shadow-lg shadow-gray-500">
               <Image src={image1} alt="img" className="w-[300px]" />
             </div>

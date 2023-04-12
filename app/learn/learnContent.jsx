@@ -8,7 +8,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 const LearnContent = () => {
   return (
-    <div className="max-w-screen-xl px-3 lg:px-5 mx-auto mt-10 lg:mt-20">
+    <div className="max-w-screen-xl px-3 lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="text-black mx-auto mb-10 lg:mb-20">
         <div className="text-2xl lg:text-4xl text-center pb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting

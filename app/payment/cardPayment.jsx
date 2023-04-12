@@ -21,7 +21,7 @@ const Login = () => {
         </div>
       </div>
       <div className="w-full bg-white flex justify-center items-center">
-        <div className="bg-zinc-100 rounded-xl w-[50vh] h-[80vh] shadow-lg">
+        <div className="bg-zinc-100 rounded-xl w-[90%] lg:w-[50vh] h-auto lg:h-[80vh] shadow-lg my-10">
           <div className="flex justify-start"></div>
           <div className="pt-8">
             <div className="flex flex-col items-center">

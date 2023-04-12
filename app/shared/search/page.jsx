@@ -4,7 +4,7 @@ import "./searchStyle.css";
 
 const CustomSearch = ({ search, handleSearch }) => {
   return (
-    <div className="z-50 absolute top-16 right-5 sm:static w-[90%]">
+    <div className="z-50 absolute top-15 right-5 sm:static w-[90%]">
       <div
         className={`${
           search ? "bg-white rounded-lg lg:rounded-full shadow-lg" : ""

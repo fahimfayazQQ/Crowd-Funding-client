@@ -35,10 +35,10 @@ const AboutHeader = () => {
       </Zoom>
 
       <div className="py-10 lg:py-20">
-        <div className="flex flex-col lg:flex-row justify-evenly items-center">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
           <Fade direction="right" triggerOnce>
-            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white">
-              <Image src={Image1} alt="img" className="pb-5" />
+            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white m-4">
+              <Image src={Image1} alt="img" className="w-full pb-5" />
               <Image src={Image2} alt="img" className="" />
             </div>
           </Fade>
@@ -114,8 +114,8 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="py-10 lg:py-20">
-        <div className="flex flex-col lg:flex-row justify-evenly items-center">
+      <div className="my-10 lg:my-20">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
           <div className="w-11/12 lg:w-1/4 my-auto pb-10 lg:pb-0">
             <Fade direction="right" triggerOnce>
               <div className="font-semibold text-2xl pb-5">
@@ -151,8 +151,8 @@ const AboutHeader = () => {
             </Fade>
           </div>
           <Fade direction="left" triggerOnce>
-            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white">
-              <Image src={Image1} alt="img" className="pb-5" />
+            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white m-4">
+              <Image src={Image1} alt="img" className="w-full pb-5" />
               <Image src={Image2} alt="img" className="" />
             </div>
           </Fade>
@@ -238,7 +238,7 @@ const AboutHeader = () => {
         </Fade>
       </div>
 
-      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl px-5 mx-auto p-5 lg:p-10 mt-20 shadow-lg">
+      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl px-5 mx-auto p-5 lg:p-10 mt-20 shadow-lg overflow-hidden">
         <div className="flex flex-col lg:flex-row justify-between">
           <Fade direction="left" triggerOnce>
             <div className="w-full mx-auto lg:m-0 pb-10 lg:pb-0 text-white">

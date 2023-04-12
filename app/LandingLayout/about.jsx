@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 const About = () => {
   return (
     <div className="py-14 lg:py-20">
-      <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
+      <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center overflow-hidden">
         <div className="w-11/12 lg:w-1/4 my-auto">
           <Fade direction="left" triggerOnce>
             <div className="font-semibold text-2xl pb-5">

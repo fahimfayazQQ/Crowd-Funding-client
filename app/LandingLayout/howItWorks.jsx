@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const HowItWorks = () => {
   return (
     <div className="py-14 lg:py-20">
-      <div className="flex flex-col lg:flex-row justify-evenly items-center">
+      <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
         <div className="w-11/12 lg:w-auto flex-col pb-14 lg:pb-0">
           <Fade direction="left" triggerOnce>
             <div className="flex justify-center items-center mb-5">

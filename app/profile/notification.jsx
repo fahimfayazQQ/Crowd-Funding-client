@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Avatar from "../../public/assets/images/avatar.png";
 import post1 from "../../public/assets/images/blog2.png";
+import { Tick } from "../shared/Icons";
 import { Select } from "antd";
 const categoryData = ["All", "Events"];
 
@@ -13,14 +14,14 @@ const Notification = () => {
   };
 
   const handleReadAllMsg = () => {
-  setReadAll(true);
+  setReadAll(!readAll);
   }
   return (
-    <div className="lg:w-10/12 h-[100vh] mx-auto lg:p-20">
+    <div className="lg:w-10/12 h-auto lg:h-[100vh] mx-auto lg:p-20 overflow-y-auto lg:overflow-y-hidden">
       <div className="flex flex-col lg:flex-row justify-between my-5 mx-4">
         <div className="flex items-end gap-4">
           <div>
-            <div className="text-lg font-bold">Notifications</div>
+            <div className="text-lg font-bold">Filter</div>
           </div>
           <Select
             defaultValue={categoryData[0]}
@@ -35,14 +36,16 @@ const Notification = () => {
           />
         </div>
         <div className="flex items-center">
-          <div className={`${readAll ? "bg-black":""} w-4 h-4 border border-black`}></div>
-          <a onClick={()=>{handleReadAllMsg()}} href="" className="text-sm underline text-sky-600 mr-10 px-2 py-2">
+          <div onClick={() => {handleReadAllMsg();}} className={`border w-5 h-5 rounded-md shadow-md flex items-center justify-center cursor-pointer ${readAll && "shadow shadow-green-300"}`}>
+            <Tick className={`${readAll ? "text-green-400":"hidden"}`}/>
+            </div>
+          <span className="text-xs text-sky-500 lg:mr-10 px-2 py-2">
             mark all as read
-          </a>
+          </span>
         </div>
       </div>
 
-      <div className="h-[83vh] text-sm lg:p-5 overflow-y-scroll px-4">
+      <div className="h-[83vh] text-sm lg:p-5 lg:overflow-y-auto px-4">
         <div className="flex items-center">
           <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>

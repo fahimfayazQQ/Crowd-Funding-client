@@ -5,6 +5,7 @@ import Card1 from "../../public/assets/images/card1.png";
 import Card2 from "../../public/assets/images/card2.png";
 import Products from "../shared/jsondata/products.json";
 import { Modal } from 'antd';
+import ReccomendationModal from './ReccomendationModal';
 
 const Reccomendation = () => {
     const [selectedCat, setSelectedCat] = useState([])
@@ -31,22 +32,22 @@ const Reccomendation = () => {
   return (
     <div className="h-[100vh] overflow-y-auto">
       <div className="lg:w-9/12 h-auto mx-auto p-5 lg:p-20">
-        <div className="text-2xl">Recommendations</div>
         <div
           onClick={showModal}
-          className="inline-block bg-home-color rounded-md text-white text-center px-2 py-2 my-5 cursor-pointer"
+          className="inline-block bg-home-color rounded-md text-white text-center px-2 py-2 mb-5 cursor-pointer"
         >
           Select categories
         </div>
 
-        <Modal
+        {/* <Modal
           title={false}
           footer={false}
           open={isModalOpen}
           onOk={handleOk}
           onCancel={handleCancel}
+          width={'60%'}
         >
-          <div className="bg-white p-4 lg:p-10">
+          <div className="bg-white lg:p-10">
             <div className="text-lg font-semibold">categories</div>
             <div className="w-10/12 mx-auto grid grid-cols-2 my-10 gap-5 text-xs lg:text-base">
               <div
@@ -233,13 +234,14 @@ const Reccomendation = () => {
               </div>
             </div>
             <div
-              onClick={handleCancel}
-              className="w-[5rem] bg-home-color rounded-md text-white text-center px-2 py-2"
+              onClick={handleOk}
+              className="w-[5rem] bg-home-color rounded-md text-white text-center px-2 py-2 cursor-pointer"
             >
               OK
             </div>
           </div>
-        </Modal>
+        </Modal> */}
+        <ReccomendationModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
 
         <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod, i) => (

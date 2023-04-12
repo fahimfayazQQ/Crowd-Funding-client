@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const Business = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row justify-evenly items-center">
+      <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
         <div>
           <Fade direction="left" triggerOnce>
             <Image src={Image1} alt="img" className="mt-10 lg:mt-20" />

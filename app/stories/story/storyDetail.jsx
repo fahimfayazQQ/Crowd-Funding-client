@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import Img1 from "../../../public/assets/images/overview.png";
@@ -6,79 +7,89 @@ import Card2 from "../../../public/assets/images/card2.png";
 import Image3 from "../../../public/assets/images/avatar.png";
 import { FB, Insta, Twitter } from "../../shared/Icons";
 import Link from "next/link";
+import { Zoom, Fade } from "react-awesome-reveal";
 
 const StoryDetail = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto py-20">
-      <div className="text-3xl font-semibold mb-2">
-        Do what you can, with what you have
-      </div>
-      <div className="flex italic text-sm">
-        <span>January 15, 2023</span> &nbsp; / &nbsp;
-        <span>By: David Gilmour</span>
-      </div>
-      <Image src={Img1} alt="img" className="w-full my-5" />
-      <div>
-        This page is a demo that shows everything you can do inside portfolio
-        and blog posts. We’ve included everything you need to create engaging
-        posts about your work, and show off your case studies in a beautiful
-        way. Obviously, we’ve styled up all the basic text formatting options
-        available in markdown. You can create lists: Simple bulleted lists Like
-        this one Are cool And: Numbered lists Like this other one Are great too
-        You can also add blockquotes, which are shown at a larger width to help
-        break up the layout and draw attention to key parts of your content.
-        This page is a demo that shows everything you can do inside portfolio
-        and blog posts. We’ve included everything you need to create engaging
-        posts about your work, and show off your case studies in a beautiful
-        way. Obviously, we’ve styled up all the basic text formatting options
-        available in markdown. You can create lists: Simple bulleted lists Like
-        this one Are cool And: Numbered lists Like this other one Are great too
-        You can also add blockquotes, which are shown at a larger width to help
-        break up the layout and draw attention to key parts of your content.{" "}
-        <br /> <br />
-        This page is a demo that shows everything you can do inside portfolio
-        and blog posts. We’ve included everything you need to create engaging
-        posts about your work, and show off your case studies in a beautiful
-        way. Obviously, we’ve styled up all the basic text formatting options
-        available in markdown. You can create lists: Simple bulleted lists Like
-        this one Are cool And: Numbered lists Like this other one Are great too
-        You can also add blockquotes, which are shown at a larger width to help
-        break up the layout and draw attention to key parts of your content.
-      </div>
+    <div className="max-w-screen-xl px-5 mx-auto py-20 overflow-hidden">
+      <Fade direction="right" triggerOnce>
+        <div className="text-3xl font-semibold mb-2">
+          Do what you can, with what you have
+        </div>
+        <div className="flex italic text-sm">
+          <span>January 15, 2023</span> &nbsp; / &nbsp;
+          <span>By: David Gilmour</span>
+        </div>
+      </Fade>
+      <Zoom triggerOnce>
+        <Image src={Img1} alt="img" className="w-full my-5" />
+      </Zoom>
+      <Fade>
+        <div>
+          This page is a demo that shows everything you can do inside portfolio
+          and blog posts. We’ve included everything you need to create engaging
+          posts about your work, and show off your case studies in a beautiful
+          way. Obviously, we’ve styled up all the basic text formatting options
+          available in markdown. You can create lists: Simple bulleted lists
+          Like this one Are cool And: Numbered lists Like this other one Are
+          great too You can also add blockquotes, which are shown at a larger
+          width to help break up the layout and draw attention to key parts of
+          your content. This page is a demo that shows everything you can do
+          inside portfolio and blog posts. We’ve included everything you need to
+          create engaging posts about your work, and show off your case studies
+          in a beautiful way. Obviously, we’ve styled up all the basic text
+          formatting options available in markdown. You can create lists: Simple
+          bulleted lists Like this one Are cool And: Numbered lists Like this
+          other one Are great too You can also add blockquotes, which are shown
+          at a larger width to help break up the layout and draw attention to
+          key parts of your content. <br /> <br />
+          This page is a demo that shows everything you can do inside portfolio
+          and blog posts. We’ve included everything you need to create engaging
+          posts about your work, and show off your case studies in a beautiful
+          way. Obviously, we’ve styled up all the basic text formatting options
+          available in markdown. You can create lists: Simple bulleted lists
+          Like this one Are cool And: Numbered lists Like this other one Are
+          great too You can also add blockquotes, which are shown at a larger
+          width to help break up the layout and draw attention to key parts of
+          your content.
+        </div>
+      </Fade>
 
       <div className="text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
       <div className="grid lg:grid-cols-4 gap-3 mb-10">
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
-        </div>
+        <Fade direction="right" triggerOnce>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card1} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card2} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card1} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card2} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card2} alt="" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="img" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card1} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card2} alt="img" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card2} alt="img" className="w-full rounded-2xl" />
+          </div>
 
-        <div className="shadow-lg rounded-2xl">
-          <Image src={Card1} alt="" className="w-full rounded-2xl" />
-        </div>
+          <div className="shadow-lg rounded-2xl">
+            <Image src={Card1} alt="" className="w-full rounded-2xl" />
+          </div>
+        </Fade>
       </div>
 
       <div className="text-2xl font-semibold mt-10 mb-5">Top brands</div>
@@ -88,7 +99,9 @@ const StoryDetail = () => {
         when it is in view, so your visitors won’t scroll down to find it half
         way through your images.
       </div>
+      <Zoom triggerOnce>
       <Image src={Img1} alt="img" className="w-full my-5" />
+      </Zoom>
 
       {/* Share & Comments Section */}
       <div className="mx-auto pt-20">
@@ -111,6 +124,7 @@ const StoryDetail = () => {
           cols="30"
           rows="3"
           className="w-full border-b-2 shadow-lg rounded-md outline-none p-2"
+          placeholder="What's on your mind..."
         ></textarea>
 
         <div>

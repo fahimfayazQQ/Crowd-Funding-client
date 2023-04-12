@@ -8,7 +8,7 @@ import Products from "../../shared/jsondata/products.json"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const LearnGallery = () => {
   const sliderRef = useRef(null);
@@ -51,26 +51,26 @@ const LearnGallery = () => {
     ],
   };
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-20">
+    <div className="max-w-screen-xl px-5 mx-auto mt-20 overflow-hidden">
       <div className="flex justify-between items-center mb-4">
         <div className="text-xl">Trending Items</div>
         <div className="flex items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3"
+            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3 cursor-pointer"
           >
             {"<"}
           </div>
           <div
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4"
+            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 cursor-pointer"
           >
             {">"}
           </div>
         </div>
       </div>
 
-      <Zoom triggerOnce>
+      <Fade direction="right" triggerOnce>
         <div className="">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Products?.map((product, i) => (
@@ -89,7 +89,7 @@ const LearnGallery = () => {
             ))}
           </Slider>
         </div>
-      </Zoom>
+      </Fade>
     </div>
   );
 };

@@ -75,7 +75,7 @@ const CreateProject = () => {
         </div>
       </Fade>
 
-      <div className="flex flex-col lg:flex-row justify-between mt-20">
+      <div className="flex flex-col lg:flex-row justify-between mt-20 overflow-hidden">
         <div className="lg:w-1/3">
           <Fade direction="left" triggerOnce>
             <div className="text-2xl lg:text-3xl mb-5">
@@ -103,24 +103,24 @@ const CreateProject = () => {
             </div>
           </Fade>
         </div>
-        <div className="lg:w-1/3 flex flex-wrap justify-center m-auto">
+        <div className="lg:w-1/3 flex flex-wrap justify-center m-auto overflow-hidden">
           <Slide direction="right" triggerOnce>
-            <div className="w-[10rem] h-[8rem] flex justify-center items-center border-2 border-home-color text-xl text-home-color rounded-xl p-5 m-4">
+            <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color lg:text-xl text-home-color rounded-xl p-5 m-2 lg:m-4">
               Donation
             </div>
           </Slide>
           <Slide direction="right" duration={1300} triggerOnce>
-            <div className="w-[10rem] h-[8rem] flex justify-center items-center border-2 border-home-color text-xl text-home-color rounded-xl p-5 m-4">
+            <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color lg:text-xl text-home-color rounded-xl p-5 m-2 lg:m-4">
               Debt
             </div>
           </Slide>
           <Slide direction="right" duration={1600} triggerOnce>
-            <div className="w-[10rem] h-[8rem] flex justify-center items-center border-2 border-home-color text-xl text-home-color rounded-xl p-5 m-4">
+            <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color lg:text-xl text-home-color rounded-xl p-5 m-2 lg:m-4">
               Equity
             </div>
           </Slide>
           <Slide direction="right" duration={1900} triggerOnce>
-            <div className="w-[10rem] h-[8rem] flex justify-center items-center border-2 border-home-color text-xl text-home-color rounded-xl p-5 m-4">
+            <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color lg:text-xl text-home-color rounded-xl p-5 m-2 lg:m-4">
               Reward
             </div>
           </Slide>
