@@ -13,11 +13,11 @@ import Image from 'next/image'
 const ProfileTab = () => {
     const [toogleTab, setToogleTab] = useState(0)
     const [showTabs, setShowTabs] = useState(false);
-    const [extension, setExtension] = useState("h-0");
     const HamburgerLine = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-500 m-4`;
 
     const handleToogle = (id) => {
       setToogleTab(id);
+      setShowTabs(false);
     };
     const handleShowTabs = () => {
       setShowTabs(!showTabs);
@@ -38,7 +38,7 @@ const ProfileTab = () => {
           </Link>
         </div>
       </div>
-      <div onClick={()=>{handleShowTabs()}} className='lg:hidden mt-20 mb-4 cursor-pointer flex items-center'>
+      <div onClick={()=>{handleShowTabs()}} className='lg:hidden mt-24 mb-4 cursor-pointer flex items-center'>
         <div className='inline-block'>
           <div className={`${HamburgerLine} ${showTabs? "rotate-45 translate-y-2":""}`} />
           <div className={`${HamburgerLine} ${showTabs? "opacity-0":"opacity-100"}`} />
@@ -51,12 +51,12 @@ const ProfileTab = () => {
         {toogleTab===4 && <div className='font-semibold'>Account Settings</div>}
       </div>
       <div>
-      <Slide className={`lg:hidden w-full flex flex-wrap justify-around px-4 mx-auto`}>
-        <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Notifications</div>
-        <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Wish Project</div>
-        <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Recommended</div>
-        <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Profile</div>
-        <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 ? "text-white bg-black duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Account Settings</div>
+      <Slide triggerOnce className={`lg:hidden w-full flex flex-wrap justify-around px-4 mx-auto`}>
+        <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Notifications</div>
+        <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Wish Project</div>
+        <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Recommended</div>
+        <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Profile</div>
+        <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Account Settings</div>
         <Link href={'./'} className='w-full'>
           <div className={`${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} bg-white rounded-full shadow-md px-5 py-2 my-1 cursor-pointer flex justify-center items-center`}><Image src={Logout} alt='logout' className='w-6 mr-2'/>Logout</div>
         </Link>

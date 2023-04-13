@@ -1,22 +1,29 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Avatar from "../../public/assets/images/avatar.png";
 import post1 from "../../public/assets/images/blog2.png";
 import "./userStyles.css"
 import { Select } from "antd";
+import { Tick } from "../shared/Icons";
 const categoryData = ["Recent", "All"];
 
 const Notifications = () => {
+  const [readAll, setReadAll] = useState(false);
+
   const handleProvinceChange = (value) => {
     value.preventDefault();
   };
+
+  const handleReadAllMsg = () => {
+    setReadAll(!readAll);
+  };
   return (
-    <div className="w-11/12 h-full mx-auto p-20 text-white">
+    <div className="w-11/12 h-full mx-auto lg:p-20 text-white">
       <div className="flex justify-between mb-5">
         <div className="flex items-end gap-4">
           <div>
-            <div className="text-2xl font-bold">Update</div>
+            <div className="text-2xl font-bold">filter</div>
           </div>
           <Select
             defaultValue={categoryData[0]}
@@ -30,12 +37,24 @@ const Notifications = () => {
             }))}
           />
         </div>
-        <a href="" className="text-sm underline text-sky-600 mr-10">
-          mark all as read
-        </a>
+        <div className="flex items-center">
+          <div
+            onClick={() => {
+              handleReadAllMsg();
+            }}
+            className={`border w-5 h-5 rounded-md shadow-md flex items-center justify-center cursor-pointer ${
+              readAll && "shadow shadow-green-300"
+            }`}
+          >
+            <Tick className={`${readAll ? "text-green-400" : "hidden"}`} />
+          </div>
+          <span className="text-xs text-sky-500 lg:mr-10 px-2 py-2">
+            mark all as read
+          </span>
+        </div>
       </div>
 
-      <div className="h-[75vh] text-sm p-5 overflow-y-scroll">
+      <div className="h-[100vh] lg:h-[75vh] text-sm p-5 overflow-y-scroll">
         <div className="flex items-center">
           <Image src={Avatar} alt="img" className="w-10 mr-3" />
           <div>
@@ -43,8 +62,8 @@ const Notifications = () => {
             your post.
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>
@@ -57,9 +76,9 @@ const Notifications = () => {
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
-          <div className="flex">
-            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
+        <div className="w-full 2lg:w-2/3 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
+          <div className="flex flex-col lg:flex-row">
+            <Image src={post1} alt="img" className="w-full lg:w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -76,8 +95,8 @@ const Notifications = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>
@@ -90,8 +109,8 @@ const Notifications = () => {
             your post.
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>
@@ -104,9 +123,9 @@ const Notifications = () => {
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
-          <div className="flex">
-            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
+        <div className="w-full 2lg:w-2/3 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
+          <div className="flex flex-col lg:flex-row">
+            <Image src={post1} alt="img" className="w-full lg:w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -123,8 +142,8 @@ const Notifications = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>
@@ -137,8 +156,8 @@ const Notifications = () => {
             your post.
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>
@@ -151,9 +170,9 @@ const Notifications = () => {
             in Food category.
           </div>
         </div>
-        <div className="w-1/2 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
-          <div className="flex">
-            <Image src={post1} alt="img" className="w-[15rem] mr-3" />
+        <div className="w-full 2lg:w-2/3 bg-admin-secondary-color rounded-xl shadow-lg p-5 my-5">
+          <div className="flex flex-col lg:flex-row">
+            <Image src={post1} alt="img" className="w-full lg:w-[15rem] mr-3" />
             <div>
               <div className="flex justify-between text-xs pb-2">
                 <div>Food Category</div>
@@ -170,8 +189,8 @@ const Notifications = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center py-5">
-          <div className="text-zinc-400 px-14 whitespace-nowrap">
+        <div className="flex items-center py-2 lg:py-5">
+          <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>
           <div className="w-full border-t"></div>

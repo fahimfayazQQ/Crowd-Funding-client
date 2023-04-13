@@ -14,9 +14,9 @@ const Project = () => {
     value.preventDefault();
   };
   return (
-    <div className="w-11/12 h-full mx-auto p-20 text-white">
-      <div className="w-11/12 bg-admin-secondary-color rounded-3xl shadow-lg p-10">
-        <div className="flex justify-between">
+    <div className="w-11/12 h-full mx-auto lg:p-20 text-white">
+      <div className="bg-admin-secondary-color rounded-3xl shadow-lg p-10">
+        <div className="flex flex-col lg:flex-row justify-between">
           <Image src={post1} alt="img" className="w-[30rem] mr-3" />
           <div>
             <div className="flex justify-between pb-2">
@@ -35,7 +35,7 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="flex justify-between my-5">
+      <div className="flex flex-col lg:flex-row justify-between my-5">
         <div className="flex items-end gap-4">
           <div>
             <div className="text-2xl font-bold">Update</div>
@@ -54,7 +54,7 @@ const Project = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="w-[15rem] bg-admin-secondary-color text-xl rounded-lg py-2 flex justify-center items-center mr-5"
+          className="w-[15rem] bg-admin-secondary-color text-xl rounded-lg py-2 flex justify-center items-center mr-5 mt-5"
         >
           <span className="w-5 h-5 bg-white text-admin-secondary-color rounded-full flex justify-center items-center mr-3">
             +
@@ -64,7 +64,7 @@ const Project = () => {
       </div>
 
       <div className="h-[50vh] text-sm p-5 overflow-y-scroll">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
           <div className="bg-admin-secondary-color rounded-2xl p-5">
             <div className="text-lg pb-5">Lorem Ipsum</div>
             <div>

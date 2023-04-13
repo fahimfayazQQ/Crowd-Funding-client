@@ -8,9 +8,9 @@ import Youtube from "../../public/assets/images/yt.png";
 
 const UserLogin = () => {
   return (
-    <div className="bg-admin-color h-screen p-20">
-      <div className="flex h-[85vh] border p-5 rounded-2xl">
-        <div className="w-full bg-admin-secondary-color flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
+    <div className="bg-admin-color h-auto lg:h-screen py-20 lg:px-20">
+      <div className="flex flex-col lg:flex-row lg:h-[85vh] lg:border lg:p-5 rounded-2xl">
+        <div className="w-full lg:bg-admin-secondary-color flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
           <div className="">
             <Image src={Biznez} alt="img" className="m-auto" />
             <div className="text-white flex justify-center mb-3">Partners</div>
@@ -21,7 +21,7 @@ const UserLogin = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-admin-secondary-color flex justify-center items-center  rounded-tr-2xl rounded-br-2xl">
+        <div className="w-full lg:bg-admin-secondary-color flex justify-center items-center  rounded-tr-2xl rounded-br-2xl">
           <div className="rounded-xl w-[40vh] text-white">
             <div className="flex justify-start"></div>
             <div className="pt-8">
@@ -110,7 +110,7 @@ const UserLogin = () => {
                   <Link href={"../user"}>
                     <button
                       type="submit"
-                      className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none  "
+                      className="w-full p-3 font-medium bg-white text-black hover:bg-gray-200 rounded-md focus:outline-none"
                     >
                       Log in
                     </button>

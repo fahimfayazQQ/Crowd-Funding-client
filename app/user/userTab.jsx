@@ -8,16 +8,25 @@ import Members from './members';
 import Account from './account';
 import UserSettings from './userSettings';
 import Chat from './chat';
+import Link from "next/link";
+import Logout from "../../public/assets/images/logout.png";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const UsersTab = () => {
     const [toogleTab, setToogleTab] = useState(0)
+        const [showTabs, setShowTabs] = useState(false);
+        const HamburgerLine = `h-1 w-7 my-1 rounded-full bg-white transition ease transform duration-500 m-4`;
 
     const handleToogle = (id) => {
-    setToogleTab(id);
+      setToogleTab(id);
+      setShowTabs(false)
+    };
+    const handleShowTabs = () => {
+      setShowTabs(!showTabs);
     };
   return (
-    <div className="w-full h-screen flex bg-admin-color">
-      <div className="w-[30rem] h-full text-white z-50 pl-10 py-20">
+    <div className="w-full h-auto lg:h-screen lg:flex bg-admin-color overflow-hidden">
+      <div className="hidden lg:block w-[30rem] h-full text-white z-50 pl-10 py-20">
         <div className='h-full bg-admin-secondary-color rounded-2xl py-20'>
             <Image src={Propic} alt="img" className="w-24 h-24 rounded-full mx-auto"/>
             <div className='text-2xl font-semibold text-center mt-3'>Sourav Sen</div>
@@ -28,16 +37,45 @@ const UsersTab = () => {
             <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Member</div>
             <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Accounts</div>
             <div onClick={()=>{handleToogle(5)}} className={`${toogleTab===5 && "bg-gradient-to-r from-[#ffffff30] to-transparent duration-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Settings</div>
+            <Link href={'./'} className='w-full'>
+            <div className="tracking-widest py-5 pl-20 cursor-pointer flex items-center"><Image src={Logout} alt='logout' className='w-6 mr-2'/>Logout</div>
+            </Link>
             </div>
         </div>
       </div>
+      <div onClick={()=>{handleShowTabs()}} className='lg:hidden pt-24 mb-4 cursor-pointer flex items-center'>
+        <div className='inline-block'>
+          <div className={`${HamburgerLine} ${showTabs? "rotate-45 translate-y-2":""}`} />
+          <div className={`${HamburgerLine} ${showTabs? "opacity-0":"opacity-100"}`} />
+          <div className={`${HamburgerLine} ${showTabs? "-rotate-45 -translate-y-2":""}`} />
+        </div>
+        {toogleTab===0 && <div className='text-white font-semibold'>Project</div>}
+        {toogleTab===1 && <div className='text-white font-semibold'>Notifications</div>}
+        {toogleTab===2 && <div className='text-white font-semibold'>Chat</div>}
+        {toogleTab===3 && <div className='text-white font-semibold'>Member</div>}
+        {toogleTab===4 && <div className='text-white font-semibold'>Accounts</div>}
+        {toogleTab===5 && <div className='text-white font-semibold'>Settings</div>}
+      </div>
+      <div className='mb-4'>
+      <Slide triggerOnce className={`lg:hidden w-full flex flex-wrap justify-around px-4 mx-auto`}>
+        <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Project</div>
+        <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Notifications</div>
+        <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Chat</div>
+        <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Member</div>
+        <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Accounts</div>
+        <div onClick={()=>{handleToogle(5)}} className={`${toogleTab===5 ? "text-white bg-admin-secondary-color duration-300":"text-black bg-white duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Settings</div>
+        <Link href={'./'} className='w-full'>
+          <div className={`${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} bg-white rounded-full shadow-md px-5 py-2 my-1 cursor-pointer flex justify-center items-center`}><Image src={Logout} alt='logout' className='w-6 mr-2'/>Logout</div>
+        </Link>
+      </Slide>
+      </div>
       <div className='w-full'>
-        {toogleTab===0 && <Project/>}
-        {toogleTab===1 && <Notifications/>}
-        {toogleTab===2 && <Chat/>}
-        {toogleTab===3 && <Members/>}
-        {toogleTab===4 && <Account/>}
-        {toogleTab===5 && <UserSettings/>}
+        {toogleTab===0 && <Slide direction='right'><Project/></Slide>}
+        {toogleTab===1 && <Slide direction='right'><Notifications/></Slide>}
+        {toogleTab===2 && <Slide direction='right'><Chat/></Slide>}
+        {toogleTab===3 && <Slide direction='right'><Members/></Slide>}
+        {toogleTab===4 && <Slide direction='right'><Account/></Slide>}
+        {toogleTab===5 && <Slide direction='right'><UserSettings/></Slide>}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import ProfilePic from "../../public/assets/images/propic.png";
 
 const Settings = () => {
   return (
-    <div className="lg:w-9/12 h-full mx-auto p-4 lg:p-20">
+    <div className="2xl:w-9/12 h-full mx-auto p-4 lg:p-20">
       <div className="flex justify-between">
         <div>
           <div className="text-lg font-bold pb-5">Email Address</div>

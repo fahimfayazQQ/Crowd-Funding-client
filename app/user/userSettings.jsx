@@ -2,7 +2,7 @@ import React from "react";
 
 const UserSettings = () => {
   return (
-    <div className="w-11/12 h-full mx-auto text-white p-20">
+    <div className="w-11/12 h-screen mx-auto text-white lg:p-20">
       <div className="flex justify-between">
         <div>
           <div className="text-lg font-bold pb-5">Email Address</div>
@@ -17,7 +17,7 @@ const UserSettings = () => {
       </div>
       <div className="w-full border my-10"></div>
       <div className="flex justify-between relative">
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <div className="text-lg font-bold pb-5">Password</div>
           <div className="pb-5">
             <span className="text-sm"> Enter current password</span>
