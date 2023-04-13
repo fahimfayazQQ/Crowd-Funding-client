@@ -12,6 +12,7 @@ const SingleChat = ({activeChat}) => {
   const msgid = pathname.split("/user/")
   console.log("when route ", msgid);
   const [chatData, setChatData] = useState()
+  
   useEffect(() => {
     if (activeChat) {
       setChatData(activeChat);

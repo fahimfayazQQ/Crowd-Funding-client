@@ -16,7 +16,7 @@ const Chat = () => {
 
   useEffect(() => {
     setActiveChat(Chatperson[0])
-  }, [Chatperson])
+  }, [])
   
   return (
     <div className="lg:w-11/12 mx-auto lg:flex lg:mt-20 text-white gap-10">
