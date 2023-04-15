@@ -8,7 +8,7 @@ import Products from "../shared/jsondata/products.json"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const ExploreGallery = () => {
   const sliderRef = useRef(null);
@@ -18,17 +18,18 @@ const ExploreGallery = () => {
     infinite: false,
     dots: false,
     // centerPadding: "60px",
-    slidesToShow: 4,
+    slidesToShow: 1,
     speed: 500,
     rows: 2,
-    slidesPerRow: 1,
+    slidesPerRow: 3,
     focusOnSelect: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 3,
+          slidesPerRow: 3,
           infinite: true,
           dots: true,
         },
@@ -36,8 +37,9 @@ const ExploreGallery = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
+          slidesPerRow: 2,
           initialSlide: 2,
         },
       },
@@ -46,12 +48,15 @@ const ExploreGallery = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          slidesPerRow: 1,
+          rows: 1,
         },
       },
     ],
   };
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-10 lg:mt-20">
+    <div className="max-w-screen-xl lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
+      <div className="hidden lg:block">
       <div className="w-11/12 lg:w-full mx-auto lg:m-0 flex justify-between items-center mb-4">
         <div className="text-xl">Trending Items</div>
         <div className="flex items-center">
@@ -63,19 +68,20 @@ const ExploreGallery = () => {
           </div>
           <div
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4"
+            className="w-[40px] bg-white rounded-md shadow-md cursor-pointer text-[#5143F6] font-semibold border border-[#5143F6] tracking-widest text-sm text-center py-4 px-4"
           >
             {">"}
           </div>
         </div>
       </div>
+      </div>
 
       <div className="w-11/12 lg:w-full mx-auto">
         <Slider ref={sliderRef} {...settings} arrows={false}>
           {Products?.map((product, i) => (
-            <Zoom triggerOnce key={i}>
+            <Fade direction="right" triggerOnce key={i}>
               <div className="p-2 mb-5">
-                <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
+                <div className="bg-white lg:bg-transparent hover:bg-white rounded-2xl shadow-lg lg:shadow-none hover:shadow-lg pb-5 duration-300 p-2">
                   <Image src={Card1} alt="img" className="w-full" />
                   <div className="text-xl my-5">{product?.title}</div>
                   <div className="text-sm pb-8">{product?.description}</div>
@@ -86,7 +92,7 @@ const ExploreGallery = () => {
                   </Link>
                 </div>
               </div>
-            </Zoom>
+            </Fade>
           ))}
         </Slider>
       </div>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Apple",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$2280",
+    "image": "https://i.ibb.co/XbbzBWp/event1.png"
+  },
+  {
+    "id": 2,
+    "title": "DHL",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$4580",
+    "image": "https://i.ibb.co/Fg7yFSq/event2.png"
+  },
+  {
+    "id": 3,
+    "title": "Nike",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$2000",
+    "image": "https://i.ibb.co/sRwHsxh/event3.png"
+  },
+  {
+    "id": 4,
+    "title": "Okla",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$7280",
+    "image": "https://i.ibb.co/5X0TDqj/event4.png"
+  },
+  {
+    "id": 5,
+    "title": "Atari",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$6080",
+    "image": "https://i.ibb.co/XbbzBWp/event1.png"
+  },
+  {
+    "id": 6,
+    "title": "Google",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$280",
+    "image": "https://i.ibb.co/Fg7yFSq/event2.png"
+  },
+  {
+    "id": 7,
+    "title": "Microsoft",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$880",
+    "image": "https://i.ibb.co/sRwHsxh/event3.png"
+  },
+  {
+    "id": 8,
+    "title": "Tesla",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$8000",
+    "image": "https://i.ibb.co/5X0TDqj/event4.png"
+  },
+  {
+    "id": 9,
+    "title": "SpaceX",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$8000",
+    "image": "https://i.ibb.co/XbbzBWp/event1.png"
+  },
+  {
+    "id": 10,
+    "title": "CISRO",
+    "bgColor": "bg-red-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$8000",
+    "image": "https://i.ibb.co/Fg7yFSq/event2.png"
+  }
+]

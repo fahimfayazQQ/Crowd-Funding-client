@@ -13,7 +13,8 @@ const NavbarWhite = () => {
   const [search, setSearch] = useState(false);
   // const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
-  const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-white transition ease transform duration-500 m-4`;
+  const HamburgerLine1 = `h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-500 m-4`;
+  const HamburgerLine2 = `h-1 w-7 my-1 rounded-full bg-white transition ease transform duration-500 m-4 float-right`;
   
   const handleSearch = (bool) => {
     setSearch(bool);
@@ -21,7 +22,7 @@ const NavbarWhite = () => {
   console.log(search);
 
   return (
-    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[999]">
+    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[999] overflow-hidden">
       <nav className="bg-transparent text-white relative">
         <div className="flex justify-between py-5">
           <Link href={"./"}>
@@ -41,9 +42,8 @@ const NavbarWhite = () => {
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
-              <div className={`${genericHamburgerLine}`} />
-              <div className={`${genericHamburgerLine}`} />
-              <div className={`${genericHamburgerLine}`} />
+              <div className={`${HamburgerLine1} ${open && "translate-x-20 delay-100"}`} />
+              <div className={`${HamburgerLine2} ${open ? "translate-x-20": "delay-100"}`} />
             </div>
           </div>
           {/* Hamburger Animation end*/}

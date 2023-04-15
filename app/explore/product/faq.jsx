@@ -12,7 +12,7 @@ const Faq = () => {
     <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white">
       <div className="text-2xl pb-5">Frequently Asked Questions</div>
       <Collapse accordion>
-        <Panel header="1. Where is my order? Quisque molestie" key="1">
+        <Panel header="1. Where is my order?" key="1">
           <p>{text}</p>
         </Panel>
         <Panel header="2. How can I return an item purchased online?" key="2">

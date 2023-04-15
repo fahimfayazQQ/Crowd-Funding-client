@@ -4,17 +4,17 @@ import Image3 from "../../../public/assets/images/overview.png"
 
 const Overview = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white">
-      <div className="text-2xl text-cneter">
+    <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white mb-5">
+      <div className="text-lg lg:text-2xl text-cneter">
         Paragraphs What this handout is about
       </div>
-      <div>
+      <div className="text-sm lg:text-base">
         This handout will help you understand how paragraphs are formed, how to
         develop stronger paragraphs, and how to completely and clearly express
         your ideas. What is a paragraph?
       </div>
       <Image src={Image3} alt="img" className="w-full my-5" />
-      <div>
+      <div className="text-sm lg:text-base">
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length: a paragraph is a group of at least five
         sentences, a paragraph is half a page long, etc. In reality, though, the

@@ -425,3 +425,7 @@ table.custom-table>tbody>tr:hover td {
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+.slick-current {
+  font-weight: normal;
+}

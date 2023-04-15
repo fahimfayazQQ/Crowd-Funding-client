@@ -44,7 +44,7 @@ const Articles = () => {
     ],
   };
   return (
-    <div className="max-w-screen-xl px-5 py-10 lg:py-20 mx-auto">
+    <div className="max-w-screen-xl px-2 py-10 lg:py-20 mx-auto">
       <Fade direction="up" triggerOnce>
         <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl mx-auto lg:m-0">
           <div className="text-zinc-700 tracking-widest text-sm mb-3">
@@ -98,7 +98,7 @@ const Articles = () => {
           </div>
           <div
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4"
+            className="w-[40px] bg-white rounded-md shadow-md cursor-pointer text-[#5143F6] font-semibold border border-[#5143F6] tracking-widest text-sm text-center py-4 px-4"
           >
             {">"}
           </div>

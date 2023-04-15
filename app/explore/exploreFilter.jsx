@@ -27,7 +27,7 @@ const ExploreFilter = () => {
 
   return (
     <div className="px-2 lg:px-5">
-      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl mx-auto p-4 lg:p-10 mt-20 shadow-lg">
+      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl mx-auto p-4 lg:p-10 mt-20 shadow-xl">
         <div className="flex flex-col lg:flex-row justify-between">
           <Fade direction="left" triggerOnce>
             <div className="w-full text-white">
@@ -38,7 +38,7 @@ const ExploreFilter = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:border px-8 py-12 lg:rounded-xl lg:bg-white lg:bg-opacity-10 lg:backdrop:filter lg:backdrop-blur-md">
+              <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:border px-8 py-6 lg:rounded-2xl lg:bg-white lg:bg-opacity-10 lg:backdrop:filter lg:backdrop-blur-md">
                 <div className="flex justify-around items-center gap-2 mb-4 lg:mb-0">
                   <Select
                     defaultValue={categoryData[0]}

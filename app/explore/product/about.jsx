@@ -2,16 +2,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white">
-      <div className="text-lg lg:text-2xl text-cneter">Address</div>
-      <div className="w-1/3 pb-5">
+    <div className="max-w-screen-xl px-5 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white mb-5">
+      <div className="text-lg lg:text-2xl">Address</div>
+      <div className="w-1/3 text-sm lg:text-base pb-5">
         HEADQUARTERS <br />
         12381 Wilshire Boulevard, Suite 105 <br />
         Los Angeles, CA 90025
       </div>
-      <div className="text-lg lg:text-2xl text-cneter pb-5">Valuation: $5M</div>
-      <div className="text-lg lg:text-2xl text-cneter">Description</div>
-      <div>
+      <div className="lg:text-2xl text-cneter">Description</div>
+      <div className="lg:text-2xl text-cneter pb-5">Valuation: $5M</div>
+      <div className="text-sm lg:text-base">
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length: a paragraph is a group of at least five
         sentences, a paragraph is half a page long, etc. In reality, though, the

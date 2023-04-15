@@ -18,17 +18,18 @@ const LearnGallery = () => {
     infinite: false,
     dots: false,
     // centerPadding: "60px",
-    slidesToShow: 4,
+    slidesToShow: 1,
     speed: 500,
     rows: 2,
-    slidesPerRow: 1,
+    slidesPerRow: 3,
     focusOnSelect: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 3,
+          slidesPerRow: 3,
           infinite: true,
           dots: true,
         },
@@ -36,8 +37,9 @@ const LearnGallery = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
+          slidesPerRow: 2,
           initialSlide: 2,
         },
       },
@@ -46,6 +48,8 @@ const LearnGallery = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          slidesPerRow: 1,
+          rows: 1,
         },
       },
     ],
@@ -75,13 +79,17 @@ const LearnGallery = () => {
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Products?.map((product, i) => (
               <div key={i} className="p-2 mb-5">
-                <div className="bg-white rounded-2xl shadow-lg pb-5 border p-2">
+                <div className="bg-white rounded-2xl hover:shadow-lg duration-300 pb-5 border p-3">
                   <Image src={Card1} alt="img" className="w-full" />
+                  <div className="flex justify-between items-center pt-3">
+                    <div className="rounded-full inline-block bg-indigo-300 text-indigo-600 px-3 py-2">{product?.medium}</div>
+                    <div>Tk. 5000</div>
+                  </div>
                   <div className="text-xl my-5">{product?.title}</div>
                   <div className="text-sm pb-8">{product?.description}</div>
                   <Link href={"./learn/gallery/details"}>
                     <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                      Learn More
+                      Admission Now
                     </div>
                   </Link>
                 </div>
