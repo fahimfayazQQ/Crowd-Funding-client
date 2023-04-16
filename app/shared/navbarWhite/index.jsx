@@ -3,7 +3,6 @@ import { useState } from "react";
 /* import NavigationItems from "./NavLinks"; */
 import { Modal } from "antd";
 import Link from "next/link";
-import { Fade } from "react-awesome-reveal";
 import { Down, Search } from "../Icons";
 import { customlinks } from "../navbar/MyLinks";
 import CustomSearch from "../search/page";
@@ -75,9 +74,7 @@ const NavbarWhite = () => {
                     }}
                   >
                     <a className="text-white" href={link?.link}>
-                    <Fade direction="left" triggerOnce>
                       {link.name}
-                    </Fade>
                     </a>
                     <div className={`${link?.submenu ? "block" : "hidden"}`}>
                       <Down
