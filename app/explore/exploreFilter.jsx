@@ -7,6 +7,7 @@ import image from "../../public/assets/images/image3.png";
 import "../LandingLayout/style.css"
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
+import { Search } from "../shared/Icons";
 
 const categoryData = ["Marketing", "SEO"];
 const sortByData = {
@@ -70,7 +71,7 @@ const ExploreFilter = () => {
                     placeholder="Search Campaigns"
                     className="bg-white bg-opacity-30 rounded-md w-full px-2 py-2 placeholder-white outline-none"
                   />
-                  {/* <Search className="text-xl mt-1.5 absolute right-2"/> */}
+                  <Search className="text-xl mt-2 absolute right-2"/>
                 </div>
               </div>
             </div>

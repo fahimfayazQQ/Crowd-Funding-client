@@ -26,7 +26,7 @@ const About = () => {
           </Fade>
         </div>
         <Fade direction="right" triggerOnce>
-          <div className="flex-col shadow-lg p-5 rounded-3xl bg-white mb-14 lg:mb-0">
+          <div className="flex-col shadow-lg p-5 rounded-3xl bg-white mb-14 lg:mb-5">
             <Image src={Image1} alt="img" className="pb-5" />
             <Image src={Image2} alt="img" className="" />
           </div>

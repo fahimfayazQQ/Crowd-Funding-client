@@ -116,21 +116,21 @@ const CreateProject = () => {
               </div>
             </Link>
           </Slide>
-          <Slide direction="right" duration={1300} triggerOnce>
+          <Slide direction="right" triggerOnce>
             <Link href={"/start-project/registration"}>
               <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color hover:bg-home-color lg:text-xl text-home-color hover:text-white rounded-xl p-5 m-2 lg:m-4">
                 Debt
               </div>
             </Link>
           </Slide>
-          <Slide direction="right" duration={1600} triggerOnce>
+          <Slide direction="right" triggerOnce>
             <Link href={"/start-project/registration"}>
               <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color hover:bg-home-color lg:text-xl text-home-color hover:text-white rounded-xl p-5 m-2 lg:m-4">
                 Equity
               </div>
             </Link>
           </Slide>
-          <Slide direction="right" duration={1900} triggerOnce>
+          <Slide direction="right" triggerOnce>
             <Link href={"/start-project/registration"}>
               <div className="w-[8rem] lg:w-[10rem] lg:h-[8rem] flex justify-center items-center border-2 border-home-color hover:bg-home-color hover:text-white lg:text-xl text-home-color rounded-xl p-5 m-2 lg:m-4">
                 Reward
