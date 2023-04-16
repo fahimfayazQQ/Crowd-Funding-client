@@ -13,18 +13,30 @@ import Gal4 from "../../../public/assets/images/board4.png";
 import Gal5 from "../../../public/assets/images/board5.png";
 import Avatar1 from "../../../public/assets/images/avatar.png";
 import Avatar2 from "../../../public/assets/images/avatar2.png";
-import { FB, Insta, Twitter } from "../../shared/Icons";
+import { FB, Insta, Twitter, Mail, Bell } from "../../shared/Icons";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const BlogDetails = () => {
   return (
-    <div className="bg-[#ececec]">
-      <div className=" max-w-screen-xl px-5 mx-auto py-20 overflow-hidden">
+    <div className="bg-[#fffbf1]">
+      
+      <div className="flex flex-wrap lg:justify-end items-center pt-20 pl-5 lg:pr-20">
+        <Image src={Avatar2} alt="img" className="lg:hidden"/>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Find Campaign</div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Dashboard</div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Studio</div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Insight</div>
+        <Mail className="hover:text-home-color cursor-pointer my-2 mx-5"/>
+        <Bell className="hover:text-home-color cursor-pointer my-2 mx-5"/>
+        <Image src={Avatar2} alt="img" className="hidden lg:block"/>
+      </div>
+
+      <div className=" max-w-screen-xl px-5 mx-auto pt-10 pb-10 overflow-hidden">
         <Fade direction="right" triggerOnce>
-          <div className="text-3xl font-semibold mb-2">
+          <div className="text-xl lg:text-3xl font-semibold mb-2">
             Do what you can, with what you have
           </div>
-          <div className="flex italic text-sm">
+          <div className="flex italic text-xs lg:text-sm">
             <span>January 15, 2023</span> &nbsp; / &nbsp;
             <span>By: Donn John</span>
           </div>
@@ -33,7 +45,7 @@ const BlogDetails = () => {
           <Image src={Img1} alt="img" className="w-full my-5" />
         </Zoom>
         <Fade>
-          <div>
+          <div className="text-sm lgLtext-base">
             This page is a demo that shows everything you can do inside
             portfolio and blog posts. We&apos;ve included everything you need to
             create engaging posts about your work, and show off your case
@@ -64,7 +76,7 @@ const BlogDetails = () => {
           </div>
         </Fade>
 
-        <div className="text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
+        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
         <div className="grid lg:grid-cols-3 gap-3 mb-10">
           <Fade direction="right" triggerOnce>
             <div className="shadow-lg rounded-2xl">
@@ -88,8 +100,8 @@ const BlogDetails = () => {
           </Fade>
         </div>
 
-        <div className="text-2xl font-semibold mt-10 mb-5">Top brands</div>
-        <div>
+        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">Top brands</div>
+        <div className="text-sm lg:text-base">
           Here&apos;s another gallery with only one column, which creates a
           carousel slide-show instead. A nice little feature: the carousel only
           advances when it is in view, so your visitors won&apos;t scroll down
@@ -98,10 +110,10 @@ const BlogDetails = () => {
         <Zoom triggerOnce>
           <Image src={Img2} alt="img" className="w-full my-5" />
         </Zoom>
-        <div className="text-2xl font-semibold mt-10 mb-5">
+        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           What about videos?
         </div>
-        <div>
+        <div className="text-sm lg:text-base">
           Videos are an awesome way to show off your work in a more engaging and
           personal way, and we&apos;ve made sure they work great on our themes.
           Just paste an embed code from YouTube or Vimeo, and the theme makes
@@ -112,8 +124,8 @@ const BlogDetails = () => {
         </Zoom>
 
         {/* Share & Comments Section */}
-        <div className="mx-auto pt-20">
-          <div className="text-lg font-semibold my-5">Share</div>
+        <div className="mx-auto pt-10 lg:pt-20">
+          <div className="text-lg font-semibold mb-5">Share</div>
           <div className="flex pb-5">
             <FB className="text-3xl mx-3 cursor-pointer text-blue-700" />
             <Insta className="text-3xl mx-3 cursor-pointer text-pink-600" />
@@ -128,14 +140,16 @@ const BlogDetails = () => {
             placeholder="What's on your mind..."
             className="w-full border border-b-2 rounded-md outline-none p-2"
           ></textarea>
+          <div className="inline-block border bg-white rounded-lg shadow-sm cursor-pointer py-1 px-3">Post</div>
+
 
           <div>
             <div className="flex justify-start items-center">
               <Image src={Avatar1} alt="img" className="w-10 h-10 my-5" />
-              <span className="px-5">Sourav Sen</span>
+              <span className="text-sm lg:text-base px-5">Sourav Sen</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="pl-5">
+            <div className="text-sm lg:text-base pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
@@ -147,10 +161,10 @@ const BlogDetails = () => {
           <div className="pl-20">
             <div className="flex justify-start items-center">
               <Image src={Avatar2} alt="img" className="w-10 h-10 my-5" />
-              <span className="px-5">Atika Younus</span>
+              <span className="text-sm lg:text-base px-5">Atika Younus</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="pl-5">
+            <div className="text-sm lg:text-base pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
@@ -163,10 +177,10 @@ const BlogDetails = () => {
           <div>
             <div className="flex justify-start items-center">
               <Image src={Avatar2} alt="img" className="w-10 h-10 my-5" />
-              <span className="px-5">Atika Younus</span>
+              <span className="text-sm lg:text-base px-5">Atika Younus</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="pl-5">
+            <div className="text-sm lg:text-base pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.

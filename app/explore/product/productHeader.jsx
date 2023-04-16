@@ -94,7 +94,7 @@ const ProductHeader = () => {
           </div>
         </JackInTheBox>
         <Fade direction="down" triggerOnce className="sm:w-6/12">
-          <div className="w-full h-full text-black p-5 lg:p-10">
+          <div className="w-full h-full text-black p-5 lg:p-10 relative">
             <div className="text-2xl lg:text-4xl font-semibold mb-5 lg:mt-10">
               Pasta Bolognese
             </div>
@@ -122,7 +122,7 @@ const ProductHeader = () => {
               </div>
             </div>
 
-            <div className="flex justify-around gap-3 lg:gap-10">
+            <div className="lg:absolute lg:bottom-[8%] flex justify-around gap-3 lg:gap-10">
               <Link href={"../payment"}>
                 <div className="inline-block bg-home-color text-white tracking-widest text-sm text-center rounded-lg shadow-lg py-3 px-10 lg:px-20 cursor-pointer">
                   INVEST

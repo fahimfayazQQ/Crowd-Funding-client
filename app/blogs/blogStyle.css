@@ -8,13 +8,11 @@
     z-index: -1;
     content: "";
     position: absolute;
-    top: -150px;
-    left: 70%;
+    top: 0;
+    left: 60%;
     width: 700px;
-    height: 1000px;
-    background: #5956E9;
-    background-image: url("../../public/assets/images/biznez.png");
-    transform: rotate(-20deg);
+    height: 500px;
+    background-image: url("../../public/assets/images/blog-banner.png");
 }
 
 @media screen and (max-width: 450px) {
@@ -26,8 +24,7 @@
         left: 250px;
         width: 700px;
         height: 1000px;
-        background: #5956e9;
-        background-image: url("../../public/assets/images/biznez.png");
+        background-image: url("../../public/assets/images/blog-banner.png");
         transform: rotate(-20deg);
     }
 }

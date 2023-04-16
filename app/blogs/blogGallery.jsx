@@ -80,7 +80,7 @@ const BlogGallery = () => {
             <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
               Latest News
             </div>
-            <div className="text-white w-2/3 lg:w-full">
+            <div className="text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum is simply dummy text of the printing
               and typesetting industry.

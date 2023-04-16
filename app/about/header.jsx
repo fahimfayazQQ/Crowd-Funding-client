@@ -18,7 +18,7 @@ import {
   Value4,
   Value5,
   Value6,
-  Tick,
+  TickGreen,
 } from "../shared/Icons";
 import { Fade, Zoom } from "react-awesome-reveal";
 
@@ -125,7 +125,7 @@ const AboutHeader = () => {
 
       <div className="my-10 lg:my-20">
         <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
-          <div className="w-11/12 lg:w-1/4 my-auto pb-10 lg:pb-0">
+          <div className="w-11/12 lg:w-2/4 my-auto pb-10 lg:pb-0">
             <Fade direction="right" triggerOnce>
               <div className="font-semibold text-xl lg:text-2xl pb-5">
                 Our Mission
@@ -136,17 +136,17 @@ const AboutHeader = () => {
                 completxability to create.
               </div>
               <div className="flex items-center pb-3">
-                <Tick className="text-2xl text-green-400 mr-5" />
+                <TickGreen className="text-lg text-green-400 mr-5" />
                 <div className="lg:text-lg">
                   Posting to social media, blogs, and messengers
                 </div>
               </div>
               <div className="flex items-center pb-3">
-                <Tick className="text-lg text-green-400 mr-5" />
+                <TickGreen className="text-lg text-green-400 mr-5" />
                 <div className="lg:text-lg">Endless Possibilities</div>
               </div>
               <div className="flex items-center">
-                <Tick className="text-lg text-green-400 mr-5" />
+                <TickGreen className="text-lg text-green-400 mr-5" />
                 <div className="lg:text-lg">
                   The Future of Writing Blog Articles
                 </div>

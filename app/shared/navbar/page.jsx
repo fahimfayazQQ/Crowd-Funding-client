@@ -1,12 +1,13 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 /* import NavigationItems from "./NavLinks"; */
 import { Modal } from "antd";
-import "./Navbar.css";
-import { customlinks } from "./MyLinks";
-import { Search, Down } from "../Icons";
 import Link from "next/link";
+import { Fade, Slide } from "react-awesome-reveal";
+import { Down, Search } from "../Icons";
 import CustomSearch from "../search/page";
+import { customlinks } from "./MyLinks";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -77,7 +78,9 @@ const Navbar = () => {
                       className="text-black hover:text-home-color"
                       href={link?.link}
                     >
+                      <Fade direction="left" triggerOnce>
                       {link.name}
+                      </Fade>
                     </a>
                     <div className={`${link?.submenu ? "block" : "hidden"}`}>
                       <Down
