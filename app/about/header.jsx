@@ -4,6 +4,10 @@ import "../LandingLayout/style.css";
 import Image1 from "../../public/assets/images/image2.png";
 import Image2 from "../../public/assets/images/Method.png";
 import Image3 from "../../public/assets/images/footer33.png";
+import Mission from "../../public/assets/images/mission.png";
+import Lady1 from "../../public/assets/images/lady1.png";
+import Lady2 from "../../public/assets/images/lady2.png";
+import Lady3 from "../../public/assets/images/lady3.png";
 import Image from "next/image";
 import {
   List1,
@@ -14,7 +18,7 @@ import {
   Value4,
   Value5,
   Value6,
-  Search,
+  Tick,
 } from "../shared/Icons";
 import { Fade, Zoom } from "react-awesome-reveal";
 
@@ -23,10 +27,10 @@ const AboutHeader = () => {
     <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20">
       <Zoom triggerOnce>
         <div className="w-full bg-home-color rounded-2xl p-16 investor_shine">
-          <div className="text-white text-4xl font-semibold pb-5 text-center">
+          <div className="text-white text-2xl lg:text-4xl font-semibold pb-5 text-center">
             About Us
           </div>
-          <div className="text-white text-center">
+          <div className="text-white text-center text-sm lg:text-base">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. <br /> Lorem Ipsum is simply dummy text of the printing
             and typesetting industry.
@@ -37,26 +41,29 @@ const AboutHeader = () => {
       <div className="py-10 lg:py-20">
         <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
           <Fade direction="right" triggerOnce>
-            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white m-4">
-              <Image src={Image1} alt="img" className="w-full pb-5" />
-              <Image src={Image2} alt="img" className="" />
+            <div className="flex-col">
+              <Image src={Lady1} alt="img" className="w-full pb-5" />
+              <div className="flex gap-5">
+                <Image src={Lady2} alt="img" className="" />
+                <Image src={Lady3} alt="img" className="" />
+              </div>
             </div>
           </Fade>
 
           <div className="w-11/12 lg:w-1/4 my-auto pt-10 lg:pt-0">
             <Fade direction="left" triggerOnce>
-              <div className="font-semibold text-2xl pb-5">
+              <div className="font-semibold text-xl lg:text-2xl pb-5">
                 We&apos;re on a mission to bring ideas to life.
               </div>
-              <div className="pb-5">
+              <div className="text-sm lg:text-base pb-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s,
               </div>
-              <div className="flex">
+              <div className="flex pb-3">
                 <List1 className="text-5xl mr-5" />
                 <div>
-                  <div className="text-lg font-semibold">
+                  <div className="text-sm lg:text-lg font-semibold">
                     How technology started
                   </div>
                   <div>
@@ -67,7 +74,7 @@ const AboutHeader = () => {
               <div className="flex">
                 <List2 className="text-5xl mr-5" />
                 <div>
-                  <div className="text-lg font-semibold">
+                  <div className="text-sm lg:text-lg font-semibold">
                     Endless Possibilities
                   </div>
                   <div>
@@ -81,7 +88,7 @@ const AboutHeader = () => {
       </div>
 
       <div className="text-black mx-auto py-10 lg:py-20">
-        <div className="text-xl lg:text-4xl text-center pb-10">
+        <div className="text-lg lg:text-4xl text-center pb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
         </div>
         <div className="w-2/3 flex flex-wrap justify-evenly mx-auto">
@@ -91,7 +98,9 @@ const AboutHeader = () => {
                 <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
                   1000
                 </div>
-                <div className="text-center">Investors</div>
+                <div className="text-sm lg:text-base text-center">
+                  Investors
+                </div>
               </div>
             </Fade>
           </div>
@@ -100,7 +109,7 @@ const AboutHeader = () => {
               <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
                 1000
               </div>
-              <div className="text-center">Investors</div>
+              <div className="text-sm lg:text-base text-center">Investors</div>
             </div>
           </Fade>
           <Fade>
@@ -108,7 +117,7 @@ const AboutHeader = () => {
               <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
                 1000
               </div>
-              <div className="text-center">Investors</div>
+              <div className="text-sm lg:text-base text-center">Investors</div>
             </div>
           </Fade>
         </div>
@@ -118,43 +127,34 @@ const AboutHeader = () => {
         <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
           <div className="w-11/12 lg:w-1/4 my-auto pb-10 lg:pb-0">
             <Fade direction="right" triggerOnce>
-              <div className="font-semibold text-2xl pb-5">
-                We&apos;re on a mission to bring ideas to life.
+              <div className="font-semibold text-xl lg:text-2xl pb-5">
+                Our Mission
               </div>
-              <div className="pb-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s,
+              <div className=" lg:text-lg pb-5">
+                Building an enterprise level site doesn&apos;t need nightmare or
+                cost your thousands. Felix is purpose built for ease of use and
+                completxability to create.
               </div>
-              <div className="flex">
-                <List1 className="text-5xl mr-5" />
-                <div>
-                  <div className="text-lg font-semibold">
-                    How technology started
-                  </div>
-                  <div>
-                    Building an enterprisedoesn&apos;t need your thousands.
-                  </div>
+              <div className="flex items-center pb-3">
+                <Tick className="text-2xl text-green-400 mr-5" />
+                <div className="lg:text-lg">
+                  Posting to social media, blogs, and messengers
                 </div>
               </div>
-              <div className="flex">
-                <List2 className="text-5xl mr-5" />
-                <div>
-                  <div className="text-lg font-semibold">
-                    Endless Possibilities
-                  </div>
-                  <div>
-                    Building an enterprisedoesn&apos;t need your thousands.
-                  </div>
+              <div className="flex items-center pb-3">
+                <Tick className="text-lg text-green-400 mr-5" />
+                <div className="lg:text-lg">Endless Possibilities</div>
+              </div>
+              <div className="flex items-center">
+                <Tick className="text-lg text-green-400 mr-5" />
+                <div className="lg:text-lg">
+                  The Future of Writing Blog Articles
                 </div>
               </div>
             </Fade>
           </div>
           <Fade direction="left" triggerOnce>
-            <div className="flex-col shadow-lg p-5 rounded-3xl bg-white m-4">
-              <Image src={Image1} alt="img" className="w-full pb-5" />
-              <Image src={Image2} alt="img" className="" />
-            </div>
+            <Image src={Mission} alt="img" className="" />
           </Fade>
         </div>
       </div>
@@ -163,7 +163,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value1 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -176,7 +176,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value2 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -189,7 +189,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value3 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -201,7 +201,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value4 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -214,7 +214,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value5 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -227,7 +227,7 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value6 className="text-5xl mx-auto" />
-            <div className="text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
               Lorem ipsum dolor
             </div>
             <div className=" text-sm text-center pb-8 px-2">
@@ -245,18 +245,18 @@ const AboutHeader = () => {
               <div className="text-2xl lg:text-4xl my-4 lg:my-8">
                 Lorem ipsum dolor
               </div>
-              <div className="text-base pb-8">
+              <div className="text-sm lg:text-base pb-8">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <div className="w-full flex justify-center items-center lg:border lg:p-8 lg:rounded-xl lg:bg-white lg:bg-opacity-10 lg:backdrop:filter lg:backdrop-blur-md">
-                <div className="w-full mx-auto flex relative">
-                  <input
-                    type="text"
-                    placeholder="Search Campaigns"
-                    className="bg-white bg-opacity-30 rounded-md w-full px-2 py-3 placeholder-white outline-none"
-                  />
-                  <Search className="text-xl mt-3 absolute right-2" />
+              <div className="w-full mx-auto flex relative">
+                <input
+                  type="text"
+                  placeholder="Search Campaigns"
+                  className="bg-white rounded-full w-full px-2 py-4 placeholder-gray-500 outline-none pl-3"
+                />
+                <div className="text-white bg-home-color rounded-full absolute right-1 my-1 py-3 px-10 cursor-pointer">
+                  Start
                 </div>
               </div>
             </div>

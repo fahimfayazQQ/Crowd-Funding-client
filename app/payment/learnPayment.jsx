@@ -9,16 +9,7 @@ const Login = () => {
   return (
     <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row ">
       <div className="w-full flex justify-center items-center">
-        <div className="mt-20 lg:mt-0">
-          <Image src={CreditCard} alt="img" className="m-auto" />
-          <div className="hidden lg:block w-11/12 lg:w-1/2 text-white text-justify mx-auto">
-            Certified Charity donations are made to PayPal Giving Fund, minus
-            processing fees and granted within 15-45 days, subject to its terms.
-            In the unlikely event that there is a problem funding your chosen
-            charity, PayPal Giving Fund will contact you before reassigning the
-            funds. Your donation is typically tax deductible in the US.
-          </div>
-        </div>
+        
       </div>
       <div className="w-full lg:bg-white flex justify-center items-center">
         <div className="lg:bg-zinc-100 lg:rounded-xl w-full lg:w-[50vh] h-auto lg:h-[80vh] lg:shadow-lg my-10">

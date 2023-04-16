@@ -22,9 +22,9 @@ const NavbarWhite = () => {
   console.log(search);
 
   return (
-    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[999] overflow-hidden">
+    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[998] overflow-hidden">
       <nav className="bg-transparent text-white relative">
-        <div className="flex justify-between py-5">
+        <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
             <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-10 lg:pl-20">
               QUADQUE

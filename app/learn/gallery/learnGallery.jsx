@@ -2,8 +2,9 @@
 import React, {useRef} from "react"
 import Image from "next/image"
 import Link from "next/link"
-import Card1 from "../../../public/assets/images/card1.png"
-import Card2 from "../../../public/assets/images/card2.png"
+import Learn2 from "../../../public/assets/images/learn3.png"
+import Learn1 from "../../../public/assets/images/learn2.png"
+import Learn3 from "../../../public/assets/images/learn4.png"
 import Products from "../../shared/jsondata/products.json"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -80,9 +81,15 @@ const LearnGallery = () => {
             {Products?.map((product, i) => (
               <div key={i} className="p-2 mb-5">
                 <div className="bg-white rounded-2xl hover:shadow-lg duration-300 pb-5 border p-3">
-                  <Image src={Card1} alt="img" className="w-full" />
+                  <Image
+                    src={LearnImages[product?.id - 1].image}
+                    alt="img"
+                    className="w-full"
+                  />
                   <div className="flex justify-between items-center pt-3">
-                    <div className="rounded-full inline-block bg-indigo-300 text-indigo-600 px-3 py-2">{product?.medium}</div>
+                    <div className="rounded-full inline-block bg-indigo-300 text-indigo-600 shadow-md px-3 py-2">
+                      {product?.medium}
+                    </div>
                     <div>Tk. 5000</div>
                   </div>
                   <div className="text-xl my-5">{product?.title}</div>
@@ -103,3 +110,15 @@ const LearnGallery = () => {
 };
 
 export default LearnGallery;
+const LearnImages = [
+  { id: 1, image: Learn1 },
+  { id: 2, image: Learn2 },
+  { id: 3, image: Learn3 },
+  { id: 4, image: Learn1 },
+  { id: 5, image: Learn2 },
+  { id: 6, image: Learn3 },
+  { id: 7, image: Learn1 },
+  { id: 8, image: Learn2 },
+  { id: 9, image: Learn3 },
+  { id: 10, image: Learn1 },
+];

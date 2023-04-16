@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Event1 from "../../public/assets/images/event1.png";
@@ -13,7 +13,6 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 const EventsGallery = () => {
-  const [cardImage, setCardImage] = useState()
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -58,20 +57,10 @@ const EventsGallery = () => {
     ],
   };
 
-  useEffect(() => {
-    if(EventImages?.find(wtf=>wtf.id===Events.id)){
-      setCardImage(EventImages?.find(wtf=>wtf.id===Events.id)?.image)
-    } else {
-      setCardImage(Event1)
-    }
-    console.log("imagee", cardImage);
-  }, [])
-  console.log(Events);
-
   return (
     <div className="max-w-screen-xl px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="hidden lg:block ">
-        <div className="flex justify-end items-center mb-4">
+        <div className="flex justify-end items-center mb-4 mr-10">
           <div className="flex items-center">
             <div
               onClick={() => sliderRef.current.slickPrev()}
@@ -93,16 +82,19 @@ const EventsGallery = () => {
         <div className="">
           <Slider ref={sliderRef} {...settings} arrows={false}>
             {Events?.map((product, i) => (
-              <Link key={i} href={"./learn/gallery/details"}>
-                <div className="p-2 mb-5">
-                  <div className={`${product?.bgColor} w-full h-[25rem] rounded-xl`}>
-                  <div className="px-2 pt-10">
-                    <Image {...cardImage} alt="img" width={100} height={100} className="w-10/12 mx-auto" />
+              <Link key={i} href={"/events/event"}>
+                <div className="pb-24 lg:pb-44 relative flex justify-center items-center">
+                  <div className={`${product?.bgColor} lg:w-[90%] h-[23rem] rounded-3xl`}></div>
+                  <div className="w-full lg:w-auto absolute top-[68px] mx-auto">
+                    <Image
+                      src={EventImages[product?.id - 1]?.image}
+                      alt="img"
+                      className="w-full rounded-3xl"
+                    />
                     <div className="w-1/2 mx-auto">
-                    <div className="text-xl my-5">{product?.title}</div>
-                    <div className="text-sm pb-8">{product?.description}</div>
+                      <div className="text-xl my-5">{product?.title}</div>
+                      <div className="text-sm pb-8">{product?.description}</div>
                     </div>
-                  </div>
                   </div>
                 </div>
               </Link>
@@ -133,14 +125,23 @@ const EventsGallery = () => {
 
 export default EventsGallery;
 const EventImages = [
-  {id:1, image: Event1, bgColor: "#ffa8b2",},
-  {id:2, image: Event2, bgColor: "#fff",},
-  {id:3, image: Event3, bgColor: "#fff",},
-  {id:4, image: Event4, bgColor: "#fff",},
-  {id:5, image: Event1, bgColor: "#fff",},
-  {id:6, image: Event2, bgColor: "#fff",},
-  {id:7, image: Event3, bgColor: "#fff",},
-  {id:8, image: Event4, bgColor: "#fff",},
-  {id:9, image: Event1, bgColor: "#fff",},
-  {id:10, image: Event2},
+  { id: 1, image: Event1,},
+  { id: 2, image: Event2,},
+  { id: 3, image: Event3,},
+  { id: 4, image: Event4,},
+  { id: 5, image: Event1,},
+  { id: 6, image: Event2,},
+  { id: 7, image: Event3,},
+  { id: 8, image: Event4,},
+  { id: 9, image: Event1,},
+  { id: 10, image: Event2,},
+  { id: 11, image: Event3,},
+  { id: 12, image: Event4,},
+];
+
+const Color = [
+  "bg-red-200",
+  "bg-green-200",
+  "bg-blue-200",
+  "bg-yellow-200",
 ]

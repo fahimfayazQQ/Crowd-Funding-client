@@ -3,53 +3,53 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div className="bg-white rounded-xl shadow-lg p-10 my-5">
-        <div className="text-xl pb-5">Address</div>
-        <div className="pb-2">
+      <div className="bg-white rounded-xl shadow-lg p-4 lg:p-10 my-5">
+        <div className="text-lg lg:text-xl pb-5">Address</div>
+        <div className="text-sm lg:text-base pb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
         </div>
-        <div className="font-semibold pb-5">
+        <div className="text-sm lg:text-base font-semibold pb-5">
           *All fields required unless noted.
         </div>
         <input
           type="text"
-          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300 text-sm lg:text-base"
           placeholder="Address"
         />
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg p-10 my-5">
-        <div className="text-xl pb-5">Valuation</div>
-        <div className="pb-2">
+      <div className="bg-white rounded-xl shadow-lg p-4 lg:p-10 my-5">
+        <div className="text-lg lg:text-xl pb-5">Valuation</div>
+        <div className="text-sm lg:text-base pb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
         </div>
-        <div className="font-semibold pb-5">
+        <div className="text-sm lg:text-base font-semibold pb-5">
           *All fields required unless noted.
         </div>
         <input
           type="text"
-          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300 text-sm lg:text-base"
           placeholder="Amount"
         />
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg p-10 my-5">
-        <div className="text-xl pb-5">Description</div>
-        <div className="pb-2">
+      <div className="bg-white rounded-xl shadow-lg p-4 lg:p-10 my-5">
+        <div className="text-lg lg:text-xl pb-5">Description</div>
+        <div className="text-sm lg:text-base pb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
         </div>
-        <div className="font-semibold pb-5">
+        <div className="text-sm lg:text-base font-semibold pb-5">
           *All fields required unless noted.
         </div>
         <input
           type="text"
-          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300"
+          className="lg:w-1/2 shadow-lg py-2 lg:py-4 px-2 rounded-lg outline-none mb-4 border border-gray-300 text-sm lg:text-base"
           placeholder="Description"
         />
       </div>

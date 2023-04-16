@@ -44,8 +44,8 @@ const OurTeam = () => {
   };
   return (
     <div className="max-w-screen-xl px-5 my-10 lg:my-20 mx-auto">
-      <div className="text-3xl mb-3">Our Team</div>
-      <div className="lg:w-1/3">
+      <div className="text-2xl lg:text-3xl mb-3">Our Team</div>
+      <div className="lg:w-1/3 text-sm lg:text-base">
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length
       </div>

@@ -25,13 +25,13 @@ const Navbar = () => {
     <div id="Navbar" className="w-full absolute top-0 bg-transparent z-40 overflow-hidden">
       <div></div>
       <nav className="bg-transparent text-black relative">
-        <div className="flex justify-between py-5">
+        <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
             <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-10 lg:pl-20">
               QUADQUE
             </div>
           </Link>
-          <div className="flex justify-between items-center gap-2">
+          <div className="flex justify-between items-center gap-2 ">
             <CustomSearch search={search} handleSearch={handleSearch}/>
             <div
               onClick={() => {

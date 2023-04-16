@@ -9,15 +9,26 @@ const Login = () => {
   return (
     <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row ">
       <div className="w-full flex justify-center items-center">
-        <div className="mt-20 lg:mt-0">
-          <Image src={CreditCard} alt="img" className="m-auto" />
-          <div className="hidden lg:block w-11/12 lg:w-1/2 text-white text-justify mx-auto">
-            Certified Charity donations are made to PayPal Giving Fund, minus
-            processing fees and granted within 15-45 days, subject to its terms.
-            In the unlikely event that there is a problem funding your chosen
-            charity, PayPal Giving Fund will contact you before reassigning the
-            funds. Your donation is typically tax deductible in the US.
+        <div className="mt-20 lg:mt-0 w-11/12 lg:w-1/2 mx-auto">
+          <div className="text-white text-justif">
+            Paragraphs are the building blocks of papers. Many students define
+            paragraphs in terms of length
           </div>
+          <div className="text-white font-semibold mt-5">Full name *</div>
+          <input
+            type="text"
+            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+          />
+          <div className="text-white font-semibold mt-5">Email *</div>
+          <input
+            type="text"
+            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+          />
+          <div className="text-white font-semibold mt-5">Address *</div>
+          <input
+            type="text"
+            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+          />
         </div>
       </div>
       <div className="w-full lg:bg-white flex justify-center items-center">
@@ -48,7 +59,7 @@ const Login = () => {
                   id="card_no"
                   // value={data.email}
                   placeholder="Enter your card number"
-                  className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                  className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                   // onChange={userData}
                   required
                 />
@@ -71,7 +82,7 @@ const Login = () => {
                   id="holder"
                   placeholder="Enter card holder name"
                   // value={data.password}
-                  className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                  className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                   // onChange={userData}
                   required
                 />
@@ -86,7 +97,7 @@ const Login = () => {
                   id="email"
                   placeholder="Enter card holder email"
                   // value={data.password}
-                  className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                  className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                   // onChange={userData}
                   required
                 />
@@ -103,7 +114,7 @@ const Login = () => {
                     id="expDate"
                     placeholder="MM-YY"
                     // value={data.password}
-                    className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                    className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                     // onChange={userData}
                     required
                   />
@@ -118,7 +129,7 @@ const Login = () => {
                     id="expDate"
                     placeholder="CVV"
                     // value={data.password}
-                    className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                    className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                     // onChange={userData}
                     required
                   />
@@ -136,7 +147,7 @@ const Login = () => {
                     id="country"
                     placeholder="Select country"
                     // value={data.password}
-                    className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                    className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                     // onChange={userData}
                     required
                   />
@@ -151,7 +162,7 @@ const Login = () => {
                     id="postal"
                     placeholder="Postal code"
                     // value={data.password}
-                    className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                    className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                     // onChange={userData}
                     required
                   />
@@ -168,7 +179,7 @@ const Login = () => {
                   id="amount"
                   placeholder="Enter payment amount"
                   // value={data.password}
-                  className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
+                  className="w-full px-6 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:border-brand-color"
                   // onChange={userData}
                   required
                 />
@@ -178,7 +189,7 @@ const Login = () => {
                 <Link href={"../profile"}>
                   <button
                     type="submit"
-                    className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none"
+                    className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 duration-500 rounded-2xl focus:outline-none"
                   >
                     Make Payment
                   </button>

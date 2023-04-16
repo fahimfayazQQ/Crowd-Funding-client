@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "DHL",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-green-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$4580",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Nike",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-blue-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$2000",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Okla",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-yellow-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$7280",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Google",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-green-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$280",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "Microsoft",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-blue-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$880",
@@ -64,8 +64,8 @@
   },
   {
     "id": 8,
-    "title": "Tesla",
-    "bgColor": "bg-red-200",
+    "title": "Ubisoft",
+    "bgColor": "bg-yellow-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$8000",
@@ -83,7 +83,25 @@
   {
     "id": 10,
     "title": "CISRO",
-    "bgColor": "bg-red-200",
+    "bgColor": "bg-green-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$8000",
+    "image": "https://i.ibb.co/Fg7yFSq/event2.png"
+  },
+  {
+    "id": 11,
+    "title": "EA Sports",
+    "bgColor": "bg-blue-200",
+    "description": "IT Technology",
+    "time": "16 December, 2023",
+    "raised": "$8000",
+    "image": "https://i.ibb.co/Fg7yFSq/event2.png"
+  },
+  {
+    "id": 12,
+    "title": "Rockstar Games",
+    "bgColor": "bg-yellow-200",
     "description": "IT Technology",
     "time": "16 December, 2023",
     "raised": "$8000",

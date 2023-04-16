@@ -99,13 +99,13 @@ const Footer = () => {
         </div>
         <div className="flex">
           <Link href={"https://www.facebook.com/"}>
-            <FB className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+            <FB className="text-3xl mx-3 text-gray-400 hover:text-blue-700 cursor-pointer" />
           </Link>
           <Link href={"https://www.instagram.com/"}>
-            <Insta className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+            <Insta className="text-3xl mx-3 text-gray-400 hover:text-pink-600 cursor-pointer" />
           </Link>
           <Link href={"https://twitter.com/"}>
-            <Twitter className="text-3xl mx-3 text-gray-400 hover:text-indigo-400 cursor-pointer" />
+            <Twitter className="text-3xl mx-3 text-gray-400 hover:text-sky-500 cursor-pointer" />
           </Link>
         </div>
       </div>

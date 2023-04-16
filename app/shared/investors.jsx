@@ -23,7 +23,7 @@ const Investors = () => {
     <div className="lg:px-5">
       <div className="max-w-screen-xl px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto lg:rounded-3xl text-white relative">
         <Zoom triggerOnce>
-          <div className="text-3xl font-semibold text-center pb-10">
+          <div className="text-2xl lg:text-3xl font-semibold text-center pb-10">
             Our Happy Investors
           </div>
         </Zoom>
@@ -51,7 +51,7 @@ const Investors = () => {
                     className="mx-auto rounded-full"
                   />
                   <div className="text-white py-5">Pakku, Head of Okla</div>
-                  <div className="w-11/12 lg:w-9/12 text-white mx-auto">
+                  <div className="w-11/12 lg:w-9/12 text-white mx-auto text-sm lg:text-base">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the
                     industry&apos;s standard dummy text ever since the when an
