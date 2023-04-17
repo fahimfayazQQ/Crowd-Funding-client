@@ -170,7 +170,7 @@ const AboutHeader = () => {
               Innovation
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>
@@ -183,7 +183,7 @@ const AboutHeader = () => {
               Growth
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>
@@ -196,7 +196,7 @@ const AboutHeader = () => {
               Ownership
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>
@@ -208,7 +208,7 @@ const AboutHeader = () => {
               Team Work
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>
@@ -221,7 +221,7 @@ const AboutHeader = () => {
               Commitment
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>
@@ -234,7 +234,7 @@ const AboutHeader = () => {
               Positivity
             </div>
             <div className=" text-sm text-center pb-8 px-2">
-              Building an enterprisedoesn't need nightmare or cost your
+              Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
           </div>

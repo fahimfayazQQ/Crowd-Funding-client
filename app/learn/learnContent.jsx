@@ -59,7 +59,7 @@ const LearnContent = () => {
       <div className="hidden lg:block">
         <div className="grid lg:grid-cols-4 gap-5 mb-10">
           {Posts?.map((post) => (
-            <Zoom triggerOnce>
+            <Zoom triggerOnce key={post?.id}>
               <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
                 <div className="text-lg lg:text-xl font-semibold my-5">{post?.title}</div>
                 <div className="text-sm pb-8">{post?.description}</div>
@@ -82,7 +82,7 @@ const LearnContent = () => {
         className="lg:hidden"
       >
         {Posts?.map((post) => (
-          <Zoom triggerOnce>
+          <Zoom triggerOnce key={post?.id}>
             <div className="bg-white rounded-2xl shadow-lg mb-5 border p-4 mx-2">
               <div className="text-lg lg:text-xl my-5">{post?.title}</div>
               <div className="text-sm pb-8">{post?.description}</div>

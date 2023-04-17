@@ -10,7 +10,7 @@ function Accordion(props) {
 
   useEffect(() => {
     console.log("Height for ", props.title, ": ", height);
-  }, [height]);
+  }, [height, props?.title]);
 
   function toggleAccordion() {
     setActive(!active);

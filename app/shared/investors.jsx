@@ -47,7 +47,7 @@ const Investors = () => {
             <div className="lg:w-10/12 mx-auto">
               <Slider ref={sliderRef} {...settings} arrows={false}>
                 {Testimonials?.map((post) => (
-                  <div>
+                  <div key={post?.id}>
                     <div className="lg:w-1/3 mx-auto relative">
                       <Image
                         src={Image1}
