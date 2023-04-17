@@ -1,38 +1,41 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import CreditCard from "../../public/assets/images/creditcard.png"
-import Meta from "../../public/assets/images/fb.png"
-import Google from "../../public/assets/images/google.png"
-import Youtube from "../../public/assets/images/yt.png"
-const Login = () => {
+/* import CreditCard from "../../public/assets/images/creditcard.png" */
+import { Send } from "../shared/Icons"
+
+const LearnPayment = () => {
   return (
     <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row ">
       <div className="w-full flex justify-center items-center">
         <div className="mt-20 lg:mt-0 w-11/12 lg:w-1/2 mx-auto">
-          <div className="text-white text-justif">
+          <div className="text-black lg:text-white text-justify">
             Paragraphs are the building blocks of papers. Many students define
             paragraphs in terms of length
           </div>
-          <div className="text-white font-semibold mt-5">Full name *</div>
+          <div className="text-black lg:text-white font-semibold mt-5">
+            Full name *
+          </div>
           <input
             type="text"
-            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+            className="w-full bg-transparent outline-none bg-white lg:bg-transparent border lg:border-white rounded-2xl text-black lg:text-white py-3 px-2 my-2"
           />
-          <div className="text-white font-semibold mt-5">Email *</div>
+          <div className="text-black lg:text-white font-semibold mt-5">
+            Email *
+          </div>
           <input
             type="text"
-            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+            className="w-full bg-transparent outline-none bg-white lg:bg-transparent border lg:border-white rounded-2xl text-black lg:text-white py-3 px-2 my-2"
           />
-          <div className="text-white font-semibold mt-5">Address *</div>
+          <div className="text-black lg:text-white font-semibold mt-5">
+            Address *
+          </div>
           <input
             type="text"
-            className="w-full bg-transparent outline-none border border-white rounded-2xl text-white py-3 px-2 my-2"
+            className="w-full bg-transparent outline-none bg-white lg:bg-transparent border lg:border-white rounded-2xl text-black lg:text-white py-3 px-2 my-2"
           />
         </div>
       </div>
       <div className="w-full lg:bg-white flex justify-center items-center">
-        <div className="lg:bg-zinc-100 lg:rounded-xl w-full lg:w-[50vh] h-auto lg:h-[80vh] lg:shadow-lg my-10">
+        <div className="lg:bg-zinc-100 lg:rounded-xl w-full lg:w-[50vh] h-auto lg:h-[80vh] lg:shadow-lg mb-10">
           <div className="flex justify-start"></div>
           <div className="lg:pt-8">
             <div className="flex flex-col items-center">
@@ -189,9 +192,9 @@ const Login = () => {
                 <Link href={"../profile"}>
                   <button
                     type="submit"
-                    className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 duration-500 rounded-2xl focus:outline-none"
+                    className="flex items-center px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 duration-500 rounded-2xl focus:outline-none"
                   >
-                    Make Payment
+                    <Send className="mr-2"/> Make Payment
                   </button>
                 </Link>
               </div>
@@ -210,4 +213,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default LearnPayment;

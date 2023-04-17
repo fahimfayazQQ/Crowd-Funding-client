@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 5
+  },
+  {
+    "id": 2,
+    "name": "Pakku",
+    "designation": "Head of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 4
+  },
+  {
+    "id": 3,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 3
+  },
+  {
+    "id": 4,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 2
+  },
+  {
+    "id": 5,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 1
+  },
+  {
+    "id": 6,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 5
+  },
+  {
+    "id": 7,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 5
+  },
+  {
+    "id": 8,
+    "name": "Pakku",
+    "designation": "CEO of Okla",
+    "testimonial": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "stars": 5
+  }
+]

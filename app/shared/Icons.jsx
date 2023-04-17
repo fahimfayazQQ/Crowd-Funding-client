@@ -21,3 +21,6 @@ export { default as Tick } from "../../public/assets/icons/tick.svg";
 export { default as TickGreen } from "../../public/assets/icons/tick-green.svg";
 export { default as Mail } from "../../public/assets/icons/mail.svg";
 export { default as Bell } from "../../public/assets/icons/bell.svg";
+export { default as Star } from "../../public/assets/icons/star.svg";
+export { default as Profit } from "../../public/assets/icons/profit.svg";
+export { default as Loss } from "../../public/assets/icons/loss.svg";

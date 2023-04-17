@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import CreditCard from "../../public/assets/images/creditcard.png"
-import Meta from "../../public/assets/images/fb.png"
-import Google from "../../public/assets/images/google.png"
-import Youtube from "../../public/assets/images/yt.png"
-const Login = () => {
+import { Send } from "../shared/Icons";
+
+const Payment = () => {
   return (
     <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row ">
       <div className="w-full flex justify-center items-center">
@@ -20,8 +18,8 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:bg-white flex justify-center items-center">
-        <div className="lg:bg-zinc-100 lg:rounded-xl w-full lg:w-[50vh] h-auto lg:h-[80vh] lg:shadow-lg my-10">
+      <div className="w-full lg:bg-white flex justify-center items-center relative -top-14 lg:static">
+        <div className="lg:bg-zinc-100 lg:rounded-xl w-full lg:w-[50vh] h-auto lg:h-[80vh] lg:shadow-lg mb-10">
           <div className="flex justify-start"></div>
           <div className="lg:pt-8">
             <div className="flex flex-col items-center">
@@ -178,9 +176,9 @@ const Login = () => {
                 <Link href={"../profile"}>
                   <button
                     type="submit"
-                    className="inline-block px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none"
+                    className="flex items-center px-6 py-2 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 rounded-md focus:outline-none"
                   >
-                    Make Payment
+                    <Send className="mr-2" /> Make Payment
                   </button>
                 </Link>
               </div>
@@ -199,4 +197,4 @@ const Login = () => {
   );
 }
 
-export default Login
+export default Payment;

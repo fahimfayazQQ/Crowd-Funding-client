@@ -30,7 +30,7 @@ const Reccomendation = () => {
     }
     console.log(selectedCat);
   return (
-    <div className="h-[100vh] overflow-y-auto">
+    <div className="lg:h-[100vh] overflow-y-auto pb-10">
       <div className="2xl:w-9/12 h-auto mx-auto p-5 lg:p-20">
         <div
           onClick={showModal}

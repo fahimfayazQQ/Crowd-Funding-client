@@ -31,7 +31,8 @@ const ProjectForm = () => {
               hangleToogle(0);
             }}
             className={`${
-              toogleTab === 0 && "text-home-color scale-110 duration-300"
+              toogleTab === 0 &&
+              "text-home-color scale-110 duration-300 text-shadow"
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
@@ -48,7 +49,8 @@ const ProjectForm = () => {
               hangleToogle(1);
             }}
             className={`${
-              toogleTab === 1 && "text-home-color scale-110 duration-300"
+              toogleTab === 1 &&
+              "text-home-color scale-110 duration-300 text-shadow"
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
@@ -65,7 +67,8 @@ const ProjectForm = () => {
               hangleToogle(2);
             }}
             className={`${
-              toogleTab === 2 && "text-home-color scale-110 duration-300"
+              toogleTab === 2 &&
+              "text-home-color scale-110 duration-300 text-shadow"
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
@@ -82,7 +85,8 @@ const ProjectForm = () => {
               hangleToogle(3);
             }}
             className={`${
-              toogleTab === 3 && "text-home-color scale-110 duration-300"
+              toogleTab === 3 &&
+              "text-home-color scale-110 duration-300 text-shadow"
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div
@@ -99,7 +103,8 @@ const ProjectForm = () => {
               hangleToogle(4);
             }}
             className={`${
-              toogleTab === 4 && "text-home-color scale-110 duration-300"
+              toogleTab === 4 &&
+              "text-home-color scale-110 duration-300 text-shadow"
             } flex-col justify-center items-center text-center cursor-pointer`}
           >
             <div

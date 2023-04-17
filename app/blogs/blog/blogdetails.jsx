@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import { useRef } from "react";
 import Img1 from "../../../public/assets/images/blog-detail.png";
 import Img2 from "../../../public/assets/images/blog-detail2.png";
 import Img3 from "../../../public/assets/images/blog-detail3.png";
@@ -15,20 +15,65 @@ import Avatar1 from "../../../public/assets/images/avatar.png";
 import Avatar2 from "../../../public/assets/images/avatar2.png";
 import { FB, Insta, Twitter, Mail, Bell } from "../../shared/Icons";
 import { Fade, Zoom } from "react-awesome-reveal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const BlogDetails = () => {
+  const sliderRef = useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: "0",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="bg-[#fffbf1]">
-      
-      <div className="flex flex-wrap lg:justify-end items-center pt-20 pl-5 lg:pr-20">
-        <Image src={Avatar2} alt="img" className="lg:hidden"/>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Find Campaign</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Dashboard</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Studio</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Insight</div>
-        <Mail className="hover:text-home-color cursor-pointer my-2 mx-5"/>
-        <Bell className="hover:text-home-color cursor-pointer my-2 mx-5"/>
-        <Image src={Avatar2} alt="img" className="hidden lg:block"/>
+      <div className="flex flex-wrap justify-between lg:justify-end items-center pt-20 px-5 lg:pr-20 lg:px-0">
+        <Image src={Avatar2} alt="img" className="lg:hidden" />
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Find Campaign
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Dashboard
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Studio
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Insight
+        </div>
+        <Mail className="hover:text-home-color cursor-pointer my-2 mx-5" />
+        <Bell className="hover:text-home-color cursor-pointer my-2 mx-5" />
+        <Image src={Avatar2} alt="img" className="hidden lg:block" />
       </div>
 
       <div className=" max-w-screen-xl px-5 mx-auto pt-10 pb-10 overflow-hidden">
@@ -76,7 +121,9 @@ const BlogDetails = () => {
           </div>
         </Fade>
 
-        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">Image Gallery</div>
+        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
+          Image Gallery
+        </div>
         <div className="grid lg:grid-cols-3 gap-3 mb-10">
           <Fade direction="right" triggerOnce>
             <div className="shadow-lg rounded-2xl">
@@ -100,16 +147,25 @@ const BlogDetails = () => {
           </Fade>
         </div>
 
-        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">Top brands</div>
-        <div className="text-sm lg:text-base">
-          Here&apos;s another gallery with only one column, which creates a
-          carousel slide-show instead. A nice little feature: the carousel only
-          advances when it is in view, so your visitors won&apos;t scroll down
-          to find it half way through your images.
+        <div className="my-16 lg:my-20">
+          <div className="text-xl lg:text-2xl font-semibold mb-5">
+            Top brands
+          </div>
+          <div className="text-sm lg:text-base">
+            Here&apos;s another gallery with only one column, which creates a
+            carousel slide-show instead. A nice little feature: the carousel
+            only advances when it is in view, so your visitors won&apos;t scroll
+            down to find it half way through your images.
+          </div>
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            <Zoom triggerOnce>
+              <Image src={Img2} alt="img" className="w-full my-5" />
+            </Zoom>
+            <Zoom triggerOnce>
+              <Image src={Img2} alt="img" className="w-full my-5" />
+            </Zoom>
+          </Slider>
         </div>
-        <Zoom triggerOnce>
-          <Image src={Img2} alt="img" className="w-full my-5" />
-        </Zoom>
         <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           What about videos?
         </div>
@@ -140,8 +196,9 @@ const BlogDetails = () => {
             placeholder="What's on your mind..."
             className="w-full border border-b-2 rounded-md outline-none p-2"
           ></textarea>
-          <div className="inline-block border bg-white rounded-lg shadow-sm cursor-pointer py-1 px-3">Post</div>
-
+          <div className="inline-block border bg-white rounded-lg shadow-sm cursor-pointer py-1 px-3">
+            Post
+          </div>
 
           <div>
             <div className="flex justify-start items-center">

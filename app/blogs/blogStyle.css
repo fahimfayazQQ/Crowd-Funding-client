@@ -10,8 +10,8 @@
     position: absolute;
     top: 0;
     left: 60%;
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-image: url("../../public/assets/images/blog-banner.png");
 }
 
@@ -20,11 +20,10 @@
         z-index: -1;
         content: "";
         position: absolute;
-        top: -150px;
-        left: 250px;
-        width: 700px;
-        height: 1000px;
+        top: 0;
+        left: 30%;
+        width: 400px;
+        height: 400px;
         background-image: url("../../public/assets/images/blog-banner.png");
-        transform: rotate(-20deg);
     }
 }

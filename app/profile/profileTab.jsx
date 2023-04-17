@@ -4,6 +4,7 @@ import UserProfile from './userProfile'
 import Settings from './settings'
 import Notification from './notification'
 import WishProject from './wishProject'
+import InvestList from './investList'
 import Reccomendation from './reccomendation'
 import { Fade, Slide } from "react-awesome-reveal";
 import Link from 'next/link'
@@ -24,17 +25,18 @@ const ProfileTab = () => {
     };
 
   return (
-    <div className="w-full h-screen lg:flex overflow-hidden">
+    <div className="w-full h-screen lg:flex overflow-x-hidden">
       <div className="hidden lg:block w-[25rem] h-full bg-home-color text-white z-50">
         <div className='text-2xl font-semibold pl-20 py-20'>QUADQUE</div>
         <div className="flex flex-col justify-center text-lg pt-20">
           <div onClick={()=>{handleToogle(0);}} className={`${toogleTab===0 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Notifications</div>
-          <div onClick={()=>{handleToogle(1);}} className={`${toogleTab===1 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Wish Project</div>
-          <div onClick={()=>{handleToogle(2);}} className={`${toogleTab===2 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Recommended</div>
-          <div onClick={()=>{handleToogle(3);}} className={`${toogleTab===3 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Profile</div>
-          <div onClick={()=>{handleToogle(4);}} className={`${toogleTab===4 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Account Settings</div>
+          <div onClick={()=>{handleToogle(1);}} className={`${toogleTab===1 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Investments List</div>
+          <div onClick={()=>{handleToogle(2);}} className={`${toogleTab===2 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Wish Project</div>
+          <div onClick={()=>{handleToogle(3);}} className={`${toogleTab===3 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Recommended</div>
+          <div onClick={()=>{handleToogle(4);}} className={`${toogleTab===4 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Profile</div>
+          <div onClick={()=>{handleToogle(5);}} className={`${toogleTab===5 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Account Settings</div>
           <Link href={'./'}>
-            <div onClick={()=>{handleToogle(5);}} className={`${toogleTab===5 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer flex items-center`}><Image src={Logout} alt='logout' className='w-6 mr-2'/> Logout</div>
+            <div onClick={()=>{handleToogle(6);}} className={`${toogleTab===6 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer flex items-center`}><Image src={Logout} alt='logout' className='w-6 mr-2'/> Logout</div>
           </Link>
         </div>
       </div>
@@ -45,29 +47,32 @@ const ProfileTab = () => {
           <div className={`${HamburgerLine} ${showTabs? "-rotate-45 -translate-y-2":""}`} />
         </div>
         {toogleTab===0 && <div className='font-semibold'>Notifications</div>}
-        {toogleTab===1 && <div className='font-semibold'>Wish Project</div>}
-        {toogleTab===2 && <div className='font-semibold'>Recommended</div>}
-        {toogleTab===3 && <div className='font-semibold'>Profile</div>}
-        {toogleTab===4 && <div className='font-semibold'>Account Settings</div>}
+        {toogleTab===1 && <div className='font-semibold'>Investments</div>}
+        {toogleTab===2 && <div className='font-semibold'>Wish Project</div>}
+        {toogleTab===3 && <div className='font-semibold'>Recommended</div>}
+        {toogleTab===4 && <div className='font-semibold'>Profile</div>}
+        {toogleTab===5 && <div className='font-semibold'>Account Settings</div>}
       </div>
       <div>
-      <Slide triggerOnce className={`lg:hidden w-full flex flex-wrap justify-around px-4 mx-auto`}>
+      <Slide triggerOnce className={`${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} lg:hidden w-full flex flex-wrap justify-around px-4 mx-auto`}>
         <div onClick={()=>{handleToogle(0)}} className={`${toogleTab===0 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Notifications</div>
-        <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Wish Project</div>
-        <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Recommended</div>
-        <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Profile</div>
-        <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Account Settings</div>
+        <div onClick={()=>{handleToogle(1)}} className={`${toogleTab===1 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Investments List</div>
+        <div onClick={()=>{handleToogle(2)}} className={`${toogleTab===2 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Wish Project</div>
+        <div onClick={()=>{handleToogle(3)}} className={`${toogleTab===3 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Recommended</div>
+        <div onClick={()=>{handleToogle(4)}} className={`${toogleTab===4 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Profile</div>
+        <div onClick={()=>{handleToogle(5)}} className={`${toogleTab===5 ? "text-white bg-gray-800 duration-300":"text-black bg-white border duration-300"} ${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} w-full text-center rounded-full shadow-md px-5 py-2 my-1 cursor-pointer`}>Account Settings</div>
         <Link href={'./'} className='w-full'>
           <div className={`${showTabs? "translate-y-0":"absolute -left-56 -translate-x-[500px]"} bg-white rounded-full shadow-md px-5 py-2 my-1 cursor-pointer flex justify-center items-center`}><Image src={Logout} alt='logout' className='w-6 mr-2'/>Logout</div>
         </Link>
       </Slide>
       </div>
       <div className='w-full'>
-        {toogleTab===0 && <Slide direction='right'><Notification/></Slide>}
-        {toogleTab===1 && <Slide direction='right'><WishProject/></Slide>}
-        {toogleTab===2 && <Slide direction='right'><Reccomendation/></Slide>}
-        {toogleTab===3 && <Slide direction='right'><UserProfile/></Slide>}
-        {toogleTab===4 && <Slide direction='right'><Settings/></Slide>}
+        {toogleTab===0 && <Slide direction='right' triggerOnce><Notification/></Slide>}
+        {toogleTab===1 && <Slide direction='right' triggerOnce><InvestList/></Slide>}
+        {toogleTab===2 && <Slide direction='right' triggerOnce><WishProject/></Slide>}
+        {toogleTab===3 && <Slide direction='right' triggerOnce><Reccomendation/></Slide>}
+        {toogleTab===4 && <Slide direction='right' triggerOnce><UserProfile/></Slide>}
+        {toogleTab===5 && <Slide direction='right' triggerOnce><Settings/></Slide>}
       </div>
     </div>
   );

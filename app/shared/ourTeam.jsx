@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, {useRef} from "react";
 import Coke from "../../public/assets/images/Photo.png";
+import Coke2 from "../../public/assets/images/staff1.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +45,7 @@ const OurTeam = () => {
   };
   return (
     <div className="max-w-screen-xl px-5 my-10 lg:my-20 mx-auto">
-      <div className="text-2xl lg:text-3xl mb-3">Our Team</div>
+      <div className="text-2xl lg:text-3xl font-semibold mb-3">Our Team</div>
       <div className="lg:w-1/3 text-sm lg:text-base">
         Paragraphs are the building blocks of papers. Many students define
         paragraphs in terms of length
@@ -62,9 +63,9 @@ const OurTeam = () => {
               </div>
             </div>
             <div className="w-full h-full">
-              <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
+              <Image src={Coke2} alt="img" className="w-[95%] rounded-lg" />
               <div className="text-center text-black font-semibold mt-3">
-                HM Alvi
+                Sofia Vergara
               </div>
               <div className="text-center text-black text-sm">
                 Ceo & Founder{" "}

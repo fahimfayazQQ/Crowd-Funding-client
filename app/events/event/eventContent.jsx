@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Events1 from "../../../public/assets/images/events1.png";
+import Events43 from "../../../public/assets/images/event43.png";
 import { Zoom, Fade, JackInTheBox } from "react-awesome-reveal";
 import "../eventsStyle.css";
 
@@ -102,7 +103,7 @@ const EventContent = () => {
         <div className="flex flex-col lg:flex-row justify-center gap-5 my-10">
           <Zoom triggerOnce>
             <Image src={Events1} alt="img" />
-            <Image src={Events1} alt="img" />
+            <Image src={Events43} alt="img" />
           </Zoom>
         </div>
 

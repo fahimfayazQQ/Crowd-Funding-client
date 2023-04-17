@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import React from "react";
+import {useRef} from "react";
 import Img1 from "../../../public/assets/images/blog-detail.png";
 import Img2 from "../../../public/assets/images/blog-detail2.png";
 import Img3 from "../../../public/assets/images/blog-detail3.png";
@@ -16,17 +16,62 @@ import Avatar2 from "../../../public/assets/images/avatar2.png";
 import { FB, Insta, Twitter, Mail, Bell } from "../../shared/Icons";
 import Link from "next/link";
 import { Zoom, Fade } from "react-awesome-reveal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const StoryDetail = () => {
+  const sliderRef = useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: "0",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="bg-[#fffbf1]">
-
-      <div className="flex flex-wrap lg:justify-end items-center pt-20 pl-5 lg:pr-20">
+      <div className="flex flex-wrap justify-between lg:justify-end items-center pt-20 px-5 lg:pr-20 lg:px-0">
         <Image src={Avatar2} alt="img" className="lg:hidden" />
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Find Campaign</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Dashboard</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Studio</div>
-        <div className="hover:text-home-color cursor-pointer my-2 mx-5">Insight</div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Find Campaign
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Dashboard
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Studio
+        </div>
+        <div className="hover:text-home-color cursor-pointer my-2 mx-5">
+          Insight
+        </div>
         <Mail className="hover:text-home-color cursor-pointer my-2 mx-5" />
         <Bell className="hover:text-home-color cursor-pointer my-2 mx-5" />
         <Image src={Avatar2} alt="img" className="hidden lg:block" />
@@ -47,32 +92,33 @@ const StoryDetail = () => {
         </Zoom>
         <Fade>
           <div className="text-sm lg:text-base">
-            This page is a demo that shows everything you can do inside portfolio
-            and blog posts. We&apos;ve included everything you need to create
-            engaging posts about your work, and show off your case studies in a
-            beautiful way. Obviously, we&apos;ve styled up all the basic text
-            formatting options available in markdown. You can create lists: Simple
-            bulleted lists Like this one Are cool And: Numbered lists Like this
-            other one Are great too You can also add blockquotes, which are shown
-            at a larger width to help break up the layout and draw attention to
-            key parts of your content. This page is a demo that shows everything
-            you can do inside portfolio and blog posts. We&apos;ve included
-            everything you need to create engaging posts about your work, and show
-            off your case studies in a beautiful way. Obviously, we&apos;ve styled
-            up all the basic text formatting options available in markdown. You
-            can create lists: Simple bulleted lists Like this one Are cool And:
-            Numbered lists Like this other one Are great too You can also add
+            This page is a demo that shows everything you can do inside
+            portfolio and blog posts. We&apos;ve included everything you need to
+            create engaging posts about your work, and show off your case
+            studies in a beautiful way. Obviously, we&apos;ve styled up all the
+            basic text formatting options available in markdown. You can create
+            lists: Simple bulleted lists Like this one Are cool And: Numbered
+            lists Like this other one Are great too You can also add
             blockquotes, which are shown at a larger width to help break up the
-            layout and draw attention to key parts of your content. <br /> <br />
-            This page is a demo that shows everything you can do inside portfolio
-            and blog posts. We&apos;ve included everything you need to create
-            engaging posts about your work, and show off your case studies in a
-            beautiful way. Obviously, we&apos;ve styled up all the basic text
-            formatting options available in markdown. You can create lists: Simple
-            bulleted lists Like this one Are cool And: Numbered lists Like this
-            other one Are great too You can also add blockquotes, which are shown
-            at a larger width to help break up the layout and draw attention to
-            key parts of your content.
+            layout and draw attention to key parts of your content. This page is
+            a demo that shows everything you can do inside portfolio and blog
+            posts. We&apos;ve included everything you need to create engaging
+            posts about your work, and show off your case studies in a beautiful
+            way. Obviously, we&apos;ve styled up all the basic text formatting
+            options available in markdown. You can create lists: Simple bulleted
+            lists Like this one Are cool And: Numbered lists Like this other one
+            Are great too You can also add blockquotes, which are shown at a
+            larger width to help break up the layout and draw attention to key
+            parts of your content. <br /> <br />
+            This page is a demo that shows everything you can do inside
+            portfolio and blog posts. We&apos;ve included everything you need to
+            create engaging posts about your work, and show off your case
+            studies in a beautiful way. Obviously, we&apos;ve styled up all the
+            basic text formatting options available in markdown. You can create
+            lists: Simple bulleted lists Like this one Are cool And: Numbered
+            lists Like this other one Are great too You can also add
+            blockquotes, which are shown at a larger width to help break up the
+            layout and draw attention to key parts of your content.
           </div>
         </Fade>
 
@@ -107,26 +153,33 @@ const StoryDetail = () => {
           </Fade>
         </div>
 
-        <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
-          Top brands
+        <div className="my-16 lg:my-20">
+          <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
+            Top brands
+          </div>
+          <div className="text-sm lg:text-base">
+            Here&apos;s another gallery with only one column, which creates a
+            carousel slide-show instead. A nice little feature: the carousel
+            only advances when it is in view, so your visitors won&apos;t scroll
+            down to find it half way through your images.
+          </div>
+          <Slider ref={sliderRef} {...settings} arrows={false}>
+            <Zoom triggerOnce>
+              <Image src={Img2} alt="img" className="w-full my-5" />
+            </Zoom>
+            <Zoom triggerOnce>
+              <Image src={Img2} alt="img" className="w-full my-5" />
+            </Zoom>
+          </Slider>
         </div>
-        <div className="text-sm lg:text-base">
-          Here&apos;s another gallery with only one column, which creates a
-          carousel slide-show instead. A nice little feature: the carousel only
-          advances when it is in view, so your visitors won&apos;t scroll down to
-          find it half way through your images.
-        </div>
-        <Zoom triggerOnce>
-          <Image src={Img2} alt="img" className="w-full my-5" />
-        </Zoom>
         <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           What about videos?
         </div>
         <div className="text-sm lg:text-base">
           Here&apos;s another gallery with only one column, which creates a
           carousel slide-show instead. A nice little feature: the carousel only
-          advances when it is in view, so your visitors won&apos;t scroll down to
-          find it half way through your images.
+          advances when it is in view, so your visitors won&apos;t scroll down
+          to find it half way through your images.
         </div>
         <Zoom triggerOnce>
           <Image src={Img3} alt="img" className="w-full my-5" />
@@ -155,7 +208,9 @@ const StoryDetail = () => {
             className="w-full border rounded-md outline-none p-2"
             placeholder="What's on your mind..."
           ></textarea>
-          <div className="inline-block border bg-white rounded-lg shadow-sm cursor-pointer py-1 px-3">Post</div>
+          <div className="inline-block border bg-white rounded-lg shadow-sm cursor-pointer py-1 px-3">
+            Post
+          </div>
 
           <div>
             <div className="flex justify-start items-center">
@@ -164,11 +219,13 @@ const StoryDetail = () => {
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
             <div className="text-sm lg:text-base pl-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
-              dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+              arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
             </div>
-            <div className="text-sm text-sky-500 pl-10 cursor-pointer">Reply</div>
+            <div className="text-sm text-sky-500 pl-10 cursor-pointer">
+              Reply
+            </div>
           </div>
           <div className="pl-20">
             <div className="flex justify-start items-center">
@@ -177,11 +234,13 @@ const StoryDetail = () => {
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
             <div className="text-sm lg:text-base pl-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
-              dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+              arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
             </div>
-            <div className="text-sm text-sky-500 pl-10 cursor-pointer">Reply</div>
+            <div className="text-sm text-sky-500 pl-10 cursor-pointer">
+              Reply
+            </div>
           </div>
           <div className="border w-full my-5"></div>
           <div>
@@ -191,11 +250,13 @@ const StoryDetail = () => {
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
             <div className="text-sm lg:text-base pl-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
-              dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+              arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
             </div>
-            <div className="text-sm text-sky-500 pl-10 cursor-pointer">Reply</div>
+            <div className="text-sm text-sky-500 pl-10 cursor-pointer">
+              Reply
+            </div>
           </div>
         </div>
       </div>

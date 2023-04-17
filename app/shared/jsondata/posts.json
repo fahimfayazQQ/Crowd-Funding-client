@@ -5,8 +5,7 @@
     "medium": "Virtual",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$2280",
-    "image": "",
-    "profit": 1
+    "image": ""
   },
   {
     "id": 2,
@@ -14,8 +13,7 @@
     "medium": "On Class",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$4580",
-    "image": "",
-    "profit": 0
+    "image": ""
   },
   {
     "id": 3,
@@ -23,8 +21,7 @@
     "medium": "Virtual",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$2000",
-    "image": "",
-    "profit": 1
+    "image": ""
   },
   {
     "id": 4,
@@ -32,8 +29,7 @@
     "medium": "On Class",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$7280",
-    "image": "",
-    "profit": 0
+    "image": ""
   },
   {
     "id": 5,
@@ -41,8 +37,7 @@
     "medium": "Virtual",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$6080",
-    "image": "",
-    "profit": 1
+    "image": ""
   },
   {
     "id": 6,
@@ -50,8 +45,7 @@
     "medium": "On Class",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$280",
-    "image": "",
-    "profit": 0
+    "image": ""
   },
   {
     "id": 7,
@@ -59,8 +53,7 @@
     "medium": "Virtual",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$880",
-    "image": "",
-    "profit": 0
+    "image": ""
   },
   {
     "id": 8,
@@ -68,25 +61,6 @@
     "medium": "On Class",
     "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
     "raised": "$8000",
-    "image": "",
-    "profit": 0
-  },
-  {
-    "id": 9,
-    "title": "Lorem Ipsum",
-    "medium": "Virtual",
-    "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
-    "raised": "$8000",
-    "image": "",
-    "profit": 1
-  },
-  {
-    "id": 10,
-    "title": "Lorem Ipsum",
-    "medium": "On Class",
-    "description": "Our new seminar in wordpress 26 June Our new wordpress 26 June",
-    "raised": "$8000",
-    "image": "",
-    "profit": 1
+    "image": ""
   }
 ]

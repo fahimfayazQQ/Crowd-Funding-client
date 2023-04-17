@@ -429,3 +429,13 @@ table.custom-table>tbody>tr:hover td {
 .slick-current {
   font-weight: normal;
 }
+
+.slick-dots>li>button::before {
+  background-color: #D100D1;
+  color: #D100D1;
+  border-radius: 50%;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 2px #c9c9c9;
+}

@@ -1,16 +1,29 @@
 'use client'
-import React from "react";
-import { List1 } from "../shared/Icons";
-import Image1 from "../../public/assets/images/image2.png";
-import Image2 from "../../public/assets/images/Method.png";
 import Image from "next/image";
+import { useRef } from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
+import Image2 from "../../public/assets/images/Method.png";
+import Image1 from "../../public/assets/images/image2.png";
+import Icon from "../../public/assets/images/save-time.png";
+import Posts from "../shared/jsondata/posts.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const LearnContent = () => {
+    const sliderRef = useRef(null);
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerPadding: "0",
+    };
   return (
     <div className="max-w-screen-xl px-3 lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="text-black mx-auto mb-10 lg:mb-20">
-        <div className="text-xl lg:text-4xl text-center pb-10">
+        <div className="text-xl lg:text-4xl font-semibold text-center pb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
         </div>
         <div className="lg:w-2/3 flex flex-wrap justify-evenly mx-auto">
@@ -40,147 +53,49 @@ const LearnContent = () => {
           </Zoom>
         </div>
       </div>
-      <div className="text-xl lg:text-3xl text-center mb-4 lg:mb-10">
+      <div className="text-xl lg:text-4xl font-semibold text-center mb-4 lg:mb-10">
         Save time by scheduling posts
       </div>
-      <div className="grid lg:grid-cols-4 gap-5 mb-10">
-        <Zoom triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts1
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
+      <div className="hidden lg:block">
+        <div className="grid lg:grid-cols-4 gap-5 mb-10">
+          {Posts?.map((post) => (
+            <Zoom triggerOnce>
+              <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
+                <div className="text-lg lg:text-xl font-semibold my-5">{post?.title}</div>
+                <div className="text-sm pb-8">{post?.description}</div>
+                <div className="flex justify-between px-4">
+                  <Image src={Icon} alt="img" className="" />
+                  <div className="border text-black hover:bg-home-color hover:bg-opacity-10 duration-300 shadow-md tracking-widest text-sm text-center rounded-full py-3 px-4 cursor-pointer">
+                    Get Started
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={1200} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts2
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={1400} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts3
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={1600} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts4
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={1800} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts5
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={2000} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts6
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={2200} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts7
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
-        <Zoom duration={2400} triggerOnce>
-          <div className="bg-white rounded-2xl shadow-lg pb-5 border p-4">
-            <div className="text-lg lg:text-xl my-5">
-              Save time by scheduling posts8
-            </div>
-            <div className="text-sm pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div className="flex justify-between px-4">
-              <List1 className="text-5xl" />
-              <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                Get Started
-              </div>
-            </div>
-          </div>
-        </Zoom>
+            </Zoom>
+          ))}
+        </div>
       </div>
+
+      <Slider
+        ref={sliderRef}
+        {...settings}
+        arrows={false}
+        className="lg:hidden"
+      >
+        {Posts?.map((post) => (
+          <Zoom triggerOnce>
+            <div className="bg-white rounded-2xl shadow-lg mb-5 border p-4 mx-2">
+              <div className="text-lg lg:text-xl my-5">{post?.title}</div>
+              <div className="text-sm pb-8">{post?.description}</div>
+              <div className="flex justify-between px-4">
+                <Image src={Icon} alt="img" className="" />
+                <div className="border text-black shadow-md tracking-widest text-sm text-center rounded-full py-3 px-4 cursor-pointer">
+                  Get Started
+                </div>
+              </div>
+            </div>
+          </Zoom>
+        ))}
+      </Slider>
 
       <div className="py-10 lg:py-20">
         <div className="flex flex-col lg:flex-row justify-between items-center">

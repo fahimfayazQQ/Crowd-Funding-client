@@ -17,7 +17,7 @@ const Notification = () => {
   setReadAll(!readAll);
   }
   return (
-    <div className="2xl:w-10/12 h-auto lg:h-[100vh] mx-auto lg:p-20 overflow-y-auto lg:overflow-y-hidden">
+    <div className="2xl:w-10/12 h-[100vh] mx-auto lg:p-20">
       <div className="flex flex-col lg:flex-row justify-between my-5 mx-4">
         <div className="flex items-end gap-4">
           <div>
@@ -257,7 +257,7 @@ const Notification = () => {
             your post.
           </div>
         </div>
-        <div className="flex items-center lg:py-5">
+        <div className="flex items-center lg:py-5 pb-10">
           <div className="text-zinc-400 text-xs px-14 whitespace-nowrap">
             Yesterday, 10:22am
           </div>

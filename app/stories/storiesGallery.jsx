@@ -60,12 +60,12 @@ const StoriesGallery = () => {
   return (
     <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20 overflow-hidden">
       <Zoom triggerOnce>
-        <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 story_shine">
-          <div className="bg-white bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none p-5">
+        <div className="w-full bg-home-color rounded-2xl p-0 lg:p-16 story_shine">
+          <div className="bg-black bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none px-8 py-12">
             <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
               Success Stories
             </div>
-            <div className="text-white">
+            <div className="text-sm lg:text-base text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum is simply dummy text of the printing
               and typesetting industry.

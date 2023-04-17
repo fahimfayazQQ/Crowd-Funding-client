@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import React, {useRef} from "react";
+import {useRef} from "react";
 import Coke from "../../public/assets/images/cocacola.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -20,8 +20,8 @@ const Articles = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
@@ -46,7 +46,7 @@ const Articles = () => {
   return (
     <div className="max-w-screen-xl px-2 py-10 lg:py-20 mx-auto">
       <Fade direction="up" triggerOnce>
-        <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl mx-auto lg:m-0">
+        <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl font-semibold mx-auto lg:m-0">
           <div className="text-zinc-700 tracking-widest text-sm mb-3">
             - ARTICLES
           </div>
@@ -85,11 +85,10 @@ const Articles = () => {
         </div>
       </Zoom>
 
-      <div className="w-11/12 lg:w-full mx-auto flex items-center justify-between">
+      <div className="w-11/12 lg:w-full mx-auto flex items-center">
         <div className="inline-block bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
           See More
         </div>
-        <div className="flex">
           <div
             onClick={() => sliderRef.current.slickPrev()}
             className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-3"
@@ -102,7 +101,6 @@ const Articles = () => {
           >
             {">"}
           </div>
-        </div>
       </div>
     </div>
   );
