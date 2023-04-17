@@ -15,10 +15,10 @@ const Business = () => {
         </div>
         <div className="w-11/12 lg:w-1/4 my-auto">
           <Fade direction="right" triggerOnce>
-            <div className="font-semibold text-xl lg:text-2xl pb-5">
+            <div className="font-semibold text-xl lg:text-4xl pb-5">
               Lorem Ipsum simply dummy text of the{" "}
             </div>
-            <div className="text-sm lg:text-base ">
+            <div className="text-sm lg:text-lg ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s,

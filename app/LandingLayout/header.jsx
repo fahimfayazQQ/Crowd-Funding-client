@@ -24,15 +24,15 @@ const Header = () => {
         <div className="w-full lg:h-[71vh] flex flex-col lg:flex-row justify-between">
           <div className="w-full bg-gradient-to-tl from-[#5143F6] via-indigo-500 to-[#5143F6] rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl text-white py-8 pl-4 pr-4 lg:pl-8 lg:pr-20">
             <Fade direction="left" triggerOnce>
-              <div className="text-2xl lg:text-5xl font-semibold mb-5 lg:mt-10">
+              <div className="text-2xl lg:text-[60px] leading-[60px] font-semibold mb-5 lg:mt-10">
                 Bring A Creative Project To Life.
               </div>
-              <div className="mb-10">
+              <div className="text-sm lg:text-lg mb-10">
                 Below, we answer the questions people most often have about
                 crowdfunding when they’re trying to decide if they want to start
                 an online fundraiser.
               </div>
-              <div className="inline-block bg-white text-indigo-500 tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
+              <div className="inline-block bg-white text-indigo-500 tracking-[.5em] font-semibold text-sm text-center rounded-md py-3 px-4 cursor-pointer">
                 EXPLORE
               </div>
             </Fade>

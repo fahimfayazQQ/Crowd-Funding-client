@@ -1,11 +1,13 @@
 'use client';
 import Image from "next/image";
 import {useRef} from "react";
-import Coke from "../../public/assets/images/cocacola.png";
+import Article1 from "../../../public/assets/images/cocacola.png";
+import Article2 from "../../../public/assets/images/article2.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, Zoom } from "react-awesome-reveal";
+import "./article.css"
 
 const Articles = () => {
   const sliderRef = useRef(null);
@@ -46,10 +48,10 @@ const Articles = () => {
   return (
     <div className="max-w-screen-xl px-2 py-10 lg:py-20 mx-auto">
       <Fade direction="up" triggerOnce>
-        <div className="w-11/12 lg:w-1/3 text-xl lg:text-2xl font-semibold mx-auto lg:m-0">
-          <div className="text-zinc-700 tracking-widest text-sm mb-3">
-            - ARTICLES
-          </div>
+        <div className="text-zinc-700 tracking-[.5em] text-sm mb-3 pl-5 lg:pl-0">
+          -ARTICLES
+        </div>
+        <div className="w-11/12 lg:w-5/12 text-xl lg:text-3xl font-semibold mx-auto lg:m-0">
           Paragraphs are the building blocks of papers. Many students define
           paragraphs in terms of length
         </div>
@@ -57,28 +59,31 @@ const Articles = () => {
       <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
-            <div className="w-full h-full relative px-1">
-              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
+            <div className="content">
+              <div className="content-overlay"></div>
+              <Image src={Article1} alt="img" className="content-image" />
+              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
+                <span className="text-indigo-500 cursor-pointer">View More</span>
               </div>
             </div>
-            <div className="w-full h-full relative px-1">
-              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
+            <div className="content">
+              <div className="content-overlay"></div>
+              <Image src={Article2} alt="img" className="content-image" />
+              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
+                <span className="text-indigo-500 cursor-pointer">View More</span>
               </div>
             </div>
-            <div className="w-full h-full relative px-1">
-              <Image src={Coke} alt="img" className="lg:w-full mx-1 shrink-0" />
-              <div className="absolute bottom-5 px-10 text-white font-semibold">
+            <div className="content">
+              <div className="content-overlay"></div>
+              <Image src={Article1} alt="img" className="content-image" />
+              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-600">View More</span>
+                <span className="text-indigo-500 cursor-pointer">View More</span>
               </div>
             </div>
           </Slider>

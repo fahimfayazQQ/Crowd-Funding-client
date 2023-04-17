@@ -25,7 +25,7 @@ const Investors = () => {
     <div className="lg:px-5">
       <div className="max-w-screen-xl px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto lg:rounded-3xl text-white relative">
         <Zoom triggerOnce>
-          <div className="text-2xl lg:text-3xl font-semibold text-center pb-10">
+          <div className="text-2xl lg:text-5xl font-semibold text-center pb-10">
             Our Happy Investors
           </div>
         </Zoom>
@@ -60,16 +60,16 @@ const Investors = () => {
                         className="absolute -bottom-2 left-22"
                       />
                     </div>
-                    <div className="text-white pt-5 pb-2">
+                    <div className="text-white text-lg lg:text-xl pt-5 pb-2">
                       <span className="font-semibold">{post?.name}</span>,{" "}
                       {post?.designation}
                     </div>
                     <div className="w-[10rem] mx-auto flex justify-evenly pb-5">
                       {[...Array(post?.stars)].map((_,i)=>
-                      <Star key={i} className="text-[#FFA722]" />
+                      <Star key={i} className="text-[#FFA722] text-3xl" />
                       )}
                     </div>
-                    <div className="w-11/12 lg:w-9/12 text-white mx-auto text-sm lg:text-base">
+                    <div className="w-11/12 lg:w-9/12 text-white mx-auto text-sm lg:text-2xl">
                       {post?.testimonial}
                     </div>
                   </div>

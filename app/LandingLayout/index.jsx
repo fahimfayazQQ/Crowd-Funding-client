@@ -6,7 +6,7 @@ import About from "./about";
 import HowItWorks from "./howItWorks";
 import Investors from '../shared/investors';
 import Accolades from "./accolades";
-import Articles from "../shared/articles";
+import Articles from "../shared/Article/articles";
 
 const LandingPage = () => {
   return (

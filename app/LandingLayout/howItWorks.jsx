@@ -12,7 +12,7 @@ const HowItWorks = () => {
             <div className="flex justify-center items-center mb-5">
               <List1 className="text-5xl mr-5" />
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-2xl">
+                <div className="font-semibold text-xl lg:text-3xl">
                   Lorem Ipsum
                 </div>
                 <div className="text-sm lg:text-base ">
@@ -24,7 +24,7 @@ const HowItWorks = () => {
             <div className="flex justify-center items-center mb-5">
               <List2 className="text-5xl mr-5" />
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-2xl">
+                <div className="font-semibold text-xl lg:text-3xl">
                   Lorem Ipsum
                 </div>
                 <div className="text-sm lg:text-base ">
@@ -36,7 +36,7 @@ const HowItWorks = () => {
             <div className="flex justify-center items-center mb-5">
               <List3 className="text-5xl mr-5" />
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-2xl">
+                <div className="font-semibold text-xl lg:text-3xl">
                   Lorem Ipsum
                 </div>
                 <div className="text-sm lg:text-base ">
@@ -50,10 +50,10 @@ const HowItWorks = () => {
 
         <div className="w-11/12 lg:w-1/4 my-auto">
           <Fade direction="right" triggerOnce>
-            <div className="font-semibold text-xl lg:text-2xl pb-5">
+            <div className="font-semibold text-xl lg:text-4xl pb-5">
               How It works <br />Lorem Ipsum is simply text of the printing
             </div>
-            <div className="text-sm lg:text-base ">
+            <div className="text-sm lg:text-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s,
