@@ -1,15 +1,16 @@
 'use client';
-import React, {useRef} from "react"
-import Image from "next/image"
-import Link from "next/link"
-import Learn2 from "../../../public/assets/images/learn3.png"
-import Learn1 from "../../../public/assets/images/learn2.png"
-import Learn3 from "../../../public/assets/images/learn4.png"
-import Products from "../../shared/jsondata/products.json"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Image from "next/image";
+import Link from "next/link";
+import { useRef } from "react";
 import { Fade } from "react-awesome-reveal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Learn1 from "../../../public/assets/images/learn2.png";
+import Learn2 from "../../../public/assets/images/learn3.png";
+import Learn3 from "../../../public/assets/images/learn4.png";
+import Products from "../../shared/jsondata/products.json";
+import { SliderArrow } from "../../shared/Icons";
 
 const LearnGallery = () => {
   const sliderRef = useRef(null);
@@ -58,19 +59,19 @@ const LearnGallery = () => {
   return (
     <div className="max-w-screen-xl px-5 mx-auto mt-20 overflow-hidden">
       <div className="flex justify-between items-center mb-4">
-        <div className="text-xl">Trending Items</div>
+        <div className="text-xl lg:text-2xl">Trending Items</div>
         <div className="flex items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3 cursor-pointer"
+            className="w-[40px] h-[50px] bg-[#5143F6] flex items-center shadow-md cursor-pointer text-white tracking-widest text-sm text-center mr-3"
           >
-            {"<"}
+            <SliderArrow className="text-3xl m-auto rotate-180" />
           </div>
           <div
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 cursor-pointer"
+            className="w-[40px] h-[50px] flex items-center cursor-pointer text-[#5143F6] font-semibold tracking-widest text-sm text-center"
           >
-            {">"}
+            <SliderArrow className="text-3xl m-auto text-home-color" />
           </div>
         </div>
       </div>

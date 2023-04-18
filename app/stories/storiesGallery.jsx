@@ -1,16 +1,17 @@
 'use client'
-import React, {useEffect, useRef, useState} from 'react'
-import "./storyStyle.css"
 import Image from "next/image";
+import Link from 'next/link';
+import { useRef } from 'react';
+import { Fade, Zoom } from "react-awesome-reveal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import Story1 from "../../public/assets/images/story1.png";
 import Story2 from "../../public/assets/images/story2.png";
 import Story3 from "../../public/assets/images/story3.png";
+import { SliderArrow } from "../shared/Icons";
 import Blogs from "../shared/jsondata/blogs.json";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Link from 'next/link';
-import { Zoom, Fade } from "react-awesome-reveal";
+import "./storyStyle.css";
 
 const StoriesGallery = () => {
   const sliderRef = useRef(null);
@@ -65,7 +66,7 @@ const StoriesGallery = () => {
             <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
               Success Stories
             </div>
-            <div className="text-sm lg:text-base text-white">
+            <div className="text-sm lg:text-xl text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum is simply dummy text of the printing
               and typesetting industry.
@@ -81,15 +82,15 @@ const StoriesGallery = () => {
             <div className="flex items-center">
               <div
                 onClick={() => sliderRef.current.slickPrev()}
-                className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3 cursor-pointer"
+                className="w-[40px] h-[50px] bg-[#5143F6] flex items-center shadow-md cursor-pointer text-white tracking-widest text-sm text-center mr-3"
               >
-                {"<"}
+                <SliderArrow className="text-3xl m-auto rotate-180" />
               </div>
               <div
                 onClick={() => sliderRef.current.slickNext()}
-                className="w-[40px] bg-white rounded-md shadow-md text-[#5143F6] font-semibold border border-[#5143F6] tracking-widest text-sm text-center py-4 px-4 cursor-pointer"
+                className="w-[40px] h-[50px] flex items-center cursor-pointer text-[#5143F6] font-semibold tracking-widest text-sm text-center"
               >
-                {">"}
+                <SliderArrow className="text-3xl m-auto text-home-color" />
               </div>
             </div>
           </div>

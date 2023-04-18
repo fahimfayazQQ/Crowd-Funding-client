@@ -25,7 +25,7 @@ const LearnHeader = () => {
                 an online fundraiser.
               </div>
               <Link href={"./learn/gallery"}>
-                <div className="inline-block bg-white text-indigo-500 hover:text-indigo-700 hover:font-semibold duration-500 tracking-widest text-sm text-center py-3 px-5 cursor-pointer lg:text-base">
+                <div className="inline-block bg-white text-indigo-500 hover:text-indigo-700 hover:font-semibold duration-500 tracking-[.3em] text-sm text-center py-3 px-5 cursor-pointer lg:text-base">
                   GET STARTED
                 </div>
               </Link>
@@ -48,7 +48,7 @@ const LearnHeader = () => {
                 <Image
                   src={Bottle}
                   alt="img"
-                  className="w-[50vh] h-[50vh] lg:my-auto rounded-tl-2xl rounded-tr-2xl lg:rounded-tl-none lg:rounded-tr-none"
+                  className="w-full lg:w-[50vh] lg:h-[50vh] lg:my-auto rounded-tl-2xl rounded-tr-2xl lg:rounded-tl-none lg:rounded-tr-none mx-auto lg:m-0"
                 />
               </div>
             </Fade>

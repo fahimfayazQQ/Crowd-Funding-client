@@ -4,7 +4,7 @@ import Accordion from "../../shared/Accordion/Accordion";
 const Faq = () => {
   return (
     <div className="max-w-screen-xl px-3 mx-auto mt-10 p-10 rounded-xl shadow-md bg-white mb-5">
-      <div className="text-2xl pb-5">Frequently Asked Questions</div>
+      <div className="text-xl lg:text-2xl pb-5">Frequently Asked Questions</div>
       <div>
         <Accordion 
           title="1. Where is my order? Quisque molestie" 

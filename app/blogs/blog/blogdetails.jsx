@@ -78,7 +78,7 @@ const BlogDetails = () => {
 
       <div className=" max-w-screen-xl px-5 mx-auto pt-10 pb-10 overflow-hidden">
         <Fade direction="right" triggerOnce>
-          <div className="text-xl lg:text-3xl font-semibold mb-2">
+          <div className="text-xl lg:text-4xl font-semibold mb-2">
             Do what you can, with what you have
           </div>
           <div className="flex italic text-xs lg:text-sm">
@@ -87,10 +87,10 @@ const BlogDetails = () => {
           </div>
         </Fade>
         <Zoom triggerOnce>
-          <Image src={Img1} alt="img" className="w-full my-5" />
+          <Image src={Img1} alt="img" className="w-full mt-5 mb-10" />
         </Zoom>
         <Fade>
-          <div className="text-sm lgLtext-base">
+          <div className="lg:text-xl">
             This page is a demo that shows everything you can do inside
             portfolio and blog posts. We&apos;ve included everything you need to
             create engaging posts about your work, and show off your case
@@ -124,6 +124,7 @@ const BlogDetails = () => {
         <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           Image Gallery
         </div>
+        <div className="lg:text-xl">Here’s a really neat custom feature we added in our gallery galleries:</div>
         <div className="grid lg:grid-cols-3 gap-3 mb-10">
           <Fade direction="right" triggerOnce>
             <div className="shadow-lg rounded-2xl">
@@ -151,7 +152,7 @@ const BlogDetails = () => {
           <div className="text-xl lg:text-2xl font-semibold mb-5">
             Top brands
           </div>
-          <div className="text-sm lg:text-base">
+          <div className="lg:text-xl">
             Here&apos;s another gallery with only one column, which creates a
             carousel slide-show instead. A nice little feature: the carousel
             only advances when it is in view, so your visitors won&apos;t scroll
@@ -169,7 +170,7 @@ const BlogDetails = () => {
         <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           What about videos?
         </div>
-        <div className="text-sm lg:text-base">
+        <div className="lg:text-xl">
           Videos are an awesome way to show off your work in a more engaging and
           personal way, and we&apos;ve made sure they work great on our themes.
           Just paste an embed code from YouTube or Vimeo, and the theme makes

@@ -22,8 +22,8 @@ const Investors = () => {
   };
 
   return (
-    <div className="lg:px-5">
-      <div className="max-w-screen-xl px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto lg:rounded-3xl text-white relative">
+    <div className="px-2 lg:px-5">
+      <div className="max-w-screen-xl px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto rounded-3xl text-white relative">
         <Zoom triggerOnce>
           <div className="text-2xl lg:text-5xl font-semibold text-center pb-10">
             Our Happy Investors

@@ -1,16 +1,17 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRef } from "react";
+import { Fade } from "react-awesome-reveal";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import Event1 from "../../public/assets/images/event1.png";
 import Event2 from "../../public/assets/images/event2.png";
 import Event3 from "../../public/assets/images/event3.png";
 import Event4 from "../../public/assets/images/event4.png";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { SliderArrow } from "../shared/Icons";
 import Events from "../shared/jsondata/Events.json";
-import Link from "next/link";
-import { Fade } from "react-awesome-reveal";
 
 const EventsGallery = () => {
   const sliderRef = useRef(null);
@@ -64,15 +65,15 @@ const EventsGallery = () => {
           <div className="flex items-center">
             <div
               onClick={() => sliderRef.current.slickPrev()}
-              className="w-[40px] bg-[#5143F6] rounded-md shadow-md text-white tracking-widest text-sm text-center py-4 px-4 mr-3 cursor-pointer"
+              className="w-[40px] h-[50px] bg-[#5143F6] flex items-center shadow-md cursor-pointer text-white tracking-widest text-sm text-center mr-3"
             >
-              {"<"}
+              <SliderArrow className="text-3xl m-auto rotate-180" />
             </div>
             <div
               onClick={() => sliderRef.current.slickNext()}
-              className="w-[40px] bg-white rounded-md shadow-md text-[#5143F6] font-semibold border border-[#5143F6] tracking-widest text-sm text-center py-4 px-4 cursor-pointer"
+              className="w-[40px] h-[50px] flex items-center cursor-pointer text-[#5143F6] font-semibold tracking-widest text-sm text-center"
             >
-              {">"}
+              <SliderArrow className="text-3xl m-auto text-home-color" />
             </div>
           </div>
         </div>
@@ -84,7 +85,9 @@ const EventsGallery = () => {
             {Events?.map((product, i) => (
               <Link key={i} href={"/events/event"}>
                 <div className="pb-24 lg:pb-44 relative flex justify-center items-center">
-                  <div className={`${product?.bgColor} lg:w-[90%] h-[23rem] rounded-3xl`}></div>
+                  <div
+                    className={`${product?.bgColor} lg:w-[90%] h-[23rem] rounded-3xl`}
+                  ></div>
                   <div className="w-full lg:w-auto absolute top-[68px] mx-auto">
                     <Image
                       src={EventImages[product?.id - 1]?.image}

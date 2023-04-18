@@ -26,14 +26,15 @@ const AboutHeader = () => {
   return (
     <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20">
       <Zoom triggerOnce>
-        <div className="w-full bg-home-color rounded-2xl p-16 investor_shine">
-          <div className="text-white text-2xl lg:text-4xl font-semibold pb-5 text-center">
-            About Us
-          </div>
-          <div className="text-white text-center text-sm lg:text-base">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. <br /> Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry.
+        <div className="w-full lg:h-[400px] flex justify-center items-center bg-home-color rounded-2xl p-16 investor_shine">
+          <div>
+            <div className="text-white text-2xl lg:text-[60px] font-semibold pb-8 text-center">
+              About Us
+            </div>
+            <div className="text-white text-center text-sm lg:text-xl">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
           </div>
         </div>
       </Zoom>
@@ -50,7 +51,7 @@ const AboutHeader = () => {
             </div>
           </Fade>
 
-          <div className="w-11/12 lg:w-1/4 my-auto pt-10 lg:pt-0">
+          <div className="w-11/12 lg:w-5/12 my-auto pt-10 lg:pt-0">
             <Fade direction="left" triggerOnce>
               <div className="font-semibold text-xl lg:text-4xl pb-5">
                 We&apos;re on a mission to bring ideas to life.
@@ -89,48 +90,52 @@ const AboutHeader = () => {
 
       <div className="text-black mx-auto py-10 lg:py-20">
         <div className="text-lg lg:text-4xl font-semibold text-center pb-10">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+          Businesses all over the world <br /> trust us to build their brand
         </div>
-        <div className="w-2/3 flex flex-wrap justify-evenly mx-auto">
-          <div>
-            <Fade>
-              <div className="flex-col">
-                <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
-                  1000
-                </div>
-                <div className="text-sm lg:text-base text-center">
-                  Investors
-                </div>
-              </div>
-            </Fade>
-          </div>
+        <div className="flex flex-col lg:flex-row justify-evenly mx-auto">
           <Fade>
-            <div className="flex-col">
-              <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
-                1000
+            <div className="flex-col pb-6 lg:pb-0">
+              <div className="text-indigo-600 text-5xl font-semibold text-center">
+                10 Years
               </div>
-              <div className="text-sm lg:text-base text-center">Investors</div>
+              <div className="text-xl text-center">In Business</div>
             </div>
           </Fade>
           <Fade>
-            <div className="flex-col">
-              <div className="text-indigo-600 text-xl lg:text-4xl font-semibold text-center">
-                1000
+            <div className="flex-col pb-6 lg:pb-0">
+              <div className="text-indigo-600 text-5xl font-semibold text-center">
+                75000+
               </div>
-              <div className="text-sm lg:text-base text-center">Investors</div>
+              <div className="text-xl text-center">Investors</div>
+            </div>
+          </Fade>
+          <Fade>
+            <div className="flex-col pb-6 lg:pb-0">
+              <div className="text-indigo-600 text-5xl font-semibold text-center">
+                100K+
+              </div>
+              <div className="text-xl text-center">Monthly Blog Readers</div>
+            </div>
+          </Fade>
+          <Fade>
+            <div className="flex-col pb-6 lg:pb-0">
+              <div className="text-indigo-600 text-5xl font-semibold text-center">
+                1.2m+
+              </div>
+              <div className="text-xl text-center">Social Followers</div>
             </div>
           </Fade>
         </div>
       </div>
 
-      <div className="my-10 lg:my-20">
+      <div className="mb-10 lg:mb-20 lg:mt-20">
         <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-hidden">
           <div className="w-11/12 lg:w-2/4 my-auto pb-10 lg:pb-0">
             <Fade direction="right" triggerOnce>
               <div className="font-semibold text-xl lg:text-4xl pb-5">
                 Our Mission
               </div>
-              <div className="text-sm lg:text-lg pb-5">
+              <div className="text-sm lg:text-xl pb-5">
                 Building an enterprise level site doesn&apos;t need nightmare or
                 cost your thousands. Felix is purpose built for ease of use and
                 completxability to create.
@@ -159,17 +164,17 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="font-semibold text-xl text-center lg:text-4xl pb-10">
+      <div className="font-semibold text-center text-xl lg:text-4xl pb-10">
         Our Value
       </div>
       <div className="w-11/12 lg:w-auto mx-auto lg:m-0 grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 my-20">
         <Fade>
           <div>
             <Value1 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Innovation
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -179,10 +184,10 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value2 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Growth
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -192,10 +197,10 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value3 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Ownership
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -204,10 +209,10 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value4 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Team Work
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -217,10 +222,10 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value5 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Commitment
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -230,10 +235,10 @@ const AboutHeader = () => {
         <Fade>
           <div>
             <Value6 className="text-5xl mx-auto" />
-            <div className="text-lg lg:text-xl text-center font-semibold my-5 px-2">
+            <div className="text-lg lg:text-2xl text-center font-semibold my-5 px-2">
               Positivity
             </div>
-            <div className=" text-sm text-center pb-8 px-2">
+            <div className=" text-sm lg:text-base text-center pb-8 px-2">
               Building an enterprise doesn&apos;t need nightmare or cost your
               thousands Felix is purpose built.
             </div>
@@ -245,17 +250,17 @@ const AboutHeader = () => {
         <div className="flex flex-col lg:flex-row justify-between">
           <Fade direction="left" triggerOnce>
             <div className="w-full mx-auto lg:m-0 pb-10 lg:pb-0 text-white">
-              <div className="text-2xl lg:text-4xl my-4 lg:my-8">
+              <div className="text-2xl lg:text-4xl text-center lg:text-start font-bold my-4 lg:my-8">
                 Start Course free trial
               </div>
-              <div className="text-sm lg:text-base pb-8">
+              <div className="text-sm lg:text-base text-center lg:text-start pb-8">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
               <div className="w-full mx-auto flex relative">
                 <input
                   type="text"
-                  placeholder="Search Campaigns"
+                  placeholder="Type your email"
                   className="bg-white rounded-full w-full px-2 py-4 placeholder-gray-500 outline-none pl-3"
                 />
                 <div className="text-white bg-home-color rounded-full absolute right-1 my-1 py-3 px-10 cursor-pointer">
@@ -284,16 +289,16 @@ const AboutHeader = () => {
         </div>
       </div>
 
-      <div className="text-2xl lg:text-4xl font-semibold text-center mt-10 lg:mt-20 lg:mb-8">
+      <div className="text-xl lg:text-4xl font-semibold text-center mt-10 lg:mt-20 lg:mb-8">
         Our Investors
       </div>
-      <div className="w-11/12 lg:w-full mx-auto lg:m-0 grid lg:grid-cols-2 gap-5 lg:gap-10">
+      <div className="w-11/12 lg:w-full mx-auto lg:m-0 grid lg:grid-cols-2 lg:gap-10">
         <Fade>
           <div className="lg:w-2/3">
-            <div className="text-lg lg:text-2xl text-home-color font-semibold my-5 px-2">
+            <div className="text-xl lg:text-4xl text-home-color font-bold my-5 px-2">
               Facebook
             </div>
-            <div className=" text-sm pb-8 px-2">
+            <div className=" text-sm lg:text-base pb-8 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting.
               of the printing and typesetting industry Lorem Ipsum is simply
               dummy text. Lorem Ipsum is simply dummy text.
@@ -302,10 +307,10 @@ const AboutHeader = () => {
         </Fade>
         <Fade>
           <div className="lg:w-2/3">
-            <div className="text-lg lg:text-2xl text-home-color font-semibold my-5 px-2">
+            <div className="text-xl lg:text-4xl text-home-color font-bold my-5 px-2">
               Amazon
             </div>
-            <div className=" text-sm pb-8 px-2">
+            <div className=" text-sm lg:text-base pb-8 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting.
               of the printing and typesetting industry Lorem Ipsum is simply
               dummy text. Lorem Ipsum is simply dummy text.
@@ -314,10 +319,10 @@ const AboutHeader = () => {
         </Fade>
         <Fade>
           <div className="lg:w-2/3">
-            <div className="text-lg lg:text-2xl text-home-color font-semibold my-5 px-2">
+            <div className="text-xl lg:text-4xl text-home-color font-bold my-5 px-2">
               Daraz
             </div>
-            <div className=" text-sm pb-8 px-2">
+            <div className=" text-sm lg:text-base pb-8 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting.
               of the printing and typesetting industry Lorem Ipsum is simply
               dummy text. Lorem Ipsum is simply dummy text.
@@ -326,10 +331,10 @@ const AboutHeader = () => {
         </Fade>
         <Fade>
           <div className="lg:w-2/3">
-            <div className="text-lg lg:text-2xl text-home-color font-semibold my-5 px-2">
+            <div className="text-xl lg:text-4xl text-home-color font-bold my-5 px-2">
               Google
             </div>
-            <div className=" text-sm pb-8 px-2">
+            <div className=" text-sm lg:text-base pb-8 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting.
               of the printing and typesetting industry Lorem Ipsum is simply
               dummy text. Lorem Ipsum is simply dummy text.

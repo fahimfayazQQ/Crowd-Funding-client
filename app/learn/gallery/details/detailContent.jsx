@@ -13,10 +13,10 @@ const DetailContent = () => {
         <Image src={Learn1} alt="img" className="w-full pb-10" />
       </Zoom>
       <Fade>
-        <div className="text-2xl lg:text-3xl font-semibold mb-5">
+        <div className="text-2xl lg:text-4xl font-semibold mb-5">
           Lorem Ipsum is simply dummy text{" "}
         </div>
-        <div className="text-sm lg:text-base mb-10">
+        <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
@@ -32,42 +32,30 @@ const DetailContent = () => {
         <div className="w-11/12 lg:w-1/2 flex flex-wrap justify-between mx-auto gap-5 mb-10">
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">
-              Lorem Ipsum is simply dummy
-            </span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
         </div>
-        <div className="text-sm lg:text-base mb-10">
+        <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
@@ -88,8 +76,10 @@ const DetailContent = () => {
         </Zoom>
       </div>
       <Fade>
-        <div className="text-lg lg:text-3xl font-semibold mb-5">Our Working Proccess</div>
-        <div className="text-sm lg:text-base mb-10">
+        <div className="text-lg lg:text-3xl font-semibold mb-5">
+          Our Working Proccess
+        </div>
+        <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
@@ -105,30 +95,30 @@ const DetailContent = () => {
         <div className="w-11/12 lg:w-1/2 flex flex-wrap justify-between mx-auto gap-5 mb-10">
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
           <div className="flex items-center">
             <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-            <span className="text-sm lg:text-base">Lorem Ipsum is simply dummy</span>
+            <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
           </div>
         </div>
-        <div className="text-sm lg:text-base mb-10">
+        <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
@@ -145,12 +135,12 @@ const DetailContent = () => {
 
       <JackInTheBox triggerOnce>
         <div className="bg-white w-11/12 lg:w-1/2 mx-auto p-10 shadow-lg rounded-xl mb-5">
-          <div className="text-2xl text-center my-2">Buy ticket</div>
-          <div className="text-center">
+          <div className="text-2xl font-semibold text-center my-2">Admission Fee</div>
+          <div className="text-center lg:text-xl">
             Building an enterprise level site doesn&apos;t need nightmare or
             cost your thousands.
           </div>
-          <div className="text-3xl text-center my-5">$14.99</div>
+          <div className="text-3xl font-semibold text-center my-5">$14.99</div>
           <Link href={"../../learnPayment"} className="flex justify-center">
             <div className="inliine-block mx-auto rounded-xl text-center bg-home-color text-white px-5 py-3">
               Payments

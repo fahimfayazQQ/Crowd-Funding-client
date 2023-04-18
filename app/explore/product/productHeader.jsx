@@ -95,7 +95,10 @@ const ProductHeader = () => {
         </JackInTheBox>
         <Fade direction="down" triggerOnce className="sm:w-6/12">
           <div className="w-full h-full text-black p-5 lg:p-10 relative">
-            <div className="text-2xl lg:text-4xl font-semibold mb-5 lg:mt-10">
+            <div className="lg:text-xl text-zinc-500 pb-5">Catagory</div>
+            <div className="lg:text-xl text-zinc-500 pb-5">10 Days late</div>
+            <div className="lg:text-xl text-zinc-500">Equity</div>
+            <div className="text-2xl lg:text-4xl font-semibold mb-5 mt-5">
               Pasta Bolognese
             </div>
             <div className="text-sm lg:text-base mb-10">
@@ -103,22 +106,22 @@ const ProductHeader = () => {
               crowdfunding when they’re trying to decide if they want to start
               an online fundraiser.
             </div>
-            <div className="grid grid-cols-2 text-sm lg:text-base mb-10 gap-10">
-              <div className="flex">
-                <div className="text-zinc-500 pr-4 whitespace-nowrap">Raised:</div>
-                <div>$5000</div>
+            <div className="grid grid-cols-2 text-sm lg:text-base mb-10 gap-4 lg:gap-10">
+              <div className="flex items-center">
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">Raised:</div>
+                <div className="text-lg lg:text-2xl">$5000</div>
               </div>
-              <div className="flex">
-                <div className="text-zinc-500 pr-4 whitespace-nowrap">Target:</div>
-                <div>$20000</div>
+              <div className="flex items-center">
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">Target:</div>
+                <div className="text-lg lg:text-2xl">$20000</div>
               </div>
-              <div className="flex">
-                <div className="text-zinc-500 pr-4 whitespace-nowrap">Investors:</div>
-                <div>33</div>
+              <div className="flex items-center">
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">Investors:</div>
+                <div className="text-lg lg:text-2xl">33</div>
               </div>
-              <div className="flex">
-                <div className="text-zinc-500 pr-4 whitespace-nowrap">Share price:</div>
-                <div>$1000</div>
+              <div className="flex items-center">
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">Share price:</div>
+                <div className="text-lg lg:text-2xl">$1000</div>
               </div>
             </div>
 

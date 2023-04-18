@@ -16,6 +16,7 @@ export { default as ArrowLeftWhite } from "../../public/assets/icons/arrow2.svg"
 export { default as Menu } from "../../public/assets/icons/menu.svg";
 export { default as Send } from "../../public/assets/icons/send.svg";
 export { default as Heart } from "../../public/assets/icons/heart.svg";
+export { default as HeartOff } from "../../public/assets/icons/heart-border.svg";
 export { default as Down } from "../../public/assets/icons/down.svg";
 export { default as Tick } from "../../public/assets/icons/tick.svg";
 export { default as TickGreen } from "../../public/assets/icons/tick-green.svg";
@@ -24,3 +25,4 @@ export { default as Bell } from "../../public/assets/icons/bell.svg";
 export { default as Star } from "../../public/assets/icons/star.svg";
 export { default as Profit } from "../../public/assets/icons/profit.svg";
 export { default as Loss } from "../../public/assets/icons/loss.svg";
+export { default as SliderArrow } from "../../public/assets/icons/slider-arrow.svg";

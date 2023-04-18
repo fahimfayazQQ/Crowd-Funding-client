@@ -189,11 +189,13 @@ const BlogGallery = () => {
           </div>
         </Fade>
 
+        <div className="hidden lg:block">
         <div
           onClick={showMoreItems}
           className="inline-block bg-home-color text-white px-10 py-2 cursor-pointer mt-5"
         >
           Show more
+        </div>
         </div>
 
         {/* <div className="flex justify-center items-center mt-4 lg:hidden">

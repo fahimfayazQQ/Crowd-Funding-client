@@ -32,10 +32,10 @@ const ExploreFilter = () => {
         <div className="flex flex-col lg:flex-row justify-between">
           <Fade direction="left" triggerOnce>
             <div className="w-full text-white">
-              <div className="text-2xl lg:text-4xl text-center lg:text-start my-8">
+              <div className="text-2xl lg:text-5xl font-bold text-center lg:text-start my-8">
                 Lorem ipsum dolor
               </div>
-              <div className="text-base lg:pb-8 text-center lg:text-start">
+              <div className="lg:text-xl lg:pb-8 text-center lg:text-start">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>

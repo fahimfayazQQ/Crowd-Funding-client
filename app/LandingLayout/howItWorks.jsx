@@ -10,10 +10,12 @@ const HowItWorks = () => {
         <div className="w-11/12 lg:w-auto flex-col pb-14 lg:pb-0">
           <Fade direction="left" triggerOnce>
             <div className="flex justify-center items-center mb-5">
-              <List1 className="text-5xl mr-5" />
+              <div className="w-[5rem] bg-[#e7e7e7] lg:bg-transparent rounded-2xl p-3 mr-2">
+                <List1 className="text-5xl mr-5" />
+              </div>
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-3xl">
-                  Lorem Ipsum
+                <div className="font-semibold text-lg lg:text-3xl">
+                  How technology started
                 </div>
                 <div className="text-sm lg:text-base ">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -22,10 +24,12 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="flex justify-center items-center mb-5">
-              <List2 className="text-5xl mr-5" />
+              <div className="w-[5rem] bg-[#e7e7e7] lg:bg-transparent rounded-2xl p-3 mr-2">
+                <List2 className="text-5xl mr-5" />
+              </div>
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-3xl">
-                  Lorem Ipsum
+                <div className="font-semibold text-lg lg:text-3xl">
+                  Endless Possibilities
                 </div>
                 <div className="text-sm lg:text-base ">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -34,10 +38,12 @@ const HowItWorks = () => {
               </div>
             </div>
             <div className="flex justify-center items-center mb-5">
-              <List3 className="text-5xl mr-5" />
+              <div className="w-[5rem] bg-[#e7e7e7] lg:bg-transparent rounded-2xl p-3 mr-2">
+                <List3 className="text-5xl mr-5" />
+              </div>
               <div className="flex-col">
-                <div className="font-semibold text-xl lg:text-3xl">
-                  Lorem Ipsum
+                <div className="font-semibold text-lg lg:text-3xl">
+                  Endless Possibilities
                 </div>
                 <div className="text-sm lg:text-base ">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -50,10 +56,11 @@ const HowItWorks = () => {
 
         <div className="w-11/12 lg:w-1/4 my-auto">
           <Fade direction="right" triggerOnce>
-            <div className="font-semibold text-xl lg:text-4xl pb-5">
-              How It works <br />Lorem Ipsum is simply text of the printing
+            <div className="font-semibold text-2xl lg:text-4xl pb-5">
+              How It works <br />
+              Lorem Ipsum is simply text of the printing
             </div>
-            <div className="text-sm lg:text-lg">
+            <div className="lg:text-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s,

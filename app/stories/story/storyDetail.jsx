@@ -88,10 +88,10 @@ const StoryDetail = () => {
           </div>
         </Fade>
         <Zoom triggerOnce>
-          <Image src={Img1} alt="img" className="w-full my-5" />
+          <Image src={Img1} alt="img" className="w-full mt-5 mb-10" />
         </Zoom>
         <Fade>
-          <div className="text-sm lg:text-base">
+          <div className="lg:text-xl">
             This page is a demo that shows everything you can do inside
             portfolio and blog posts. We&apos;ve included everything you need to
             create engaging posts about your work, and show off your case
@@ -157,7 +157,7 @@ const StoryDetail = () => {
           <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
             Top brands
           </div>
-          <div className="text-sm lg:text-base">
+          <div className="lg:text-xl">
             Here&apos;s another gallery with only one column, which creates a
             carousel slide-show instead. A nice little feature: the carousel
             only advances when it is in view, so your visitors won&apos;t scroll
@@ -175,7 +175,7 @@ const StoryDetail = () => {
         <div className="text-xl lg:text-2xl font-semibold mt-10 mb-5">
           What about videos?
         </div>
-        <div className="text-sm lg:text-base">
+        <div className="lg:text-xl">
           Here&apos;s another gallery with only one column, which creates a
           carousel slide-show instead. A nice little feature: the carousel only
           advances when it is in view, so your visitors won&apos;t scroll down
@@ -215,10 +215,10 @@ const StoryDetail = () => {
           <div>
             <div className="flex justify-start items-center">
               <Image src={Avatar1} alt="img" className="w-10 h-10 my-5" />
-              <span className="text-sm lg:text-base px-5">Sourav Sen</span>
+              <span className="lg:text-xl px-5">Sourav Sen</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="text-sm lg:text-base pl-5">
+            <div className="lg:text-xl pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
@@ -230,10 +230,10 @@ const StoryDetail = () => {
           <div className="pl-20">
             <div className="flex justify-start items-center">
               <Image src={Avatar2} alt="img" className="w-10 h-10 my-5" />
-              <span className="text-sm lg:text-base px-5">Atika Younus</span>
+              <span className="lg:text-xl px-5">Atika Younus</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="text-sm lg:text-base pl-5">
+            <div className="lg:text-xl pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.
@@ -246,10 +246,10 @@ const StoryDetail = () => {
           <div>
             <div className="flex justify-start items-center">
               <Image src={Avatar2} alt="img" className="w-10 h-10 my-5" />
-              <span className="text-sm lg:text-base px-5">Atika Younus</span>
+              <span className="lg:text-xl px-5">Atika Younus</span>
               <span className="text-xs text-zinc-400">Oct 22, 8:45pm</span>
             </div>
-            <div className="text-sm lg:text-base pl-5">
+            <div className="lg:text-xl pl-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
               arcu dui. Aenean placerat.Lorem ipsumdolor sit amet, consectetur
               adipiscing elit. Sed at arcu dui. Aenean placerat.

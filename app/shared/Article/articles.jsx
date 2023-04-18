@@ -1,13 +1,14 @@
 'use client';
 import Image from "next/image";
-import {useRef} from "react";
-import Article1 from "../../../public/assets/images/cocacola.png";
-import Article2 from "../../../public/assets/images/article2.png";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
-import "./article.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Article2 from "../../../public/assets/images/article2.png";
+import Article1 from "../../../public/assets/images/cocacola.png";
+import { SliderArrow } from "../Icons";
+import "./article.css";
 
 const Articles = () => {
   const sliderRef = useRef(null);
@@ -65,7 +66,9 @@ const Articles = () => {
               <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">View More</span>
+                <span className="text-indigo-500 cursor-pointer">
+                  View More
+                </span>
               </div>
             </div>
             <div className="content">
@@ -74,7 +77,9 @@ const Articles = () => {
               <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">View More</span>
+                <span className="text-indigo-500 cursor-pointer">
+                  View More
+                </span>
               </div>
             </div>
             <div className="content">
@@ -83,7 +88,9 @@ const Articles = () => {
               <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
                 Paragraphs are the building blocks of papers. Many students
                 define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">View More</span>
+                <span className="text-indigo-500 cursor-pointer">
+                  View More
+                </span>
               </div>
             </div>
           </Slider>
@@ -91,21 +98,23 @@ const Articles = () => {
       </Zoom>
 
       <div className="w-11/12 lg:w-full mx-auto flex items-center">
-        <div className="inline-block bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
+        <div className="inline-block bg-[#5143F6] shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
           See More
         </div>
+        <div className="flex items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}
-            className="w-[40px] bg-[#5143F6] rounded-md shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-3"
+            className="w-[40px] h-[50px] bg-[#5143F6] flex items-center shadow-md cursor-pointer text-white tracking-widest text-sm text-center mr-3"
           >
-            {"<"}
+            <SliderArrow className="text-3xl m-auto rotate-180" />
           </div>
           <div
             onClick={() => sliderRef.current.slickNext()}
-            className="w-[40px] bg-white rounded-md shadow-md cursor-pointer text-[#5143F6] font-semibold border border-[#5143F6] tracking-widest text-sm text-center py-4 px-4"
+            className="w-[40px] h-[50px] flex items-center cursor-pointer text-[#5143F6] font-semibold tracking-widest text-sm text-center"
           >
-            {">"}
+            <SliderArrow className="text-3xl m-auto text-home-color" />
           </div>
+        </div>
       </div>
     </div>
   );

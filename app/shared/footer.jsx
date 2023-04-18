@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Footer = () => {
   return (
-    <div className="max-w-screen-xl px-5 pt-14 lg:pt-20 mx-auto overflow-hidden">
+    <div className="max-w-screen-xl px-5 pt-10 lg:pt-20 mx-auto overflow-hidden">
       <div className="border-t pb-5"></div>
       <div className="w-11/12 lg:w-full flex justify-between items-center mx-auto lg:m-0">
         <Fade direction="left" triggerOnce>
