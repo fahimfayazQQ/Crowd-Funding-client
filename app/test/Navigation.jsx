@@ -6,7 +6,7 @@ const Navigation = () => {
     <ul>
         {
             [...Array(5)].map((_,i)=>(
-                <MenuItems/>    
+                <MenuItems key={i}/>    
             ))
         }
     </ul>
