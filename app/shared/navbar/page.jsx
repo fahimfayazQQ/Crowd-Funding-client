@@ -23,11 +23,10 @@ const Navbar = () => {
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent z-40 overflow-hidden">
-      <div></div>
-      <nav className="bg-transparent text-black relative">
+      <nav className="bg-transparent text-black relative lg:max-w-screen-xl mx-auto">
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-10 lg:pl-20">
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer">
               QUADQUE
             </div>
           </Link>
@@ -43,8 +42,8 @@ const Navbar = () => {
             </div>
             <div className="cursor-pointer" onClick={() => setOpen(!open)}>
               {/* Hamburger Animation */}
-              <div className={` ${HamburgerLine1} ${open && "translate-x-20 delay-100"}`} />
-              <div className={`${HamburgerLine2} ${open ? "translate-x-20": "delay-100"}`} />
+              <div className={` ${HamburgerLine1}`} />
+              <div className={`${HamburgerLine2}`} />
             </div>
           </div>
           {/* Hamburger Animation end*/}

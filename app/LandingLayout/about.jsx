@@ -5,10 +5,20 @@ import Image1 from "../../public/assets/images/image2.png";
 import Image2 from "../../public/assets/images/Method.png";
 import Dotted from "../../public/assets/images/dotted.png";
 import { Fade } from "react-awesome-reveal";
+import "./globe.scss"
 
 const About = () => {
+  const RenderGlobe = () => {
+    let totalOrbs = 1000;
+    const orbs = [];
+    for (let x = 0; x < totalOrbs; x++) {
+      orbs.push(<div className="c" />);
+    }
+    return orbs;
+  };
   return (
-    <div className="py-14 lg:py-20">
+    <div className="pt-10 lg:pt-0 pb-14 lg:pb-20 relative overflow-x-hidden">
+      <div className="wrap">{RenderGlobe()}</div>
       <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center overflow-hidden">
         <div className="w-11/12 lg:w-1/4 my-auto">
           <Fade direction="left" triggerOnce>
@@ -22,7 +32,7 @@ const About = () => {
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s,
             </div>
-            <div className="w-11/12 bg-gradient-to-tl from-[#5143F6] via-indigo-400 to-[#5143F6] text-white tracking-widest text-2xl font-semibold text-center shadow-xl rounded-xl cursor-pointer py-5 px-4">
+            <div className="w-11/12 bg-gradient-to-tl from-[#5143F6] via-indigo-400 to-[#5143F6] text-white tracking-widest text-2xl font-semibold text-center shadow-xl rounded-xl cursor-pointer py-8 px-4">
               <span className="text-4xl font-bold">100%</span> Safe to Use
             </div>
           </Fade>

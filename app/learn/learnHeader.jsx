@@ -8,7 +8,7 @@ import { FB, Insta, Twitter } from "../shared/Icons";
 
 const LearnHeader = () => {
   return (
-    <div className='px-3 lg:px-5'>
+    <div className="px-3 lg:px-5">
       <div className="bg-home-color rounded-2xl lg:rounded-none max-w-screen-xl mx-auto mt-20 overflow-hidden">
         <div className="w-full lg:h-[85vh] flex flex-col-reverse lg:flex-row justify-between items-center">
           <Fade direction="left" triggerOnce>
@@ -25,7 +25,7 @@ const LearnHeader = () => {
                 an online fundraiser.
               </div>
               <Link href={"./learn/gallery"}>
-                <div className="inline-block bg-white text-indigo-500 hover:text-indigo-700 hover:font-semibold duration-500 tracking-[.3em] text-sm text-center py-3 px-5 cursor-pointer lg:text-base">
+                <div className="inline-block bg-white text-indigo-500 hover:text-indigo-700 hover:scale-105 duration-500 tracking-[.3em] text-sm text-center py-3 px-5 cursor-pointer lg:text-base">
                   GET STARTED
                 </div>
               </Link>

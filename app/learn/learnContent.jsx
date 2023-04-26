@@ -25,7 +25,8 @@ const LearnContent = () => {
     <div className="max-w-screen-xl px-3 lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="text-black mx-auto mb-10 lg:mb-20">
         <div className="text-xl lg:text-4xl font-semibold text-center pb-10">
-          Lorem Ipsum is simply dummy text <br /> of the printing and typesetting
+          Lorem Ipsum is simply dummy text <br /> of the printing and
+          typesetting
         </div>
         <div className="lg:w-2/3 flex flex-wrap justify-evenly mx-auto">
           <Zoom triggerOnce>
@@ -69,7 +70,7 @@ const LearnContent = () => {
                 <div className="border-t w-11/12 mx-auto pb-4"></div>
                 <div className="flex justify-between px-4">
                   <Image src={Icon} alt="img" className="" />
-                  <div className="border text-black hover:bg-home-color hover:bg-opacity-10 duration-300 shadow-md tracking-widest text-sm text-center rounded-full py-3 px-4 cursor-pointer">
+                  <div className="border text-black hover:bg-home-color hover:bg-opacity-10 shadow-md tracking-widest text-sm hover:scale-105 duration-500 text-center rounded-full py-3 px-4 cursor-pointer">
                     Get Started
                   </div>
                 </div>
