@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import YouTube from "react-youtube";
 import "./style.css";
+import "./globe.scss";
 
 const Header = () => {
   const [bannerClass, setBannerClass] = useState("hero-banner");
@@ -18,60 +19,69 @@ const Header = () => {
     },
   };
 
-    useEffect(() => {
-      const timer = setTimeout(() => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
         setBannerClass(BannerClasses[index]);
         setIndex((prevIndex) => (prevIndex + 1) % BannerClasses.length);
       }, 5000); // set the interval to 1 second (1000 milliseconds)
 
       return () => clearTimeout(timer);
     }, [index]);
-
-  return (
-    <div className="bg-home-color h-auto lg:h-screen py-20 px-5 lg:px-20 overflow-x-hidden">
-      <div className="border lg:h-[80vh] rounded-xl p-3 lg:p-10 lg:max-w-screen-xl mx-auto">
-        <div className="w-full lg:h-[71vh] flex flex-col lg:flex-row justify-between relative">
-          <div className="w-full bg-gradient-to-r from-[#4d3cff] to-[#6456ff] rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl text-white py-8 pl-4 pr-4 lg:pl-8 lg:pr-20">
-            <Fade direction="left" triggerOnce>
-              <div className="text-3xl lg:text-[60px] lg:leading-[60px] font-semibold mb-5 lg:mt-10">
-                Bring A Creative Project To Life.
-              </div>
-              <div className="lg:text-lg mb-10">
-                Below, we answer the questions people most often have about
-                crowdfunding when they’re trying to decide if they want to start
-                an online fundraiser.
-              </div>
-              <div className="inline-block bg-white text-indigo-500 tracking-[.5em] font-semibold text-sm hover:scale-105 duration-500 text-center rounded-md py-3 px-4 cursor-pointer">
-                EXPLORE
-              </div>
-              <div className="flex items-center mt-28">
-                <div className="font-semibold mr-3">01</div>
-                <div className="w-[30%] h-[2px] bg-white"></div>
-                <div className="w-[30%] h-[2px] bg-gray-400"></div>
-                <div className="font-semibold ml-3">02</div>
-              </div>
-            </Fade>
+    
+  const RenderGlobe = () => {
+    let totalOrbs = 1000;
+    const orbs = [];
+    for (let x = 0; x < totalOrbs; x++) {
+      orbs.push(<div className="c" />);
+    }
+    return orbs;
+  };
+    return (
+      <div className="bg-home-color h-auto lg:h-screen py-20 px-5 lg:px-20 overflow-x-hidden">
+        <div className="wrapHome">{RenderGlobe()}</div>
+        <div className="border lg:h-[80vh] rounded-xl p-3 lg:p-10 lg:max-w-screen-xl mx-auto">
+          <div className="w-full lg:h-[71vh] flex flex-col lg:flex-row justify-between relative">
+            <div className="w-full bg-gradient-to-r from-[#4d3cff] to-[#6456ff] rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl text-white py-8 pl-4 pr-4 lg:pl-8 lg:pr-20">
+              <Fade direction="left" triggerOnce>
+                <div className="text-3xl lg:text-[60px] lg:leading-[60px] font-semibold mb-5 lg:mt-10">
+                  Bring A Creative Project To Life.
+                </div>
+                <div className="lg:text-lg mb-10">
+                  Below, we answer the questions people most often have about
+                  crowdfunding when they’re trying to decide if they want to
+                  start an online fundraiser.
+                </div>
+                <div className="inline-block bg-white text-indigo-500 tracking-[.5em] font-semibold text-sm hover:scale-105 duration-500 text-center rounded-md py-3 px-4 cursor-pointer">
+                  EXPLORE
+                </div>
+                <div className="flex items-center mt-28">
+                  <div className="font-semibold mr-3">01</div>
+                  <div className="w-[30%] h-[2px] bg-white"></div>
+                  <div className="w-[30%] h-[2px] bg-gray-400"></div>
+                  <div className="font-semibold ml-3">02</div>
+                </div>
+              </Fade>
+            </div>
+            <div className={`w-full h-full`}>
+              <Fade
+                direction="right"
+                triggerOnce
+                className={`w-full h-full relative`}
+              >
+                <div
+                  className={`${bannerClass} duration-1000 w-full h-full relative`}
+                ></div>
+              </Fade>
+            </div>
+            <YouTube
+              opts={opts}
+              videoId={videoId}
+              className="youtubePlayer lg:absolute lg:bottom-15 lg:left-[40%]"
+            />
           </div>
-          <div className={`w-full h-full`}>
-            <Fade
-              direction="right"
-              triggerOnce
-              className={`w-full h-full relative`}
-            >
-              <div
-                className={`${bannerClass} duration-1000 w-full h-full relative`}
-              ></div>
-            </Fade>
-          </div>
-          <YouTube
-            opts={opts}
-            videoId={videoId}
-            className="youtubePlayer lg:absolute lg:bottom-15 lg:left-[40%]"
-          />
         </div>
       </div>
-    </div>
-  );
+    );
 };
 
 export default Header;
