@@ -42,12 +42,13 @@ const ProductHeader = () => {
     };
 
   return (
-    <div className="rounded-2xl max-w-screen-xl px-5 mx-auto mt-20">
+    <div className="rounded-2xl max-w-[1280px] px-5 mx-auto mt-20">
       <div className="flex flex-col lg:flex-row rounded-xl shadow-md bg-white">
         <JackInTheBox direction="left" triggerOnce className="sm:w-6/12">
           <div className="relative lg:p-5">
             <Slider
-              asNavFor={nav2} ref={(slider1) => setNav1(slider1)}
+              asNavFor={nav2}
+              ref={(slider1) => setNav1(slider1)}
               {...settings}
               arrows={false}
               className="w-full lg:w-[32rem] mx-auto"
@@ -59,22 +60,22 @@ const ProductHeader = () => {
 
             {/* AS FOR NAV */}
             <div className="productSliderSecondary mt-2">
-            <Slider
-              asNavFor={nav1}
-              ref={(slider2) => setNav2(slider2)}
-              {...secondarysettings}
-              arrows={false}
-            >
-              <div className="w-[5rem] p-3 sm:p-8">
-              <Image src={Product1} alt="" className=""/>
-              </div>
-              <div className="w-[5rem] p-3 sm:p-8">
-              <Image src={Product1} alt="" className=""/>
-              </div>
-              <div className="w-[5rem] p-3 sm:p-8">
-              <Image src={Product1} alt="" className=""/>
-              </div>
-            </Slider>
+              <Slider
+                asNavFor={nav1}
+                ref={(slider2) => setNav2(slider2)}
+                {...secondarysettings}
+                arrows={false}
+              >
+                <div className="w-[5rem] p-3 sm:p-8">
+                  <Image src={Product1} alt="" className="" />
+                </div>
+                <div className="w-[5rem] p-3 sm:p-8">
+                  <Image src={Product1} alt="" className="" />
+                </div>
+                <div className="w-[5rem] p-3 sm:p-8">
+                  <Image src={Product1} alt="" className="" />
+                </div>
+              </Slider>
             </div>
             {/* <Image src={Product1} alt="img" className="mx-auto" /> */}
             {/* <div className="flex justify-center items-center pt-5">
@@ -108,19 +109,27 @@ const ProductHeader = () => {
             </div>
             <div className="grid grid-cols-2 text-sm lg:text-base mb-10 gap-4 lg:gap-10">
               <div className="flex items-center">
-                <div className="text-zinc-500 pr-2 whitespace-nowrap">Raised:</div>
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">
+                  Raised:
+                </div>
                 <div className="text-lg lg:text-2xl">$5000</div>
               </div>
               <div className="flex items-center">
-                <div className="text-zinc-500 pr-2 whitespace-nowrap">Target:</div>
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">
+                  Target:
+                </div>
                 <div className="text-lg lg:text-2xl">$20000</div>
               </div>
               <div className="flex items-center">
-                <div className="text-zinc-500 pr-2 whitespace-nowrap">Investors:</div>
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">
+                  Investors:
+                </div>
                 <div className="text-lg lg:text-2xl">33</div>
               </div>
               <div className="flex items-center">
-                <div className="text-zinc-500 pr-2 whitespace-nowrap">Share price:</div>
+                <div className="text-zinc-500 pr-2 whitespace-nowrap">
+                  Share price:
+                </div>
                 <div className="text-lg lg:text-2xl">$1000</div>
               </div>
             </div>

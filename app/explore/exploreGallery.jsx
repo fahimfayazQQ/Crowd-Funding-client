@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade } from "react-awesome-reveal";
 import { SliderArrow, Heart, HeartOff } from "../shared/Icons";
+import "./explore.css";
 
 const ExploreGallery = () => {
   const sliderRef = useRef(null);
@@ -62,8 +63,16 @@ const ExploreGallery = () => {
     console.log(id);
     if (isFavourite?.includes(id)) {
       setIsFavourite(isFavourite?.filter((wtf) => wtf !== id));
+      document.getElementById(`removeFromWishlist${id}`).classList.add("opacity-100");
+      setTimeout(() => {
+        document.getElementById(`removeFromWishlist${id}`).classList.remove("opacity-100");
+      }, 2000);
     } else {
       setIsFavourite([...isFavourite, id]);
+      document.getElementById(`addToWishlist${id}`).classList.add("opacity-100");
+      setTimeout(() => {
+        document.getElementById(`addToWishlist${id}`).classList.remove("opacity-100");
+      }, 2000);
     }
   };
 
@@ -75,7 +84,7 @@ const ExploreGallery = () => {
   }
 }; */
   return (
-    <div className="max-w-screen-xl lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
+    <div className="max-w-[1280px] lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="hidden lg:block">
         <div className="w-11/12 lg:w-full mx-auto lg:m-0 flex justify-between items-center mb-4">
           <div className="text-2xl font-semibold">Trending Items</div>
@@ -101,26 +110,48 @@ const ExploreGallery = () => {
           {Products?.map((product, i) => (
             <Fade direction="right" triggerOnce key={i}>
               <div className="p-2 mb-5">
-                <div className="relative bg-white lg:bg-transparent hover:bg-white rounded-2xl shadow-lg lg:shadow-none hover:shadow-lg pb-5 duration-500 p-2">
+                <div className="relative bg-white lg:bg-transparent hover:bg-white rounded-2xl shadow-lg lg:shadow-none hover:shadow-lg pb-5 duration-500">
+                  <div
+                    id={`addToWishlist${product?.id}`}
+                    className="opacity-0 delay-500 duration-700 absolute top-5 right-16 bg-white shadow-lg rounded-lg px-4 py-3 text-xs whitespace-nowrap"
+                  >
+                    Added to Wishlist!
+                  </div>
+                  <div
+                    id={`removeFromWishlist${product?.id}`}
+                    className="opacity-0 delay-500 duration-700 absolute top-5 right-16 bg-white shadow-lg rounded-lg px-4 py-3 text-xs whitespace-nowrap"
+                  >
+                    Removed from Wishlist!
+                  </div>
                   <div
                     onClick={() => {
                       handleIsFavourite(product?.id);
                     }}
-                    className="w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center shadow-lg"
+                    // className={`${addToWishMsg ? "show-info" : ""
+                    //   } w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center shadow-lg`}
+                    className={`w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center shadow-lg transition-opacity delay-100 duration-200`}
                   >
-                    <Heart className={`${isFavourite?.includes(product?.id) ? "text-[#8075FF]":"text-gray-200"} duration-500`} />
+                    <Heart
+                      className={`${
+                        isFavourite?.includes(product?.id)
+                          ? "text-[#8075FF]"
+                          : "text-gray-200"
+                      } duration-500`}
+                    />
                   </div>
                   <Image src={Card1} alt="img" className="w-full" />
-                  <div className="flex justify-between items-center mt-4 mx-2">
-                    <div className="text-zinc-500">Category</div>
-                    <div className="text-zinc-500">10 Days late</div>
-                  </div>
-                  <div className="text-xl font-semibold my-5">
-                    {product?.title}
-                  </div>
-                  <div className="text-sm pb-5">{product?.description}</div>
-                  <div className="text-zinc-500 pb-8">
-                    Raised: <span className="text-black">$500 of $2000</span>
+                  <div className="px-4">
+                    <div className="flex justify-between items-center mt-4 mx-2">
+                      <div className="text-zinc-500">Category</div>
+                      <div className="text-zinc-500">10 Days late</div>
+                    </div>
+                    <div className="text-xl font-semibold my-5">
+                      {product?.title}
+                    </div>
+                    <div className="text-sm pb-5">{product?.description}</div>
+                    <div className="text-zinc-500 pb-8">
+                      Raised: <span className="text-black">$500 of $2000</span>
+                    </div>
                   </div>
                   <Link href={"./explore/product"}>
                     <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
@@ -138,3 +169,4 @@ const ExploreGallery = () => {
 };
 
 export default ExploreGallery;
+

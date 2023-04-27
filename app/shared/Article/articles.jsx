@@ -49,7 +49,7 @@ const Articles = () => {
     ],
   };
   return (
-    <div className="max-w-screen-xl px-2 py-10 lg:py-20 mx-auto overflow-x-hidden">
+    <div className="max-w-[1280px] px-2 py-10 lg:py-20 mx-auto overflow-x-hidden">
       <Fade direction="up" triggerOnce>
         <div className="text-zinc-700 tracking-[.5em] text-sm mb-3 pl-5 lg:pl-0">
           -ARTICLES

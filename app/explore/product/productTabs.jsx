@@ -15,7 +15,7 @@ const ProductTabs = () => {
     setToogleTab(id);
   }
   return (
-    <div className='max-w-screen-xl px-5 mx-auto my-10 overflow-hidden'>
+    <div className='max-w-[1280px] px-5 mx-auto my-10 overflow-hidden'>
       <Fade bottom>
       <div className='w-full flex flex-wrap justify-around lg:p-5 lg:shadow-md lg:rounded-xl mx-auto lg:bg-white pt-2'>
         <div onClick={()=>{hangleToogle(0)}} className={`${toogleTab===0 && "text-home-color scale-110 lg:scale-125 duration-300 font-semibold text-shadow"} bg-white rounded-full lg:border-none shadow-lg lg:shadow-none text-sm lg:text-base px-5 py-2 mb-2 cursor-pointer`}>Overview</div>

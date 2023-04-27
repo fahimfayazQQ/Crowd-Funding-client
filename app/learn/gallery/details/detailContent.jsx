@@ -8,7 +8,7 @@ import { Zoom, Fade, JackInTheBox } from "react-awesome-reveal";
 
 const DetailContent = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-20 lg:mb-20 overflow-hidden">
+    <div className="max-w-[1280px] px-5 mx-auto mt-20 lg:mb-20 overflow-hidden">
       <Zoom triggerOnce>
         <Image src={Learn1} alt="img" className="w-full pb-10" />
       </Zoom>
@@ -135,7 +135,9 @@ const DetailContent = () => {
 
       <JackInTheBox triggerOnce>
         <div className="bg-white w-11/12 lg:w-1/2 mx-auto p-10 shadow-lg rounded-xl mb-5">
-          <div className="text-2xl font-semibold text-center my-2">Admission Fee</div>
+          <div className="text-2xl font-semibold text-center my-2">
+            Admission Fee
+          </div>
           <div className="text-center lg:text-xl">
             Building an enterprise level site doesn&apos;t need nightmare or
             cost your thousands.

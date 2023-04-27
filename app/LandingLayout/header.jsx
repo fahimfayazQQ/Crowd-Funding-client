@@ -4,8 +4,10 @@ import { Fade } from "react-awesome-reveal";
 import YouTube from "react-youtube";
 import "./style.css";
 import "./globe.scss";
+import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
+  const { lang } = useSelector((state) => state?.language);
   const [bannerClass, setBannerClass] = useState("hero-banner");
   const [index, setIndex] = useState(0);
   const videoId = `4TutF9refYo`;
@@ -38,14 +40,20 @@ const Header = () => {
   };
     return (
       <div className="bg-home-color h-auto lg:h-screen py-20 px-5 lg:px-20 overflow-x-hidden">
-        <div className="wrapHome">{RenderGlobe()}</div>
-        <div className="border lg:h-[80vh] rounded-xl p-3 lg:p-10 lg:max-w-screen-xl mx-auto">
+        <div className="hidden lg:block wrapHome">{RenderGlobe()}</div>
+        <div className="border lg:h-[80vh] rounded-xl p-3 lg:p-10 max-w-[1280px] mx-auto">
           <div className="w-full lg:h-[71vh] flex flex-col lg:flex-row justify-between relative">
             <div className="w-full bg-gradient-to-r from-[#4d3cff] to-[#6456ff] rounded-tl-2xl rounded-tr-2xl lg:rounded-tr-none lg:rounded-bl-2xl text-white py-8 pl-4 pr-4 lg:pl-8 lg:pr-20">
               <Fade direction="left" triggerOnce>
-                <div className="text-3xl lg:text-[60px] lg:leading-[60px] font-semibold mb-5 lg:mt-10">
-                  Bring A Creative Project To Life.
-                </div>
+                {lang === "eng" ? (
+                  <div className="text-3xl lg:text-[60px] lg:leading-[60px] font-semibold mb-5 lg:mt-10">
+                    Bring A Creative Project To Life.
+                  </div>
+                ) : (
+                  <div className="text-3xl lg:text-[60px] lg:leading-[70px] tracking-wide font-semibold mb-5 lg:mt-10">
+                    একটি সৃজনশীল প্রকল্পকে জীবনে আনুন।
+                  </div>
+                )}
                 <div className="lg:text-lg mb-10">
                   Below, we answer the questions people most often have about
                   crowdfunding when they’re trying to decide if they want to
@@ -54,11 +62,13 @@ const Header = () => {
                 <div className="inline-block bg-white text-indigo-500 tracking-[.5em] font-semibold text-sm hover:scale-105 duration-500 text-center rounded-md py-3 px-4 cursor-pointer">
                   EXPLORE
                 </div>
-                <div className="flex items-center mt-28">
-                  <div className="font-semibold mr-3">01</div>
-                  <div className="w-[30%] h-[2px] bg-white"></div>
-                  <div className="w-[30%] h-[2px] bg-gray-400"></div>
-                  <div className="font-semibold ml-3">02</div>
+                <div className="hidden lg:block">
+                  <div className="flex items-center mt-28">
+                    <div className="font-semibold mr-3">01</div>
+                    <div className="w-[30%] h-[2px] bg-white"></div>
+                    <div className="w-[30%] h-[2px] bg-gray-400"></div>
+                    <div className="font-semibold ml-3">02</div>
+                  </div>
                 </div>
               </Fade>
             </div>
@@ -69,7 +79,7 @@ const Header = () => {
                 className={`w-full h-full relative`}
               >
                 <div
-                  className={`${bannerClass} duration-1000 w-full h-full relative`}
+                  className={`${bannerClass} rounded-bl-2xl rounded-tr-2xl lg:rounded-bl-none rounded-br-2xl duration-1000 w-full h-full relative`}
                 ></div>
               </Fade>
             </div>

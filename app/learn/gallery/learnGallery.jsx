@@ -57,7 +57,7 @@ const LearnGallery = () => {
     ],
   };
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-20 overflow-hidden">
+    <div className="max-w-[1280px] px-5 mx-auto mt-20 overflow-hidden">
       <div className="flex justify-between items-center mb-4">
         <div className="text-xl lg:text-2xl">Trending Items</div>
         <div className="flex items-center">

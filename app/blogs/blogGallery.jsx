@@ -73,7 +73,7 @@ const BlogGallery = () => {
 
   
   return (
-    <div className="max-w-screen-3lg px-2 lg:px-5 mx-auto mt-20 overflow-hidden">
+    <div className="max-w-[1280px] px-2 lg:px-5 mx-auto mt-20 overflow-hidden">
       <Zoom triggerOnce>
         <div className="w-full bg-home-color rounded-2xl p-0 lg:p-10 blog_shine">
           <div className=" bg-black bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none px-8 py-12">
@@ -190,12 +190,12 @@ const BlogGallery = () => {
         </Fade>
 
         <div className="hidden lg:block">
-        <div
-          onClick={showMoreItems}
-          className="inline-block bg-home-color text-white px-10 py-2 cursor-pointer mt-5"
-        >
-          Show more
-        </div>
+          <div
+            onClick={showMoreItems}
+            className="inline-block bg-home-color text-white px-10 py-2 cursor-pointer mt-5"
+          >
+            Show more
+          </div>
         </div>
 
         {/* <div className="flex justify-center items-center mt-4 lg:hidden">

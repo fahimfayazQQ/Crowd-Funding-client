@@ -5,7 +5,7 @@ import { Send } from "../shared/Icons";
 
 const Payment = () => {
   return (
-    <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row ">
+    <div className="lg:bg-home-color lg:h-screen flex flex-col lg:flex-row">
       <div className="w-full flex justify-center items-center">
         <div className="mt-20 lg:mt-0">
           <Image src={CreditCard} alt="img" className="m-auto" />

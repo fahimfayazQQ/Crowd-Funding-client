@@ -15,7 +15,7 @@ const ProjectForm = () => {
   };
   return (
     <div className="bg-gray-100">
-      <div className="max-w-screen-2lg px-5 mx-auto pt-20">
+      <div className="max-w-[1280px] px-5 mx-auto pt-20">
         <div className="text-2xl lg:text-4xl font-semibold mb-5">
           Let’s get ready to start your campaign!
         </div>

@@ -25,8 +25,9 @@ const UsersTab = () => {
       setShowTabs(!showTabs);
     };
   return (
-    <div className="w-full h-auto lg:h-screen lg:flex bg-admin-color overflow-hidden">
-      <div className="hidden lg:block w-[30rem] h-full text-white z-50 pl-10 py-20">
+    <div className='bg-admin-color'>
+    <div className="w-full max-w-[1280px] mx-auto h-auto lg:h-screen lg:flex bg-admin-color overflow-hidden">
+      <div className="hidden lg:block w-[30rem] h-full text-white z-50 py-20">
         <div className='h-full bg-admin-secondary-color rounded-2xl py-20'>
             <Image src={Propic} alt="img" className="w-24 h-24 rounded-full mx-auto"/>
             <div className='text-2xl font-semibold text-center mt-3'>Sourav Sen</div>
@@ -77,6 +78,7 @@ const UsersTab = () => {
         {toogleTab===4 && <Slide direction='right'><Account/></Slide>}
         {toogleTab===5 && <Slide direction='right'><UserSettings/></Slide>}
       </div>
+    </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import Youtube from "../../public/assets/images/yt.png";
 const UserLogin = () => {
   return (
     <div className="bg-admin-color h-auto lg:h-screen py-20 lg:px-20">
-      <div className="flex flex-col lg:flex-row lg:h-[85vh] lg:border lg:p-5 rounded-2xl">
+      <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row lg:h-[85vh] lg:border lg:p-5 rounded-2xl">
         <div className="w-full lg:bg-admin-secondary-color flex justify-center items-center rounded-tl-2xl rounded-bl-2xl">
           <div className="">
             <Image src={Biznez} alt="img" className="m-auto" />

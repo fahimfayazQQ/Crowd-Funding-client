@@ -22,7 +22,7 @@ const LearnContent = () => {
       centerPadding: "0",
     };
   return (
-    <div className="max-w-screen-xl px-3 lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
+    <div className="max-w-[1280px] px-3 lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="text-black mx-auto mb-10 lg:mb-20">
         <div className="text-xl lg:text-4xl font-semibold text-center pb-10">
           Lorem Ipsum is simply dummy text <br /> of the printing and

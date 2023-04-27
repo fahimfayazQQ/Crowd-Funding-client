@@ -19,13 +19,13 @@ const Chat = () => {
   }, [])
   
   return (
-    <div className="lg:w-11/12 mx-auto lg:flex lg:mt-20 text-white gap-10">
+    <div className="w-full mx-auto lg:flex lg:mt-20 px-5 lg:px-0 lg:pl-5 text-white gap-5">
       <div className="hidden lg:block w-2/3">
         <SingleChat activeChat={activeChat}/>
       </div>
 
       {/* ALL CHATS LIST */}
-      <div className="lg:w-1/3 lg:bg-admin-secondary-color lg:rounded-2xl p-5">
+      <div className="lg:w-1/3 lg:bg-admin-secondary-color lg:rounded-2xl lg:p-5">
         <div className="text-xl pb-2">Chats</div>
         <div className="lg:hidden h-[70vh] overflow-y-auto my-5">
           {Chatperson?.map((person, i) => (

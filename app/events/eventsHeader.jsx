@@ -6,7 +6,7 @@ import { Zoom } from "react-awesome-reveal";
 const EventHeader = () => {
   return (
     <div className="px-2 lg:px-5">
-      <div className="max-w-screen-3lg mx-auto mt-20">
+      <div className="max-w-[1280px] mx-auto mt-20">
         <Zoom triggerOnce>
           <div className="w-full bg-home-color rounded-2xl p-0 lg:p-16 event_shine">
             <div className="bg-black bg-opacity-30 backdrop:filter backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none rounded-2xl px-8 py-12">

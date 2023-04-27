@@ -19,7 +19,7 @@ const Notifications = () => {
     setReadAll(!readAll);
   };
   return (
-    <div className="w-11/12 h-full mx-auto lg:p-20 text-white">
+    <div className="w-full h-full mx-auto lg:py-20 lg:pl-5 px-5 lg:px-0 text-white">
       <div className="flex justify-between mb-5">
         <div className="flex items-end gap-4">
           <div>

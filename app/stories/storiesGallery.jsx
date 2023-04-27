@@ -59,7 +59,7 @@ const StoriesGallery = () => {
   };
 
   return (
-    <div className="max-w-screen-xl px-2 lg:px-5 mx-auto mt-20 overflow-hidden">
+    <div className="max-w-[1280px] px-2 lg:px-5 mx-auto mt-20 overflow-hidden">
       <Zoom triggerOnce>
         <div className="w-full bg-home-color rounded-2xl p-0 lg:p-16 story_shine">
           <div className="bg-black bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none px-8 py-12">
@@ -75,7 +75,7 @@ const StoriesGallery = () => {
         </div>
       </Zoom>
 
-      <div className="max-w-screen-xl px-0 mx-auto mt-10 lg:mt-20 overflow-hidden">
+      <div className="max-w-[1280px] px-0 mx-auto mt-10 lg:mt-20 overflow-hidden">
         <div className="hidden lg:block">
           <div className="flex justify-between items-center mb-4">
             <div className="text-xl">Trending Items</div>

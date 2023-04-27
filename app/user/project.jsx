@@ -14,14 +14,14 @@ const Project = () => {
     value.preventDefault();
   };
   return (
-    <div className="w-11/12 h-full mx-auto lg:p-20 text-white">
+    <div className="w-full h-full mx-auto lg:py-20 lg:pl-5 text-white px-5 lg:px-0">
       <div className="bg-admin-secondary-color rounded-3xl shadow-lg p-10">
         <div className="flex flex-col lg:flex-row justify-between">
           <Image src={post1} alt="img" className="w-[30rem] mr-3" />
           <div>
-            <div className="flex justify-between pb-2">
-              <div className="text-2xl">Food Category</div>
-              <div>10 days late</div>
+            <div className="flex justify-between items-center py-2">
+              <div className="text-lg lg:text-2xl">Food Category</div>
+              <div className="text-xs lg:text-base">10 days late</div>
             </div>
             <div className="font-semibold">Lorem ipsum dolor sit amet</div>
             <div className="">

@@ -58,7 +58,7 @@ const StoryDetail = () => {
   };
   return (
     <div className="bg-[#fffbf1]">
-      <div className="flex flex-wrap justify-between lg:justify-end items-center pt-20 px-5 lg:pr-20 lg:px-0">
+      <div className="max-w-[1280px] mx-auto flex flex-wrap justify-between lg:justify-end items-center pt-20 px-5 lg:pr-20 lg:px-0">
         <Image src={Avatar2} alt="img" className="lg:hidden" />
         <div className="hover:text-home-color cursor-pointer my-2 mx-5">
           Find Campaign
@@ -77,7 +77,7 @@ const StoryDetail = () => {
         <Image src={Avatar2} alt="img" className="hidden lg:block" />
       </div>
 
-      <div className="max-w-screen-xl px-5 mx-auto pt-10 pb-10 overflow-hidden">
+      <div className="max-w-[1280px] px-5 mx-auto pt-10 pb-10 overflow-hidden">
         <Fade direction="right" triggerOnce>
           <div className="text-xl lg:text-3xl font-semibold mb-2">
             Do what you can, with what you have

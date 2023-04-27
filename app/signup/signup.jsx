@@ -2,39 +2,37 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Biznez from "../../public/assets/images/biznez.png"
+import Partners from "../../public/assets/images/signup-partners.png"
 import Meta from "../../public/assets/images/fb.png"
 import Google from "../../public/assets/images/google.png"
 import Youtube from "../../public/assets/images/yt.png"
 const Signup = () => {
   return (
-    <div className="bg-home-color h-screen flex flex-col lg:flex-row">
+    <div className="bg-[#F3F3F3] h-screen flex flex-col lg:flex-row max-w-[1280px] mx-auto">
       <div className="w-full flex justify-center items-center py-20 lg:py-0">
         <div className="">
           <Image src={Biznez} alt="img" className="m-auto" />
-          <div className="text-white flex justify-center mb-3">Partners</div>
           <div className="w-9/12 flex mx-auto">
-            <Image src={Meta} alt="img" className="w-[5rem] mx-auto" />
-            <Image src={Google} alt="img" className="w-[5rem] mx-auto" />
-            <Image src={Youtube} alt="img" className="w-[5rem] mx-auto" />
+            <Image src={Partners} alt="img" className="m-auto" />
           </div>
         </div>
       </div>
       <div className="w-full bg-zinc-100 flex justify-center items-center py-10 lg:py-0">
-        <div className="bg-white rounded-xl lg:w-[40vh] lg:h-[80vh] shadow-lg">
+        <div className="">
           <div className="flex justify-start"></div>
           <div className="pt-8">
             <div className="flex flex-col items-center">
               {/* <img src={Logo} alt="" /> */}
             </div>
           </div>
-          <div className="text-center my-6">
+          <div className="my-6">
             <h1 className="text-2xl font-semibold text-black">Signup</h1>
             <p className="pt-2 pb-4 text-black text-sm">
               Signup to create your account
             </p>
           </div>
 
-          <div className="m-6">
+          <div className="">
             <form className="mb-4">
               <div className="mb-6  ">
                 <label

@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@netlify/plugin-nextjs": "^4.33.0",
-    "@reduxjs/toolkit": "^1.9.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "@svgr/webpack": "^7.0.0",
     "antd": "^5.3.3",
     "dayjs": "^1.11.7",

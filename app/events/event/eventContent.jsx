@@ -11,7 +11,7 @@ const EventContent = () => {
   return (
     <div className="bg-[#ececec]">
       <div className="px-2 lg:px-5">
-        <div className="max-w-screen-3lg mx-auto pt-20">
+        <div className="max-w-[1280px] mx-auto pt-20">
           <Zoom triggerOnce>
             <div className="w-full bg-home-color rounded-2xl p-8 lg:p-16 event_shine">
               <div className="bg-white bg-opacity-30 backdrop:filter backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none rounded-2xl p-5">
@@ -29,7 +29,7 @@ const EventContent = () => {
           </Zoom>
         </div>
       </div>
-      <div className="max-w-screen-xl px-5 mx-auto py-10 lg:py-20">
+      <div className="max-w-[1280px] px-5 mx-auto py-10 lg:py-20">
         <Fade>
           <div className="text-xl lg:text-4xl font-semibold mb-5">
             Lorem Ipsum is simply dummy text{" "}
@@ -50,39 +50,27 @@ const EventContent = () => {
           <div className="w-11/12 lg:w-1/2 flex flex-wrap justify-between mx-auto gap-5 mb-10">
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
             <div className="flex items-center">
               <span className="w-2 h-2 rounded-full bg-black mr-4"></span>
-              <span className="lg:text-xl">
-                Lorem Ipsum is simply dummy
-              </span>
+              <span className="lg:text-xl">Lorem Ipsum is simply dummy</span>
             </div>
           </div>
           <div className="lg:text-xl mb-10">
@@ -128,12 +116,16 @@ const EventContent = () => {
 
         <JackInTheBox triggerOnce>
           <div className="bg-white w-11/12 lg:w-1/2 mx-auto p-10 shadow-lg rounded-xl">
-            <div className="text-2xl text-center font-semibold my-2">Buy ticket</div>
+            <div className="text-2xl text-center font-semibold my-2">
+              Buy ticket
+            </div>
             <div className="text-center">
               Building an enterprise level site doesn&apos;t need nightmare or
               cost your thousands.
             </div>
-            <div className="text-3xl text-center font-semibold my-5">$14.99</div>
+            <div className="text-3xl text-center font-semibold my-5">
+              $14.99
+            </div>
             <Link href={"../../learnPayment"} className="flex justify-center">
               <div className="inline-block mx-auto rounded-xl text-center bg-home-color text-white px-5 py-3">
                 Payments

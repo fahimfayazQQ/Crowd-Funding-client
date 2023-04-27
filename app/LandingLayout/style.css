@@ -8,9 +8,9 @@
   z-index: -1;
   content: "";
   position: absolute;
-  top: -100px;
-  left: -30px;
-  width: 700px;
+  top: -150px;
+  left: -80px;
+  width:760px;
   height: 1000px;
   background: #5956e9;
   transform: rotate(-20deg);
@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     top: -150px;
-    left: 200px;
+    left: 250px;
     width: 700px;
     height: 1000px;
     background: #5956e9;

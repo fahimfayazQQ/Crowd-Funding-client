@@ -4,7 +4,7 @@ import { Select } from "antd";
 import image from "../../public/assets/images/image3.png";
 // import "../landingLayout/style.css";
 // import { Search } from "../shared/Icons";
-import "../LandingLayout/style.css"
+import "./explore.css";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import { Search } from "../shared/Icons";
@@ -28,7 +28,7 @@ const ExploreFilter = () => {
 
   return (
     <div className="px-2 lg:px-5">
-      <div className="investor_shine bg-home-color rounded-2xl max-w-screen-xl mx-auto p-4 lg:p-10 mt-20 shadow-xl">
+      <div className="explore_shine bg-home-color rounded-2xl max-w-[1280px] mx-auto p-4 lg:p-10 mt-20 shadow-xl">
         <div className="flex flex-col lg:flex-row justify-between">
           <Fade direction="left" triggerOnce>
             <div className="w-full text-white">
@@ -71,7 +71,7 @@ const ExploreFilter = () => {
                     placeholder="Search Campaigns"
                     className="bg-white bg-opacity-30 rounded-md w-full px-2 py-2 placeholder-white outline-none"
                   />
-                  <Search className="text-xl mt-2 absolute right-2"/>
+                  <Search className="text-xl mt-2 absolute right-2" />
                 </div>
               </div>
             </div>

@@ -5,9 +5,9 @@ import { Fade } from "react-awesome-reveal";
 
 const HowItWorks = () => {
   return (
-    <div className="pb-14 lg:pb-20">
+    <div className="max-w-[1280px] mx-auto pb-14 lg:pb-36">
       <div className="flex flex-col lg:flex-row justify-evenly items-center overflow-x-hidden">
-        <div className="w-11/12 lg:w-auto flex-col pb-14 lg:pb-0">
+        <div className="w-11/12 lg:w-1/2 lg:mr-auto flex-col pb-14 lg:pb-0">
           <Fade direction="left" triggerOnce>
             <div className="flex justify-center items-center mb-5">
               <div className="w-[5rem] bg-[#e7e7e7] lg:bg-transparent rounded-2xl p-3 mr-2">

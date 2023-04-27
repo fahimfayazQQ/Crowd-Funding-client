@@ -27,7 +27,9 @@ const ProfileTab = () => {
   return (
     <div className="w-full h-screen lg:flex overflow-x-hidden">
       <div className="hidden lg:block w-[25rem] h-full bg-home-color text-white z-50">
-        <div className='text-2xl font-semibold pl-20 py-20'>QUADQUE</div>
+        <Link href={"./"}>
+        <div className='text-2xl font-semibold pl-20 py-20 cursor-pointer'>QUADQUE</div>
+        </Link>
         <div className="flex flex-col justify-center text-lg pt-20">
           <div onClick={()=>{handleToogle(0);}} className={`${toogleTab===0 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Notifications</div>
           <div onClick={()=>{handleToogle(1);}} className={`${toogleTab===1 && "bg-indigo-500"} tracking-widest py-5 pl-20 cursor-pointer`}>Investments List</div>

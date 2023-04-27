@@ -7,12 +7,14 @@ import { Down, Search } from "../Icons";
 import CustomSearch from "../search/page";
 import { customlinks } from "./MyLinks";
 import "./Navbar.css";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(false);
   // const [isHome, setIsHome] = useState(false);
   const [toogleSubmenu, setToogleSubmenu] = useState("");
+  const pathname = usePathname()
   const HamburgerLine1 = `h-1 w-10 my-1 rounded-full bg-black transition ease transform duration-500 m-4`;
   const HamburgerLine2 = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-500 m-4 float-right`;
 
@@ -22,16 +24,25 @@ const Navbar = () => {
   console.log(search);
 
   return (
-    <div id="Navbar" className="w-full absolute top-0 bg-transparent z-40 overflow-hidden">
-      <nav className="bg-transparent text-black relative lg:max-w-screen-xl mx-auto">
+    <div
+      id="Navbar"
+      className="w-full absolute top-0 bg-transparent z-40 overflow-hidden"
+    >
+      <nav className="bg-transparent text-black relative max-w-[1280px] mx-auto">
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer">
+            <div
+              className={`${
+                (pathname === "/login") ||
+                (pathname === "/payment") ||
+                (pathname === "/learnPayment") && "text-white"
+              } ${pathname==="/profile" && "hidden"} flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 lg:pl-0`}
+            >
               QUADQUE
             </div>
           </Link>
           <div className="flex justify-between items-center gap-2 ">
-            <CustomSearch search={search} handleSearch={handleSearch}/>
+            <CustomSearch search={search} handleSearch={handleSearch} />
             <div
               onClick={() => {
                 handleSearch(true);
@@ -94,7 +105,14 @@ const Navbar = () => {
                         }`}
                       >
                         {link.submenu?.map((slink, i) => (
-                          <Link key={i} href={slink.sublink} onClick={()=>{setOpen(false);setToogleSubmenu("")}}>
+                          <Link
+                            key={i}
+                            href={slink.sublink}
+                            onClick={() => {
+                              setOpen(false);
+                              setToogleSubmenu("");
+                            }}
+                          >
                             <div className="py-6 pl-10">{slink.name}</div>
                           </Link>
                         ))}

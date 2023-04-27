@@ -47,7 +47,7 @@ const OurTeam = () => {
     ],
   };
   return (
-    <div className="max-w-screen-xl px-5 my-10 lg:my-20 mx-auto">
+    <div className="max-w-[1280px] px-5 my-10 lg:my-20 mx-auto">
       <div className="text-2xl lg:text-3xl font-semibold mb-3">Our Team</div>
       <div className="lg:w-5/12 lg:text-xl">
         Paragraphs are the building blocks of papers. Many students define

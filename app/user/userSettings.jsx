@@ -2,7 +2,7 @@ import React from "react";
 
 const UserSettings = () => {
   return (
-    <div className="w-11/12 h-screen mx-auto text-white lg:p-20">
+    <div className="lg:w-full h-screen mx-auto text-white lg:py-20 lg:pl-10 px-5 lg:px-0">
       <div className="flex justify-between">
         <div>
           <div className="text-lg font-bold pb-5">Email Address</div>
@@ -33,8 +33,15 @@ const UserSettings = () => {
               className="w-full border rounded-md shadow-md py-2 px-2 outline-none"
             />
           </div>
-          <div className="text-sm my-5">Cannot remember your password?<span className="underline text-sky-600 px-2 cursor-pointer">Reset your password</span></div>
-          <div className="w-[5rem] bg-home-color text-white text-center rounded-md px-4 py-2 my-5">Save</div>
+          <div className="text-sm my-5">
+            Cannot remember your password?
+            <span className="underline text-sky-600 px-2 cursor-pointer">
+              Reset your password
+            </span>
+          </div>
+          <div className="w-[5rem] bg-home-color text-white text-center rounded-md px-4 py-2 my-5">
+            Save
+          </div>
         </div>
         <a href="" className="text-sm underline text-sky-600">
           change

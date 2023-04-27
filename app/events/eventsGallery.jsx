@@ -59,7 +59,7 @@ const EventsGallery = () => {
   };
 
   return (
-    <div className="max-w-screen-xl px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
+    <div className="max-w-[1280px] px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="hidden lg:block ">
         <div className="flex justify-end items-center mb-4 mr-10">
           <div className="flex items-center">

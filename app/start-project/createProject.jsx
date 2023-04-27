@@ -7,7 +7,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const CreateProject = () => {
   return (
-    <div className="max-w-screen-xl px-5 mx-auto pt-20">
+    <div className="max-w-[1280px] px-5 mx-auto pt-20">
       <div className="text-2xl lg:text-4xl font-bold mb-5">
         Lorem Ipsum is simply dummy text
       </div>

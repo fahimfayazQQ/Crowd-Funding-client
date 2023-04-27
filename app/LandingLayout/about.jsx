@@ -17,10 +17,10 @@ const About = () => {
     return orbs;
   };
   return (
-    <div className="pt-10 lg:pt-0 pb-14 lg:pb-20 relative overflow-hidden">
-      <div className="wrapAbout">{RenderGlobe()}</div>
-      <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center overflow-hidden">
-        <div className="w-11/12 lg:w-1/4 my-auto">
+    <div className="max-w-[1280px] mx-auto pt-10 lg:pt-0 pb-14 lg:pb-36 relative overflow-hidden">
+      <div className="hidden lg:block wrapAbout">{RenderGlobe()}</div>
+      <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
+        <div className="w-11/12 lg:w-1/2 m-auto mr-auto">
           <Fade direction="left" triggerOnce>
             <div className="font-semibold text-2xl lg:text-4xl pb-5">
               About <br />
@@ -32,13 +32,13 @@ const About = () => {
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s,
             </div>
-            <div className="w-11/12 bg-gradient-to-tl from-[#5143F6] via-indigo-400 to-[#5143F6] text-white tracking-widest text-2xl font-semibold text-center shadow-xl rounded-xl cursor-pointer py-8 px-4">
+            <div className="w-11/12 mx-auto lg:m-0 bg-gradient-to-tl from-[#5143F6] via-indigo-400 to-[#5143F6] text-white tracking-widest text-2xl font-semibold text-center shadow-xl rounded-xl cursor-pointer py-8 px-4">
               <span className="text-4xl font-bold">100%</span> Safe to Use
             </div>
           </Fade>
         </div>
-        <Fade direction="right" triggerOnce>
-          <div className="w-[21rem] h-[37rem] flex-col shadow-lg p-5 rounded-3xl bg-white mb-14 lg:mb-5 mt-5 relative lg:mr-10">
+        <Fade direction="right" triggerOnce className="lg:w-1/2">
+          <div className="w-[21rem] h-[37rem] flex-col shadow-lg p-5 rounded-3xl bg-white mb-14 lg:mb-5 mt-5 relative lg:mr-10 m-0 lg:mx-auto">
             <Image src={Dotted} alt="img" className="-ml-10 -mt-9 z-0" />
             <Image
               src={Dotted}

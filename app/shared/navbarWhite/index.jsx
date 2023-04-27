@@ -7,8 +7,12 @@ import { Down, Search } from "../Icons";
 import { customlinks } from "../navbar/MyLinks";
 import CustomSearch from "../search/page";
 import "./Navbar.css";
+import { useDispatch, useSelector } from "react-redux";
+import { SET_LANG } from "../../../redux/Features/Language/LanguageSlice";
 
 const NavbarWhite = () => {
+  const dispatch = useDispatch()
+  const {lang} = useSelector((state) => state?.language)
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState(false);
   // const [isHome, setIsHome] = useState(false);
@@ -23,14 +27,18 @@ const NavbarWhite = () => {
 
   return (
     <div id="Navbar" className="w-full absolute top-0 bg-transparent z-[998] overflow-hidden">
-      <nav className="bg-transparent text-white relative lg:max-w-screen-xl mx-auto">
+      <nav className="bg-transparent text-white relative max-w-[1280px] mx-auto">
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer">
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 lg:pl-0">
               QUADQUE
             </div>
           </Link>
           <div className="flex justify-between items-center gap-2">
+            <div className="flex gap-5 font-semibold text-gray-400">
+              <div onClick={()=> {dispatch(SET_LANG("eng"))}} className={`${lang === "eng" && "text-white duration-700"} cursor-pointer`}>EN</div>
+              <div onClick={()=> {dispatch(SET_LANG("ban"))}} className={`${lang === "ban" && "text-white duration-700"} cursor-pointer`}>BN</div>
+            </div>
             <CustomSearch search={search} handleSearch={handleSearch}/>
             <div
               onClick={() => {

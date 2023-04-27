@@ -41,6 +41,7 @@ module.exports = {
         86: "22.3rem",
         88: "23.25rem",
         98: "25.7rem",
+        "page": "1280px"
       },
       height: {
         7.5: "1.875rem",

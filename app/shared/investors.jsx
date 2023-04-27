@@ -25,7 +25,7 @@ const Investors = () => {
 
   return (
     <div className="px-2 lg:px-5 overflow-x-hidden">
-      <div className="max-w-screen-xl px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto rounded-3xl text-white relative">
+      <div className="max-w-[1280px] px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto rounded-3xl text-white relative">
         <Zoom triggerOnce>
           <div className="text-2xl lg:text-5xl font-semibold text-center pb-10">
             Our Happy Investors
@@ -54,12 +54,12 @@ const Investors = () => {
                       <Image
                         src={Image1}
                         alt="img"
-                        className="w-[10rem] mx-auto rounded-full"
+                        className="w-[6rem] lg:w-[10rem] mx-auto rounded-full"
                       />
                       <Image
                         src={CommaDecor}
                         alt="img"
-                        className="absolute -bottom-2 left-22"
+                        className="w-[2rem] lg:w-[55px] absolute -bottom-2 lg:left-22 left-36"
                       />
                     </div>
                     <div className="text-white text-lg lg:text-xl pt-5 pb-2">
@@ -67,9 +67,9 @@ const Investors = () => {
                       {post?.designation}
                     </div>
                     <div className="w-[10rem] mx-auto flex justify-evenly pb-5">
-                      {[...Array(post?.stars)].map((_,i)=>
-                      <Star key={i} className="text-[#FFA722] text-3xl" />
-                      )}
+                      {[...Array(post?.stars)].map((_, i) => (
+                        <Star key={i} className="text-[#FFA722] text-3xl" />
+                      ))}
                     </div>
                     <div className="w-11/12 lg:w-9/12 text-white mx-auto text-sm lg:text-2xl">
                       {post?.testimonial}
