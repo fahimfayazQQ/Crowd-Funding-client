@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex justify-between items-center gap-2 ">
-            <div className="flex gap-5 font-semibold text-gray-400">
+            <div className="flex gap-5 font-semibold text-gray-400 pr-5 lg:pr-0">
               <div onClick={()=> {dispatch(SET_LANG("eng"))}} className={`${lang === "eng" && "text-black duration-700"} cursor-pointer`}>EN</div>
               <div onClick={()=> {dispatch(SET_LANG("ban"))}} className={`${lang === "ban" && "text-black duration-700"} cursor-pointer`}>BN</div>
             </div>

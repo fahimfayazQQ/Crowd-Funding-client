@@ -134,12 +134,12 @@ const BlogGallery = () => {
                         className="w-full rounded-lg"
                       />
                       <div className="flex justify-between">
-                        <div className="text-sm pt-5">{product?.time}</div>
+                        <div className="text-sm pt-5">{lang==="eng"? (product?.time):(product?.ban_time)}</div>
                         <div className="text-sm pt-5">{lang==="eng"?`3 min read`:`৩ মিনিট পড়া`}</div>
                       </div>
                       <div className="border w-11/12 mx-auto my-5"></div>
-                      <div className="text-xl mb-5">{product?.title}</div>
-                      <div className="text-sm">{product?.description}</div>
+                      <div className="text-xl mb-5">{lang==="eng"? (product?.title):(product?.ban_title)}</div>
+                      {lang==="eng"? (product?.description):(product?.ban_description)}
                     </div>
                   </div>
                 </Link>
