@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
             <div
-              className={`${(pathname === "/learnPayment") && "text-white"} ${(pathname === "/login") && "text-white"} ${(pathname === "/payment") && "text-white"} ${pathname==="/profile" && "hidden"} flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 xl:pl-0`}
+              className={`${(pathname === "/learnPayment") && "lg:text-white"} ${(pathname === "/login") && "lg:text-white"} ${(pathname === "/payment") && "lg:text-white"} ${pathname==="/profile" && "lg:hidden"} flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 xl:pl-0`}
             >
               QUADQUE
             </div>

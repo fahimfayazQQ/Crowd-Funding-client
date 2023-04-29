@@ -21,7 +21,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-zinc-100 flex justify-center items-center py-10 lg:py-0">
+      <div className="w-full bg-zinc-100 flex justify-center items-center py-10 lg:py-0 px-10 lg:px-0">
         <div className="">
           <div className="flex justify-start"></div>
           <div className="pt-8">
