@@ -12,8 +12,10 @@ import Story3 from "../../public/assets/images/story3.png";
 import { SliderArrow } from "../shared/Icons";
 import Blogs from "../shared/jsondata/blogs.json";
 import "./storyStyle.css";
+import { useSelector } from "react-redux";
 
 const StoriesGallery = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -64,13 +66,18 @@ const StoriesGallery = () => {
         <div className="w-full bg-home-color rounded-2xl p-0 lg:p-16 story_shine">
           <div className="bg-black bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none px-8 py-12">
             <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
-              Success Stories
+              {lang==="eng"?`Success Stories`:`সাফল্যের গল্প`}
             </div>
+            {lang==="eng"?
             <div className="text-sm lg:text-xl text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum is simply dummy text of the printing
               and typesetting industry.
             </div>
+            :
+            <div className="text-sm lg:text-xl text-white">
+              কাস্টমার সন্তুষ্টি ব্যবসার জন্য অত্যন্ত গুরুত্বপূর্ণ। কাস্টমারদের সন্তুষ্টি না থাকলে <br /> একটি ব্যবসা পরিচালনার কোন লাভ হতে পারে না। কাস্টমারদের নিয়ে বিশেষ দেখভাল <br /> করা উচিত যাতে তারা আবার ব্যবসার জন্য ফিরে আসতে চান।
+            </div>}
           </div>
         </div>
       </Zoom>
@@ -78,7 +85,7 @@ const StoriesGallery = () => {
       <div className="max-w-[1280px] px-0 mx-auto mt-10 lg:mt-20 overflow-hidden">
         <div className="hidden lg:block">
           <div className="flex justify-between items-center mb-4">
-            <div className="text-xl">Trending Items</div>
+            <div className="text-xl">{lang==="eng"? "Trending Items":"ট্রেন্ডিং আইটেমসমূহ"}</div>
             <div className="flex items-center">
               <div
                 onClick={() => sliderRef.current.slickPrev()}
@@ -108,8 +115,8 @@ const StoriesGallery = () => {
                         alt="img"
                         className="w-full rounded-xl"
                       />
-                      <div className="text-xl my-5">{product?.title}</div>
-                      <div className="text-sm">{product?.description}</div>
+                      <div className="text-xl my-5">{lang==="eng"?(product?.title):(product?.ban_title)}</div>
+                      <div className="text-sm">{lang==="eng"?(product?.description):(product?.ban_description)}</div>
                     </div>
                   </div>
                 </Link>
