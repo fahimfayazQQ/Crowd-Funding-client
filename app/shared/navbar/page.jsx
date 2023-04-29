@@ -25,7 +25,7 @@ const Navbar = () => {
   const handleSearch = (bool) => {
     setSearch(bool);
   };
-  console.log(search);
+  console.log("pathname",pathname);
 
   return (
     <div
@@ -36,11 +36,7 @@ const Navbar = () => {
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
             <div
-              className={`${
-                (pathname === "/login") ||
-                (pathname === "/payment") ||
-                (pathname === "/learnPayment") && "text-white"
-              } ${pathname==="/profile" && "hidden"} flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 lg:pl-0`}
+              className={`${(pathname === "/learnPayment") && "text-white"} ${(pathname === "/login") && "text-white"} ${(pathname === "/payment") && "text-white"} ${pathname==="/profile" && "hidden"} flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 xl:pl-0`}
             >
               QUADQUE
             </div>

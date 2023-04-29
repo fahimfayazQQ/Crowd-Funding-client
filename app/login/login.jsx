@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -6,7 +7,10 @@ import Meta from "../../public/assets/images/fb.png"
 import GoogleImg from "../../public/assets/images/google.png"
 import Youtube from "../../public/assets/images/yt.png"
 import { FB, Google } from '../shared/Icons'
+import { useSelector } from "react-redux";
+
 const Login = () => {
+  const { lang } = useSelector((state) => state?.language);
   return (
     <div className="bg-home-color h-screen flex flex-col lg:flex-row">
       <div className="w-full flex justify-center items-center py-20 lg:py-0">
@@ -21,28 +25,24 @@ const Login = () => {
         </div>
       </div>
       <div className="w-full bg-zinc-100 flex justify-center items-center py-10 lg:py-0">
-        <div className="">
-          <div className="flex justify-start"></div>
           <div className="pt-8">
             <div className="flex flex-col items-center">
               {/* <img src={Logo} alt="" /> */}
             </div>
-          </div>
           <div className="my-6">
-            <h1 className="text-2xl font-semibold text-black">Login</h1>
+            <h1 className="text-2xl font-semibold text-black">{lang==="eng"? "Login":"লগইন"}</h1>
             <p className="pt-2 pb-4 text-black text-sm">
-              Login to access your account
+            {lang==="eng"? "Login to access your account":"আপনার অ্যাকাউন্টে প্রবেশ করতে লগ ইন করুন"}
             </p>
           </div>
 
-          <div className="">
             <form className="mb-4">
               <div className="mb-6">
                 <label
                   htmlFor="email"
                   className="block mb-2 text-sm text-black"
                 >
-                  Email
+                  {lang==="eng"?`Email`:`ইমেইল`}
                 </label>
                 <input
                   // type="password"
@@ -50,7 +50,7 @@ const Login = () => {
                   name="email"
                   id="email"
                   // value={data.email}
-                  placeholder="Enter your username"
+                  placeholder={lang==="eng"? "Enter your email":"ইমেইল প্রবেশ করুন"}
                   className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
                   // onChange={userData}
                   required
@@ -68,13 +68,13 @@ const Login = () => {
                 {/* Forgot password */}
                 <div className="flex justify-between mb-2">
                   <label htmlFor="password" className="text-sm text-black">
-                    Password
+                  {lang==="eng"? `Password`:`পাসওয়ার্ড`}
                   </label>
                   <label
                     className="text-xs text-gray-400 focus:outline-none hover:text-indigo-500"
                     // onClick={ForgotPasswordModal}
                   >
-                    Forgot password?
+                    {lang==="eng"? `Forgot password?`:`পাসওয়ার্ড ভুলে গেছেন?`}
                   </label>
 
                   {/*                 <ForgotPassword
@@ -88,7 +88,7 @@ const Login = () => {
                   size="large"
                   name="password"
                   id="password"
-                  placeholder="Enter your password"
+                  placeholder={lang==="eng"? "Enter your password":"আপনার পাসওয়ার্ড লিখুন"}
                   // value={data.password}
                   className="w-full px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color"
                   // onChange={userData}
@@ -109,7 +109,7 @@ const Login = () => {
                   className="cursor-pointer text-black"
                   htmlFor="remember_me"
                 >
-                  Remember Me
+                  {lang==="eng"? `Remember Me`:`আমার আইডি মনে রাখ`}
                 </label>
               </div>
 
@@ -119,24 +119,24 @@ const Login = () => {
                     type="submit"
                     className="w-full p-3 text-white font-medium bg-home-color bg-opacity-80 hover:bg-opacity-100 duration-500 rounded-md focus:outline-none  "
                   >
-                    Log in
+                    {lang==="eng"? `Log in`:`লগইন`}
                   </button>
                 </Link>
               </div>
-              <div className="text-center">or</div>
+              <div className="text-center">{lang==="eng"?"or":"অথবা"}</div>
               <div className="flex justify-center items-center bg-white px-4 py-2 shadow-lg border rounded-lg mt-5 mb-3 cursor-pointer">
                 <Google className="text-3xl mr-3" />
-                Continue with Google
+                {lang==="eng"? "Continue with Google":"গুগল দিয়ে লগইন করুন"}
               </div>
               <div className="flex justify-center items-center bg-white px-4 py-2 shadow-lg border rounded-lg mt-3 mb-5 cursor-pointer">
                 <FB className="text-3xl text-[#1877F2] mr-3" />
-                Continue with Facebook
+                {lang==="eng"? "Continue with Facebook":"ফেসবুক দিয়ে লগইন করুন"}
               </div>
               <div>
-                Dont have an account?
+              {lang==="eng"?`Dont have an account?`:`অ্যাকাউন্ট নেই?`}
                 <Link href={"../signup"}>
                   <span className="pl-2 underline text-sky-600">
-                    Sign up here
+                  {lang==="eng"? `Sign up here`:`এখানে নিবন্ধন করুন`}
                   </span>
                 </Link>
               </div>
@@ -156,7 +156,6 @@ const Login = () => {
                 </Link>
               </p> */}
             </form>
-          </div>
         </div>
       </div>
     </div>

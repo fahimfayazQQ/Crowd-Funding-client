@@ -6,8 +6,11 @@ import Card2 from "../../public/assets/images/card2.png";
 import Products from "../shared/jsondata/products.json";
 import { Heart, Profit, Loss } from "../shared/Icons";
 import { Fade } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
+
 
 const InvestList = () => {
+  const { lang } = useSelector((state) => state?.language);
   const [isFavourite, setIsFavourite] = useState([])
 
   const handleIsFavourite = (id) => {
@@ -33,7 +36,7 @@ const InvestList = () => {
         <div className="grid lg:grid-cols-3 gap-5">
           {Products?.map((prod) => (
             <Fade triggerOnce key={prod?.id}>
-              <div className="relative hover:bg-white rounded-2xl hover:shadow-lg duration-500 pb-5 border hover:border-home-color">
+              <div className="relative hover:bg-white rounded-2xl hover:shadow-lg duration-500 pb-5 border hover:border-home-color cursor-pointer">
                 <div
                   onClick={() => {
                     handleIsFavourite(prod?.id);
@@ -48,9 +51,9 @@ const InvestList = () => {
                 </div>
                 <Image src={Card1} alt="img" className="w-full" />
                 <div className="px-3">
-                  <div className="text-xl my-5">{prod?.title}</div>
-                  <div className="text-sm">total investment: $ 8000</div>
-                  <div className="text-sm">Profit: $ 5000</div>
+                  <div className="text-xl my-5">{lang==="eng"?(prod?.title):(prod?.ban_title)}</div>
+                  <div className="text-sm">{lang==="eng"? `total investment: $ 8000`:`মোট বিনিয়োগ: ৮০০০ ডলার`}</div>
+                  <div className="text-sm">{lang==="eng"? `Profit: $ 5000`:`লাভ: ৫০০০ ডলার`}</div>
                 </div>
               </div>
             </Fade>

@@ -30,7 +30,7 @@ const NavbarWhite = () => {
       <nav className="bg-transparent text-white relative max-w-[1280px] mx-auto">
         <div className="flex justify-between pt-5 pb-13">
           <Link href={"./"}>
-            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 lg:pl-0">
+            <div className="flex justify-center items-center text-xl text-center font-bold cursor-pointer pl-4 xl:pl-0">
               QUADQUE
             </div>
           </Link>

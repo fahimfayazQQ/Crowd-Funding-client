@@ -12,8 +12,10 @@ import Event3 from "../../public/assets/images/event3.png";
 import Event4 from "../../public/assets/images/event4.png";
 import { SliderArrow } from "../shared/Icons";
 import Events from "../shared/jsondata/Events.json";
+import { useSelector } from "react-redux";
 
 const EventsGallery = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -95,8 +97,8 @@ const EventsGallery = () => {
                       className="w-full rounded-3xl"
                     />
                     <div className="w-1/2 mx-auto">
-                      <div className="text-xl my-5">{product?.title}</div>
-                      <div className="text-sm pb-8">{product?.description}</div>
+                      <div className="text-xl my-5">{lang==="eng"? (product?.title):(product?.ban_title)}</div>
+                      <div className="text-sm pb-8">{lang==="eng"? (product?.description):(product?.ban_description)}</div>
                     </div>
                   </div>
                 </div>

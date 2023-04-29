@@ -6,8 +6,11 @@ import Card2 from "../../public/assets/images/card2.png";
 import Products from "../shared/jsondata/products.json";
 import { Heart } from "../shared/Icons";
 import { Fade } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
+import Link from "next/link";
 
 const WishProject = () => {
+  const { lang } = useSelector((state) => state?.language);
   const [isFavourite, setIsFavourite] = useState([])
 
   const handleIsFavourite = (id) => {
@@ -37,16 +40,18 @@ const WishProject = () => {
                 <div onClick={()=>{handleIsFavourite(prod?.id);}} className="w-10 h-10 rounded-full bg-white absolute top-5 right-5 flex justify-center items-center"><Heart className="text-[#8075FF]"/></div>
                 <Image src={Card1} alt="img" className="w-full" />
                 <div className="px-3">
-                  <div className="text-xl my-5">{prod?.title}</div>
-                  <div className="text-sm pb-3">{prod?.description}</div>
+                  <div className="text-xl my-5">{lang==="eng"?(prod?.title):(prod?.ban_title)}</div>
+                  <div className="text-sm pb-3">{lang==="eng"? (prod?.description):(prod?.ban_description)}</div>
                   <div className="text-sm pb-3">
-                    <span className="text-zinc-400 pr-2">Raised:</span>
-                    {prod?.raised}
+                    <span className="text-zinc-400 pr-2">{lang==="eng"? "Raised":"উত্থাপিত"}:</span>
+                    {lang==="eng"? (prod?.raised):(prod?.ban_raised)}
                   </div>
                 </div>
+                <Link href={"./explore/product"}>
                 <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                  Learn More
+                {lang==="eng"? "Learn More":"আরও জানুন"}
                 </div>
+                </Link>
               </div>
             </Fade>
           ))}

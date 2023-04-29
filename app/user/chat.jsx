@@ -27,7 +27,7 @@ const Chat = () => {
       {/* ALL CHATS LIST */}
       <div className="lg:w-1/3 lg:bg-admin-secondary-color lg:rounded-2xl lg:p-5">
         <div className="text-xl pb-2">Chats</div>
-        <div className="lg:hidden h-[70vh] overflow-y-auto my-5">
+        <div className="lg:hidden lg:h-[70vh] overflow-y-auto my-5">
           {Chatperson?.map((person, i) => (
             <div key={i} className="cursor-pointer">
               <Link href={`./user/${person?.id}`}>
@@ -48,12 +48,12 @@ const Chat = () => {
         <div className="hidden lg:block h-[70vh] overflow-y-auto my-5">
           {Chatperson?.map((person) => (
             <div onClick={()=>{handleActiveChatScreen(person?.id)}} key={person?.id} className="cursor-pointer">
-              <div className={`${(activeChat?.id) === (person?.id) ? "bg-admin-color":""} flex items-center justify-between hover:bg-admin-color py-3`}>
+              <div className={`${(activeChat?.id) === (person?.id) ? "bg-admin-color":""} flex flex-col justify-start hover:bg-admin-color py-3`}>
                 <div className="flex items-center">
                   <Image src={Avatar} alt="img" className="w-10 h-10 mr-3 ml-1" />
                   <div className="font-semibold">{person?.name}</div>
                 </div>
-                <div className="text-zinc-400 text-xs mr-2">{person?.time}</div>
+                <div className="flex justify-end text-zinc-400 text-xs mr-2">{person?.time}</div>
               </div>
               <div className="w-full border-b border-gray-600"></div>
             </div>

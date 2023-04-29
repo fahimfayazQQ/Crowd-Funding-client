@@ -8,8 +8,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { FB, Insta, Twitter, SliderArrow } from "../shared/Icons";
+import Team from "../shared/jsondata/team.json";
+import { useSelector } from "react-redux";
 
 const OurTeam = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -48,21 +51,26 @@ const OurTeam = () => {
   };
   return (
     <div className="max-w-[1280px] px-5 my-10 lg:my-20 mx-auto">
-      <div className="text-2xl lg:text-3xl font-semibold mb-3">Our Team</div>
+      <div className="text-2xl lg:text-3xl font-semibold mb-3">{lang==="eng"?`Our Team`:`আমাদের টিম`}</div>
       <div className="lg:w-5/12 lg:text-xl">
-        Paragraphs are the building blocks of papers. Many students define
-        paragraphs in terms of length
+      {lang==="eng"? `Paragraphs are the building blocks of papers. Many students define
+        paragraphs in terms of length`
+      :
+      `অনুচ্ছেদ হল কাগজপত্রের বিল্ডিং ব্লক। অনেক ছাত্র সংজ্ঞায়িত
+      দৈর্ঘ্যের পরিপ্রেক্ষিতে অনুচ্ছেদ`
+      }
       </div>
       <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
-            <div className="w-full h-full outline-none">
+            {Team?.map((team, i)=>
+            <div key={i} className="w-full h-full outline-none">
               <Image src={Coke} alt="img" className="w-[95%] rounded-lg" />
               <div className="text-center text-black font-semibold mt-3">
-                HM Alvi
+                {lang==="eng"? (team?.name):(team?.ban_name)}
               </div>
               <div className="text-center text-black text-sm">
-                Ceo & Founder{" "}
+              {lang==="eng"? (team?.designation):(team?.ban_designation)}
               </div>
               <div className="flex justify-center pt-2 pb-5">
                 <FB className="text-xl mx-3 cursor-pointer text-black" />
@@ -70,7 +78,8 @@ const OurTeam = () => {
                 <Twitter className="text-xl mx-3 cursor-pointer text-black" />
               </div>
             </div>
-            <div className="w-full h-full outline-none">
+            )}
+            {/* <div className="w-full h-full outline-none">
               <Image src={Coke2} alt="img" className="w-[95%] rounded-lg" />
               <div className="text-center text-black font-semibold mt-3">
                 Sofia Vergara
@@ -125,7 +134,7 @@ const OurTeam = () => {
                 <Insta className="text-xl mx-3 cursor-pointer text-black" />
                 <Twitter className="text-xl mx-3 cursor-pointer text-black" />
               </div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </Zoom>

@@ -11,8 +11,10 @@ import Learn2 from "../../../public/assets/images/learn3.png";
 import Learn3 from "../../../public/assets/images/learn4.png";
 import Products from "../../shared/jsondata/products.json";
 import { SliderArrow } from "../../shared/Icons";
+import { useSelector } from "react-redux";
 
 const LearnGallery = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -59,7 +61,7 @@ const LearnGallery = () => {
   return (
     <div className="max-w-[1280px] px-5 mx-auto mt-20 overflow-hidden">
       <div className="flex justify-between items-center mb-4">
-        <div className="text-xl lg:text-2xl">Trending Items</div>
+        <div className="text-xl lg:text-2xl">{lang==="eng"?`Trending Items`:`ট্রেন্ডিং আইটেমস্‌`}</div>
         <div className="flex items-center">
           <div
             onClick={() => sliderRef.current.slickPrev()}
@@ -91,13 +93,13 @@ const LearnGallery = () => {
                     <div className="rounded-full inline-block bg-indigo-300 text-indigo-600 shadow-md px-3 py-2">
                       {product?.medium}
                     </div>
-                    <div>Tk. 5000</div>
+                    <div>{lang==="eng"? (product?.raised):(product?.ban_raised)}</div>
                   </div>
-                  <div className="text-xl my-5">{product?.title}</div>
-                  <div className="text-sm pb-8">{product?.description}</div>
+                  <div className="text-xl my-5">{lang==="eng"? (product?.title):(product?.ban_title)}</div>
+                  <div className="text-sm pb-8">{lang==="eng"? (product?.description):(product?.ban_description)}</div>
                   <Link href={"./learn/gallery/details"}>
                     <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                      Admission Now
+                    {lang==="eng"? `Admission Now`:`ভর্তি নিন`}
                     </div>
                   </Link>
                 </div>
