@@ -18,7 +18,7 @@ const DetailContent = () => {
         </div>
         <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          industry. Lorem Ipsum has been the industry's standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries, but also the leap into electronic typesetting,
@@ -57,7 +57,7 @@ const DetailContent = () => {
         </div>
         <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          industry. Lorem Ipsum has been the industry's standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries, but also the leap into electronic typesetting,
@@ -81,7 +81,7 @@ const DetailContent = () => {
         </div>
         <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          industry. Lorem Ipsum has been the industry's standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries, but also the leap into electronic typesetting,
@@ -120,7 +120,7 @@ const DetailContent = () => {
         </div>
         <div className="lg:text-xl mb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          industry. Lorem Ipsum has been the industry's standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries, but also the leap into electronic typesetting,
@@ -139,7 +139,7 @@ const DetailContent = () => {
             Admission Fee
           </div>
           <div className="text-center lg:text-xl">
-            Building an enterprise level site doesn&apos;t need nightmare or
+            Building an enterprise level site doesn't need nightmare or
             cost your thousands.
           </div>
           <div className="text-3xl font-semibold text-center my-5">$14.99</div>

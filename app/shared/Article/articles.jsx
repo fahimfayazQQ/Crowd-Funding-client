@@ -68,8 +68,8 @@ const Articles = () => {
       <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
-            {Testimonials?.map((post) =>
-              <div className="content">
+            {Testimonials?.map((post, i) =>
+              <div key={i} className="content">
                 <div className="content-overlay"></div>
                 <Image src={Article1} alt="img" className="content-image" />
                 <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">

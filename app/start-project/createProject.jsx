@@ -78,7 +78,7 @@ const CreateProject = () => {
         <div className="mb-5 lg:text-xl">
         {lang==="eng" ?
           `Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum been the industry&apos;s standard dummy text
+          industry. Lorem Ipsum been the industry's standard dummy text
           ever since the 1500s, when an unknown printegalley of type and
           scrambled it to make a type specimen book.`
           :
@@ -114,7 +114,7 @@ const CreateProject = () => {
               </li>
               <li className="py-3 text-sm lg:text-xl flex">
                 <span className="font-semibold pr-2">{lang==="eng" ?"02":"০২"}</span>
-                {lang==="eng" ? `Randomised words which don&apos;t look even slightly believable.`:`এলোমেলো শব্দ যা সামান্য বিশ্বাসযোগ্য মনে হয় না।`}
+                {lang==="eng" ? `Randomised words which don't look even slightly believable.`:`এলোমেলো শব্দ যা সামান্য বিশ্বাসযোগ্য মনে হয় না।`}
               </li>
               <li className="py-3 text-sm lg:text-xl flex">
                 <span className="font-semibold pr-2">{lang==="eng" ?"03":"০৩"}</span>
