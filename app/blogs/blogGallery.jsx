@@ -12,8 +12,10 @@ import Blog3 from "../../public/assets/images/blog2.png";
 import Blog4 from "../../public/assets/images/blog5.png";
 import Blogs from "../shared/jsondata/blogs.json";
 import "./blogStyle.css";
+import { useSelector } from "react-redux";
 
 const BlogGallery = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef();
   const [oddBlogs, setOddBlogs] = useState()
   const [evenBlogs, setEvenBlogs] = useState()
@@ -78,13 +80,21 @@ const BlogGallery = () => {
         <div className="w-full bg-home-color rounded-2xl p-0 lg:p-10 blog_shine">
           <div className=" bg-black bg-opacity-30 lg:bg-transparent backdrop:filter backdrop-blur-sm lg:backdrop-blur-0 rounded-2xl shadow-md lg:shadow-none px-8 py-12">
             <div className="text-white text-2xl lg:text-4xl font-semibold pb-5">
-              Latest News
+              {lang==="eng"? `Latest News`:`সর্বশেষ সংবাদ`}
             </div>
+            {lang==="eng"? 
             <div className="text-sm lg:text-base text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum is simply dummy text of the printing
               and typesetting industry.
             </div>
+            :
+            <div className="text-sm lg:text-base text-white">
+              সর্বশেষ সংবাদ হল মুদ্রণ এবং টাইপসেটিং এর ডামি পাঠ্য
+              শিল্প <br /> সর্বশেষ সংবাদ হল মুদ্রণের ডামি টেক্সট
+              এবং টাইপসেটিং শিল্প।
+            </div>
+            }
           </div>
         </div>
       </Zoom>
@@ -125,7 +135,7 @@ const BlogGallery = () => {
                       />
                       <div className="flex justify-between">
                         <div className="text-sm pt-5">{product?.time}</div>
-                        <div className="text-sm pt-5">3 min read</div>
+                        <div className="text-sm pt-5">{lang==="eng"?`3 min read`:`৩ মিনিট পড়া`}</div>
                       </div>
                       <div className="border w-11/12 mx-auto my-5"></div>
                       <div className="text-xl mb-5">{product?.title}</div>
@@ -151,13 +161,13 @@ const BlogGallery = () => {
                         className="w-full rounded-2xl"
                       />
                       <div className="flex justify-between">
-                        <div className="text-sm pt-5">{product?.time}</div>
-                        <div className="text-sm pt-5">3 min read</div>
+                        <div className="text-sm pt-5">{lang==="eng"? (product?.time):(product?.ban_time)}</div>
+                        <div className="text-sm pt-5">{lang==="eng"?`3 min read`:`৩ মিনিট পড়া`}</div>
                       </div>
                       <div className="border w-11/12 mx-auto my-5"></div>
-                      <div className="text-xl mb-5">{product?.title}</div>
+                      <div className="text-xl mb-5">{lang==="eng"? (product?.title):(product?.ban_title)}</div>
                       <div className="text-sm lg:pb-10">
-                        {product?.description}
+                      {lang==="eng"? (product?.description):(product?.ban_description)}
                       </div>
                     </Link>
                   ))}
@@ -173,13 +183,13 @@ const BlogGallery = () => {
                         className="w-full rounded-2xl"
                       />
                       <div className="flex justify-between">
-                        <div className="text-sm pt-5">{product?.time}</div>
-                        <div className="text-sm pt-5">3 min read</div>
+                        <div className="text-sm pt-5">{lang==="eng"? (product?.time):(product?.ban_time)}</div>
+                        <div className="text-sm pt-5">{lang==="eng"?`3 min read`:`৩ মিনিট পড়া`}</div>
                       </div>
                       <div className="border w-11/12 mx-auto my-5"></div>
-                      <div className="text-xl mb-5">{product?.title}</div>
+                      <div className="text-xl mb-5">{lang==="eng"? (product?.title):(product?.ban_title)}</div>
                       <div className="text-sm lg:pb-10">
-                        {product?.description}
+                      {lang==="eng"? (product?.description):(product?.ban_description)}
                       </div>
                     </Link>
                   ))}
@@ -194,7 +204,7 @@ const BlogGallery = () => {
             onClick={showMoreItems}
             className="inline-block bg-home-color text-white px-10 py-2 cursor-pointer mt-5"
           >
-            Show more
+            {lang==="eng"?`Show more`:`আরো দেখুন`}
           </div>
         </div>
 

@@ -5,8 +5,10 @@ import image1 from "../../public/assets/images/footer33.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const { lang } = useSelector((state) => state?.language);
   return (
     <div className="max-w-[1280px] px-5 pt-10 lg:pt-20 mx-auto overflow-hidden">
       <div className="border-t pb-5"></div>
@@ -16,7 +18,7 @@ const Footer = () => {
         </Fade>
         <Fade direction="right" triggerOnce>
           <div className="bg-white text-xs lg:text-sm font-semibold rounded-full shadow-md px-6 py-3 cursor-pointer">
-            Create Campaign
+            {lang==="eng" ? "Create Campaign":"ক্যাম্পেইন প্রণয়ন"}
           </div>
         </Fade>
       </div>
@@ -26,19 +28,19 @@ const Footer = () => {
         <Fade direction="left" triggerOnce>
           <ul className="text-zinc-600 pb-5 lg:pb-0">
             <Link href={"../"}>
-              <li className="mb-4 cursor-pointer">Home</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Home":"হোম"} </li>
             </Link>
             <Link href={"../about"}>
-              <li className="mb-4 cursor-pointer">About</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "About":"সম্বন্ধে"} </li>
             </Link>
             <Link href={"../explore"}>
-              <li className="mb-4 cursor-pointer">Explore</li>
+              <li className="mb-4 cursor-pointer"> {lang==="eng" ? "Explore":"অন্বেষণ"}</li>
             </Link>
             <Link href={"../start-project"}>
-              <li className="mb-4 cursor-pointer">Create Project</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Create Project":"প্রকল্প প্রণয়ন"} </li>
             </Link>
             <Link href={"../login"}>
-              <li className="mb-4 cursor-pointer">Login</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Login":"লগইন"} </li>
             </Link>
           </ul>
         </Fade>
@@ -46,26 +48,26 @@ const Footer = () => {
         <Fade direction="left" delay={500} triggerOnce>
           <ul className="text-zinc-600 pb-5 lg:pb-0">
             <Link href={"../blogs"}>
-              <li className="mb-4 cursor-pointer">Blogs</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Blogs":"ব্লগ"}</li>
             </Link>
             <Link href={"../stories"}>
-              <li className="mb-4 cursor-pointer">Stories</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Success Stories":"সাফল্যের গল্প"} </li>
             </Link>
             <Link href={"../events"}>
-              <li className="mb-4 cursor-pointer">Events</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Events":"আয়োজন"} </li>
             </Link>
             <Link href={"../learn"}>
-              <li className="mb-4 cursor-pointer">Learn</li>
+              <li className="mb-4 cursor-pointer">{lang==="eng" ? "Learn":"ক্যাম্পেইন"} </li>
             </Link>
           </ul>
         </Fade>
 
         <Fade direction="left" delay={1000} triggerOnce>
           <ul className="text-zinc-600 pb-5 lg:pb-0">
-            <li className="mb-4 cursor-pointer">Guide</li>
-            <li className="mb-4 cursor-pointer">password Protection</li>
-            <li className="mb-4 cursor-pointer">Licences</li>
-            <li className="mb-4 cursor-pointer">Changelog</li>
+            <li className="mb-4 cursor-pointer">{lang==="eng" ? "Guide":"গাইড"}</li>
+            <li className="mb-4 cursor-pointer">{lang==="eng" ? "password Protection":"পাসওয়ার্ড সুরক্ষা"}</li>
+            <li className="mb-4 cursor-pointer">{lang==="eng" ? "Licences":"লাইসেন্স"}</li>
+            <li className="mb-4 cursor-pointer">{lang==="eng" ? "Changelog":"চেঞ্জলগ"}</li>
           </ul>
         </Fade>
 
@@ -77,14 +79,20 @@ const Footer = () => {
             <div className="absolute top-[30%] px-4">
               <div className="">
                 <div className="text-lg font-semibold text-white text-center pb-5">
-                  Paragraphs are the building blocks of papers
+                {lang==="eng" ? "Paragraphs are the building blocks of papers":"অনুচ্ছেদ হল কাগজপত্রের বিল্ডিং ব্লক"}
                 </div>
+                {lang==="eng"?
                 <div className="text-white text-center text-3xl pb-3">
                   Startup <span>$25</span>
                 </div>
+                :
+                <div className="text-white text-center text-3xl pb-3">
+                  স্টার্টআপ <span>$২৫</span>
+                </div>
+                }
                 <div className="w-[10rem] mx-auto bg-[#5143F6] rounded-lg shadow-md text-white text-center px-5 py-2 cursor-pointer">
                   {" "}
-                  Get Plan
+                  {lang==="eng" ? "Get Plan":"পরিকল্পনা নিন"}
                 </div>
               </div>
             </div>

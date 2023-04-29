@@ -11,8 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { Fade } from "react-awesome-reveal";
 import { SliderArrow, Heart, HeartOff } from "../shared/Icons";
 import "./explore.css";
+import { useSelector } from "react-redux";
 
 const ExploreGallery = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     className: "center",
@@ -60,7 +62,6 @@ const ExploreGallery = () => {
   const [isFavourite, setIsFavourite] = useState([]);
 
   const handleIsFavourite = (id) => {
-    console.log(id);
     if (isFavourite?.includes(id)) {
       setIsFavourite(isFavourite?.filter((wtf) => wtf !== id));
       document.getElementById(`removeFromWishlist${id}`).classList.add("opacity-100");
@@ -87,7 +88,7 @@ const ExploreGallery = () => {
     <div className="max-w-[1280px] lg:px-5 mx-auto mt-10 lg:mt-20 overflow-hidden">
       <div className="hidden lg:block">
         <div className="w-11/12 lg:w-full mx-auto lg:m-0 flex justify-between items-center mb-4">
-          <div className="text-2xl font-semibold">Trending Items</div>
+          <div className="text-2xl font-semibold">{lang==="eng"? "Trending Items":"ট্রেন্ডিং আইটেমসমূহ"}</div>
           <div className="flex items-center">
             <div
               onClick={() => sliderRef.current.slickPrev()}
@@ -115,13 +116,13 @@ const ExploreGallery = () => {
                     id={`addToWishlist${product?.id}`}
                     className="opacity-0 delay-500 duration-700 absolute top-5 right-16 bg-white shadow-lg rounded-lg px-4 py-3 text-xs whitespace-nowrap"
                   >
-                    Added to Wishlist!
+                    {lang==="eng"?"Added to Wishlist!":"ইচ্ছা তালিকায় যোগ করা হয়েছে!"}
                   </div>
                   <div
                     id={`removeFromWishlist${product?.id}`}
                     className="opacity-0 delay-500 duration-700 absolute top-5 right-16 bg-white shadow-lg rounded-lg px-4 py-3 text-xs whitespace-nowrap"
-                  >
-                    Removed from Wishlist!
+                    >
+                    {lang==="eng"?"Removed to Wishlist!":"ইচ্ছা তালিকা থেকে সরানো হয়েছে!"}
                   </div>
                   <div
                     onClick={() => {
@@ -142,20 +143,20 @@ const ExploreGallery = () => {
                   <Image src={Card1} alt="img" className="w-full" />
                   <div className="px-4">
                     <div className="flex justify-between items-center mt-4 mx-2">
-                      <div className="text-zinc-500">Category</div>
-                      <div className="text-zinc-500">10 Days late</div>
+                      <div className="text-zinc-500">{lang==="eng"?"Category: Food":"শ্রেণী: খাদ্য"}</div>
+                      <div className="text-zinc-500">{lang==="eng"?"10 Days late":"দশ দিন বিলম্বে"}</div>
                     </div>
                     <div className="text-xl font-semibold my-5">
-                      {product?.title}
+                      {lang==="eng"?(product?.title):(product?.ban_title)}
                     </div>
-                    <div className="text-sm pb-5">{product?.description}</div>
+                    <div className="text-sm pb-5">{lang==="eng"?(product?.description):(product?.ban_description)}</div>
                     <div className="text-zinc-500 pb-8">
-                      Raised: <span className="text-black">$500 of $2000</span>
+                    {lang==="eng"?"Raised":"সংগৃহীত"}: <span className="text-black">{lang==="eng"?"$500 of $2000":"$২০০০ এর মধ্যে $৫০০"}</span>
                     </div>
                   </div>
                   <Link href={"./explore/product"}>
                     <div className="w-9/12 bg-home-color mx-auto text-white tracking-widest text-sm text-center rounded-md py-3 px-4 cursor-pointer">
-                      Learn More
+                      {lang==="eng"?"Learn More":"আরও জানুন"}
                     </div>
                   </Link>
                 </div>

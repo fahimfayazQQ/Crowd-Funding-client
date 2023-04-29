@@ -10,8 +10,10 @@ import Image1 from "../../public/assets/images/image2.png";
 import { ArrowWhite, Star } from "./Icons";
 import { Zoom } from "react-awesome-reveal";
 import Testimonials from "../shared/jsondata/testimonials.json"
+import { useSelector } from "react-redux";
 
 const Investors = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -28,7 +30,7 @@ const Investors = () => {
       <div className="max-w-[1280px] px-3 investor_shine bg-home-color my-10 lg:my-20 p-20 mx-auto rounded-3xl text-white relative">
         <Zoom triggerOnce>
           <div className="text-2xl lg:text-5xl font-semibold text-center pb-10">
-            Our Happy Investors
+            {lang==="eng"?"Our Happy Investors":"আমাদের মূল্যবান বিনিয়োগকারীরা"}
           </div>
         </Zoom>
         <div
@@ -63,8 +65,8 @@ const Investors = () => {
                       />
                     </div>
                     <div className="text-white text-lg lg:text-xl pt-5 pb-2">
-                      <span className="font-semibold">{post?.name}</span>,{" "}
-                      {post?.designation}
+                      <span className="font-semibold">{lang==="eng"? (post?.name):(post?.ban_name)}</span>,{" "}
+                      {lang==="eng"? (post?.designation):(post?.ban_designation)}
                     </div>
                     <div className="w-[10rem] mx-auto flex justify-evenly pb-5">
                       {[...Array(post?.stars)].map((_, i) => (
@@ -72,7 +74,7 @@ const Investors = () => {
                       ))}
                     </div>
                     <div className="w-11/12 lg:w-9/12 text-white mx-auto text-sm lg:text-2xl">
-                      {post?.testimonial}
+                      {lang==="eng"? (post?.testimonial):(post?.ban_testimonial)}
                     </div>
                   </div>
                 ))}

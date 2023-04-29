@@ -6,8 +6,11 @@ import Image2 from "../../public/assets/images/Method.png";
 import Dotted from "../../public/assets/images/dotted.png";
 import { Fade } from "react-awesome-reveal";
 import "./globe2.scss"
+import { useSelector } from "react-redux";
 
 const About = () => {
+  const { lang } = useSelector((state) => state?.language);
+
   const RenderGlobe = () => {
     let totalOrbs = 1000;
     const orbs = [];
@@ -23,17 +26,26 @@ const About = () => {
         <div className="w-11/12 lg:w-1/2 m-auto mr-auto">
           <Fade direction="left" triggerOnce>
             <div className="font-semibold text-2xl lg:text-4xl pb-5">
-              About <br />
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              {lang === "eng"?
+              "About":"সম্বন্ধে"
+            }
+            </div>
+            <div className="font-semibold text-2xl lg:text-4xl pb-5">
+              {lang === "eng"?
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              :
+              "লরেম ইপসাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য।"
+              }
             </div>
             <div className="lg:text-lg pb-8">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s,
+              {lang === "eng"?
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+              :
+              "লরেম ইপসাম হল মুদ্রণ এবং টাইপসেটিং শিল্পের ডামি পাঠ্য। লোরেম ইপসাম ১৫০০ এর দশক থেকে শিল্পের মানক ডামি পাঠ্য।"
+              }
             </div>
             <div className="w-11/12 mx-auto lg:m-0 bg-gradient-to-tl from-[#5143F6] via-indigo-400 to-[#5143F6] text-white tracking-widest text-2xl font-semibold text-center shadow-xl rounded-xl cursor-pointer py-8 px-4">
-              <span className="text-4xl font-bold">100%</span> Safe to Use
+              <span className="text-4xl font-bold">{lang==="eng"?"100%":"১00%"}</span> {lang==="eng"?"Safe to Use":"নিরাপদ"}
             </div>
           </Fade>
         </div>

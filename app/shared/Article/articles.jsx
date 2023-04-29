@@ -9,8 +9,11 @@ import Article2 from "../../../public/assets/images/article2.png";
 import Article1 from "../../../public/assets/images/cocacola.png";
 import { SliderArrow } from "../Icons";
 import "./article.css";
+import Testimonials from "../jsondata/testimonials.json"
+import { useSelector } from "react-redux";
 
 const Articles = () => {
+  const { lang } = useSelector((state) => state?.language);
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -52,56 +55,38 @@ const Articles = () => {
     <div className="max-w-[1280px] px-2 py-10 lg:py-20 mx-auto overflow-x-hidden">
       <Fade direction="up" triggerOnce>
         <div className="text-zinc-700 tracking-[.5em] text-sm mb-3 pl-5 lg:pl-0">
-          -ARTICLES
+          -{lang==="eng"? "ARTICLES" : "প্রবন্ধ"}
         </div>
         <div className="w-11/12 lg:w-5/12 text-xl lg:text-3xl font-semibold mx-auto lg:m-0">
-          Paragraphs are the building blocks of papers. Many students define
-          paragraphs in terms of length
+          {lang==="eng"?
+          "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length."
+          :
+          "অনুচ্ছেদ হল কাগজপত্রের বিল্ডিং ব্লক। অনেক ছাত্র দৈর্ঘ্যের পরিপ্রেক্ষিতে অনুচ্ছেদ সংজ্ঞায়িত করে।"
+          }
         </div>
       </Fade>
       <Zoom triggerOnce>
         <div className="my-5">
           <Slider ref={sliderRef} {...settings} arrows={false}>
-            <div className="content">
-              <div className="content-overlay"></div>
-              <Image src={Article1} alt="img" className="content-image" />
-              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">
-                  View More
-                </span>
+            {Testimonials?.map((post) =>
+              <div className="content">
+                <div className="content-overlay"></div>
+                <Image src={Article1} alt="img" className="content-image" />
+                <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
+                  {lang==="eng"? (post?.testimonial):(post?.ban_testimonial)}
+                  <span className="text-indigo-500 cursor-pointer">
+                    View More
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="content">
-              <div className="content-overlay"></div>
-              <Image src={Article2} alt="img" className="content-image" />
-              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">
-                  View More
-                </span>
-              </div>
-            </div>
-            <div className="content">
-              <div className="content-overlay"></div>
-              <Image src={Article1} alt="img" className="content-image" />
-              <div className="content-details fadeIn-bottom text-white text-xs lg:text-xl">
-                Paragraphs are the building blocks of papers. Many students
-                define paragraphs in terms of length{" "}
-                <span className="text-indigo-500 cursor-pointer">
-                  View More
-                </span>
-              </div>
-            </div>
+            )}
           </Slider>
         </div>
       </Zoom>
 
       <div className="w-11/12 lg:w-full mx-auto flex items-center">
         <div className="inline-block bg-[#5143F6] shadow-md cursor-pointer text-white tracking-widest text-sm text-center py-4 px-4 mr-20">
-          See More
+          {lang==="eng" ? "See More" : "আরো দেখুন"}
         </div>
         <div className="flex items-center">
           <div

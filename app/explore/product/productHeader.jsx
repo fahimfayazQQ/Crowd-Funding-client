@@ -10,8 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 import "./product.css"
+import { useSelector } from "react-redux";
 
 const ProductHeader = () => {
+  const { lang } = useSelector((state) => state?.language);
   const [isReacted, setIsReacted] = useState(false);
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -96,48 +98,49 @@ const ProductHeader = () => {
         </JackInTheBox>
         <Fade direction="down" triggerOnce className="sm:w-6/12">
           <div className="w-full h-full text-black p-5 lg:p-10 relative">
-            <div className="lg:text-xl text-zinc-500 pb-5">Catagory</div>
-            <div className="lg:text-xl text-zinc-500 pb-5">10 Days late</div>
-            <div className="lg:text-xl text-zinc-500">Equity</div>
+            <div className="lg:text-xl text-zinc-500 pb-5">{lang==="eng"?"Category: Food":"শ্রেণী: খাদ্য"}</div>
+            <div className="lg:text-xl text-zinc-500 pb-5">{lang==="eng"?"10 Days late":"দশ দিন বিলম্বে"}</div>
+            <div className="lg:text-xl text-zinc-500">{lang==="eng"?"Equity":"ইকুইটি"}</div>
             <div className="text-2xl lg:text-4xl font-semibold mb-5 mt-5">
-              Pasta Bolognese
+              {lang==="eng"?"Pasta Bolognese":"পাস্তা বোলোনিজ"}
             </div>
             <div className="text-sm lg:text-base mb-10">
-              Below, we answer the questions people most often have about
-              crowdfunding when they’re trying to decide if they want to start
-              an online fundraiser.
+            {lang==="eng"?
+              "Below, we answer the questions people most often have about crowdfunding when they’re trying to decide if they want to start an online fundraiser."
+              :
+              "নীচে, আমরা প্রায়শই লোকেরা যে প্রশ্নগুলি করে তার উত্তর দিই৷ ক্রাউডফান্ডিং যখন তারা সিদ্ধান্ত নেওয়ার চেষ্টা করছে তারা শুরু করতে চায় কিনা একটি অনলাইন তহবিল সংগ্রহকারী।"}
             </div>
             <div className="grid grid-cols-2 text-sm lg:text-base mb-10 gap-4 lg:gap-10">
               <div className="flex items-center">
                 <div className="text-zinc-500 pr-2 whitespace-nowrap">
-                  Raised:
+                {lang==="eng"?"Raised":"সংগৃহীত"}:
                 </div>
-                <div className="text-lg lg:text-2xl">$5000</div>
+                <div className="text-lg lg:text-2xl">{lang==="eng"?"$5000":"$৫০০০"}</div>
               </div>
               <div className="flex items-center">
                 <div className="text-zinc-500 pr-2 whitespace-nowrap">
-                  Target:
+                  {lang==="eng"?"Target":"টার্গেট"}:
                 </div>
-                <div className="text-lg lg:text-2xl">$20000</div>
+                <div className="text-lg lg:text-2xl">{lang==="eng"?"$20000":"$২০,০০০"}</div>
               </div>
               <div className="flex items-center">
                 <div className="text-zinc-500 pr-2 whitespace-nowrap">
-                  Investors:
+                  {lang==="eng"?"Investors":"বিনিয়োগকারী"}:
                 </div>
-                <div className="text-lg lg:text-2xl">33</div>
+                <div className="text-lg lg:text-2xl">{lang==="eng"?"33":"৩৩"}</div>
               </div>
               <div className="flex items-center">
                 <div className="text-zinc-500 pr-2 whitespace-nowrap">
-                  Share price:
+                  {lang==="eng"?"Share price":"শেয়ারের দাম"}:
                 </div>
-                <div className="text-lg lg:text-2xl">$1000</div>
+                <div className="text-lg lg:text-2xl">{lang==="eng"?"$1000":"$১০০০"}</div>
               </div>
             </div>
 
             <div className="lg:absolute lg:bottom-[8%] flex justify-around gap-3 lg:gap-10">
               <Link href={"../payment"}>
                 <div className="inline-block bg-home-color text-white tracking-widest text-sm text-center rounded-lg shadow-lg py-3 px-10 lg:px-20 cursor-pointer">
-                  INVEST
+                {lang==="eng"?"INVEST":"বিনিয়োগ করুন"}
                 </div>
               </Link>
               <div
@@ -153,7 +156,7 @@ const ProductHeader = () => {
                     isReacted ? "text-[#F40B5F]" : "text-gray-200"
                   }`}
                 />
-                WISH
+                {lang==="eng"?"WISH":"প্রিয় তালিকাভুক্ত"}
               </div>
             </div>
           </div>
